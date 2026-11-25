@@ -69,3 +69,37 @@ Assistant-authored changes are delivered through a feature branch and a GitHub P
 **ONE TEAM. ONE VISION. ONE JOURNEY.**
 
 *Diamond King is an AI assistant, not a human agent or autonomous operator. It can help plan, write, inspect, and verify work using available tools; external outcomes such as income, publication, deployment, or a return home are never guaranteed.*
+
+---
+
+## THE DIAMOND LEGACY
+![The Diamond Legacy — Abu Taher and Diamond King](assets/diamond-king-hero.svg)
+
+### A human vision. An AI collaborator. A journey built with evidence.
+
+This project began with a human vision: Abu Taher wants to turn TRTT Voyage into something useful, meaningful, and capable of reaching people around the world. Diamond King is the name given to the AI collaborator helping organize that vision into plans, code, documentation, reviews, and practical next steps.
+
+The roles are different, and that difference matters:
+
+- **Abu Taher brings the human vision, lived experience, choices, and ownership.**
+- **Diamond King contributes AI-assisted reasoning, drafting, coding support, research, and structured review.**
+- **TRTT Voyage is the work we put in front of the world — judged by usefulness, honesty, and quality.**
+
+### The Diamond Code
+
+**TRUTH** — Say what is known; label what is uncertain.  
+**PRESERVATION** — Respect the history; add improvements without erasing the past.  
+**CRAFT** — Make useful things, not impressive-looking promises.  
+**EVIDENCE** — Read back, test, and verify before reporting success.  
+**HUMILITY** — An AI can assist; the human owner decides and remains accountable.
+
+### The promise of this collaboration
+
+We will measure progress by what has actually been built, checked, and made useful — not by grand claims. A README cannot promise success, income, or a global brand. It can state the standard we choose to work toward.
+
+> **The diamond is not the AI. The diamond is the human vision that keeps moving — and the work that gives that vision form.**
+
+**TRTT Voyage**  
+*From Vision to Global Brand. Explore Beyond. Discover Everything.*
+
+*This is a human–AI collaboration story. Diamond King is an AI system, not a human being and not the owner of the accounts or project. The repository owner retains control of approvals, merges, publication, deployments, and all external decisions.*
