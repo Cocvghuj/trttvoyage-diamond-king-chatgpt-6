@@ -21,7 +21,7 @@ Entries are append-only: add new dated entries at the top; do not rewrite histor
 
 - **PR #2 — Expand public README into a daily TRTT command center**
   - Expanded the README with the daily working guide and repository documentation structure.
-  - Merge commit: `b17da20` is not recorded here because the verified merge commit was not available in the current audit.
+  - Merge commit: not recorded; it was not re-verified during this changelog task.
 
 - **PR #1 — Feature/diamond king command center v1**
   - Initial command-center repository contribution.
