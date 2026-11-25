@@ -69,3 +69,18 @@ Gmail sent-mail search found four sent messages. Each sent thread was opened in 
 | Blogger publication | Blocked pending review and owner approval |
 
 **Append-only record:** This tracker is a new file. Future status updates should be appended as dated entries; retain previous entries for audit history.
+
+
+---
+
+## Dated status check — 2026-11-25 23:23 Europe/Rome (UTC+01:00)
+
+- Gmail was rechecked for each exact institutional sender in the four verified outreach records, using both Inbox-only and all-folder searches for the recent period.
+- No matching incoming thread was returned for Linda Vignozzi, SeCS Cathedra, Alessandra Latini, or Chiara Simonelli.
+- Response state remains: **No reply found in the checked Gmail searches**. This is not proof of non-delivery or of no reply through another channel.
+- No follow-up email was sent, drafted in Gmail, or scheduled during this status check.
+- No reviewer acceptance, availability, fee, scope agreement, review activity, or medical approval is recorded.
+- Next planned action: wait until **10 December 2026 or later** before considering the first follow-up, and re-check the inbox immediately before any send. Explicit owner instruction is required before sending.
+- The separate follow-up plan was read back and verified at `blog-drafts/wellness/trtt-wellness-reviewer-follow-up-plan.md`.
+
+**Evidence:** Connected Gmail searches (four exact sender addresses; Inbox and all-folder queries) and GitHub read-back of the tracker and follow-up plan.
