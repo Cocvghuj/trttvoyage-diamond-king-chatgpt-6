@@ -103,3 +103,16 @@ We will measure progress by what has actually been built, checked, and made usef
 *From Vision to Global Brand. Explore Beyond. Discover Everything.*
 
 *This is a human–AI collaboration story. Diamond King is an AI system, not a human being and not the owner of the accounts or project. The repository owner retains control of approvals, merges, publication, deployments, and all external decisions.*
+
+---
+
+## Mobile-Friendly Repository Guide
+
+For narrow screens, use this single-column list instead of the table above. The original Repository Guide table is preserved.
+
+- [Project Charter](docs/PROJECT-CHARTER.md) — Mission, principles, and project scope
+- [Workflow](docs/WORKFLOW.md) — Inspect, plan, build, diff, verify, and save
+- [Repository Map](docs/REPOSITORY-MAP.md) — Guide to the repository structure
+- [Daily Log Template](templates/DAILY-LOG-TEMPLATE.md) — Record progress, evidence, blockers, and the next handoff
+
+*Mobile navigation aid added while preserving the original Repository Guide table and its content.*
