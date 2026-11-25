@@ -86,14 +86,15 @@
       <aside class="summary" aria-live="polite" aria-labelledby="summary-title">
         <h2 id="summary-title">Your budget summary</h2>
         <div class="total-label">Estimated group total</div>
-        <div class="total" id="total">€1,699.00</div>
+        <div class="total-label" id="destination-out">Trip destination not set</div>
+        <div class="total" id="total">€1,928.00</div>
         <div class="metric"><span>Transport</span><strong id="transport-out">€300.00</strong></div>
         <div class="metric"><span>Accommodation</span><strong id="stay-out">€770.00</strong></div>
         <div class="metric"><span>Food</span><strong id="food-out">€490.00</strong></div>
         <div class="metric"><span>Local transport</span><strong id="local-out">€168.00</strong></div>
         <div class="metric"><span>Activities</span><strong id="activities-out">€120.00</strong></div>
         <div class="metric"><span>Other</span><strong id="other-out">€80.00</strong></div>
-        <div class="perperson">Per traveller: <span id="per-person">€849.50</span></div>
+        <div class="perperson">Per traveller: <span id="per-person">€964.00</span></div>
         <p class="notice">This is your estimate, not a live quote. Prices vary by dates, destination, availability and travel style. No currency conversion or live price lookup is performed.</p>
       </aside>
     </div>
@@ -141,12 +142,14 @@
           $("error").textContent = "The estimate is too large to calculate. Please check your entries.";
           return;
         }
+        $("destination-out").textContent = $("destination").value.trim() || "Trip destination not set";
         $("total").textContent = money(total);
         $("per-person").textContent = money(total / values.travellers);
         for (const [key,value] of Object.entries(parts)) $(key+"-out").textContent = money(value);
       }
       $("calculate").addEventListener("click",calculate);
       $("currency").addEventListener("change",calculate);
+      $("destination").addEventListener("input",() => { $("destination-out").textContent = $("destination").value.trim() || "Trip destination not set"; });
       $("reset").addEventListener("click",() => {
         for (const [id,value] of Object.entries(defaults)) $(id).value = value;
         $("destination").value = "";
