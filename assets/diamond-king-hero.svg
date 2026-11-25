@@ -4,16 +4,16 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#11152D"/>
-      <stop offset="1" stop-color="#25213C"/>
+      <stop offset="1" stop-color="#11152D"/>
     </linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFF0B0"/>
+      <stop offset="0" stop-color="#D6A542"/>
       <stop offset=".48" stop-color="#D6A542"/>
       <stop offset="1" stop-color="#B77991"/>
     </linearGradient>
     <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#E98BAF"/>
-      <stop offset="1" stop-color="#F6C6D8"/>
+      <stop offset="1" stop-color="#E98BAF"/>
     </linearGradient>
     <filter id="glow"><feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
