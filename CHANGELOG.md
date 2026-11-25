@@ -21,11 +21,11 @@ Entries are append-only: add new dated entries at the top; do not rewrite histor
 
 - **PR #2 — Expand public README into a daily TRTT command center**
   - Expanded the README with the daily working guide and repository documentation structure.
-  - Merge commit: not recorded; it was not re-verified during this changelog task.
+  - Merge commit: `56463c769a5af451a5a72e5b4f909b7978c2fb2b`.
 
 - **PR #1 — Feature/diamond king command center v1**
-  - Initial command-center repository contribution.
-  - Detailed file-level scope and merge commit: not recorded in this entry because they were not re-verified during this changelog task.
+  - Added the initial project charter, repository map, evidence-first workflow, and daily work-log template (four files).
+  - Merge commit: `7ef33be0acd2984caa850ea32b578ebf9f43bd4a`.
 
 ---
 
