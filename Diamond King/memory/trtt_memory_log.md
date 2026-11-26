@@ -158,3 +158,13 @@ Policy: append-only; preserve all earlier entries.
 - **Next action:** Owner should verify the exact repository and Actions environment used by the workflow, confirm the existing `BLOGGER_REFRESH_TOKEN` secret was updated in `Cocvghuj/Cocvghuj-trtt-news-bot` (not merely another repository/environment), and reauthorize the same Blogger Google account against the configured client with Blogger API access. Never paste token values into chat. After correction, rerun the failed job and verify Post ID plus `status=draft`.
 - **Safety:** No live Blogger publish, Telegram send, PR merge, Main write, paid/browser fallback, or secret disclosure.
 - **Evidence:** https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/actions/runs/45831150926
+
+
+## Entry — 2026-11-26T14:12:00Z — Requested Blogger refresh-token acquisition link
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked for the link to obtain a Blogger OAuth refresh token.
+- **Guidance provided:** Google OAuth 2.0 Playground (https://developers.google.com/oauthplayground/); Blogger scope https://www.googleapis.com/auth/blogger; use the owner's own OAuth client credentials and exchange the authorization code for tokens.
+- **Security:** No token value requested, accessed, or exposed. Owner must store the refresh token only in the correct GitHub Actions secret; never paste it into chat.
+- **File changes:** Append-only memory entry; matching additive trace to trttmagic.html.
+- **Verification:** NOT TESTED — no token was generated or validated in this chat.
