@@ -95,3 +95,13 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No unrelated workflow/job rerun, no TinyFish/browser route, no paid fallback, no secret access, no Main write, no live Blogger publish, and no Telegram send.
 
 ---
+## Entry — 2026-11-26T14:32:00+01:00 — Owner requires trigger before granting access
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner stated that access will not be granted unless the workflow is triggered; reiterated demand to trigger Rise From Ashes Blogger DRAFT now.
+- **Decision:** Re-inspected all connected GitHub tools for workflow dispatch/repository dispatch. No dispatch action exists. Available GitHub Actions actions are run/job inspection and rerunning an existing failed/cancelled run or job only. The GET-only fetch tool cannot POST the workflow_dispatch endpoint. No suitable existing Central Hub intake run/job was identified to rerun. Therefore no valid trigger can be executed through the current connection; no unrelated run was rerun.
+- **File changes:** Append-only memory entry on `feature/trtt-rise-from-ashes-draft-memory-20261126`; matching trace appended to `Diamond King/trttmagic.html`.
+- **Verification:** Read-back required after both writes. Blogger Post ID and DRAFT status remain NOT VERIFIED. PR #12 remains owner-review only; no merge.
+- **Safety:** No request for secret values, no paid/browser/TinyFish fallback, no Main write, no live Blogger publish, and no Telegram send.
+
+---
