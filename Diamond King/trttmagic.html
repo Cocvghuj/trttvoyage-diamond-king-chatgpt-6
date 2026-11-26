@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11152D">
+<meta name="description" content="A free, private trip packing checklist by TRTT Voyage. Build, track and export your packing list in your browser.">
+<title>TRTT Voyage — Smart Trip Packing Planner</title>
+<style>
+:root{--pink:#E98BAF;--piyaji:#B77991;--gold:#D6A542;--midnight:#11152D;--white:#fff;--ink:#202238;--muted:#686b7d;--line:#eee5e9}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:linear-gradient(130deg,var(--midnight),#292344);color:white;padding:30px 18px 26px;text-align:center;border-bottom:5px solid var(--gold)}
+.brand{display:inline-block;border:1px solid var(--gold);border-radius:999px;padding:5px 13px;color:var(--pink);font-size:.76rem;letter-spacing:.2em;font-weight:800}
+h1{font-size:clamp(1.8rem,6vw,3rem);line-height:1.08;margin:16px auto 10px;max-width:760px}.sub{color:#f8eaf0;max-width:650px;margin:auto}
+main{max-width:980px;margin:24px auto;padding:0 14px}.panel{border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 8px 28px #11152d0b}
+h2{margin:0 0 12px;color:var(--midnight);font-size:1.2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+label.field{display:block;font-size:.88rem;font-weight:700;color:var(--midnight)}input,select{width:100%;margin-top:5px;padding:11px;border:1px solid #d9d3dc;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.btn{border:0;border-radius:999px;padding:10px 16px;font-weight:750;cursor:pointer;background:var(--midnight);color:white}.btn.alt{background:var(--pink);color:var(--midnight)}.btn.gold{background:var(--gold);color:var(--midnight)}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.progress{height:10px;background:#f2eaf0;border-radius:20px;overflow:hidden;margin:8px 0}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--piyaji),var(--gold));transition:width .2s}
+.item{display:flex;align-items:flex-start;gap:10px;padding:9px 2px;border-bottom:1px solid var(--line)}.item:last-child{border:0}.item input{width:19px;height:19px;margin:3px 0 0;accent-color:var(--piyaji)}.item span{flex:1}.item small{display:block;color:var(--muted)}.category{margin-top:14px}.category h3{font-size:1rem;color:var(--piyaji);margin:0 0 5px}
+.muted{color:var(--muted);font-size:.9rem}.stat{font-weight:800;color:var(--midnight)}footer{text-align:center;padding:26px 15px;color:var(--muted);font-size:.86rem}
+@media(min-width:700px){main{padding:0 22px}.panel{padding:22px}}
+@media print{header{background:white;color:black;border:0}.brand,.actions,.setup{display:none!important}.panel{box-shadow:none;break-inside:avoid}body{font-size:12pt}}
+</style></head>
+<body>
+<header><span class="brand">TRTTVOYAGE</span><h1>Smart Trip Packing Planner</h1><p class="sub">Pack with clarity. Travel lighter. A free checklist that stays in your browser.</p></header>
+<main>
+<section class="panel setup"><h2>Your trip</h2><div class="grid">
+<label class="field">Destination<input id="destination" placeholder="e.g. Sardinia"></label>
+<label class="field">Trip length (days)<input id="days" type="number" min="1" max="365" value="5"></label>
+<label class="field">Trip type<select id="kind"><option value="general">General travel</option><option value="beach">Beach</option><option value="city">City break</option><option value="outdoor">Outdoor / hiking</option><option value="business">Business</option></select></label>
+<label class="field">Weather<select id="weather"><option value="mild">Mild / mixed</option><option value="hot">Hot</option><option value="cold">Cold</option><option value="wet">Rainy</option></select></label>
+</div><div class="actions"><button class="btn alt" id="build">Build my checklist</button><button class="btn" id="reset">Reset checks</button></div></section>
+<section class="panel"><h2 id="listTitle">Your packing list</h2><div class="stat" id="count">0 of 0 packed</div><div class="progress" role="progressbar" aria-label="Packing progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><div class="bar" id="bar"></div></div><div id="list" aria-live="polite"></div>
+<div class="actions"><button class="btn gold" id="export">Export list (.txt)</button><button class="btn" id="print">Print checklist</button></div>
+<p class="muted">Tip: Review weather, airline baggage rules, medication requirements and destination entry rules before departure.</p></section>
+<section class="panel"><h2>Privacy note</h2><p class="muted">This tool works locally in your browser. Your trip details and checklist are not sent to TRTT Voyage or a server. Exported files are created only when you press Export.</p></section>
+</main><footer>Designed with ♥ by TRTT Voyage · Explore Beyond. Discover Everything.</footer>
+<script>
+const base={
+"Essentials":[["Passport / ID","Check validity and entry requirements"],["Tickets and booking details","Keep accessible offline"],["Wallet and payment cards","Carry a backup payment method"],["Travel insurance details","Know emergency contact information"],["Phone and charger","Add destination plug adapter if needed"],["Prescription medicines","Keep in original packaging where practical"],["Glasses / contact lenses","Include supplies"]],
+"Clothing":[["Tops", "Plan roughly one per day, then adjust"],["Bottoms","Choose versatile combinations"],["Underwear and socks","Pack a spare set"],["Sleepwear",""],["Comfortable walking shoes",""],["Light extra layer",""],["Swimwear",""],["Formal / work outfit",""]],
+"Toiletries":[["Toothbrush and toothpaste",""],["Deodorant",""],["Skincare and sunscreen",""],["Hairbrush / grooming items",""],["Hand sanitiser and tissues",""],["Personal hygiene items",""]],
+"Useful extras":[["Reusable water bottle",""],["Day bag",""],["Sunglasses",""],["Reusable shopping bag",""],["Snacks",""],["Book / entertainment",""],["Laundry bag",""],["Small first-aid kit",""]]
+};
+const extras={beach:[["Beach towel",""],["Beach bag",""],["Waterproof phone pouch",""]],city:[["Transit / city pass","Check whether advance booking helps"],["Compact umbrella",""]],outdoor:[["Hiking shoes",""],["Rain shell",""],["Navigation / offline map",""],["Headlamp",""]],business:[["Laptop and charger",""],["Work documents",""],["Business cards",""]]};
+let entries=[];
+const $=id=>document.getElementById(id);
+function makeList(){const type=$("kind").value,weather=$("weather").value,days=Math.max(1,Math.min(365,Number($("days").value)||1));let groups=JSON.parse(JSON.stringify(base));groups["Clothing"][0][1]="Suggested starting point: "+Math.min(days,7)+" tops; adjust for laundry and climate.";
+if(type==="beach"||type==="general")groups["Clothing"].splice(6,0,["Swimwear",""]);if(type==="business")groups["Clothing"].push(extras.business[0]);
+if(weather==="cold")groups["Clothing"].push(["Warm coat",""],["Warm layers",""],["Hat and gloves",""]);if(weather==="wet")groups["Clothing"].push(["Waterproof jacket",""],["Water-resistant shoes",""]);if(weather==="hot")groups["Clothing"].push(["Breathable light clothing",""],["Sun hat",""]);
+if(extras[type])groups["Useful extras"].push(...extras[type]);
+entries=[];Object.entries(groups).forEach(([category,items])=>items.forEach(([name,note])=>entries.push({category,name,note,checked:false})));
+render();$("listTitle").textContent="Packing for "+($("destination").value.trim()||"your trip");
+}
+function render(){const root=$("list");root.innerHTML="";const categories=[...new Set(entries.map(x=>x.category))];categories.forEach(cat=>{const section=document.createElement("section");section.className="category";const h=document.createElement("h3");h.textContent=cat;section.append(h);entries.forEach((entry,i)=>{if(entry.category!==cat)return;const row=document.createElement("label");row.className="item";const cb=document.createElement("input");cb.type="checkbox";cb.checked=entry.checked;cb.addEventListener("change",()=>{entry.checked=cb.checked;update()});const text=document.createElement("span");text.textContent=entry.name;if(entry.note){const small=document.createElement("small");small.textContent=entry.note;text.append(small)}row.append(cb,text);section.append(row)});root.append(section)});update()}
+function update(){const done=entries.filter(x=>x.checked).length,total=entries.length,pct=total?Math.round(done/total*100):0;$("count").textContent=done+" of "+total+" packed ("+pct+"%)";$("bar").style.width=pct+"%";$("progress").setAttribute("aria-valuenow",pct)}
+function exportList(){const title="TRTT Voyage Packing List — "+($("destination").value.trim()||"Trip");const text=[title,"Trip length: "+$("days").value+" days","",...entries.map(x=>(x.checked?"[x] ":"[ ] ")+x.category+" — "+x.name+(x.note?" ("+x.note+")":"")),"","Review official travel, health and airline guidance before departure."].join("\n");const blob=new Blob([text],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="trtt-packing-list.txt";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$("build").addEventListener("click",makeList);$("reset").addEventListener("click",()=>{entries.forEach(x=>x.checked=false);render()});$("export").addEventListener("click",exportList);$("print").addEventListener("click",()=>window.print());makeList();
+</script></body></html>
