@@ -195,3 +195,15 @@ Policy: append-only; preserve all earlier entries.
 - **Current work boundary:** No Blogger publish, Theme XML edit, Layout gadget placement, production deploy, DNS/security change, or Telegram send performed in this entry.
 - **Files changed:** Append-only update to this memory log and additive command-center section on this feature branch; no prior content removed.
 - **Verification status:** GitHub main files read successfully. PR #135 merge indicated by matching homepage blob; PR #21 merge not yet verified. GitLab backup, mobile browser/device rendering, Blogger live appearance, Blogger account/API access, and deployment are NOT TESTED pending evidence.
+
+
+### Verification Addendum — Consolidated Follow-through — 2026-11-26
+
+- **PR #135:** Merge verified from GitHub main; main index.html blob SHA equals the Diamond Horizon branch blob SHA, and main Blogger stylesheet matches the implementation branch. Main blog-control.json retains all ten prior menu destinations.
+- **Memory PR #21:** Merge verified; the memory entry and command-center trace are present on GitHub main, and the branch file SHA equals the main file SHA.
+- **Production deployment:** Vercel deployment for commit eaa53a314859f6a68fb2e6c457f215edc741f594 (PR #135) is ERROR. Exact error: invalid_function_runtime; obsolete runtime declaration @vercel/python in vercel.json. This prevents claiming the refreshed assets are live through the Vercel pipeline.
+- **Repair PR:** GitHub PR #136, https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/136, is OPEN / NOT MERGED. It adds narrow-screen CSS hardening for the hub and Blogger posts, removes the invalid custom Python runtime declaration while preserving maxDuration 30, and adds a mobile/deployment note.
+- **Static checks:** Six source files read back; vercel.json JSON parse PASS; hub and Blogger CSS brace balance PASS; 700px/420px/768px breakpoints and 44px touch targets present; viewport metadata present; ten menu entries preserved; no file deletions.
+- **GitLab backup:** Branch backup/github-pr-136-diamond-horizon-mobile-20261126, commit 89054defe22e78bda87051132c89c538afe1af7c. Four modified/new files read back and exact content matched GitHub 4/4.
+- **Not tested / blocked:** No Vercel preview deployment exists for PR #136 yet. Actual browser/device rendering at 320/360/390/768px is NOT TESTED. Blogger connector/account write action is unavailable in this session; Blogger Theme XML and Layout gadget placement cannot be changed via this repository flow. Live Blogger appearance and production deployment remain NOT VERIFIED. No Telegram send.
+- **Owner care:** No repeated phone checks requested. PR #136 and Memory PR #22 are the consolidated review points; owner may review when well. Do not merge PRs on the owner's behalf.
