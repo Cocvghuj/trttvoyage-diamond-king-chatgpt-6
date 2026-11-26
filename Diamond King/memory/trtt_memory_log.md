@@ -181,3 +181,38 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** All five changed files read back from the feature branch. JSON parse PASS; 10 menu destinations preserved; CSS brace-balance checks PASS; approved palette and hero identity checks PASS; no-secret-pattern check PASS; no deletions. GitLab backup branch `backup/github-pr-135-diamond-horizon-20261126` created in project 88270725; all five files read back and exact content matched GitHub.
 - **Not tested:** Full `npm test`, `npm run build`, browser/device rendering, Vercel deployment, Blogger gadget installation, live Blogger appearance, and live publication. GitHub PR is not merged. GitLab `main` was not modified.
 - **Owner care:** Owner said they are unwell and will put the phone away. Do not ask for phone interaction or repeated checks; leave the single consolidated PR for review when recovered.
+
+
+---
+
+## Owner Confirmation — PR #135 and Memory PR #21 Merge; Consolidated Blogger & Mobile Audit — 2026-11-26
+
+- **Timestamp:** 2026-11-26 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner confirmed that implementation PR #135 and Memory PR #21 were merged, requested one consolidated follow-through covering Blogger live design and mobile checks, and stated they are unwell and need to work while resting without repeated phone checks.
+- **Decision:** Verify merged repository state before relying on owner confirmation. Complete safe repository-side work in one consolidated pass, preserve all existing posts/pages/menu destinations and append-only history, and avoid asking the Owner to perform repeated checks. Never claim a live Blogger change or production deployment without an authorized integration and successful evidence. Blogger Theme XML/Layout gadget installation remains a separate account-side action where repository architecture documents this limitation.
+- **Initial verification:** GitHub main index.html and trtt-theme.css were read back; main index SHA matched the Diamond Horizon feature branch index SHA. Main blog-control.json retains ten existing menu destinations. The main memory log currently does not visibly contain the Diamond Horizon entry, so Memory PR #21 merge status still requires independent PR/commit verification before being reported PASS.
+- **Current work boundary:** No Blogger publish, Theme XML edit, Layout gadget placement, production deploy, DNS/security change, or Telegram send performed in this entry.
+- **Files changed:** Append-only update to this memory log and additive command-center section on this feature branch; no prior content removed.
+- **Verification status:** GitHub main files read successfully. PR #135 merge indicated by matching homepage blob; PR #21 merge not yet verified. GitLab backup, mobile browser/device rendering, Blogger live appearance, Blogger account/API access, and deployment are NOT TESTED pending evidence.
+
+
+### Verification Addendum — Consolidated Follow-through — 2026-11-26
+
+- **PR #135:** Merge verified from GitHub main; main index.html blob SHA equals the Diamond Horizon branch blob SHA, and main Blogger stylesheet matches the implementation branch. Main blog-control.json retains all ten prior menu destinations.
+- **Memory PR #21:** Merge verified; the memory entry and command-center trace are present on GitHub main, and the branch file SHA equals the main file SHA.
+- **Production deployment:** Vercel deployment for commit eaa53a314859f6a68fb2e6c457f215edc741f594 (PR #135) is ERROR. Exact error: invalid_function_runtime; obsolete runtime declaration @vercel/python in vercel.json. This prevents claiming the refreshed assets are live through the Vercel pipeline.
+- **Repair PR:** GitHub PR #136, https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/136, is OPEN / NOT MERGED. It adds narrow-screen CSS hardening for the hub and Blogger posts, removes the invalid custom Python runtime declaration while preserving maxDuration 30, and adds a mobile/deployment note.
+- **Static checks:** Six source files read back; vercel.json JSON parse PASS; hub and Blogger CSS brace balance PASS; 700px/420px/768px breakpoints and 44px touch targets present; viewport metadata present; ten menu entries preserved; no file deletions.
+- **GitLab backup:** Branch backup/github-pr-136-diamond-horizon-mobile-20261126, commit 89054defe22e78bda87051132c89c538afe1af7c. Four modified/new files read back and exact content matched GitHub 4/4.
+- **Not tested / blocked:** No Vercel preview deployment exists for PR #136 yet. Actual browser/device rendering at 320/360/390/768px is NOT TESTED. Blogger connector/account write action is unavailable in this session; Blogger Theme XML and Layout gadget placement cannot be changed via this repository flow. Live Blogger appearance and production deployment remain NOT VERIFIED. No Telegram send.
+- **Owner care:** No repeated phone checks requested. PR #136 and Memory PR #22 are the consolidated review points; owner may review when well. Do not merge PRs on the owner's behalf.
+
+
+### Preview Deployment & Public Asset Readback — 2026-11-26
+
+- **Vercel preview:** PASS. Preview deployment dpl_76QgZpFTz8u8jwuGn7mDzq8nwHXH for PR #136 commit 46beff954d87d93cab7de7a4266a5c26a9972029 reached READY. Preview URL: https://cocvghuj-trtt-news-ik8ghzruo-trtt6.vercel.app/ . Build log confirms npm run build completed and Python dependencies were packaged; no production alias was assigned.
+- **Preview asset readback:** Homepage, trtt-hub.css and trtt-theme.css returned HTTP 200. Homepage contains the TRTT Voyage identity and viewport metadata. Public CSS contains the approved palette; hub stylesheet contains 700px and 420px responsive rules; Blogger stylesheet contains 768px responsive rules. Static responsive/touch-target checks remain PASS.
+- **Production alias finding:** The current production alias https://cocvghuj-trtt-news-bot-trtt6.vercel.app/ still serves the previous design. Its live trtt-theme.css and blog-control.json return the old palette (#14213d / #ef476f), not Diamond Horizon. This matches the failed production deployment for the PR #135 commit. Therefore production/live Blogger design is NOT VERIFIED and is not yet updated through the existing asset loader.
+- **Blogger boundary:** Repository documentation confirms that a one-time Blogger Dashboard → Layout HTML/JavaScript gadget is required to load the Vercel CSS/menu assets. No Blogger account connector is available in this session, and no gadget/Theme XML changes were made. The live Blogger page and whether the gadget is installed were NOT TESTED.
+- **Mobile boundary:** The preview build and responsive CSS were verified at source/asset level. No actual browser viewport screenshot or physical mobile-device test was run; those remain NOT TESTED. No paid browser service or paid API was used.
