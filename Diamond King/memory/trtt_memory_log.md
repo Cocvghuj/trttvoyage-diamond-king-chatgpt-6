@@ -270,3 +270,15 @@ Policy: append-only; preserve all earlier entries.
 - **Release boundary:** No merge, production deployment, Blogger gadget change, Blogger post creation, live publish, Telegram delivery, DNS/security change or secret access occurred. Production still needs owner merge and a verified deployment before the existing Blogger gadget can be changed.
 - **Remaining:** news queue stale; structural draft validation is not fact-checking; full 32-workflow inventory and mobile/desktop device test incomplete; Blogger draft Post ID/read-back, GA4 and Search Console remain NOT TESTED.
 - **Verification:** GitHub CI PASS; preview deployment PASS; GitLab code mirror PASS 15/15; GitLab memory mirror PASS 2/2.
+
+
+### Owner Instruction — Continue Until Evidence-Based Completion (2026-11-26)
+
+- **Trigger:** Owner repeated that they do not want to rest until the whole project is at 100%. Agent acknowledged the instruction to continue safe work but did not accept an unsafe or false requirement to sacrifice health or claim completion without evidence. No guarantee of income, rankings or deadline.
+- **PR #137:** Updated the consolidated stabilization PR body with latest evidence and current release gates. PR remains OPEN / NOT MERGED; current head `33baeaab3c3b546731c9fed1fb919bc0d91a2621`; GitHub reports mergeable true. Owner merge remains mandatory.
+- **Workflow review:** Reviewed seven additional Blogger/FlightScoutPro workflows and scripts. The legacy TRTT leadership workflow generated both English and Bengali drafts, contrary to TRTT's English-only public-content rule; disabled the workflow on the feature branch while preserving its Python source. Confirmed FlightScoutPro draft workflow is isolated by its separate blog ID and verifies DRAFT status; TRTT diary workflow requires explicit `allow_draft=true`; location-news workflow validates owner-authored tagged issue and checks DRAFT status. No publish calls were found in inspected draft scripts.
+- **Latest CI:** GitHub Actions run `45895396315` completed SUCCESS for head commit; `npm test` and `npm run build` PASS. Protected V106 workflow skipped as expected.
+- **GitLab code backup:** PR #137 branch `backup/github-pr-137-owner-approval-blogger-menu-20261126`, latest commit `f8a74e38aabeeceb6af57107b406662a84410afc`. All 18/18 changed file GitHub blob SHAs matched GitLab.
+- **Vercel:** Preview deployment remains READY, preview-only. No production deployment made. Preview URL is not to be installed permanently in Blogger.
+- **Remaining blockers:** production deployment awaits owner merge; exact Blogger gadget contents not publicly verified; Blogger draft API write/read-back not executed; stale news route queue; no source-level fact-check gate; physical mobile test, GA4/Search Console review, and runtime test of scheduled workflows remain outstanding. No Telegram message, Blogger post or live publish occurred; no secrets read.
+- **Verification:** PR #137 body updated; GitLab code mirror 18/18 PASS; latest CI PASS; production/Blogger unchanged. No claim of 100% completion.
