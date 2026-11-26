@@ -168,3 +168,14 @@ Policy: append-only; preserve all earlier entries.
 - **Security:** No token value requested, accessed, or exposed. Owner must store the refresh token only in the correct GitHub Actions secret; never paste it into chat.
 - **File changes:** Append-only memory entry; matching additive trace to trttmagic.html.
 - **Verification:** NOT TESTED — no token was generated or validated in this chat.
+
+
+## Entry — 2026-11-26T14:12:30Z — Owner asked to check Blogger refresh-token status
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked to check the current Blogger OAuth/refresh-token and draft workflow state after receiving the OAuth Playground link.
+- **GitHub evidence:** Inspected workflow run 45831150926, attempt 3; job 139964835308 is completed with FAILURE. Read logs: Google returned `invalid_grant: Token has been expired or revoked.` The workflow environment has the four Blogger variables configured (values redacted); this does not establish that the token is valid or newly updated.
+- **Blogger outcome:** Draft intake rejected the source; candidates=1, failures=1, dry_run=False. No Blogger Post ID and no `status=draft` confirmation. DRAFT NOT VERIFIED.
+- **Limits:** GitHub Actions secret values are not readable through the available integration. No new workflow run was found/triggered after the failed attempt; no secret value accessed or exposed. Do not rerun until owner confirms the correct refresh token has been stored for the same OAuth client/account and Blogger scope.
+- **File changes:** Append-only memory entry and matching additive HTML trace.
+- **Verification:** Memory and HTML read-back pending in this execution; GitLab backup NOT TESTED; no publish, Telegram, merge, or Main write.
