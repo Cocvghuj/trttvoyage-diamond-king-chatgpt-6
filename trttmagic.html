@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11152D">
+<meta name="description" content="Build, validate and export a simple workflow in your browser with the free TRTT Magic Workflow Builder.">
+<title>TRTT Magic — Free Workflow Builder</title>
+<style>
+:root{color-scheme:dark;--midnight:#11152D;--pink:#E98BAF;--rose:#B77991;--gold:#D6A542;--white:#fff;--muted:#c9c7d2;--line:#41445c;--panel:#1b203c}
+*{box-sizing:border-box}body{margin:0;background:var(--midnight);color:var(--white);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--pink)}button,input,select,textarea{font:inherit}button{cursor:pointer;border:1px solid var(--gold);border-radius:10px;padding:.72rem 1rem;background:var(--gold);color:#17182a;font-weight:750}button.secondary{background:transparent;color:var(--white);border-color:var(--rose)}button.danger{background:transparent;border-color:#d77d87;color:#ffd9dd}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1050px;margin:auto;padding:24px 18px 56px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font-weight:850;letter-spacing:.08em;color:var(--gold)}.hero{padding:34px 0 24px}.eyebrow{color:var(--pink);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.08;margin:.45rem 0}h2{font-size:1.25rem;margin:0 0 12px}.sub{color:var(--muted);max-width:700px}.grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:18px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;min-width:0}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.steps{display:grid;gap:12px}.step{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:13px;background:#151a33}.stephead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}.stepnum{color:var(--gold);font-weight:800;font-size:.8rem}.fields{display:grid;grid-template-columns:1fr 1.4fr;gap:9px}.field{display:grid;gap:5px}.field label{font-size:.82rem;color:var(--muted);font-weight:700}input,select,textarea{width:100%;min-width:0;background:#10142a;color:var(--white);border:1px solid #686982;border-radius:8px;padding:10px}textarea{min-height:72px;resize:vertical}.status{border-radius:10px;padding:12px;background:#10142a;border:1px solid var(--line);min-height:70px;color:var(--muted)}.status.good{border-color:#76b99a;color:#c9f5df}.status.bad{border-color:#d77d87;color:#ffd9dd}.metric{font-size:1.9rem;font-weight:850;color:var(--gold)}.small{font-size:.85rem;color:var(--muted)}.notice{border-left:3px solid var(--pink);padding:10px 12px;background:#24203a;color:#f5eaf0;border-radius:6px;font-size:.9rem}.output{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;font: .82rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;background:#0c1022;border:1px solid var(--line);padding:12px;border-radius:10px}.footer{margin-top:24px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.wrap{padding:16px 12px 40px}.panel{padding:14px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top"><div class="brand">TRTT VOYAGE · MAGIC TOOLS</div><a href="https://trttvoyage.com/" rel="noopener">TRTT Voyage</a></header>
+<section class="hero"><div class="eyebrow">Free browser-based tool</div><h1>TRTT Magic<br>Workflow Builder</h1><p class="sub">Plan a repeatable workflow, check that its steps are present, and export a portable JSON file. Your workflow stays in this browser tab until you export it.</p></section>
+<div class="grid">
+<section class="panel" aria-labelledby="builder-title">
+<h2 id="builder-title">1. Build your workflow</h2>
+<div class="field"><label for="workflowName">Workflow name</label><input id="workflowName" maxlength="80" value="TRTT Daily Content Workflow"></div>
+<div class="toolbar"><button id="addStep" type="button">+ Add step</button><button id="validate" type="button" class="secondary">Check workflow</button></div>
+<div id="steps" class="steps" aria-live="polite"></div>
+</section>
+<aside class="panel" aria-labelledby="check-title">
+<h2 id="check-title">2. Validation</h2>
+<div class="metric" id="stepCount">7 steps</div><p class="small">Workflow steps currently in this draft</p>
+<div id="status" class="status" role="status" aria-live="polite">Ready to validate. Required stages: TRIGGER, CHECK, FIX, GITHUB SAVE and RESULT.</div>
+<div class="toolbar"><button id="preview" type="button" class="secondary">Preview JSON</button><button id="copy" type="button" class="secondary">Copy JSON</button><button id="download" type="button">Export JSON</button></div>
+<pre id="jsonPreview" class="output" aria-label="Workflow JSON preview">Your JSON preview will appear here.</pre>
+<p class="notice"><strong>Important:</strong> This is a planning and export utility. It does not connect to GitHub, Blogger, Make.com, APIs, accounts or external services, and it does not run automations.</p>
+</aside>
+</div>
+<footer class="footer"><strong>Privacy:</strong> No account, backend, analytics script or external library is used by this page. Workflow data is held in page memory and is lost when the tab is closed unless you export it.<br>TRTT Voyage — From Vision to Global Brand. Explore Beyond. Discover Everything.</footer>
+</main>
+<script>
+(function(){
+"use strict";
+const TYPES=["TRIGGER","CHECK","FIX","MEMORY UPDATE","GITHUB SAVE","BLOG POST","RESULT","NOTIFICATION","APPROVAL"];
+let steps=[
+ {type:"TRIGGER",name:"Start workflow",details:"Owner starts the approved workflow."},
+ {type:"CHECK",name:"Inspect inputs",details:"Check required information and existing files."},
+ {type:"FIX",name:"Resolve issues",details:"Apply safe fixes and record what changed."},
+ {type:"MEMORY UPDATE",name:"Record progress",details:"Append a dated note; preserve earlier records."},
+ {type:"GITHUB SAVE",name:"Save version",details:"Commit the reviewed work to the authorised branch."},
+ {type:"BLOG POST",name:"Prepare blog content",details:"Prepare an approved post; publishing needs its own approval."},
+ {type:"RESULT",name:"Report evidence",details:"Show test results, links and any remaining blockers."}
+];
+const $=id=>document.getElementById(id);
+const safe=(s)=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){
+ $("steps").innerHTML="";
+ steps.forEach((s,i)=>{
+  const el=document.createElement("article");el.className="step";
+  el.innerHTML='<div class="stephead"><span class="stepnum">STEP '+(i+1)+'</span><button type="button" class="danger" data-remove="'+i+'" aria-label="Remove step '+(i+1)+'">Remove</button></div><div class="fields"><div class="field"><label for="type-'+i+'">Step type</label><select id="type-'+i+'" data-field="type" data-index="'+i+'">'+TYPES.map(t=>'<option'+(t===s.type?' selected':'')+'>'+safe(t)+'</option>').join("")+'</select></div><div class="field"><label for="name-'+i+'">Step name</label><input id="name-'+i+'" data-field="name" data-index="'+i+'" maxlength="80" value="'+safe(s.name)+'"></div><div class="field" style="grid-column:1/-1"><label for="details-'+i+'">What happens?</label><textarea id="details-'+i+'" data-field="details" data-index="'+i+'" maxlength="500">'+safe(s.details)+'</textarea></div></div>';
+  $("steps").appendChild(el);
+ });
+ $("stepCount").textContent=steps.length+" step"+(steps.length===1?"":"s");
+}
+function data(){return {tool:"TRTT Magic Workflow Builder",schema_version:"1.0",workflow_name:$("workflowName").value.trim(),created_at:new Date().toISOString(),execution_mode:"planning_only",steps:steps.map((s,i)=>({order:i+1,type:s.type,name:s.name.trim(),details:s.details.trim()}))};}
+function validate(){
+ const issues=[];
+ if(!$("workflowName").value.trim())issues.push("Add a workflow name.");
+ if(steps.length<3)issues.push("Add at least 3 steps.");
+ for(const required of ["TRIGGER","CHECK","FIX","GITHUB SAVE","RESULT"]){if(!steps.some(s=>s.type===required))issues.push("Missing required stage: "+required+".");}
+ steps.forEach((s,i)=>{if(!s.name.trim())issues.push("Step "+(i+1)+" needs a name.");if(!s.details.trim())issues.push("Step "+(i+1)+" needs a description.");});
+ const box=$("status");
+ if(issues.length){box.className="status bad";box.textContent="Needs attention: "+issues.join(" ");return false;}
+ box.className="status good";box.textContent="Structure check passed. This confirms required fields and stages only; it does not execute or certify an external automation.";return true;
+}
+function preview(){const text=JSON.stringify(data(),null,2);$("jsonPreview").textContent=text;return text;}
+$("steps").addEventListener("input",e=>{const t=e.target;if(!t.dataset.field)return;steps[Number(t.dataset.index)][t.dataset.field]=t.value;});
+$("steps").addEventListener("change",e=>{const t=e.target;if(!t.dataset.field)return;steps[Number(t.dataset.index)][t.dataset.field]=t.value;});
+$("steps").addEventListener("click",e=>{const b=e.target.closest("[data-remove]");if(!b)return;steps.splice(Number(b.dataset.remove),1);render();$("status").className="status";$("status").textContent="Step removed from this unsaved draft. Run validation again.";});
+$("addStep").addEventListener("click",()=>{steps.push({type:"CHECK",name:"New workflow step",details:"Describe the action and expected result."});render();});
+$("validate").addEventListener("click",validate);
+$("preview").addEventListener("click",()=>{preview();$("status").className="status";$("status").textContent="JSON preview updated. No external service was contacted.";});
+$("copy").addEventListener("click",async()=>{const text=preview();try{await navigator.clipboard.writeText(text);$("status").className="status good";$("status").textContent="JSON copied to clipboard.";}catch(e){$("status").className="status bad";$("status").textContent="Clipboard access was blocked by this browser. Use Export JSON instead."; }});
+$("download").addEventListener("click",()=>{const blob=new Blob([preview()],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="trtt-workflow.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$("status").className="status good";$("status").textContent="JSON export requested. Check your browser downloads.";});
+render();
+})();
+</script>
+</body>
+</html>
