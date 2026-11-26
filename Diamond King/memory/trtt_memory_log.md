@@ -258,3 +258,15 @@ Policy: append-only; preserve all earlier entries.
 - **Remaining blockers:** exact gadget contents NOT VERIFIED; production menu loader remains absent until merge; stale news queue; no source-verification gate beyond structural HTML checks; physical mobile test, Blogger draft Post ID/read-back, GA4/Search Console and full workflow inventory NOT TESTED.
 - **Next safe steps:** complete workflow inventory and source-verification safeguards, review/merge only by owner, then verify production assets before any Blogger gadget change. Do not encourage overnight phone monitoring; user should not need repeated manual checks.
 - **Verification:** Memory and command-center append will be read back and mirrored to GitLab. No claim of 100% project completion.
+
+
+### GitLab Code Mirror & Final CI Readback — 2026-11-26
+
+- **Main repo PR:** PR #137 remains OPEN / NOT MERGED; current head `e6fe7c603226f5f3aef0eb26694b5621b1501c98`, mergeable true. Owner merge remains required.
+- **Latest GitHub Actions:** run `45894866725` completed SUCCESS; steps `npm test` and `npm run build` both completed successfully. The protected V106 workflow was skipped because the PR did not have the `auto` label.
+- **Vercel preview:** deployment `dpl_6QS3PQ2fg72ipi6TbLGYwgJd7Xoz` READY, target null/preview. The preview assets returned HTTP 200 and config CORS was verified. No production alias was assigned.
+- **GitLab code mirror:** branch `backup/github-pr-137-owner-approval-blogger-menu-20261126`; commit `9ff201cb2fddb6d637e2e00cad72d9cfcdb38270`. All 15 PR #137 changed files were added to the backup branch; 15/15 GitHub and GitLab blob SHAs matched exactly; 0 deletions.
+- **GitLab memory mirror:** branch `backup/github-memory-pr23-blogger-audit-20261126`; latest commit `6bc1d2fd58513f696233301fdafdc55733361950`. Memory log and command center blob SHAs match GitHub exactly.
+- **Release boundary:** No merge, production deployment, Blogger gadget change, Blogger post creation, live publish, Telegram delivery, DNS/security change or secret access occurred. Production still needs owner merge and a verified deployment before the existing Blogger gadget can be changed.
+- **Remaining:** news queue stale; structural draft validation is not fact-checking; full 32-workflow inventory and mobile/desktop device test incomplete; Blogger draft Post ID/read-back, GA4 and Search Console remain NOT TESTED.
+- **Verification:** GitHub CI PASS; preview deployment PASS; GitLab code mirror PASS 15/15; GitLab memory mirror PASS 2/2.
