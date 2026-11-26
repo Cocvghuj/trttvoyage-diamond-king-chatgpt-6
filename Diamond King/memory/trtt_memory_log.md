@@ -131,3 +131,16 @@ Policy: append-only; preserve all earlier entries.
 - **PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12 remains owner-review only.
 
 ---
+
+## Entry — 2026-11-26T14:41:00+01:00 — Owner requests full autonomous completion
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed the agent to do everything following the verified Blogger OAuth `invalid_grant` failure.
+- **Current blocker:** GitHub Actions run `45831150926` proves the Blogger refresh token is expired or revoked. No Blogger-specific connector or Google OAuth reauthorization action is available in the connected tools. The agent cannot re-consent to the owner's Google account or mint a replacement refresh token without the account owner's interactive authorization.
+- **Safe work completed:** Rechecked the available connector inventory; no Blogger or OAuth-renewal action is exposed. No secret values accessed. No failed job rerun because the same revoked credential would fail again.
+- **Required owner step:** Complete Google OAuth consent using the trusted Blogger authorization flow and update the existing GitHub Actions secret `BLOGGER_REFRESH_TOKEN` directly in GitHub Actions secrets. Never paste the token into chat or commit it. Then request/allow a rerun with `dry_run=false`.
+- **Verification gate:** After a successful run, inspect logs/API read-back for a Blogger Post ID and `status=draft`. Until then Blogger DRAFT remains NOT VERIFIED.
+- **Safety:** No live publish, Telegram send, merge, Main write, or secret disclosure.
+- **PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12 remains open for owner review.
+
+---
