@@ -96,3 +96,35 @@ Policy: append-only; preserve all earlier entries.
   - `docs/TRTT-GLOBAL-TRAVEL-DISCOVERY-RELEASE-2026-11-26.md`: `a4204f97456658be35ab7b47ffc62d7435ca39cd`
 - **Protected branches:** GitHub `main` and GitLab `main` were not directly modified during this save stage. GitLab mirror is on a separate backup branch; no merge request or main update was performed.
 - **Remaining verification:** GitLab commit detail API call was attempted with an incorrect argument key and did not run; file metadata/read-back and exact blob-ID comparison independently verify the mirrored content. Browser runtime, production deployment, Blogger draft, and Telegram distribution remain NOT TESTED / not performed.
+
+
+---
+
+## Trigger 3 — BLOG DRAFT — 2026-11-26
+
+- **Trigger received:** Four arrow symbols; treated as one stage trigger under the one-trigger/one-stage rule.
+- **GitHub gate:** PR #14 was inspected before work and confirmed MERGED at 2026-11-26T15:56:41Z; merge commit: `e0384ba2d4e9ab20fa4a19158aaf995d4751c22d`.
+- **Feature branch:** `feature/trtt-global-travel-discovery-blog-draft-v1`, created from GitHub `main`; protected `main` was not modified.
+- **Draft artifact:** `blogger-drafts/2026-11-26-trtt-global-travel-discovery-shortlist.html` — English Blogger-ready article on building a destination shortlist, with intro, five sections, FAQ, disclosure, TRTT Voyage link, and official tourism portal sources.
+- **Content boundaries:** No live prices, availability, visa conclusions, safety claims, or unsupported travel facts. No image URL was supplied or verified; therefore no image was fabricated or embedded. Image asset remains a pre-publication TODO.
+- **Blogger integration:** No Blogger connector/API action is available in this session. HTML artifact is prepared; actual Blogger draft creation and Post ID are NOT TESTED.
+- **Publishing:** No live publish, Telegram distribution, production deployment, DNS or security change performed.
+- **Next gate:** Owner review and merge of the new GitHub PR. After merge, Blogger draft creation still requires an authorized Blogger integration or Owner-side import; live publish always requires explicit Owner approval.
+
+
+### Trigger 3 GitLab mirror verification addendum — 2026-11-26
+
+- **GitLab project:** `trttnews24bd-group/Cocvghuj-trtt-news-bot` (private, ID `88270725`).
+- **Backup branch:** `backup/github-pr-15-global-travel-blog-draft-20261126`.
+- **Mirror commit:** `a53ac7f605f145656e619d468295ab7051384012`.
+- **Read-back:** GitLab repository file metadata was fetched for all three changed files. Blob IDs exactly match GitHub branch blobs: Blogger HTML `839fbb6543f0e3e8ccbfb7b73c5a8f4fa8120ce3`; memory log `154374a3632d5350946b4db9cc4bf0880916af99`; command-center HTML `86758b0a39be3c7b93b7340e229fd1f725ba4186`.
+- **Branch protection:** GitLab `main` unchanged; mirror is on a separate backup branch.
+- **Blogger status:** Artifact mirrored, but actual Blogger draft creation and Post ID remain NOT TESTED. No live publication.
+
+
+### Trigger 3 mirror finalization correction — 2026-11-26
+
+- The first mirror verification addendum above records the initial GitLab mirror commit and pre-finalization memory/command-center blob IDs. Those two files were subsequently updated to append this verification, then mirrored again.
+- **Final GitLab backup commit:** `b54f7c50dd05c4ff91e0bb7da4faa5fc070d7369`.
+- **Final read-back blob matches:** Blogger draft `839fbb6543f0e3e8ccbfb7b73c5a8f4fa8120ce3`; memory log `74919e1ea4a4a87094841d153be1e89cc800f24b`; command-center HTML `190e4e8c9b835f006a03a4ef084c4f8aba4622d7`. All three GitLab blob IDs exactly match GitHub branch blob IDs.
+- GitLab `main` remains unchanged. Actual Blogger draft creation remains NOT TESTED; no live publication.

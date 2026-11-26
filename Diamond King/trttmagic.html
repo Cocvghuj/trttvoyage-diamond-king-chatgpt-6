@@ -89,4 +89,26 @@ function render(){const root=$("list");root.innerHTML="";const categories=[...ne
 function update(){const done=entries.filter(x=>x.checked).length,total=entries.length,pct=total?Math.round(done/total*100):0;$("count").textContent=done+" of "+total+" packed ("+pct+"%)";$("bar").style.width=pct+"%";$("progress").setAttribute("aria-valuenow",pct)}
 function exportList(){const title="TRTT Voyage Packing List — "+($("destination").value.trim()||"Trip");const text=[title,"Trip length: "+$("days").value+" days","",...entries.map(x=>(x.checked?"[x] ":"[ ] ")+x.category+" — "+x.name+(x.note?" ("+x.note+")":"")),"","Review official travel, health and airline guidance before departure."].join("\n");const blob=new Blob([text],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="trtt-packing-list.txt";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 $("build").addEventListener("click",makeList);$("reset").addEventListener("click",()=>{entries.forEach(x=>x.checked=false);render()});$("export").addEventListener("click",exportList);$("print").addEventListener("click",()=>window.print());makeList();
-</script></body></html>
+</script>
+<section id="trigger-3-blog-draft-2026-11-26" style="margin:24px auto;max-width:1080px;padding:20px;border:1px solid #D6A542;border-radius:14px;background:#11152D;color:#fff;font-family:Arial,sans-serif">
+  <p style="color:#E98BAF;font-weight:bold;letter-spacing:2px">DR-TRTT-OPS-001 · TRIGGER 3</p>
+  <h2 style="color:#fff">Blogger Draft Prepared — 2026-11-26</h2>
+  <p>English Blogger-ready HTML draft: <code>blogger-drafts/2026-11-26-trtt-global-travel-discovery-shortlist.html</code></p>
+  <p>GitHub branch: <code>feature/trtt-global-travel-discovery-blog-draft-v1</code>. Actual Blogger draft Post ID: NOT TESTED (no Blogger integration available in this session). Live publishing: NOT PERFORMED.</p>
+  <p>Pre-publication TODO: attach a verified, permitted hero image; then create and verify the Blogger draft after the owner-approved GitHub merge.</p>
+  <p><a style="color:#67E8F9" href="https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6">GitHub project repository</a></p>
+</section>
+
+<section id="trigger-3-gitlab-mirror-verification" style="margin:24px auto;max-width:1080px;padding:18px;border:1px solid #67E8F9;border-radius:14px;background:#11152D;color:#fff;font-family:Arial,sans-serif">
+<h2 style="color:#fff">Trigger 3 — GitLab Backup Verification</h2>
+<p>GitLab project <code>trttnews24bd-group/Cocvghuj-trtt-news-bot</code>, backup branch <code>backup/github-pr-15-global-travel-blog-draft-20261126</code>.</p>
+<p>Mirror commit: <code>a53ac7f605f145656e619d468295ab7051384012</code>. Three files were read back and their blob IDs matched GitHub exactly. GitLab <code>main</code> was not modified.</p>
+<p>Blogger Post ID: NOT TESTED. No Blogger draft creation or live publishing was performed.</p>
+</section>
+
+<section id="trigger-3-gitlab-final-readback" style="margin:24px auto;max-width:1080px;padding:18px;border:1px solid #67E8F9;border-radius:14px;background:#11152D;color:#fff;font-family:Arial,sans-serif">
+<h2 style="color:#fff">Trigger 3 — Final GitLab Read-back</h2>
+<p>Final mirror commit: <code>b54f7c50dd05c4ff91e0bb7da4faa5fc070d7369</code>.</p>
+<p>Final blob match: Blogger draft <code>839fbb6543f0e3e8ccbfb7b73c5a8f4fa8120ce3</code>; memory <code>74919e1ea4a4a87094841d153be1e89cc800f24b</code>; command center <code>190e4e8c9b835f006a03a4ef084c4f8aba4622d7</code>. GitLab main unchanged.</p>
+</section>
+</body></html>
