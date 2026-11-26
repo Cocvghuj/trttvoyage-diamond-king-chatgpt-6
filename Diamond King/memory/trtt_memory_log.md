@@ -164,3 +164,20 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions:** Acknowledge that GitHub access does not establish Blogger account/API access. Never describe repository HTML as a Blogger draft. Check available Blogger actions before claiming direct posting; if none are available, state the precise limitation and provide the shortest practical manual path. Reuse existing project instructions and prior decisions; inspect repository/files/tools before asking the Owner. Ask one question only when a genuine blocker cannot be resolved from available context. Do not ask for repeated triggers to continue safe, authorized steps; stop only at explicit approval gates.
 - **File changes:** Append-only memory entry and matching additive command-center trace on a feature branch; no existing history changed.
 - **Verification:** GitHub repository access confirmed; default branch is main; current memory and command-center files read back; existing open PRs and branches inspected. Feature branch created for this entry. Blogger API action availability, Blogger draft creation, GitLab mirror, and Telegram delivery are NOT TESTED in this interaction.
+
+
+---
+
+## Entry — 2026-11-26 — Diamond Horizon Blog Refresh Build
+
+- **Timestamp:** 2026-11-26 (date precision; exact UTC clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner confirmed the no-cost GitHub/CSS route for a consolidated TRTT Voyage visual refresh and stated they are unwell and will review one prepared PR after recovery. No phone action requested.
+- **Repository inspection:** Inspected GitHub source repository `Cocvghuj/Cocvghuj-trtt-news-bot`, README, Copilot instructions, homepage `index.html`, `trtt-hub.css`, Blogger stylesheet `trtt-theme.css`, `blog-control.json`, build script, validation script, and disabled Blogger publish/content-sync workflows.
+- **Decisions:** Use the existing free GitHub source pipeline. Preserve existing homepage sections, news links, tool destinations, Blogger menu destinations, and managed post/page content. Apply the approved palette Pink `#E98BAF`, Piyaji `#B77991`, Kathali `#D6A542`, Royal Midnight `#11152D`, and White. Do not deploy, run Blogger workflows, modify secrets, or change Blogger Theme XML/Layout gadgets/DNS/security.
+- **Build branch:** `feature/trtt-diamond-horizon-blog-refresh-20261126` in `Cocvghuj/Cocvghuj-trtt-news-bot`.
+- **Files changed:** `trtt-hub.css`, `trtt-theme.css`, `blog-control.json`, `index.html`, and `docs/TRTT-DIAMOND-HORIZON-REFRESH-2026-11-26.md`.
+- **GitHub PR:** https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/135 — OPEN, not merged; 5 files, 46 additions, 17 deletions; compare reports 5 commits ahead, 0 behind.
+- **Verification:** All five changed files read back from the feature branch. JSON parse PASS; 10 menu destinations preserved; CSS brace-balance checks PASS; approved palette and hero identity checks PASS; no-secret-pattern check PASS; no deletions. GitLab backup branch `backup/github-pr-135-diamond-horizon-20261126` created in project 88270725; all five files read back and exact content matched GitHub.
+- **Not tested:** Full `npm test`, `npm run build`, browser/device rendering, Vercel deployment, Blogger gadget installation, live Blogger appearance, and live publication. GitHub PR is not merged. GitLab `main` was not modified.
+- **Owner care:** Owner said they are unwell and will put the phone away. Do not ask for phone interaction or repeated checks; leave the single consolidated PR for review when recovered.
