@@ -144,3 +144,17 @@ Policy: append-only; preserve all earlier entries.
 - **PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12 remains open for owner review.
 
 ---
+
+
+---
+## Entry — 2026-11-26T14:08:40Z — Owner confirms OAuth/secret update; Blogger draft rerun result
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner confirmed that the requested Google OAuth reauthorization and GitHub Actions secret update had been completed.
+- **GitHub execution:** Reran the existing failed Blogger intake job `ingest-explicit-drafts` in workflow run `45831150926` (attempt 3); GitHub accepted the rerun.
+- **Result:** Attempt 3 completed FAILURE. The log again reports `RefreshError: invalid_grant: Token has been expired or revoked.` The source was rejected by the Blogger safety bridge; summary `candidates=1, failures=1, dry_run=False`.
+- **Interpretation:** The credential currently consumed by this workflow is still rejected by Google. The user may have updated a different secret/account/token, or the replacement refresh token is not valid for the configured OAuth client/blog scope. Do not infer which without owner-side inspection. No secret value was accessed or exposed.
+- **Blogger outcome:** No Blogger Post ID; DRAFT status NOT VERIFIED. No post creation success in logs.
+- **Next action:** Owner should verify the exact repository and Actions environment used by the workflow, confirm the existing `BLOGGER_REFRESH_TOKEN` secret was updated in `Cocvghuj/Cocvghuj-trtt-news-bot` (not merely another repository/environment), and reauthorize the same Blogger Google account against the configured client with Blogger API access. Never paste token values into chat. After correction, rerun the failed job and verify Post ID plus `status=draft`.
+- **Safety:** No live Blogger publish, Telegram send, PR merge, Main write, paid/browser fallback, or secret disclosure.
+- **Evidence:** https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/actions/runs/45831150926
