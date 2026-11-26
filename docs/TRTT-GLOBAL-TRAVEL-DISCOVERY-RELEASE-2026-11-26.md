@@ -25,3 +25,11 @@ GitHub API confirmed PR #13 merged into `main` with merge commit `c528712e29a219
 
 ## GitLab mirror
 The existing private TRTT Voyage GitLab project is `trttnews24bd-group/Cocvghuj-trtt-news-bot` (ID 88270725). A separate backup branch is used to avoid modifying protected `main` or overwriting existing site content. Mirror commit verification is recorded in the append-only memory log when complete.
+
+
+## GitLab mirror verification addendum
+
+- **Project:** `trttnews24bd-group/Cocvghuj-trtt-news-bot` (private, ID 88270725)
+- **Backup branch:** `backup/github-pr-13-global-travel-discovery-20261126`
+- **Backup commit:** `eb38da30d796ed082a36e12fcf7f95a49507d031`
+- **Verification:** All four files were read back from the GitLab backup branch. Their GitLab blob IDs exactly match the corresponding GitHub source blob SHAs. GitLab `main` was not changed.
