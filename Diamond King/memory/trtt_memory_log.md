@@ -153,3 +153,14 @@ Policy: append-only; preserve all earlier entries.
 - **Safety and honesty boundaries:** No claim of unrestricted autonomy or access to every account. No Blogger/Telegram action claimed without successful execution and confirmation. Owner approval remains required for protected actions such as merging, live publishing, production deployment, and DNS/security changes.
 - **File changes:** Append-only entry planned for this memory log and matching command-center trace; no existing content removed or overwritten.
 - **Verification:** GitHub repository access and current main files inspected. This entry is to be committed on a feature branch; no merge performed. GitLab mirror and Blogger/Telegram actions are not part of this clarification and remain NOT TESTED.
+
+
+---
+
+## Project Interaction — Owner Feedback: Blogger Execution and Repeated Triggers — 2026-11-26
+
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner asked why the assistant cannot complete Blogger work despite connected access, why it repeatedly asks questions, and why it asks the Owner to trigger tasks again.
+- **Decisions:** Acknowledge that GitHub access does not establish Blogger account/API access. Never describe repository HTML as a Blogger draft. Check available Blogger actions before claiming direct posting; if none are available, state the precise limitation and provide the shortest practical manual path. Reuse existing project instructions and prior decisions; inspect repository/files/tools before asking the Owner. Ask one question only when a genuine blocker cannot be resolved from available context. Do not ask for repeated triggers to continue safe, authorized steps; stop only at explicit approval gates.
+- **File changes:** Append-only memory entry and matching additive command-center trace on a feature branch; no existing history changed.
+- **Verification:** GitHub repository access confirmed; default branch is main; current memory and command-center files read back; existing open PRs and branches inspected. Feature branch created for this entry. Blogger API action availability, Blogger draft creation, GitLab mirror, and Telegram delivery are NOT TESTED in this interaction.
