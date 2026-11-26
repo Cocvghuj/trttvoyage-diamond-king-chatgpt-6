@@ -1,0 +1,72 @@
+<!-- TRTT MAGIC - 787950 LOCKED -->
+<!-- Blogger-ready HTML draft. Review sources and preview before upload. Do not publish without Owner approval. -->
+<div style="max-width:900px;margin:0 auto;color:#25263a;font:16px/1.75 Arial,sans-serif;">
+  <div style="background:#11152D;color:#fff;padding:30px 22px;border-bottom:5px solid #D6A542;">
+    <p style="margin:0;color:#E98BAF;font-weight:bold;letter-spacing:2px;">TRTT VOYAGE · AI &amp; DIGITAL WORKFLOW</p>
+    <h1 style="color:#fff;line-height:1.2;margin:12px 0;">How to Review AI-Assisted Website Changes Safely</h1>
+    <p style="margin:0;color:#f6eaf0;">A practical, phone-friendly checklist for checking a GitHub pull request before approving a change.</p>
+  </div>
+  <figure style="margin:22px 0;">
+    <img src="https://raw.githubusercontent.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/main/assets/diamond-king-hero.svg" alt="TRTT Voyage and Diamond King collaboration artwork" style="display:block;width:100%;height:auto;border-radius:12px;">
+    <figcaption style="font-size:13px;color:#666;margin-top:6px;">TRTT Voyage — human ownership, AI-assisted work and evidence-first delivery.</figcaption>
+  </figure>
+  <p><strong>AI can help produce code and documentation quickly, but speed does not replace review.</strong> Before a website change reaches a live audience, someone must understand what changed, what was tested and which actions still need approval.</p>
+  <p>To make that review easier on a phone, TRTT Voyage has prepared an <strong>Owner PR Review Checklist</strong>. It is a reusable guide for reviewing GitHub pull requests (PRs) without confusing a saved change with a tested feature, a merged change or a live release.</p>
+
+  <h2 style="color:#11152D;">1. Start with the purpose of the change</h2>
+  <p>Read the PR title and summary before opening the code. A good proposal should explain the problem, the intended outcome, the repository and the files expected to change. Confirm that the PR targets the correct base branch and uses a dedicated feature branch.</p>
+  <p>If the diff contains unrelated work, unexpected deletions or files that do not support the stated goal, pause and ask for clarification rather than approving the whole package.</p>
+
+  <h2 style="color:#11152D;">2. Inspect every changed file</h2>
+  <p>The <em>Files changed</em> view is the centre of the review. Scan the full file list, then inspect each meaningful diff. Check that existing posts, settings, workflows and historical records remain intact. Prefer additive improvements when history or user content matters.</p>
+  <p>For a documentation-only change, verify the wording and links. For code, look for unexpected network calls, unsafe redirects, destructive operations, hidden dependencies and changes outside the requested scope.</p>
+
+  <h2 style="color:#11152D;">3. Check privacy and approval boundaries</h2>
+  <p>Look for API keys, tokens, passwords, cookies, private contact details and other sensitive information. They should never appear in source files, logs, screenshots or public repository history.</p>
+  <p>Keep separate approval gates for actions with external impact. Merging a PR, publishing a Blogger post live, sending a Telegram message, deploying to production and changing DNS or security settings are different decisions. Permission for one does not automatically authorize the others.</p>
+
+  <h2 style="color:#11152D;">4. Separate evidence from assumptions</h2>
+  <p>A PR should say exactly what was checked. Static source inspection, an automated test, a remote file read-back, a browser test and a live publication check prove different things.</p>
+  <ul>
+    <li><strong>PASS:</strong> the specific check succeeded and evidence is available.</li>
+    <li><strong>FAIL:</strong> the check was attempted and failed.</li>
+    <li><strong>NOT TESTED:</strong> the check was not run.</li>
+    <li><strong>NOT VERIFIED:</strong> there is no reliable confirmation.</li>
+    <li><strong>BLOCKED:</strong> a dependency prevents completion.</li>
+    <li><strong>WAITING FOR OWNER:</strong> an approval is still required.</li>
+  </ul>
+  <p>A successful file write does not prove that an application works. A green build does not prove that a Blogger gadget is installed. A merged PR does not prove that production has changed.</p>
+
+  <h2 style="color:#11152D;">5. Make a clear review decision</h2>
+  <p>After reviewing the purpose, diff, safety and evidence, choose one of three outcomes: merge, request a specific correction, or hold the PR until missing evidence is available. Do not merge simply because the proposal looks polished or because an automated check passed.</p>
+  <p>After an Owner-approved merge, confirm the merge state and commit, then perform any separately authorized post-merge checks. Keep production publishing and distribution under their own approval gates.</p>
+
+  <h2 style="color:#11152D;">A simple phone review sequence</h2>
+  <ol>
+    <li>Open the GitHub PR link.</li>
+    <li>Read the title and summary.</li>
+    <li>Open <strong>Files changed</strong> and inspect every listed path.</li>
+    <li>Read the verification and known-limitations sections.</li>
+    <li>Check the conversation and status checks.</li>
+    <li>Choose merge, request changes or hold.</li>
+  </ol>
+  <p>The full checklist is available in the TRTT Voyage Diamond King repository under <code>templates/OWNER-PR-REVIEW-CHECKLIST.md</code>. It is a review aid, not an automated security audit or a substitute for understanding the proposed change.</p>
+
+  <h2 style="color:#11152D;">Frequently asked questions</h2>
+  <h3>Does an open PR mean the change is already live?</h3>
+  <p>No. An open PR is a proposal for review. It is not merged, deployed or published.</p>
+  <h3>Does a successful automated check guarantee that a website works?</h3>
+  <p>No. The check proves only what it actually tests. Browser, mobile-device, external-service and production behavior may need separate verification.</p>
+  <h3>Can an AI assistant merge or publish the change automatically?</h3>
+  <p>That depends on the owner's explicit authorization and the project's approval rules. For TRTT Voyage, protected actions such as PR merge and live publication remain Owner-controlled.</p>
+  <h3>Is this checklist a formal security certification?</h3>
+  <p>No. It is a practical review guide. Sensitive, high-risk or regulated changes may require specialist review and additional testing.</p>
+
+  <h2 style="color:#11152D;">Explore TRTT Voyage</h2>
+  <p>TRTT Voyage shares practical ideas about travel, technology, AI and useful digital tools. Visit <a href="https://trttvoyage.com" target="_blank" rel="noopener noreferrer">https://trttvoyage.com</a>.</p>
+  <p><strong>From Vision to Global Brand! Explore Beyond. Discover Everything.</strong></p>
+
+  <hr style="border:0;border-top:1px solid #ddd;margin:28px 0;">
+  <p style="font-size:13px;color:#666;"><strong>Editorial disclosure:</strong> This article describes a reusable checklist created for the TRTT Voyage project. It does not claim that every repository change has passed a security audit, that a production deployment occurred, or that any Blogger post was published. Always inspect the actual PR and its current evidence.</p>
+  <p style="font-size:13px;color:#666;">Designed with care by TRTT Voyage · TRTT MAGIC — 787950 LOCKED</p>
+</div>
