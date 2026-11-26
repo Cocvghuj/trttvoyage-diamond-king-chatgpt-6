@@ -117,3 +117,17 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No TinyFish/browser route, paid fallback, live Blogger publish, Telegram send, DNS/security change, or merge.
 
 ---
+
+## Entry — 2026-11-26T14:39:00+01:00 — Verify Rise From Ashes Blogger DRAFT workflow
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked to check the Rise From Ashes Blogger draft workflow after the GitHub Actions run.
+- **GitHub Actions evidence:** Central Hub workflow `.github/workflows/trtt-central-draft-ingest.yml` produced two manual-dispatch runs on 2026-11-26.
+- **Dry run:** Run `45830834480` completed SUCCESS. Job `ingest-explicit-drafts` validated `Cocvghuj/trtt-rise-from-ashes-studio/blogger-drafts/rise-from-ashes.html`; log reports `PASS: Blogger HTML validated; title=RISE FROM ASHES; blogger_write=NO` and `candidates=1, failures=0, dry_run=True`. This is validation only, not a Blogger draft.
+- **Draft creation attempt:** Run `45831150926` completed FAILURE with `dry_run=False`. Blogger API authentication failed with `invalid_grant: Token has been expired or revoked.` The safety bridge rejected the source; summary `candidates=1, failures=1, dry_run=False`.
+- **Outcome:** Blogger Post ID = NOT VERIFIED; Blogger DRAFT status = NOT VERIFIED. No post creation confirmation exists. OAuth secret values were redacted in logs and are not copied into this memory.
+- **Decision / next action:** Owner must renew/replace the Blogger OAuth refresh-token authorization through the trusted Google/Blogger authorization flow, update the existing GitHub Actions secret without sharing its value in chat, then rerun the same workflow with `dry_run=false`. Do not claim draft success until logs or Blogger API read-back show a Post ID and `status=draft`.
+- **Safety:** No live publish, no Telegram send, no secret disclosure, no unrelated workflow rerun, no Main write, no PR merge.
+- **PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12 remains owner-review only.
+
+---
