@@ -47,3 +47,17 @@ Policy: append-only; preserve all earlier entries.
 - **Next action:** Check for the first post-merge scheduled central intake run and verify Blogger post ID, title, content, and DRAFT status before reporting success.
 
 ---
+
+## Entry — 2026-11-26 — GitHub-only execution instruction
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner explicitly instructed: use GitHub for the Rise From Ashes Blogger draft; do not use TinyFish/browser automation.
+- **Decision:** GitHub Actions is the only execution route for this draft. The central workflow is present on `main`, scheduled hourly at minute 17, and configured to create Blogger DRAFTS only.
+- **Available GitHub integration capability:** Read workflow runs, files, jobs, and logs; no workflow-dispatch/write action is exposed in the connected GitHub tools. Do not pretend a manual dispatch occurred.
+- **Latest schedule evidence:** Run `45813319688` (`TRTT AUTO DAILY TOOL`) at `2026-11-26T11:44:43Z` is the latest scheduled run in the repository list and predates central intake activation. No `TRTT Central Hub - Public Repo Draft Intake` post-merge run is visible.
+- **Source evidence:** Rise From Ashes source blob SHA `db641a51d2feb0ad2fb212522fd8aa07b18a3e4f` remains the SHA-pinned legacy opt-in.
+- **Outcome:** Blogger DRAFT not yet created or verified; Post ID NOT VERIFIED. No TinyFish, no paid route, no live publication, no Telegram send.
+- **Next action:** Monitor GitHub Actions for the next scheduled central intake run, then inspect run logs and verify the Blogger DRAFT post ID/status.
+- **Memory PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12
+
+---
