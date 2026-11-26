@@ -79,3 +79,20 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab mirror target:** Located existing private project `trttnews24bd-group/Cocvghuj-trtt-news-bot` (project ID 88270725). It is the TRTT Voyage repository, not an exact GitHub memory-repository mirror. Its main branch and file tree were inspected; no matching `Diamond King` files or Global Travel Discovery tool exist on main.
 - **GitLab safety decision:** Mirror only the three specific GitHub artifacts to a new GitLab backup branch; do not modify protected GitLab `main`, existing site files, workflows, or unrelated projects.
 - **Verification status:** GitHub PR merge PASS; post-merge read-back PASS. GitLab branch/commit mirror pending at entry creation. No production deployment or Blogger/Telegram action.
+
+---
+
+## Verification addendum — Trigger 2 SAVE — 2026-11-26
+
+- **GitHub merge:** PR #13 confirmed MERGED; merge commit `c528712e29a2197976fa9ac79ec5cf73362abed9`.
+- **GitHub post-merge read-back:** PASS. Explorer tool, command-center HTML, and append-only memory log are present on `main`.
+- **GitLab target:** Private TRTT Voyage project `trttnews24bd-group/Cocvghuj-trtt-news-bot`, project ID `88270725`.
+- **GitLab backup branch:** `backup/github-pr-13-global-travel-discovery-20261126`.
+- **GitLab backup commit:** `eb38da30d796ed082a36e12fcf7f95a49507d031`.
+- **GitLab read-back:** PASS. All four mirrored files were fetched from the backup branch. GitLab blob IDs match GitHub source blob SHAs exactly:
+  - `tools/trtt-global-travel-discovery.html`: `12a3c4ce4b65dbc7f65e4adaacfc1e79562f8722`
+  - `Diamond King/memory/trtt_memory_log.md`: `4531a37b9075f2c0047c07f953eb9e3c41929f2e`
+  - `Diamond King/trttmagic.html`: `45f72521bf2c40db59aa6cdc39b5a7b011e560c6`
+  - `docs/TRTT-GLOBAL-TRAVEL-DISCOVERY-RELEASE-2026-11-26.md`: `a4204f97456658be35ab7b47ffc62d7435ca39cd`
+- **Protected branches:** GitHub `main` and GitLab `main` were not directly modified during this save stage. GitLab mirror is on a separate backup branch; no merge request or main update was performed.
+- **Remaining verification:** GitLab commit detail API call was attempted with an incorrect argument key and did not run; file metadata/read-back and exact blob-ID comparison independently verify the mirrored content. Browser runtime, production deployment, Blogger draft, and Telegram distribution remain NOT TESTED / not performed.
