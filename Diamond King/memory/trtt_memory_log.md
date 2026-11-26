@@ -179,3 +179,14 @@ Policy: append-only; preserve all earlier entries.
 - **Limits:** GitHub Actions secret values are not readable through the available integration. No new workflow run was found/triggered after the failed attempt; no secret value accessed or exposed. Do not rerun until owner confirms the correct refresh token has been stored for the same OAuth client/account and Blogger scope.
 - **File changes:** Append-only memory entry and matching additive HTML trace.
 - **Verification:** Memory and HTML read-back pending in this execution; GitLab backup NOT TESTED; no publish, Telegram, merge, or Main write.
+
+
+## Entry — 2026-11-26T14:18:00Z — Owner directed inspection of GitHub Actions Secrets settings
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner explicitly asked the agent to inspect https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/settings/secrets/actions.
+- **Inspection result:** The available GitHub integration explicitly excludes sensitive secrets API endpoints. Attempted API listing was rejected as unsupported; secret names/values cannot be inspected through this connector. No secret values accessed or exposed.
+- **Existing workflow evidence:** Latest checked Blogger ingest attempt 3 (run 45831150926/job 139964835308) returned Google `invalid_grant`; this does not prove what is currently stored in the Settings page.
+- **Decision:** Be explicit that Settings > Secrets must be viewed by the owner in GitHub UI; ask owner to verify the `BLOGGER_REFRESH_TOKEN` entry exists and was updated in the correct repository/environment. Do not claim the settings page itself was inspected.
+- **File changes:** Append-only memory and matching HTML trace.
+- **Verification:** Connector limitation confirmed; append/read-back to be checked. GitLab NOT TESTED.
