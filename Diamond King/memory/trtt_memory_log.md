@@ -295,3 +295,14 @@ Policy: append-only; preserve all earlier entries.
 - PR body updated to include editorial workflow isolation, legacy generator retirement and remaining news evidence blockers.
 - No Blogger draft was created; no Telegram send, live publish, production deployment, secret access, DNS/account change or PR merge occurred.
 - Remaining: fixed Nov 9–10 articles require current source re-verification if reused; stale queue has no source/fare timestamps; claim-to-source fact-check manifest not implemented; production/Blogger/analytics/mobile gates remain open. No 100% claim.
+
+
+### Central Blogger Intake Audit — 2026-11-26
+
+- Inspected `.github/workflows/trtt-html-to-blogger-draft.yml`: a push to main under `blog/drafts/*.html` creates/reuses one Blogger DRAFT after the source PR is merged; manual dispatch can select one file. It never publishes LIVE.
+- Inspected `.github/workflows/trtt-central-draft-ingest.yml`: hourly scan of the public repository allowlist; only direct HTML files under approved directories with the explicit `<!-- TRTT_BLOGGER_DRAFT: true -->` marker are eligible. Manual dry-run defaults to true. The live scheduled path uses central Blogger credentials and creates DRAFTs only.
+- Inspected `scripts/ingest_trtt_public_repo_drafts.py`: source repositories are fetched read-only; private repos are excluded; exact pinned legacy source SHA and explicit opt-in are enforced; temporary local copies are removed. Source repository files are not modified.
+- Inspected `scripts/create_blogger_html_draft.py`: validates HTML safety, HTTPS URLs, marker, site link, H1/H2, image alt/source and affiliate disclosure; duplicate detection is fail-closed; Blogger read-back checks ID/title/content/DRAFT. It does not establish that cited sources support individual claims.
+- Inspected `trtt-blogger-html-draft-validation.yml`: runs focused validation tests on relevant PR changes. Runtime Blogger API writes were not executed.
+- Current editorial limitation remains: a source manifest / claim-to-source review gate is not implemented. Do not treat opt-in or HTML validation as factual verification.
+- No Blogger draft was created, no source repo was modified, no live publish or Telegram send occurred.
