@@ -250,3 +250,16 @@ Policy: append-only; preserve all earlier entries.
 - **Next trigger proposed:** `👑💎 TRIGGER: POST-MERGE PRODUCTION VERIFICATION — PR #137. Check the production deployment, verify trtt-blog-menu.js, blog-control.json, trtt-theme.css and the live Blogger page; report exact HTTP/build evidence and blockers. Read-only only: no deployment, Blogger edits, publishing, Telegram, DNS or security changes.`
 - **File changes:** Append this entry and an additive command-center trace; preserve all existing history.
 - **Status:** Memory update in progress; no production or publishing action performed.
+
+
+### Root AGENTS.md and Lightweight Trigger — 2026-11-26
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner approved the idea of storing the operating rulebook in a root `AGENTS.md` so future chat triggers can be short and task-focused.
+- **Repository inspection:** Confirmed `Cocvghuj/trttvoyage-diamond-king-chatgpt-6` exists with default branch `main`; root `AGENTS.md` did not exist. Read the existing project charter, evidence-first workflow, repository map, README, memory log, and command-center HTML before editing.
+- **Decision:** Add a concise root `AGENTS.md` covering repository-first inspection, short trigger syntax, feature branches/PRs, GitLab mirror verification, append-only memory, approval gates, secret safety, and honest statuses. Future trigger format: `Read AGENTS.md in Cocvghuj/trttvoyage-diamond-king-chatgpt-6 and execute Trigger: [TASK].`
+- **Scope boundary:** This request is documentation/command-center improvement only. No unrelated product build, Blogger publication, Telegram delivery, production deployment, DNS, security, or account changes are authorized.
+- **File changes:** Add root `AGENTS.md`; append this entry to the memory log; add a matching additive section to `Diamond King/trttmagic.html`.
+- **Branch:** `feature/agents-root-operating-guide-20261126`
+- **Verification:** Existing docs inspected; feature branch created from `main`; file read-back and PR verification pending.
+- **Status:** In progress. No protected action performed.
