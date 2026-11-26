@@ -108,7 +108,7 @@ function renderShortlist(){
 function exportShortlist(){
  const chosen=destinations.filter(d=>shortlist.has(d.id)).map(d=>({destination:d.name,country:d.country,region:d.region,travel_styles:d.styles.map(s=>styleLabels[s]),official_tourism_guide:d.url}));
  const blob=new Blob([JSON.stringify({created_at:new Date().toISOString(),note:"Inspiration shortlist only. Recheck current travel requirements and details.",destinations:chosen},null,2)],{type:"application/json"});
- const url=URL.createObjectURL(blob),a=make("a");a.href=url;a.download="trtt-travel-shortlist.json";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+ const url=URL.createObjectURL(blob),a=make("a");a.href=url;a.download="trtt-travel-shortlist.json";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 $("apply").addEventListener("click",renderCards);
 $("clear").addEventListener("click",()=>{$("search").value="";$("region").value="all";$("style").value="all";renderCards()});
