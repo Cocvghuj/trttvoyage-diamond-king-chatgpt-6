@@ -282,3 +282,16 @@ Policy: append-only; preserve all earlier entries.
 - **Vercel:** Preview deployment remains READY, preview-only. No production deployment made. Preview URL is not to be installed permanently in Blogger.
 - **Remaining blockers:** production deployment awaits owner merge; exact Blogger gadget contents not publicly verified; Blogger draft API write/read-back not executed; stale news route queue; no source-level fact-check gate; physical mobile test, GA4/Search Console review, and runtime test of scheduled workflows remain outstanding. No Telegram message, Blogger post or live publish occurred; no secrets read.
 - **Verification:** PR #137 body updated; GitLab code mirror 18/18 PASS; latest CI PASS; production/Blogger unchanged. No claim of 100% completion.
+
+
+### Editorial Workflow Isolation & Legacy Generator Safety — 2026-11-26
+
+- Further audit found `.github/workflows/trtt-news-draft.yml` manually dispatched a single script that created fixed drafts on both TRTT and FlightScoutPro, violating the required project separation. The workflow was replaced on PR #137 with a disabled notice; the source Python file remains preserved.
+- Legacy `scripts/draft_news.py` contained default topic/source fallback and injected unsupported first-person Sanluri/Cagliari experience, a named author, affiliate offers and comparative claims. The entry point is now fail-closed; the reference helper was rewritten as a neutral TRTT tools link without invented experience/partner claims. Tests now cover the neutral helper and fail-closed entry point.
+- PR validation was expanded to run targeted Python editorial-safety tests as well as Node tests and the production build.
+- Latest PR head: `9ade1dce21cac2a46ac06bba4b2b318a3e293a58`; PR #137 remains OPEN / NOT MERGED; GitHub reports mergeable true.
+- Latest CI run `45896072699`: SUCCESS. Node tests, Python editorial-safety tests and production build all completed successfully.
+- GitLab PR #137 backup branch `backup/github-pr-137-owner-approval-blogger-menu-20261126`: all 21/21 changed files verified exact GitHub/GitLab blob SHA matches. Latest backup commit `9298cd68e1fe91ce699047ab601bd78a74a53d64`.
+- PR body updated to include editorial workflow isolation, legacy generator retirement and remaining news evidence blockers.
+- No Blogger draft was created; no Telegram send, live publish, production deployment, secret access, DNS/account change or PR merge occurred.
+- Remaining: fixed Nov 9–10 articles require current source re-verification if reused; stale queue has no source/fare timestamps; claim-to-source fact-check manifest not implemented; production/Blogger/analytics/mobile gates remain open. No 100% claim.
