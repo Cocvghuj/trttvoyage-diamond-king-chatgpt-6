@@ -216,3 +216,17 @@ Policy: append-only; preserve all earlier entries.
 - **Production alias finding:** The current production alias https://cocvghuj-trtt-news-bot-trtt6.vercel.app/ still serves the previous design. Its live trtt-theme.css and blog-control.json return the old palette (#14213d / #ef476f), not Diamond Horizon. This matches the failed production deployment for the PR #135 commit. Therefore production/live Blogger design is NOT VERIFIED and is not yet updated through the existing asset loader.
 - **Blogger boundary:** Repository documentation confirms that a one-time Blogger Dashboard → Layout HTML/JavaScript gadget is required to load the Vercel CSS/menu assets. No Blogger account connector is available in this session, and no gadget/Theme XML changes were made. The live Blogger page and whether the gadget is installed were NOT TESTED.
 - **Mobile boundary:** The preview build and responsive CSS were verified at source/asset level. No actual browser viewport screenshot or physical mobile-device test was run; those remain NOT TESTED. No paid browser service or paid API was used.
+
+
+---
+
+## Blogger Setup Collaboration Request — 2026-11-26
+
+- **Timestamp:** 2026-11-26 (date precision)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked to work together on the TRTT Blogger setup and wants a low-effort, consolidated process suitable for resting and using a phone.
+- **Repository evidence:** `BLOGGER_MENU_INSTALL.md` on GitHub main confirms a one-time Blogger Dashboard → Layout → HTML/JavaScript gadget containing the Vercel-hosted `trtt-theme.css` and `trtt-blog-menu.js` assets. The documented production asset base is `https://cocvghuj-trtt-news-bot.vercel.app/`.
+- **Decision:** Do not ask for repeated checks or claim account-side changes. First establish whether the documented gadget already exists; if absent, owner-side Blogger Layout access is required. Do not insert PR #136 preview URLs as permanent live assets. The preview is a test deployment, not the production alias. Wait for PR #136 owner merge and successful production deployment before switching any live Blogger asset URL.
+- **Tool availability:** No Blogger/Blogspot connector or account-write tool is available in this session. No Blogger page, Theme XML, Layout gadget, post, setting, or publish state was changed.
+- **File changes:** Append-only memory log and additive command-center trace on the existing memory feature branch; no previous content removed.
+- **Verification:** `BLOGGER_MENU_INSTALL.md` read from GitHub main. Blogger account access, gadget presence, live page source, mobile appearance, and production asset readiness NOT TESTED. No Blogger draft or live publish claimed.
