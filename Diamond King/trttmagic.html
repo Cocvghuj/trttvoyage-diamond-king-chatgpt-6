@@ -240,4 +240,17 @@ $("build").addEventListener("click",makeList);$("reset").addEventListener("click
 <p>Remaining: verify production after merge, inspect Blogger gadget configuration, validate news claims against primary sources, refresh stale route queue, test mobile devices, check GA4/Search Console, and verify Blogger draft read-back. No false 100% claim.</p>
 </section>
 
+
+<section id="editorial-safety-isolation-2026-11-26" style="margin:24px auto;max-width:1080px;padding:20px;border:1px solid #67E8F9;border-radius:14px;background:#11152D;color:#fff;font-family:Arial,sans-serif">
+<p style="color:#E98BAF;font-weight:bold;letter-spacing:2px">DR-TRTT-OPS-001 · EDITORIAL SAFETY</p>
+<h2>News Workflow Isolation + Legacy Generator Guard</h2>
+<ul>
+<li>PR #137 disables the combined TRTT + FlightScoutPro draft workflow and retires the unsafe legacy news-generator entry point.</li>
+<li>PR CI run <code>45896072699</code>: PASS — Node tests, Python editorial-safety tests and production build.</li>
+<li>GitLab mirror: 21/21 changed PR files match GitHub blob IDs; commit <code>9298cd68</code>.</li>
+<li>PR #137 remains OPEN / NOT MERGED; GitHub reports mergeable true. <a style="color:#67E8F9" href="https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/137">Owner review</a></li>
+</ul>
+<p>Remaining: verify production after owner merge, current source evidence for news, route queue provenance, Blogger draft read-back, mobile devices and analytics. No Blogger or Telegram action performed.</p>
+</section>
+
 </body></html>
