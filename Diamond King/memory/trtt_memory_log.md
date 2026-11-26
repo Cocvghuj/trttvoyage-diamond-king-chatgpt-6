@@ -190,3 +190,14 @@ Policy: append-only; preserve all earlier entries.
 - **Decision:** Be explicit that Settings > Secrets must be viewed by the owner in GitHub UI; ask owner to verify the `BLOGGER_REFRESH_TOKEN` entry exists and was updated in the correct repository/environment. Do not claim the settings page itself was inspected.
 - **File changes:** Append-only memory and matching HTML trace.
 - **Verification:** Connector limitation confirmed; append/read-back to be checked. GitLab NOT TESTED.
+
+
+## Entry — 2026-11-26 — Owner reissues TRTT AI Agent master operating prompt
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner reissued the complete Diamond King master operating prompt, reaffirming GitHub-first inspection, append-only memory, feature-branch/PR discipline, free-only tools, Blogger DRAFT-only, owner-controlled merge/publication, and Telegram only after confirmed live publication.
+- **GitHub inspection:** Read the existing memory log and TRTT Magic HTML on `feature/trtt-rise-from-ashes-draft-memory-20261126`. Searched open PRs; PR #12 remains OPEN and unmerged. Existing history includes the latest owner request to inspect GitHub Actions Secrets and the recorded Blogger OAuth `invalid_grant` failure.
+- **Decisions:** Treat this prompt as a governance/operating instruction, not authorization to trigger a new build, Blogger write, live publication, Telegram send, merge, or GitLab sync. Preserve current task state and all prior history. Never access or expose secret values.
+- **File changes:** Append this entry to `Diamond King/memory/trtt_memory_log.md` and a matching HTML comment to `Diamond King/trttmagic.html` on the existing feature branch only.
+- **Verification:** GitHub read-before-write inspection completed. File write/read-back verification to be recorded after the append. No PR merge or Main-branch write.
+- **Current operational status:** PR #12 is the owner-review path. GitLab mirror status NOT TESTED. Blogger DRAFT/Post ID NOT VERIFIED; the last confirmed attempt failed with Google OAuth `invalid_grant`. Telegram NOT TESTED and remains gated on a confirmed live post plus owner approval.
