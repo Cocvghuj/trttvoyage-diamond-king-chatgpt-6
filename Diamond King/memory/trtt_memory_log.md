@@ -32,3 +32,18 @@ Policy: append-only; preserve all earlier entries.
 - **Checks:** GitHub check-runs count 0 and commit status total_count 0 at inspection; CI verification is NOT TESTED.
 - **GitLab:** Exact matching GitLab project lookup returned 404; GitLab project search returned no matching project. No mirror was created or claimed.
 - **Decision:** Keep the PR open for owner review. Do not merge. No paid services, secrets, Blogger publication, Telegram send, deployment, or DNS/security changes.
+
+## Entry — 2026-11-26 — Start Rise From Ashes Blogger DRAFT
+
+- **Timestamp:** 2026-11-26 (date precision; exact UTC clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed the agent to start the existing Rise From Ashes article as a Blogger draft.
+- **Source verified:** Public repository `Cocvghuj/trtt-rise-from-ashes-studio`, file `blogger-drafts/rise-from-ashes.html`, blob SHA `db641a51d2feb0ad2fb212522fd8aa07b18a3e4f`; content contains the original `TRTT_VOYAGE_RISE_FROM_ASHES_787950` marker and `https://trttvoyage.com`.
+- **Central intake verified:** `Cocvghuj/Cocvghuj-trtt-news-bot` main contains the central scheduled draft-ingest workflow and allowlist with exact legacy SHA approval for this article. Workflow code is configured to create/read back Blogger DRAFTS only.
+- **Workflow status:** No post-merge run of `TRTT Central Hub - Public Repo Draft Intake` was found. The latest scheduled run visible was `45813319688` at `2026-11-26T11:44:43Z`, before PR #132 merge at approximately 13:02Z. No Blogger post ID or DRAFT status is available.
+- **Attempt:** A direct Blogger UI draft creation was prepared using the signed-in Google browser context, with strict duplicate checks and save-as-draft-only instructions. Browser execution did not start because the browser automation wallet returned insufficient funds (balance -$0.568). No paid top-up or paid retry was authorized or attempted, consistent with the project free-only rule.
+- **Decision:** Do not claim a Blogger draft exists. Do not publish live, modify existing posts, or send Telegram. Await the free GitHub Actions scheduled intake or an authorized free/manual execution path.
+- **Status:** Blogger DRAFT creation = BLOCKED / NOT VERIFIED; source SHA and workflow configuration = PASS; browser attempt = FAIL (not started); Telegram = NOT TESTED.
+- **Next action:** Check for the next scheduled central intake run and verify Blogger post ID, title, content, and DRAFT status before reporting success.
+
+---
