@@ -238,3 +238,23 @@ Policy: append-only; preserve all earlier entries.
 - **Safety and integrity:** User's health and sleep take priority; never encourage overnight phone monitoring or repeated manual checks. News remains draft-only until source verification and explicit live approval. No fake news, traffic, earnings, tests, or delivery claims.
 - **Current blockers:** Production CSS is available (HTTP 200), documented menu JS path returns 404, exact Blogger Layout gadget code is NOT VERIFIED. Memory PR #23 remains open for owner review; its GitLab mirror branch is available and was verified 2/2 files.
 - **Verification:** Plan recorded in GitHub feature branch and command center; no new Blogger, DNS, production, or publishing changes made.
+
+
+### Project-Wide Stabilization Trigger — 2026-11-26
+
+- **Owner instruction:** User insists on completing the TRTT project to a 100% target before resting, motivated by family responsibilities and income pressure. The assistant clarified that 100% cannot be claimed without evidence and that health/sleep must not be sacrificed. No guaranteed earnings, rankings or completion date promised.
+- **Primary repository audit:** Inspected GitHub main repository `Cocvghuj/Cocvghuj-trtt-news-bot`; main commit before proposed changes `a66e2005d5af4575b9d22e6eb75bc28ce49578d8`. Recursive tree contained 389 entries and 32 workflow files.
+- **Confirmed Blogger blocker:** `BLOGGER_MENU_INSTALL.md` referenced `/trtt-blog-menu.js`, but the file was absent from main and the production endpoint returned 404. Live Blogger page returned HTTP 200, had 8 menu links while `blog-control.json` contained 10, and the exact saved Layout gadget content could not be read from public HTML.
+- **Confirmed workflow risks:** V106 workflow contained `gh pr merge --auto --squash`; Telegram forwarding was scheduled every 15 minutes without a per-run LIVE DONE gate; legacy `auto-blog.yml` and `daily-tool.yml` were scheduled placeholders, the latter attempted a direct push to the default branch. These were corrected on a feature branch only.
+- **News integrity findings:** `news/queue/30days.json` was last generated 2026-11-06; only Nov 6–8 entries were ready and Nov 26 was pending. Daily draft engine refuses to invent a route. The HTML draft validator checks structure and safety but does not fact-check claims. No news draft was created in this audit.
+- **Consolidated main-repo PR:** [PR #137](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/137), branch `feature/trtt-owner-approval-and-workflow-safety-20261126`, remains OPEN / NOT MERGED. It includes:
+  - safe six-link Blogger menu loader (Home, News, Travel, AI, Tools, About), CORS for public config, responsive styling and fail-safe fallback;
+  - build-time required-asset and menu-order checks plus Node tests;
+  - removal of auto-merge, explicit Telegram LIVE DONE gate and disabling placeholder automations;
+  - project-wide audit report.
+- **CI verification:** GitHub Actions run `45894683585` completed SUCCESS; `npm test` and `npm run build` both passed. The safe V106 workflow was skipped as expected because the PR did not carry the `auto` label.
+- **Vercel preview:** Deployment `dpl_6QS3PQ2fg72ipi6TbLGYwgJd7Xoz` is READY, target preview only, commit `e145b0cdd94daf4562048696677519c40f554115`. Preview homepage, `trtt-blog-menu.js`, `blog-control.json`, and `trtt-theme.css` each returned HTTP 200; config CORS header `Access-Control-Allow-Origin: *` confirmed. Preview URL is temporary and must not be installed as permanent Blogger asset.
+- **Production / Blogger:** No production deploy, Blogger Layout gadget, Theme XML, post, page, settings, DNS, or account data changed. Production remains unchanged until owner merges PR #137 and a new production deployment is verified. No Telegram send or secret access occurred.
+- **Remaining blockers:** exact gadget contents NOT VERIFIED; production menu loader remains absent until merge; stale news queue; no source-verification gate beyond structural HTML checks; physical mobile test, Blogger draft Post ID/read-back, GA4/Search Console and full workflow inventory NOT TESTED.
+- **Next safe steps:** complete workflow inventory and source-verification safeguards, review/merge only by owner, then verify production assets before any Blogger gadget change. Do not encourage overnight phone monitoring; user should not need repeated manual checks.
+- **Verification:** Memory and command-center append will be read back and mirrored to GitLab. No claim of 100% project completion.
