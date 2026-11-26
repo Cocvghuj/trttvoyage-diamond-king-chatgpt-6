@@ -48,3 +48,19 @@ Policy: append-only; preserve all earlier entries.
 - **Verification plan:** Read back all changed files from the feature branch; run static HTML/JavaScript checks and verify source/link presence. Browser interaction testing and production deployment are not claimed unless actually performed.
 - **Safety:** No main-branch changes, no deletions, no live Blogger publishing, no Telegram distribution, no production deployment, no DNS/security changes, and no secret access or exposure.
 - **Status at entry creation:** GitHub branch creation PASS. File creation/read-back and static checks pending.
+
+---
+
+## Verification addendum — Global Travel Discovery Explorer — 2026-11-26
+
+- **GitHub PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/13
+- **Branch:** `feature/trtt-global-travel-discovery-v1`
+- **PR state:** OPEN; not merged. Final PR read-back reports `mergeable=true`.
+- **GitHub compare:** 4 commits ahead of `main`, 0 behind; 3 changed files (1 added, 2 modified additively), 146 additions, 0 deletions.
+- **Read-back:** Tool file, this memory log, and Diamond command-center HTML were fetched from the feature branch after writes. Tool file blob SHA: `12a3c4ce4b65dbc7f65e4adaacfc1e79562f8722`; command-center blob SHA: `c355de3927ebb02e55faa315bdbaf56ef8ce4e63`.
+- **Static checks:** JavaScript syntax compilation PASS; document structure PASS; 8 destination records PASS; 5 world regions PASS; 8 official tourism domains present PASS; privacy disclosure PASS; no external script/style dependencies PASS; no eval/new Function/location.href/deletion marker patterns PASS; shortlist export cleanup PASS.
+- **CI:** No commit status entries were reported. Workflow/check-run execution is NOT TESTED.
+- **Runtime:** Browser interaction, responsive rendering on physical devices, and actual JSON download are NOT TESTED.
+- **GitLab:** Project search for the exact memory repository name returned zero results. No matching mirror target was established; no unrelated project was modified. GitLab mirror status: NOT VERIFIED.
+- **Safety:** No changes to `main`; no files deleted; no secrets accessed or exposed; no Blogger draft/live publish, Telegram send, production deploy, or DNS/security change.
+- **Owner handoff:** Review PR #13 and merge only if satisfied. No merge was performed by the agent.
