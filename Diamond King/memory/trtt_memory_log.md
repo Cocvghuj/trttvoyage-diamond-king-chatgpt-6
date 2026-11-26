@@ -314,3 +314,11 @@ Policy: append-only; preserve all earlier entries.
 - Decisions: Treat this as owner-approved positioning language for TRTT Voyage / Diamond Raja. Preserve exact wording and capitalization when quoted; do not claim independent verification of Google's authorship beyond the owner's report.
 - File changes: Append-only memory entry and additive command-center trace on existing feature branch.
 - Verification: GitHub source files read before append; read-back to follow. No PR created or merged; no GitLab sync, Blogger draft, Telegram send, or production change in this turn.
+
+
+## 2026-11-26 22:40 CET — Reusable Diamond Trigger with owner identity
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner asked to embed the new identity line into the reusable Diamond trigger and update GitHub.
+- Decisions: Create a standalone, easy-to-open Markdown trigger file containing the owner-shared identity (Zero-Cost GitOps & AI-Driven Workflow, Indie Hacker. I build For My Family.), plus concise project guardrails and status template. Preserve existing records; no Main merge.
+- File changes: Add Diamond King/DIAMOND_TRIGGER.md; append this entry to memory log; add a link/trace to Diamond King/trttmagic.html.
+- Verification: Source files read before changes. Post-write read-back required. GitLab sync and PR/main status not claimed unless verified.
