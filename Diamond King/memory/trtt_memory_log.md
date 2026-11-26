@@ -96,3 +96,17 @@ Policy: append-only; preserve all earlier entries.
   - `docs/TRTT-GLOBAL-TRAVEL-DISCOVERY-RELEASE-2026-11-26.md`: `a4204f97456658be35ab7b47ffc62d7435ca39cd`
 - **Protected branches:** GitHub `main` and GitLab `main` were not directly modified during this save stage. GitLab mirror is on a separate backup branch; no merge request or main update was performed.
 - **Remaining verification:** GitLab commit detail API call was attempted with an incorrect argument key and did not run; file metadata/read-back and exact blob-ID comparison independently verify the mirrored content. Browser runtime, production deployment, Blogger draft, and Telegram distribution remain NOT TESTED / not performed.
+
+
+---
+
+## Trigger 3 — BLOG DRAFT — 2026-11-26
+
+- **Trigger received:** Four arrow symbols; treated as one stage trigger under the one-trigger/one-stage rule.
+- **GitHub gate:** PR #14 was inspected before work and confirmed MERGED at 2026-11-26T15:56:41Z; merge commit: `e0384ba2d4e9ab20fa4a19158aaf995d4751c22d`.
+- **Feature branch:** `feature/trtt-global-travel-discovery-blog-draft-v1`, created from GitHub `main`; protected `main` was not modified.
+- **Draft artifact:** `blogger-drafts/2026-11-26-trtt-global-travel-discovery-shortlist.html` — English Blogger-ready article on building a destination shortlist, with intro, five sections, FAQ, disclosure, TRTT Voyage link, and official tourism portal sources.
+- **Content boundaries:** No live prices, availability, visa conclusions, safety claims, or unsupported travel facts. No image URL was supplied or verified; therefore no image was fabricated or embedded. Image asset remains a pre-publication TODO.
+- **Blogger integration:** No Blogger connector/API action is available in this session. HTML artifact is prepared; actual Blogger draft creation and Post ID are NOT TESTED.
+- **Publishing:** No live publish, Telegram distribution, production deployment, DNS or security change performed.
+- **Next gate:** Owner review and merge of the new GitHub PR. After merge, Blogger draft creation still requires an authorized Blogger integration or Owner-side import; live publish always requires explicit Owner approval.
