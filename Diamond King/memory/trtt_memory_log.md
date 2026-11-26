@@ -105,3 +105,15 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No request for secret values, no paid/browser/TinyFish fallback, no Main write, no live Blogger publish, and no Telegram send.
 
 ---
+## Entry — 2026-11-26 — Owner says execute the Rise From Ashes trigger
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed the agent to execute the GitHub trigger for the Rise From Ashes Blogger DRAFT, not merely provide a command block.
+- **GitHub-first inspection:** Verified Central Hub workflow file `.github/workflows/trtt-central-draft-ingest.yml` on `main`, blob SHA `2ed1a62001c38d695cf996c93c4e51068cc97188`. It explicitly defines `workflow_dispatch` with required boolean input `dry_run` (default `true`), as well as an hourly schedule at minute 17.
+- **Execution decision:** Re-inspected all connected GitHub Actions tools. The available integration supports reading workflow runs/jobs/logs and rerunning existing failed/cancelled jobs, but exposes no workflow-dispatch action. The generic GitHub fetch operation is GET-only. No valid dispatch request can be issued from this connection; no unrelated workflow/job was rerun and no human-readable command is represented as an executed trigger.
+- **Workflow safety:** The manual dispatch defaults to dry-run; creating a Blogger DRAFT requires `dry_run=false`. The scheduled path is configured to create drafts only. No secret values were accessed or exposed.
+- **Current result:** Manual workflow trigger = NOT TESTED (dispatch unavailable through connected action set). Blogger Post ID and DRAFT status = NOT VERIFIED. The previously observed unrelated run `45813319688` is not evidence of this workflow.
+- **Files:** This entry and a matching trace are appended to this feature branch only. Existing PR #12 remains open and unmerged; no `main` write.
+- **Safety:** No TinyFish/browser route, paid fallback, live Blogger publish, Telegram send, DNS/security change, or merge.
+
+---
