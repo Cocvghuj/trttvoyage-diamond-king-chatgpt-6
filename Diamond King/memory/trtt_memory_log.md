@@ -61,3 +61,15 @@ Policy: append-only; preserve all earlier entries.
 - **Memory PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12
 
 ---
+
+## Entry — 2026-11-26 — Owner requests immediate GitHub workflow trigger
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner demanded immediate triggering of the Rise From Ashes Blogger draft workflow, explicitly GitHub-only.
+- **GitHub inspection:** Rechecked Central Hub Actions. No workflow-dispatch operation is exposed by the connected GitHub integration. Available Actions operations are read workflow runs/jobs/logs and rerun an existing failed/cancelled job; rerunning an unrelated workflow job would not execute the Blogger intake and was not attempted.
+- **Current evidence:** Latest inspected repository runs include `TRTT AUTO DAILY TOOL` run `45813319688` (success, 2026-11-26T11:44:43Z), but it is not the central Blogger intake workflow. No matching central-intake run is visible in the inspected run list.
+- **Decision:** No false claim of trigger or Blogger draft creation. No rerun of unrelated workflow, no browser/TinyFish, no paid fallback, no live publish, no Telegram.
+- **Outcome:** Immediate manual dispatch = NOT TESTED / unavailable through current connector; Blogger DRAFT = NOT VERIFIED. Waiting for the scheduled GitHub Actions central intake or an authorized GitHub Actions dispatch capability.
+- **Memory branch:** `feature/trtt-rise-from-ashes-draft-memory-20261126`; existing review PR #12 remains open.
+
+---
