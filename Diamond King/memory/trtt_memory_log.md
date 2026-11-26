@@ -73,3 +73,15 @@ Policy: append-only; preserve all earlier entries.
 - **Memory branch:** `feature/trtt-rise-from-ashes-draft-memory-20261126`; existing review PR #12 remains open.
 
 ---
+
+## Entry — 2026-11-26T13:31:01.461Z — Owner continuation signal (👉)
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner sent a continuation/execute signal following the request to start the Rise From Ashes Blogger DRAFT through GitHub.
+- **Decision:** Rechecked existing memory PR #12 and the append-only memory / TRTT Magic files before any edit. PR #12 remains OPEN and unmerged. The connected GitHub tool set still exposes no workflow-dispatch operation; a GET attempt to the workflow-runs API was rejected by the connector allowlist. No workflow was triggered.
+- **Safety:** No unrelated job rerun, TinyFish/browser, paid fallback, live Blogger publish, Telegram send, secret access, or Main-branch write.
+- **Outcome:** GitHub memory append and HTML trace update pending read-back. Blogger Post ID and DRAFT status remain NOT VERIFIED.
+- **Next action:** Continue only through an authorized GitHub Actions workflow-dispatch capability or verify the next scheduled central-intake run and its Blogger draft output.
+- **PR:** https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/12
+
+---
