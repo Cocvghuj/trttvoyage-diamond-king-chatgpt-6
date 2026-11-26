@@ -228,3 +228,14 @@ Policy: append-only; preserve all earlier entries.
 - **Safety / preservation:** No Blogger Theme XML, Layout gadget, post, page, settings, DNS, or account data changed. No news item was drafted or published in this audit. Future news must have attributable primary sources, corroboration, dates, jurisdiction/context, and a clear uncertainty check; unverified claims are excluded. Draft-only workflow; never auto-publish.
 - **Next safe work:** Correct the stale Blogger install documentation / missing menu asset only after inspecting build/test implications, in a separate feature branch and PR. Do not ask the owner to use the phone while recovering. Do not install a temporary preview URL or claim the live gadget is fixed.
 - **Verification:** PR merge states PASS; production deployment READY PASS; CSS asset HTTP 200 PASS; documented menu JS endpoint FAIL (404); live page fetch PASS; exact gadget configuration NOT VERIFIED; physical-device rendering NOT TESTED; Blogger account write NOT TESTED; Telegram NOT TESTED.
+
+
+### Owner Interaction Preference — 2026-11-26T21:50:41.752Z
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asks the agent to carry out safe project work directly and says they want to send a trigger each time and feel the agent's presence, rather than perform repeated manual steps.
+- **Decision:** Continue safe, evidence-backed work during active chat sessions; minimize phone/manual effort and avoid repeated questions. Be transparent that the agent cannot run or message in the background between conversations.
+- **Approval boundaries:** Never merge PRs, live-publish Blogger posts, send Telegram messages, or change production/DNS/security/account settings without the required explicit Owner approval.
+- **File changes:** Append this entry to the memory log and add an additive command-center trace; preserve all prior content. Reuse the existing Diamond Trigger file without replacing prior instructions.
+- **Verification:** GitHub repository and PR #23 inspected; PR #23 confirmed MERGED. New feature branch created from main. Current entry and command-center changes pending read-back.
+- **Status:** IN PROGRESS at time of append; no Blogger, Telegram, production, or account action performed.
