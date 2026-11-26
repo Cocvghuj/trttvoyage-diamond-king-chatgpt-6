@@ -141,3 +141,16 @@ Policy: append-only; preserve all earlier entries.
 - **Feature branch:** `feature/trtt-telegram-live-gate-check-v1`, based on current GitHub `main`. Memory and command-center updates are append-only; protected `main` is not modified.
 - **Blogger status:** PR #15 merged, but actual Blogger draft creation/Post ID remains NOT TESTED as previously recorded. This merge is not evidence of Blogger draft creation or live publication.
 - **Next requirement:** Owner must first create/review the Blogger draft, publish it through Blogger, then explicitly state `LIVE DONE` and provide the confirmed live post URL. Only then can Telegram forwarding be attempted and verified.
+
+
+## Trigger — Send Blogger draft to TRTT Voyage — 2026-11-26
+
+- **Trigger summary:** Owner asked to send the prepared travel-discovery article draft to the TRTT Voyage Blogger site.
+- **Repository inspection:** GitHub repository and main branch inspected. PR #16 confirmed MERGED by Owner (merge commit `079fcfe5a487b8a6641ced26ea051fd5b5ea03c1`).
+- **Draft artifact:** Existing Blogger-ready HTML read back from `blogger-drafts/2026-11-26-trtt-global-travel-discovery-shortlist.html` (6,914 characters; blob `839fbb6543f0e3e8ccbfb7b73c5a8f4fa8120ce3`).
+- **Blogger integration check:** No Blogger/Blogspot publishing connector or authorized Blogger API action is available in this ChatGPT session. Actual draft submission, Blogger Post ID, and DRAFT status are **NOT TESTED**. No claim of sending or saving was made.
+- **Publication safety:** No live publication, scheduling, or Telegram distribution performed.
+- **Decision:** Preserve the existing Blogger HTML; record the delivery limitation and provide the verified GitHub artifact for manual Blogger import. Owner approval remains required before live publication.
+- **GitHub change:** Append-only memory and command-center status update on `feature/trtt-blogger-draft-delivery-check-v1`; protected `main` not modified. PR created for Owner review.
+- **GitLab backup:** NOT TESTED in this trigger; post-PR mirror remains outstanding.
+- **Verification:** Existing HTML read-back PASS; actual Blogger draft creation NOT TESTED; live publication NOT TESTED.
