@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11152D">
+<meta name="description" content="Discover travel destinations by region and travel style with the free TRTT Voyage Global Travel Discovery Explorer.">
+<title>Global Travel Discovery Explorer | TRTT Voyage</title>
+<style>
+:root{--pink:#E98BAF;--piyaji:#B77991;--gold:#D6A542;--midnight:#11152D;--white:#fff;--ink:#25263a;--muted:#686b7d;--line:#ece6eb;--soft:#fbf7f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--soft);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#69405a}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+header{background:radial-gradient(circle at 85% 15%,#55354d 0,transparent 32%),linear-gradient(130deg,var(--midnight),#292344);color:white;padding:42px 18px 38px;border-bottom:5px solid var(--gold)}
+.hero{max-width:1080px;margin:auto}.brand{display:inline-block;border:1px solid var(--gold);border-radius:999px;padding:5px 13px;color:var(--pink);font-size:.74rem;letter-spacing:.2em;font-weight:850}
+h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.05;max-width:850px;margin:18px 0 12px}.hero p{max-width:700px;color:#f7eaf0;margin:0}.hero-note{font-size:.88rem;margin-top:18px!important;color:#e9d9e2!important}
+main{max-width:1120px;margin:24px auto;padding:0 14px}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 8px 28px #11152d09}
+h2{margin:0 0 12px;color:var(--midnight);font-size:1.22rem}.intro{color:var(--muted);margin:0 0 14px}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.field{display:block;font-size:.86rem;font-weight:750;color:var(--midnight)}input,select{width:100%;margin-top:5px;padding:11px;border:1px solid #d9d3dc;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.btn{border:0;border-radius:999px;padding:10px 16px;font-weight:800;cursor:pointer;background:var(--midnight);color:white}.btn.pink{background:var(--pink);color:var(--midnight)}.btn.gold{background:var(--gold);color:var(--midnight)}.btn.ghost{background:white;color:var(--midnight);border:1px solid #d8cbd2}.btn:disabled{opacity:.5;cursor:not-allowed}
+.results-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.count{font-size:.9rem;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px;margin-top:14px}
+.destination{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:white;display:flex;flex-direction:column;min-width:0}
+.destination-top{padding:17px;color:white;min-height:112px;background:linear-gradient(125deg,var(--midnight),#60415b);position:relative}.destination:nth-child(3n+2) .destination-top{background:linear-gradient(125deg,#633c54,#a96c82)}.destination:nth-child(3n) .destination-top{background:linear-gradient(125deg,#55432d,#a47c3c)}
+.region{font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:#ffe7f0;font-weight:800}.destination h3{font-size:1.35rem;line-height:1.2;margin:7px 0 3px}.country{font-size:.88rem;color:#f8eaf0}
+.destination-body{padding:15px;display:flex;flex-direction:column;flex:1}.destination-body p{margin:0 0 12px;color:#505164;font-size:.94rem}.taglist{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.tag{font-size:.72rem;padding:4px 8px;border-radius:999px;background:#f8edf2;color:#69405a;font-weight:750}.highlights{font-size:.86rem;color:var(--muted);margin:0 0 12px;padding-left:18px}.card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.card-actions a,.card-actions button{font-size:.82rem}
+.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #d9cbd3;border-radius:14px;margin-top:14px}
+.shortlist{display:grid;gap:8px}.short-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.short-item:last-child{border:0}.short-item strong{color:var(--midnight)}
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.tip{background:var(--soft);border-left:3px solid var(--piyaji);padding:12px;border-radius:8px;font-size:.9rem}.tip strong{display:block;color:var(--midnight);margin-bottom:4px}
+.small{font-size:.85rem;color:var(--muted)}footer{text-align:center;padding:28px 16px;color:var(--muted);font-size:.86rem}footer a{color:inherit}
+@media(min-width:760px){main{padding:0 22px}.panel{padding:22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="hero"><span class="brand">TRTT VOYAGE · FREE TRAVEL TOOL</span><h1>Find a place that fits your kind of journey.</h1><p>Explore a curated starting collection of destinations, filter by the experiences you enjoy, and build a shortlist to research further.</p><p class="hero-note">From Vision to Global Brand. Explore Beyond. Discover Everything.</p></div></header>
+<main>
+<section class="panel" aria-labelledby="filter-title">
+<h2 id="filter-title">What kind of journey are you imagining?</h2>
+<p class="intro">Choose a region or travel style, or search for a place. Results are inspiration—not rankings or live travel advice.</p>
+<div class="filters">
+<label class="field">Search destinations<input id="search" type="search" placeholder="Try Kyoto, islands, nature…"></label>
+<label class="field">Region<select id="region"><option value="all">All regions</option><option>Europe</option><option>Asia</option><option>Africa</option><option>South America</option><option>Oceania</option></select></label>
+<label class="field">Travel style<select id="style"><option value="all">Any travel style</option><option value="beach">Beaches & islands</option><option value="culture">Culture & heritage</option><option value="nature">Nature & landscapes</option><option value="food">Food & local flavours</option><option value="adventure">Outdoor & adventure</option><option value="city">City discovery</option><option value="slow">Slow travel</option></select></label>
+</div>
+<div class="actions"><button class="btn pink" id="apply">Explore destinations</button><button class="btn ghost" id="clear">Clear filters</button></div>
+</section>
+<section class="panel" aria-labelledby="results-title">
+<div class="results-head"><h2 id="results-title">Destination ideas</h2><span class="count" id="result-count" aria-live="polite">8 destinations</span></div>
+<div class="cards" id="cards"></div>
+<div class="empty" id="empty" hidden>No matches yet. Try another region or travel style.</div>
+</section>
+<section class="panel" aria-labelledby="shortlist-title">
+<div class="results-head"><h2 id="shortlist-title">Your travel shortlist</h2><span class="count" id="short-count">0 saved</span></div>
+<p class="intro">Save places to compare later in this browser tab. Nothing is uploaded or stored on a server.</p>
+<div id="shortlist" class="shortlist"><p class="small">Your shortlist is empty. Choose “Add to shortlist” on a destination card.</p></div>
+<div class="actions"><button class="btn gold" id="export" disabled>Export shortlist (.json)</button><button class="btn ghost" id="clear-short" disabled>Clear shortlist</button></div>
+</section>
+<section class="panel" aria-labelledby="plan-title">
+<h2 id="plan-title">Before you turn inspiration into a booking</h2>
+<div class="tip-grid">
+<div class="tip"><strong>Entry and visa rules</strong>Check the destination immigration authority and the rules for your passport nationality before booking.</div>
+<div class="tip"><strong>Safety and local advice</strong>Read your own government’s current travel advice and local emergency guidance.</div>
+<div class="tip"><strong>Weather and seasons</strong>Check official climate information for your exact dates; seasons differ between hemispheres and regions.</div>
+<div class="tip"><strong>Transport and accessibility</strong>Confirm current routes, local transport, mobility access and attraction arrangements with official providers.</div>
+</div>
+<p class="small">This tool does not provide live flight prices, hotel availability, visa decisions, safety ratings, opening hours or booking services. Always confirm current details with official authorities and providers.</p>
+</section>
+<section class="panel"><h2>Privacy and source note</h2><p class="small">The explorer runs locally in your browser. Search terms and shortlist selections stay in page memory; there are no analytics scripts, accounts, external libraries, APIs or server requests. Destination summaries are brief editorial descriptions based on the official tourism portals linked on each card. The collection is selective and is not a ranking of destinations.</p></section>
+</main>
+<footer>TRTT Voyage · <a href="https://trttvoyage.com">trttvoyage.com</a> · Explore Beyond. Discover Everything.</footer>
+<script>
+"use strict";
+const destinations = [
+{id:"sardinia",name:"Sardinia",country:"Italy",region:"Europe",styles:["beach","culture","nature","slow","adventure"],summary:"An island mix of coastal landscapes, regional culture, historic places and outdoor routes. Explore different areas before choosing a base.",highlights:["Coastal areas and beaches","Historic villages and heritage","Regional routes and practical visitor information"],url:"https://www.sardegnaturismo.it/en/",source:"Sardegna Turismo"},
+{id:"portugal",name:"Portugal",country:"Portugal",region:"Europe",styles:["beach","culture","nature","food","city","slow","adventure"],summary:"A varied country-wide starting point, from city breaks and cultural routes to Atlantic coast, islands and outdoor experiences.",highlights:["Lisbon and Porto regions","Algarve, Madeira and the Azores","Culture, gastronomy and outdoor activities"],url:"https://www.visitportugal.com/en",source:"Visit Portugal"},
+{id:"kyoto",name:"Kyoto",country:"Japan",region:"Asia",styles:["culture","nature","food","slow","city"],summary:"A destination for historic streets, shrines, gardens, traditional culture and regional food—with quieter areas beyond the busiest central sights.",highlights:["Shrines, temples and historic streets","Gardens and areas beyond central Kyoto","Local cuisine and cultural experiences"],url:"https://www.japan.travel/en/destinations/kansai/kyoto/",source:"Japan National Tourism Organization"},
+{id:"singapore",name:"Singapore",country:"Singapore",region:"Asia",styles:["culture","nature","food","city"],summary:"A compact city discovery option combining heritage neighbourhoods, food culture, contemporary architecture and green spaces.",highlights:["Civic District and heritage neighbourhoods","Chinatown, Little India and Kampong Gelam","City-in-nature experiences"],url:"https://www.visitsingapore.com/",source:"Visit Singapore"},
+{id:"morocco",name:"Morocco",country:"Morocco",region:"Africa",styles:["culture","nature","food","adventure","slow","beach"],summary:"A broad range of experiences across medinas, historic cities, mountain and desert landscapes, Atlantic towns and coastal areas.",highlights:["Marrakech, Fez and Rabat","Chefchaouen and historic medinas","Nature, desert routes and coastal destinations"],url:"https://www.visitmorocco.com/en/",source:"Moroccan National Tourism Office"},
+{id:"peru",name:"Peru",country:"Peru",region:"South America",styles:["culture","nature","food","adventure"],summary:"A destination with cultural heritage, Andean landscapes, coastal desert, rainforest experiences and a wide range of regional food traditions.",highlights:["Cusco and Machu Picchu region","Andes, rainforest and coastal desert","Culture, adventure and gastronomy"],url:"https://www.peru.travel/",source:"Peru Travel · PROMPERÚ"},
+{id:"greece",name:"Greek Islands",country:"Greece",region:"Europe",styles:["beach","culture","nature","food","slow","adventure"],summary:"A diverse island collection spanning the Cyclades, Crete, Ionian Islands and more. Compare regions rather than treating every island as the same trip.",highlights:["Cyclades and Crete","Ionian and Dodecanese islands","Beaches, villages and cultural routes"],url:"https://www.visitgreece.gr/en/islands",source:"Greek National Tourism Organisation"},
+{id:"australia",name:"Australia",country:"Australia",region:"Oceania",styles:["beach","culture","nature","food","city","adventure"],summary:"A large-scale destination with city breaks, islands, reefs, outback landscapes, national parks and Indigenous cultural experiences.",highlights:["Sydney and other capital cities","Great Barrier Reef and island regions","Outback, nature and cultural experiences"],url:"https://www.australia.com/en",source:"Tourism Australia"}
+];
+const styleLabels={beach:"Beaches & islands",culture:"Culture & heritage",nature:"Nature & landscapes",food:"Food & local flavours",adventure:"Outdoor & adventure",city:"City discovery",slow:"Slow travel"};
+const $=id=>document.getElementById(id);
+const shortlist=new Set();
+function make(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node;}
+function renderCards(){
+ const q=$("search").value.trim().toLowerCase(),region=$("region").value,style=$("style").value;
+ const matches=destinations.filter(d=>(region==="all"||d.region===region)&&(style==="all"||d.styles.includes(style))&&(!q||[d.name,d.country,d.region,d.summary,...d.highlights].join(" ").toLowerCase().includes(q)));
+ const root=$("cards");root.replaceChildren();$("empty").hidden=matches.length!==0;
+ $("result-count").textContent=matches.length+" of "+destinations.length+" destinations";
+ matches.forEach(d=>{
+  const card=make("article","destination"),top=make("div","destination-top"),body=make("div","destination-body");
+  top.append(make("div","region",d.region),make("h3","",d.name),make("div","country",d.country));
+  body.append(make("p","",d.summary));
+  const tags=make("div","taglist");d.styles.forEach(s=>tags.append(make("span","tag",styleLabels[s])));body.append(tags);
+  const list=make("ul","highlights");d.highlights.forEach(item=>list.append(make("li","",item)));body.append(list);
+  const actions=make("div","card-actions"),link=make("a","", "Official destination guide ↗");link.href=d.url;link.target="_blank";link.rel="noopener noreferrer";link.setAttribute("aria-label","Open official tourism guide for "+d.name+" in a new tab");
+  const save=make("button","btn pink",shortlist.has(d.id)?"Saved to shortlist":"Add to shortlist");save.type="button";save.setAttribute("aria-pressed",String(shortlist.has(d.id)));save.addEventListener("click",()=>{if(shortlist.has(d.id))shortlist.delete(d.id);else shortlist.add(d.id);renderCards();renderShortlist()});
+  actions.append(link,save);body.append(actions);card.append(top,body);root.append(card);
+ });
+}
+function renderShortlist(){
+ const root=$("shortlist");root.replaceChildren();const chosen=destinations.filter(d=>shortlist.has(d.id));
+ $("short-count").textContent=chosen.length+" saved";$("export").disabled=chosen.length===0;$("clear-short").disabled=chosen.length===0;
+ if(!chosen.length){root.append(make("p","small","Your shortlist is empty. Choose “Add to shortlist” on a destination card."));return;}
+ chosen.forEach(d=>{const row=make("div","short-item"),info=make("div","");info.append(make("strong","",d.name+" · "+d.country),make("div","small",d.region));const remove=make("button","btn ghost","Remove");remove.type="button";remove.addEventListener("click",()=>{shortlist.delete(d.id);renderCards();renderShortlist()});row.append(info,remove);root.append(row)});
+}
+function exportShortlist(){
+ const chosen=destinations.filter(d=>shortlist.has(d.id)).map(d=>({destination:d.name,country:d.country,region:d.region,travel_styles:d.styles.map(s=>styleLabels[s]),official_tourism_guide:d.url}));
+ const blob=new Blob([JSON.stringify({created_at:new Date().toISOString(),note:"Inspiration shortlist only. Recheck current travel requirements and details.",destinations:chosen},null,2)],{type:"application/json"});
+ const url=URL.createObjectURL(blob),a=make("a");a.href=url;a.download="trtt-travel-shortlist.json";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+$("apply").addEventListener("click",renderCards);
+$("clear").addEventListener("click",()=>{$("search").value="";$("region").value="all";$("style").value="all";renderCards()});
+$("search").addEventListener("keydown",event=>{if(event.key==="Enter")renderCards()});
+$("region").addEventListener("change",renderCards);$("style").addEventListener("change",renderCards);
+$("export").addEventListener("click",exportShortlist);
+$("clear-short").addEventListener("click",()=>{shortlist.clear();renderCards();renderShortlist()});
+renderCards();renderShortlist();
+</script>
+</body>
+</html>
