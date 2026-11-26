@@ -266,3 +266,13 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** Repository inspection completed; new files saved on feature branch; subsequent remote read-back and static content checks are required before final PASS. No deletions, Main changes, PR merge, live Blogger publication, Telegram delivery, production deployment, DNS/security/account change, or secret access.
 - **GitLab:** Mirror is pending after GitHub PR creation; no GitLab backup is claimed yet.
 - **Next Owner action:** Review PR #29 and merge only if the changed files and evidence meet the project's standards. Separately approve any later Blogger upload or live publication.
+
+
+#### Verification Addendum — 2026-11-26T23:30:45+01:00
+
+- GitHub read-back: PASS for all four changed files. Static checks PASS: checklist section coverage; exactly one Blogger H1; FAQ and editorial disclosure present; TRTT Voyage link present; image URL points to the existing repository hero SVG; no placeholder text; all article links use HTTPS; memory and command-center markers present; HTML closing document tags present.
+- GitHub compare: 4 commits ahead of main, 0 behind; 4 changed files; 159 additions; 0 deletions.
+- GitHub PR #29: OPEN / NOT MERGED. Connector currently reports `mergeable=false`; Owner should inspect the PR's current GitHub status before any merge decision.
+- GitLab backup branch `backup/github-pr29-owner-pr-review-checklist-20261126`: PASS. Commit `4609d81050dca72d951efd85de4d5c5be5fe3858`; read-back PASS for both new deliverables, memory log, and command-center HTML.
+- Blogger: repository HTML draft is prepared; actual Blogger upload, Post ID and DRAFT status remain NOT VERIFIED. No live publication.
+- GitHub/GitLab full history parity is NOT TESTED; this is a file/branch mirror on a separate backup branch, not a claim of identical repository histories.
