@@ -308,3 +308,10 @@ $("build").addEventListener("click",makeList);$("reset").addEventListener("click
   <p>GitHub compare: ARTEX, superpowers, Claude-BugHunter, DeepTutor, and stitch-skills are identical between personal and organization copies. Organization plannotator is 5 commits behind the personal fork.</p>
   <p>Cross-repository PR to sync plannotator returned HTTP 403. No organization branch or PR created; no history changed. Owner sync/review required.</p>
 </section>
+
+<section id="memory-2026-11-27-token-and-privacy-review" class="memory-entry">
+  <h2>2026-11-27 — Travelpayouts runtime and privacy review</h2>
+  <p>Source and <code>.env.example</code> identify <code>TRAVELPAYOUTS_TOKEN</code>, but the inspected GitHub Actions workflow has no reference to it. Runtime injection location is NOT VERIFIED; do not assume a GitHub Actions secret alone configures Vercel.</p>
+  <p>Legacy privacy-page source contains personal contact details. Values were not repeated or copied; Owner review/redaction is required before reusing those files. Legacy <code>trttnews24bd</code> references remain in historical and FlightScoutPro-specific assets; no blanket replacement.</p>
+  <p>No secret or contact detail changed; no publish, deploy, DNS/security change, or Telegram send.</p>
+</section>
