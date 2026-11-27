@@ -517,3 +517,11 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No unrelated products are automatically inserted. The six-item menu remains unchanged. Remove the unsupported legacy Amazon link from draft validation.
 - **Files changed:** `trtt_787950_master.py`, `tests/test_amazon_six_item_policy.py`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`.
 - **Verification:** GitHub read-back and runtime tests pending. No Blogger publishing or PR merge.
+
+### Verification addendum — Direct Amazon Item Links — 2026-11-27
+
+- **TRTT News Bot PR:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 — OPEN, DRAFT, NOT MERGED; head `d981b55dbc0db098b3164cbdaebe5e6173a0e1e9`; `mergeable=false`.
+- **Memory PR:** https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/43 — OPEN, DRAFT, NOT MERGED; append-only log and HTML trace updated on the memory feature branch.
+- **Read-back checks:** Linker exists; exact item-to-URL allowlist present; target blank and sponsored/nofollow attributes present; legacy Amazon URL removed; tests cover exact item links, unrelated item rejection and existing-anchor handling; policy updated. Static source checks PASS.
+- **CI/runtime:** Combined commit status returned no status entries. Automated runtime tests and Blogger draft generation are NOT TESTED.
+- **Blogger:** Page installation, live theme menu, actual Amazon redirect targets and rendering are NOT VERIFIED. No Blogger post created/published, no merge, no Telegram send, no deployment, DNS/security changes, or secrets accessed.
