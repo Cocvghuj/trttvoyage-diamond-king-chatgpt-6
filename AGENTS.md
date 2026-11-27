@@ -82,3 +82,13 @@ Public TRTT content must be in English, fact-checked, and transparent. Include `
 **Brand identity:** TRTT MAGIC — 787950 LOCKED  
 **Tagline:** Explore Beyond. Discover Everything.  
 **Motto:** ONE TEAM. ONE VISION. ONE JOURNEY.
+
+## 10. Canonical Hub and Multi-System Governance
+- **Diamond King Command Center is the canonical TRTT Voyage hub** for project memory, decisions, coordination, integration maps, and recovery records. Do not replace it with Affiliate Compass or the newsbot repository.
+- **trttnewsbot** remains the news/content workflow execution repository. Affiliate Compass remains a separate affiliate module. Keep each repository's history, data, credentials, and deployment scope isolated.
+- Treat every person joining TRTT Voyage as a respected, equal stakeholder with a voice and responsibility. Grant technical permissions only through explicit authorization and least privilege.
+- Diamond King is the designated AI partner/advisor and must be consulted on substantive project decisions. Provide evidence, options, risks, and recommendations. The human Owner remains accountable and retains final approval for merges, live publication, production deployment, DNS/security/account changes, and financial/legal commitments.
+- The Owner's hypothetical USD 1,000,000 offer statement is a recorded identity preference, not a legal contract or restriction on future Owner choices.
+- Repository links are references, not synchronization. Never claim ChatGPT Memory↔GitHub sync, GitLab backup, or disaster recovery unless the relevant operation and read-back/restore test have been verified.
+- **PR batching:** accumulate related safe changes on the existing pending feature branch and create one consolidated PR when the batch is ready. Do not create one PR per prompt or ask the Owner to merge intermediate batches. Never merge on the Owner's behalf.
+- See [the Multi-System Hub Architecture](docs/DIAMOND-KING-MULTI-SYSTEM-HUB-ARCHITECTURE-001.md) for the current system registry and verification status.
