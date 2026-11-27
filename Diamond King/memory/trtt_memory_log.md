@@ -749,3 +749,13 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append-only memory entry and matching command-center trace on existing pending memory branch; no PR created.
 - **Verification:** Repository search executed. Separate-repo contents/ownership, Travelpayouts API eligibility, terms, token scopes, link validation endpoint, and SaaS runtime are NOT VERIFIED. Product recommendation is a concept, not a built SaaS.
 - **Next stage:** Inspect the existing Travelpayouts repository candidate and official API/terms, then define the smallest compliant MVP before creating or modifying a repository. Owner's Chrome-only/no-app-change/no-cost constraint remains active.
+
+
+## Entry — 2026-11-27 — Owner clarifies own-built SaaS direction
+
+- **Project code:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner clarified that Travelpayouts already provides the affiliate dashboard, links, campaign and reporting views they need; they do not want those Travelpayouts functions rebuilt. They want to start a distinct, original SaaS in GitHub, designed around TRTT's own requirements, with Travelpayouts connected as a data source/integration where useful.
+- **Decision:** Do not build a Travelpayouts clone or duplicate its dashboard/link-management/analytics. Define an original TRTT SaaS product first. Amazon six-item catalog/review may be one separate module; content/news/design review and other original workflows may be included only after product scope is validated. Travelpayouts is an integration, not the SaaS product itself.
+- **Repository inspection:** GitHub organization search for “Travelpayouts” returned only the existing TRTT-VOYAGE/Cocvghuj-trtt-news-bot; no separate Travelpayouts repository was found in that search. No new repository was created. Existing no-app-change/no-cost constraint remains in force, so no app repository files or branches were modified.
+- **Implementation status:** Product direction clarified; SaaS not built. Need inspect existing command-center repo structure and candidate original product scope before creating a dedicated repository or feature branch. No paid services/trials, secrets, deployment, Blogger publishing, or Telegram send.
+- **Verification:** Search result inspected; no standalone Travelpayouts repository in returned organization results. No code build or runtime test performed.
