@@ -683,3 +683,14 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions/safeguards:** Owner completed merge; no assistant merge action. Chrome-only/no-app-change/no-cost instruction remains active. No app repository edits, sync/rebase, deployment, paid service/trial, Blogger import/live publish, or Telegram send.
 - **Files changed:** Append-only update to this log and additive section in Diamond King/trttmagic.html on feature/memory-pr60-merge-recheck-16-20261127.
 - **Verification:** GitHub metadata for PR #146 and #60 PASS. New memory file read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখো” — Memory audit and PR recheck
+- **Timestamp:** 2026-11-27 (UTC; exact minute not independently supplied).
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner challenged whether memory had actually been updated; rechecked command-center Memory PR #61 and app PR #146, inspected current main-branch memory files, and recorded this trigger.
+- **GitHub evidence:** Memory PR #61 is CLOSED and MERGED (https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/61); app PR #146 is CLOSED and MERGED with merge commit 339532320419054da609bc4862b035299d88ead4 (https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146). PR #61 merge commit SHA was not returned in the metadata response used for this check.
+- **Memory audit scope/limitation:** Current main-branch copies of trtt_memory_log.md and trttmagic.html were fetched and their latest entries inspected. This confirms those files contain earlier append records through the PR #60 recheck entry; it does not prove that every historical conversation/trigger was recorded. No claim of complete historical coverage is made.
+- **Decisions/safeguards:** Preserve append-only history. Do not edit the app repository, deploy, sync/rebase, use paid services/trials, import/publish Blogger content, or send Telegram. Chrome-only review constraint remains active. Owner retains merge authority.
+- **Files changed:** Append this entry to Diamond King/memory/trtt_memory_log.md and add a matching trace section to Diamond King/trttmagic.html on feature/memory-audit-trigger-20261127-17.
+- **Verification:** PR #61 and #146 metadata recheck PASS. Memory file read-back, HTML trace read-back and PR creation are pending. GitLab/Blogger/Telegram NOT TESTED.
