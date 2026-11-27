@@ -410,3 +410,17 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab:** Existing app and theme backup branches confirmed present. Full history parity and a complete all-repository mirror audit are NOT TESTED.
 - **Safety:** No main branch merged, no third-party fork README overwritten, no private contact information or secrets added, no Blogger live publish/theme install, no Vercel production deploy, no DNS/Cloudflare/account change, and no Telegram delivery.
 - **Next actions:** Owner reviews and merges PRs; then continue the full repository-by-repository audit of upstream, README, license, links, workflows, and hosting. Request the correct organization write permission before attempting the organization landing README again.
+
+
+## 2026-11-27 05:55 CET — Expanded fork metadata and remaining TRTT README cleanup
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Continue the repository identity and English README alignment across TRTT-owned personal repositories and organization inventory.
+- **Fork metadata audit:** GitHub REST repository metadata was inspected for all 49 personal repositories. Result: 40 forks with upstream parent relationships verified; 9 non-forks, including 1 private repository. The organization inventory contains 6 forks and 1 separate non-fork organization repository.
+- **Portfolio update:** Expanded `docs/REPOSITORY-PORTFOLIO.md` on profile branch `feature/trttvoyage-profile-hub-20261127` with all 40 personal fork-parent links, 9 non-fork names, and all 6 organization fork parents. Read-back PASS. Profile PR #2 remains open and mergeable.
+- **Legacy command-center archive:** English README prepared on `feature/trttmagic-archive-readme-20261127`, original README preserved, historical HTML left unchanged. PR #2: https://github.com/Cocvghuj/Diamond-King-trttmagic.html/pull/2 — open, mergeable.
+- **Fix repository:** Inspection found only README.md and no source code or workflow. English README now explicitly marks purpose and deployment NOT VERIFIED; original README preserved. PR #2: https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot-fix/pull/2 — open, mergeable.
+- **Other TRTT-owned README status:** Main app PR #140 and Blogger theme PR #141 remain open and mergeable. Muse Gift PR #4 and Muse Diary PR #2 remain open and mergeable. Rise From Ashes Studio, private vault, and canonical Diamond King command-center READMEs were already English on inspection; no rewrite was necessary in this pass.
+- **Organization write boundary:** Attempt to create a feature branch on the standalone organization command-center repository returned HTTP 403. No organization README was changed. Organization account alignment remains partial until authorized write access is available.
+- **Safety:** All 40 forked repositories retain upstream README/code and attribution. No repository merge, force-push, live Blogger publish, Vercel production deployment, Cloudflare/DNS/security update, Travelpayouts token update, or Telegram send occurred.
+- **Verification:** All five current README PRs (#2 profile, #4 Muse Gift, #2 Muse Diary, #2 legacy HTML archive, #2 fix placeholder) report mergeable=true and are 0 commits behind at check time. No CI run was executed for these documentation-only changes.
+- **GitLab:** The memory and command-center HTML files were mirrored and byte-compared against GitHub in `backup/github-agents-guide-mainline-refresh-20261127`. Full Git history parity remains NOT TESTED.
