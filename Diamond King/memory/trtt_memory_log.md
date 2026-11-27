@@ -628,3 +628,47 @@ Policy: append-only; preserve all earlier entries.
 - **Blocking input:** Current Blogger Theme XML backup has not been attached/provided in this turn. Blogger-native staging preview therefore remains NOT TESTED.
 - **File changes:** Append-only update to this memory log and additive trace section in `Diamond King/trttmagic.html`; no theme or Blogger content changed.
 - **Verification:** Pending read-back of both updated files.
+
+
+## Memory Entry — 2026-11-27 14:10 CET — Blogger theme backup received
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested the uploaded Blogger theme XML be saved in GitHub to avoid repeated uploads, with zero-cost tooling.
+- **Uploaded source:** `theme-6613996656611533868 (7).xml`; 440,824 bytes; SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`.
+- **Source inspection:** XML parser PASS. The file identifies itself as the Way2Themes “Mitti” free theme (template metadata visible near the top), so it is recorded as a source/rollback backup, not as the Diamond Horizon theme.
+- **GitHub storage limitation:** Available GitHub connector supports UTF-8 text file writes but no binary/raw attachment upload. Therefore the XML bytes have NOT been saved to GitHub in this operation. A backup manifest is committed with filename, size, hash and exact status so the source can be verified; do not claim the XML itself is stored.
+- **Files changed:** Append-only memory and HTML trace; add manifest at `Diamond King/backups/blogger/theme-backup-2026-11-27.md`. No existing theme, posts, or production settings changed.
+- **Verification:** Pending read-back of all three files. GitHub branch: `feature/blogger-theme-backup-record-20261127`.
+- **Cost:** No paid service or trial used; zero-cost connector route.
+
+
+## Memory Entry — 2026-11-27 13:30 CET — Continue zero-cost theme backup
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉 to continue the pending GitHub backup task.
+- **Decision:** Re-inspect the existing backup branch and use only free GitHub capabilities; preserve the original XML unchanged and do not claim backup completion without byte-for-byte hash verification.
+- **Reinspection:** Branch `feature/blogger-theme-backup-record-20261127` exists. Manifest, memory log, and HTML trace are readable. Manifest still correctly states that the actual XML bytes are not saved.
+- **Capability check:** GitHub connector exposes a Git database blob operation with base64 encoding, but this chat workflow has no direct local-file-to-connector transfer input. The local XML remains available in the current runtime (440,824 bytes; SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`). No upload or file-content change was made.
+- **Files changed:** Append-only memory and HTML trace only.
+- **Verification:** Branch and source file hash rechecked; actual repository XML storage remains NOT VERIFIED / NOT SAVED. GitLab, PR, Blogger, and Telegram not executed in this stage.
+- **Cost:** Zero-cost tools only; no paid service or trial.
+
+
+## Memory Entry — 2026-11-27 — Double-arrow continuation
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉👉 to continue the pending original Blogger theme backup.
+- **Source recheck:** Local upload is present at the previously supplied path; size 440,824 bytes; SHA-256 verified again as `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`.
+- **GitHub inspection:** Existing feature branch and manifest remain present. Available GitHub tools include base64 Git-blob creation, but the chat tool bridge accepts string content only and provides no local-file path/file-reference input for that action. No safe direct transfer of the local 440,824-byte source was available in this turn.
+- **Decision:** Do not create a placeholder or misrepresent the manifest as the XML. Keep source unchanged; original XML remains NOT SAVED in GitHub until actual bytes are uploaded and hash-verified.
+- **Files changed:** Append-only memory log and HTML trace only.
+- **Verification:** Local file size/hash PASS; GitHub XML upload NOT VERIFIED / NOT SAVED. GitLab, Blogger, Telegram not executed.
+- **Cost:** Zero-cost tools only.
+
+
+## Memory Entry — 2026-11-27 — PR scope correction and continuation
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉 to continue the pending zero-cost Blogger theme backup task.
+- **GitHub PR inspection:** Existing PR #36 was found open and unmerged. Its original target `main` made the comparison show 73 commits ahead / 8 behind, including unrelated AGENTS.md changes.
+- **Correction:** Verified that the backup feature branch is directly 8 commits ahead of `feature/agents-guide-mainline-refresh-20261127`, with exactly three intended files changed: the backup manifest, append-only memory log, and additive HTML trace. Updated PR #36 base to that feature branch and added a clear body stating that the actual XML bytes are NOT included or saved. PR remains open, unmerged; owner review required.
+- **XML status:** Local original file 440,824 bytes; SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`. Actual XML is still NOT SAVED in GitHub; do not merge or claim backup completion on the basis of the manifest.
+- **Files changed this trigger:** Append-only memory and additive HTML trace only. No XML content, existing Blogger posts, or production settings changed.
+- **Verification:** PR base correction PASS; PR #36 open/unmerged; target comparison 8 commits ahead, 0 behind, 3 intended files. GitLab/Blogger/Telegram not tested.
+- **Cost:** Zero-cost tools only.
