@@ -767,3 +767,11 @@ Policy: append-only; preserve all earlier entries.
 - **Scope guard:** Do not build all phases at once. Respect the active no-app-change, free-only, no-deployment constraints. No repository/app code was changed and no new repository/PR was created in this turn.
 - **Verification:** Owner's sequence captured. No implementation, build, runtime, or integration test performed. Memory update pending read-back.
 - **Entry marker:** travelpayouts-first-amazon-second-original-saas-sequence-20261127
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — GitHub repository topics request
+- **Trigger:** Owner asked whether DIAMOND KING can add GitHub Topics to the new TRTT Voyage Affiliate Compass repository.
+- **Decision:** Topics proposed for the repository: trtt-voyage, affiliate-marketing, travel-tech, travelpayouts-integration, saas, analytics. Repository creation is still Owner's next step; do not assume the repository exists.
+- **Capability/evidence:** Available GitHub connector actions were inspected; no repository-topics update action is exposed in this session. No repository settings were changed. Owner can add topics through the GitHub repository page, or provide the repository URL so we can re-check available authorized actions.
+- **Verification:** No topics applied; NOT TESTED. No PR, app edit, deployment, Blogger draft, or Telegram delivery.
+- **Entry marker:** github-topics-owner-question-20261127
