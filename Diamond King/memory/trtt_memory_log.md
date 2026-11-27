@@ -437,3 +437,20 @@ Policy: append-only; preserve all earlier entries.
 - **Not verified:** Blogger Theme preview/import, live Blogger page installation, mobile/desktop rendering, live link resolution, trttvoyage.com routing, and Vercel Tools route public access.
 - **Approval boundaries:** No Blogger theme install or replacement, no live page update, no production deployment, no DNS/security change, and no secret operation.
 - **Next action:** Owner reviews PR #141. After merge, export a Blogger theme backup and preview/import only with explicit Owner approval.
+
+
+## Entry — 2026-11-27 — TRTT Voyage live link, Blogger, and public channel audit
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Continued the Owner's request to make TRTT Voyage the consistent English-language brand across personal repositories, public pages, links, Blogger theme, Vercel, and Cloudflare.
+- **Live website:** TinyFish fetch confirmed `https://trttvoyage.com/` redirects to `https://www.trttvoyage.com/` and serves the live TRTT Voyage Blogger site.
+- **Public link checks:** GitHub profile, GitHub organization, WhatsApp channel, Telegram channel, Facebook profile, CodePen, Buy Me a Coffee, and Vercel `/super-app` route all returned content. WhatsApp channel currently displays title “This Moment”; Telegram username retains legacy `trttnews24bd`; Buy Me a Coffee description is Italian. Suggested English copy is in `docs/SOCIAL-CHANNEL-REBRAND-READY-TO-PASTE.md`. No account-level changes were made.
+- **Blogger page status:** About, Privacy, and Disclaimer routes resolve but still display old TRTT News 24 BD content. Contact route `/p/contact-us.html` returns 404. New English page sources are in PR #140; no live Blogger page was changed.
+- **Category routes:** News label `/search/label/TRTT%20News24BD`, Travel search `/search?q=travel`, AI label `/search/label/AI`, and Vercel Tools route `/super-app` were fetched and returned content.
+- **Theme update:** PR #141 now uses verified category routes, hides personal Diary/My dairy cards outside their own label pages, hides legacy PageList/Profile widgets, hides legacy TRTT News label chips, and omits the broken Contact footer link until the page exists. Latest CI PASS: XML validator, TRTT tests, production build output.
+- **Vercel:** The main project reports latest deployment READY but project live flag false; its public `/super-app` route nevertheless returned the Super App page. Main site domain is Blogger-managed, not a Vercel custom domain. MUSE gift and diary previews remain SSO-protected.
+- **Cloudflare:** Plugin search did not find a Cloudflare connector. Cloudflare account/DNS/Workers/Pages/security state remains NOT TESTED.
+- **GitHub PRs:** PR #140 and PR #141 are OPEN / mergeable=true; PR #34 portfolio/memory is OPEN / mergeable=true. No merges performed by the assistant.
+- **Approval boundaries:** No Blogger live page update/theme install, social-account update, production deployment, DNS/security change, Telegram send, or secret operation.
+- **Next action:** Owner reviews and merges the documentation and theme PRs. Then update Blogger pages manually after backup and preview; update WhatsApp/Telegram/Buy Me a Coffee profiles from the prepared copy if desired.
