@@ -328,3 +328,12 @@ Policy: append-only; preserve all earlier entries.
 - **Current inspection:** GitHub account repository listing confirmed Cocvghuj/trttvoyage-diamond-king-chatgpt-6 (default branch main) and Cocvghuj/Cocvghuj-trtt-news-bot (default branch main) are accessible. Branch feature/agents-guide-mainline-refresh-20261127 exists. Memory and command-center HTML were fetched from that feature branch before append.
 - **Limits:** Current live Blogger theme identity/content, Blogger export/restore, latest PR state, full GitLab history parity, and end-to-end recovery are NOT VERIFIED in this trigger. No merge, Blogger upload/publish, GitLab mutation, production deployment, Telegram send, DNS/security/account change performed.
 - **Next step:** Perform a dedicated GitHub foundation audit and create a minimal evidence-backed remediation PR; do not request blog assets until the repository/control-center checklist is stable.
+
+
+## 2026-11-27 — Gemini Prompt Review (3 submitted concepts)
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner submitted three Gemini prompt concepts for evaluation and possible GitHub retention: (1) custom Blogger HTML/CSS with Google-clean and GitHub/Termux dark-terminal styling; (2) launch post combining SaaS transition, “Smoke in the Valley” grind, and Diamond King story; (3) SEO and Answer-Engine formatting rules for future posts.
+- **Decisions:** (1) KEEP as a task-specific design brief, subordinate to the existing TRTT Diamond Horizon theme specification; do not replace the active theme requirements. (2) HOLD as a content concept until the SaaS transition and “Smoke in the Valley” details are supplied/verified; do not invent autobiographical facts. (3) KEEP as editorial guidance after revision: use helpful structure, clear headings, concise answer-first sections, relevant FAQs and valid structured data where appropriate; do not promise Google rankings or AI answer inclusion.
+- **Files:** Append this review to the memory log and add a matching trace to trttmagic.html on the existing feature branch only.
+- **Verification:** GitHub feature branch and both target files were read before editing. Read-back verification is required after each append. No merge, Blogger change, GitLab mirror, publication, production, DNS/security change, or Telegram send.
+- **Next action:** Owner may send the remaining Gemini prompts for the same review; do not promote any concept to a global operating rule without compatibility and evidence checks.
