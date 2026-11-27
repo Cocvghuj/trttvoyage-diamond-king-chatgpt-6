@@ -992,3 +992,15 @@ Policy: append-only; preserve all earlier entries.
 - GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED.
 - Browser rendering, accessibility audit, and public user comprehension: NOT TESTED.
 - Marker: free-learning-journey-readme-discovery-20261128
+
+
+## 2026-11-28 — Owner correction: verify live repositories before acting
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner stated that two repositories had already been made live and instructed Diamond King to check first.
+- GitHub verification: Learning Journey PR #12 is CLOSED and MERGED at 2026-11-27T23:43:36Z; merge commit fbfded80f54ef2de4f61009feea40d3e806b4ad4. Command Center PR #85 is CLOSED and MERGED at 2026-11-27T23:44:18Z; merge commit 3e517046b4d5c5c97cbb936fd48d26251960d54c.
+- Main-branch read-back: Learning Journey README.md and FREE-FOR-EVERYONE.md both contain the public mission and Learn → Imagine → Build → Share loop. Command Center memory log and trttmagic.html both contain the prior discovery trace.
+- Decision: Treat both PRs as Owner-merged/live in their respective GitHub repositories; do not ask Owner to merge them again. Future work must inspect current repository/PR state before assuming anything is pending.
+- File changes in this trigger: append-only update to this memory log and trttmagic.html only; no application or production deployment change.
+- Verification: PR metadata and main-branch file read-back PASS. Public site deployment/browser rendering NOT TESTED. GitLab NOT REQUIRED under current GitHub-only direction. Blogger/Telegram NOT REQUIRED.
+- Memory branch: feature/owner-live-repo-verification-memory-20261128.
+- Marker: owner-live-repositories-verified-20261128
