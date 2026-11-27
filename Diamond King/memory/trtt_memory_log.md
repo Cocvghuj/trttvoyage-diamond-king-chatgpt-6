@@ -564,12 +564,13 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** GitHub PR metadata and compare status PASS; memory PR #48 merged status PASS. Runtime tests/CI NOT TESTED; exact conflict hunks NOT VERIFIED; GitLab/Blogger/Telegram NOT TESTED.
 
 
-## 2026-11-27 — Owner trigger: “এবার দেখুন” (PR #146 and memory PR #49 recheck)
+## 2026-11-27 17:12 Europe/Rome — Owner trigger: “এবার দেখুন”
 - **Project:** DR-TRTT-OPS-001.
-- **Trigger summary:** Rechecked the Amazon Picks app PR #146 and the prior command-center memory PR #49; appended this verification record.
-- **App PR #146:** OPEN, not merged, non-draft; URL https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146. Head branch `feature/blogger-amazon-six-item-menu-20261127`, head SHA `80b3c65d6c92c1ce365b6e40d0b998feab7621ff`; base `main`, base SHA `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`. GitHub reports `mergeable=false`.
-- **Compare:** `main...feature/blogger-amazon-six-item-menu-20261127` remains `diverged`, 12 commits ahead and 1 behind; merge base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`. Six changed paths: `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, `scripts/validate_blogger_theme.py`, `tests/test_amazon_six_item_policy.py`, and `trtt_787950_master.py`.
-- **Memory PR #49:** Owner merged it; merged at `2026-11-27T16:07:33Z`, merge commit `ba20571eb1f4734fdc558eb081517f8316f56912`.
-- **Decision:** Preserve the standing Chrome-only/no-app-change/no-cost constraint. Do not edit the app branch, sync/rebase it, merge PR #146, deploy, invoke paid services/trials, import/publish Blogger content, or send Telegram messages.
-- **File changes:** Append-only additions to this memory log and `Diamond King/trttmagic.html` on dedicated branch `feature/memory-pr146-recheck-5-20261127`; no app repository files changed.
-- **Verification:** GitHub PR metadata and compare results PASS; PR #49 merged status PASS. Runtime tests/CI NOT TESTED; exact conflict hunks NOT VERIFIED; GitLab backup, Blogger draft/import, and Telegram delivery NOT TESTED.
+- **Trigger summary:** Owner requested another live GitHub recheck.
+- **App PR #146:** OPEN, unmerged, non-draft; GitHub reports `mergeable=false`. Head branch `feature/blogger-amazon-six-item-menu-20261127`, head SHA `80b3c65d6c92c1ce365b6e40d0b998feab7621ff`; base `main` SHA `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`. Compare is `diverged`, 12 commits ahead / 1 behind; merge base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`. Same six paths remain changed. Exact conflict hunks NOT VERIFIED; runtime tests/CI NOT TESTED.
+- **Memory PR #49:** Owner merged it at `2026-11-27T16:07:33Z`; merge commit `ba20571eb1f4734fdc558eb081517f8316f56912`.
+- **Memory PR #50:** OPEN, unmerged, non-draft; GitHub reports `mergeable=true`. Its branch is 2 commits ahead, 0 behind main; both intended memory files are changed additively.
+- **Decisions:** Keep Owner's Chrome-only/no-app-change/no-cost instruction. No app repository edits, sync/rebase, merge, production deployment, paid service/trial, Blogger publish, or Telegram send.
+- **Files changed:** Append-only update to this log and additive section in `Diamond King/trttmagic.html` on `feature/memory-pr146-recheck-6-20261127`.
+- **Verification:** Live PR metadata and compare results PASS; memory PR #49 merged status PASS; PR #50 open/mergeable status PASS. New memory file read-back verification pending PR creation.
+- **GitLab/Blogger/Telegram:** NOT TESTED.
