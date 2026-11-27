@@ -585,3 +585,13 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions and safeguards:** Respect Chrome-only/no-app-change/no-cost instruction. No app repository edits, sync/rebase, merge of #146, deployment, paid service/trial, Blogger publish, or Telegram send.
 - **Files changed:** Append-only update to this memory log and additive memory trace in Diamond King/trttmagic.html on feature/memory-pr146-recheck-7-20261127.
 - **Verification:** GitHub PR metadata and compare results PASS. Memory PR #50 and #51 merged status PASS. New memory files require post-write read-back. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” (PR #146 and Memory PR #52)
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner requested another live GitHub check. Rechecked app PR #146, its compare result, and command-center memory PR #52.
+- **App PR #146:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 remains OPEN, unmerged, non-draft; GitHub reports mergeable=false. Head branch feature/blogger-amazon-six-item-menu-20261127, SHA 80b3c65d6c92c1ce365b6e40d0b998feab7621ff; base main SHA 94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9. Compare remains diverged: 12 commits ahead, 1 behind; merge base 1cd01fea3ff889982862c821c1d9ac37e1ab8e8c. Six changed paths: TRTT-Voyage-Generation-2-ULTIMATE.xml, blogger-pages/amazon-picks.html, docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md, scripts/validate_blogger_theme.py, tests/test_amazon_six_item_policy.py, trtt_787950_master.py. Exact conflict hunks NOT VERIFIED; runtime tests/CI NOT TESTED.
+- **Memory PR #52:** Owner merged it at 2026-11-27T16:25:21Z; merge commit 18e434ebbbe3618515714d8f39170ffcce47bab4.
+- **Decisions/safeguards:** Chrome-only/no-app-change/no-cost instruction remains active. No app repository edits, sync/rebase, merge of #146, deployment, paid service/trial, Blogger publish, or Telegram send.
+- **Files changed:** Append-only updates to this log and Diamond King/trttmagic.html on feature/memory-pr146-recheck-8-20261127.
+- **Verification:** GitHub metadata/compare PASS; Memory PR #52 merged status PASS. New memory file read-back and PR creation follow. GitLab/Blogger/Telegram NOT TESTED.
