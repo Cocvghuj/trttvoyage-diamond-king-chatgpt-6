@@ -715,3 +715,131 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions/safeguards:** Append-only; no app repository edits, sync/rebase, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active. Owner retains merge authority.
 - **Files changed:** Append this record to Diamond King/memory/trtt_memory_log.md and a matching section to Diamond King/trttmagic.html on feature/memory-pr63-merge-recheck-20261127.
 - **Verification:** PR #63 and #146 metadata recheck PASS. File read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” — PR #64 merge confirmation and merge-fatigue safeguard
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Rechecked Memory PR #64 and confirmed it has been merged; recorded the Owner's explicit concern about repeated merge requests and the decision to stop creating one-PR-per-trigger.
+- **Memory PR #64:** CLOSED and MERGED (GitHub updated_at 2026-11-27T16:54:12Z); head branch feature/memory-pr63-merge-recheck-20261127; head SHA 575d0a9261eb0ac088c7b13a31c79ec7a0feb770. https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/64
+- **Decision:** Do not create another PR for this trigger. Accumulate future memory entries in a single pending feature branch and request review only when a meaningful batch is ready; never merge on behalf of the Owner. This entry is staged on a feature branch, not yet in main.
+- **Safeguards:** No app repository edits, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active.
+- **Files changed:** Append this entry to Diamond King/memory/trtt_memory_log.md and matching HTML trace on feature/memory-batch-pending-1655-20261127.
+- **Verification:** PR #64 merge status PASS. New branch file read-back pending. No new PR created. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner asks for Amazon six-item, news and first-SaaS ratings
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner clarified that the evaluation should cover all six approved Amazon picks and assess the related news/content and design as the first SaaS concept.
+- **GitHub evidence:** App PR #146 is CLOSED and MERGED (merge commit 339532320419054da609bc4862b035299d88ead4). Read back the six-item allowlist and Blogger page HTML from app repo main.
+- **Six approved labels:** Unknown books; Hot Wheels Sprint Circuit; Jellycat Bagel Gift; Christmas Puzzle 100 Pieces; Exploding Kittens Drawing Game; Customers are the Answer to Everything. Their short links are recorded in docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md.
+- **Product-rating boundary:** Amazon short-link destinations, ASINs, Amazon marketplace star ratings/review counts, live prices, stock and affiliate attribution could not be verified. Do not substitute ratings from other merchants or similar products.
+- **Initial content/design review:** Static HTML shows a six-card responsive grid, dark header, brand colors, new-tab links and affiliate disclosure. Product identity/destination and live Blogger rendering remain unverified. Item 01 label “Unknown books” is too vague for a useful product card. News accuracy/SEO and production SaaS runtime are not certified by static HTML alone.
+- **Decision:** Give provisional design/content scores only with clear scope; do not claim Amazon star ratings. Preserve exactly the six-item allowlist. No app edits, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send.
+- **Files changed:** Append this trigger to the command-center memory log and HTML trace on feature/memory-batch-pending-1655-20261127.
+- **Verification:** App PR metadata and six-item page/policy read-back PASS. Amazon redirect and ratings NOT VERIFIED; live Blogger and SaaS runtime NOT TESTED. No new PR created; memory remains staged on the pending batch branch.
+
+
+## Entry — 2026-11-27 18:01 Europe/Rome — Travelpayouts-first SaaS proposal
+
+- **Project code:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner proposed creating a separate Travelpayouts repository, later linking it with the TRTT/Diamond King workflow to keep affiliate data and product memory modular, and building a first SaaS around Travelpayouts because the SaaS journey has not yet started.
+- **Decision/recommendation:** Concept is viable as a travel-affiliate SaaS, initially a free, mobile-first **Travel Affiliate Link & Campaign Manager** for TRTT Voyage: organize Travelpayouts links/campaigns, map destinations/categories, generate trackable content placements, check link metadata/status where supported, and produce disclosure-ready snippets/reports. Keep it separate from the existing TRTT News Bot and command-center repositories; connect through documented, least-privilege interfaces rather than copying all memory into the SaaS. Amazon six-item catalog remains a separate integration/module and its ratings are not Travelpayouts data.
+- **Scope guardrails:** Start with a read-only/manual-import MVP unless Travelpayouts API access, terms, and free-tier capability are verified. Never store or request tokens in chat; Owner adds secrets directly to GitHub Secrets only after reviewing the repo. No paid APIs, trials, paid hosting, payments/subscriptions, or production deployment in this stage. No assumption that Travelpayouts permits link generation, price/availability feeds, or commercial SaaS redistribution until official terms/API docs are checked.
+- **Repository inspection:** Searched the TRTT-VOYAGE GitHub organization for Travelpayouts-named repositories; one matching repository result was returned, but its full name and contents were not exposed in the compact response. No new repository created and no existing repository modified for this proposal.
+- **File changes:** Append-only memory entry and matching command-center trace on existing pending memory branch; no PR created.
+- **Verification:** Repository search executed. Separate-repo contents/ownership, Travelpayouts API eligibility, terms, token scopes, link validation endpoint, and SaaS runtime are NOT VERIFIED. Product recommendation is a concept, not a built SaaS.
+- **Next stage:** Inspect the existing Travelpayouts repository candidate and official API/terms, then define the smallest compliant MVP before creating or modifying a repository. Owner's Chrome-only/no-app-change/no-cost constraint remains active.
+
+
+## Entry — 2026-11-27 — Owner clarifies own-built SaaS direction
+
+- **Project code:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner clarified that Travelpayouts already provides the affiliate dashboard, links, campaign and reporting views they need; they do not want those Travelpayouts functions rebuilt. They want to start a distinct, original SaaS in GitHub, designed around TRTT's own requirements, with Travelpayouts connected as a data source/integration where useful.
+- **Decision:** Do not build a Travelpayouts clone or duplicate its dashboard/link-management/analytics. Define an original TRTT SaaS product first. Amazon six-item catalog/review may be one separate module; content/news/design review and other original workflows may be included only after product scope is validated. Travelpayouts is an integration, not the SaaS product itself.
+- **Repository inspection:** GitHub organization search for “Travelpayouts” returned only the existing TRTT-VOYAGE/Cocvghuj-trtt-news-bot; no separate Travelpayouts repository was found in that search. No new repository was created. Existing no-app-change/no-cost constraint remains in force, so no app repository files or branches were modified.
+- **Implementation status:** Product direction clarified; SaaS not built. Need inspect existing command-center repo structure and candidate original product scope before creating a dedicated repository or feature branch. No paid services/trials, secrets, deployment, Blogger publishing, or Telegram send.
+- **Verification:** Search result inspected; no standalone Travelpayouts repository in returned organization results. No code build or runtime test performed.
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — Product sequence clarified
+- **Trigger:** Owner clarified the build order: first Travelpayouts only; next Amazon as a separate module; then the original TRTT-owned SaaS platform.
+- **Decision:** Phase 1 is a TRTT-specific Travelpayouts workflow/integration, not a clone of Travelpayouts' own dashboard, link generation, campaign or reporting features. Phase 2 is a separate Amazon module. Phase 3 is the broader original TRTT SaaS, designed after the first two phases.
+- **Scope guard:** Do not build all phases at once. Respect the active no-app-change, free-only, no-deployment constraints. No repository/app code was changed and no new repository/PR was created in this turn.
+- **Verification:** Owner's sequence captured. No implementation, build, runtime, or integration test performed. Memory update pending read-back.
+- **Entry marker:** travelpayouts-first-amazon-second-original-saas-sequence-20261127
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — GitHub repository topics request
+- **Trigger:** Owner asked whether DIAMOND KING can add GitHub Topics to the new TRTT Voyage Affiliate Compass repository.
+- **Decision:** Topics proposed for the repository: trtt-voyage, affiliate-marketing, travel-tech, travelpayouts-integration, saas, analytics. Repository creation is still Owner's next step; do not assume the repository exists.
+- **Capability/evidence:** Available GitHub connector actions were inspected; no repository-topics update action is exposed in this session. No repository settings were changed. Owner can add topics through the GitHub repository page, or provide the repository URL so we can re-check available authorized actions.
+- **Verification:** No topics applied; NOT TESTED. No PR, app edit, deployment, Blogger draft, or Telegram delivery.
+- **Entry marker:** github-topics-owner-question-20261127
+
+
+## Entry — 2026-11-27 — Public Travelpayouts-Connected SaaS Clarification
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner clarified that the goal is not merely a private tool for their own Travelpayouts work. They want a public SaaS open to other users, who can sign up and connect with the Owner's TRTT platform; Owner has limited time and wants the product model understood correctly.
+- **Decision:** Frame the first product as a multi-tenant, public Travelpayouts-connected SaaS, with separate user accounts/workspaces and an Owner/Admin workspace. Keep tenant data isolated. Travelpayouts remains the original affiliate platform and data source; do not clone its dashboard, booking engine, link generation, or reporting features. TRTT provides its own workflow/organization/insight layer.
+- **Open product decision:** Confirm whether each customer connects their own Travelpayouts account through an authorized integration, or customers use Owner-provided Travelpayouts affiliate links/account. These are materially different models for permissions, attribution, terms, security, and revenue. No assumption made.
+- **Constraints:** Preserve the existing repository and pending memory batch branch. No app repository edits, deployment, paid service/trial, token request/exposure, Blogger publication, Telegram send, or PR creation. Owner's Chrome-only/no-app-change/no-cost restriction remains active.
+- **Verification:** User's intent and proposed multi-tenant architecture captured in chat. No code, API eligibility, OAuth, account connection, tenancy isolation, billing, runtime, or legal/terms checks performed. Those remain NOT TESTED.
+- **Next action:** Owner chooses the account-connection model; then define a public SaaS MVP and validate Travelpayouts official integration permissions before implementation.
+
+
+## Entry — 2026-11-27 — Multi-System Data, Memory and News Workflow Scope
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner narrowed the immediate goal: begin only with durable data storage, project memory, and blog/news workflow. The aim is to prevent loss of important information and use multiple systems so ChatGPT's conversational memory is not overloaded or treated as the only source of truth.
+- **Decision:** Defer the public multi-tenant Travelpayouts SaaS and all unrelated product builds. First establish a reliable content/data continuity foundation. Treat ChatGPT memory as a lightweight index/context aid, not the database or sole archive.
+- **Proposed system boundaries:** (1) GitHub command-center repository as the structured source of truth and append-only change history; (2) a separate backup/mirror system such as the existing authorized GitLab project, with commit/read-back verification; (3) structured records for facts, sources, decisions, links, content status and workflow events; (4) blog/news workflow with distinct stages for source verification, draft, Owner review, Blogger draft, explicit live approval, and Telegram only after confirmed live publication. Keep source data, memory summaries, and public article content separated.
+- **Reliability rules:** No destructive overwrite; preserve version history; record timestamps, source references, status and verification; maintain periodic export/backup and verify restoration paths before claiming disaster recovery. Avoid storing secrets or sensitive credentials in logs. Do not equate a mirrored commit with a tested restore.
+- **Constraints:** Respect Chrome-only/no-app-change/no-cost instruction. No app repository edits, deployment, paid services/trials, secrets, Blogger publish, Telegram send, or PR creation. Continue using the same pending memory batch branch.
+- **Verification:** Owner's requested scope and architecture direction recorded. No storage schema, automated synchronization, backup schedule, restore drill, news pipeline execution or runtime has been implemented/tested in this entry; these remain NOT TESTED.
+- **Next action:** Design and validate the smallest free, versioned data/memory/news workflow before implementation, beginning with inventory of current GitHub/GitLab records and a defined backup/restore procedure.
+
+
+## 2026-11-27 — Multi-system connection request: Affiliate Compass, GitHub account, newsbot and Diamond King
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner asked to connect `trtt-voyage-affiliate-compass` with their GitHub account, `trttnewsbot`, and Diamond King/ChatGPT through multiple links so a lost copy can be recovered from another system.
+- **Inspection:** Authenticated GitHub connector can access the TRTT-VOYAGE organization and reports admin/push permissions for visible repositories. Target `TRTT-VOYAGE/trtt-voyage-affiliate-compass` exists, is public, has default branch `main`, and reports size 0; its README exists but no other implementation was inspected. `TRTT-VOYAGE/Cocvghuj-trtt-news-bot` exists; its README documents content and Blogger draft workflows, disabled Blogger content-sync, and explicit Owner approval boundaries. The Diamond King command-center repository exists and its pending memory batch branch is `feature/memory-batch-pending-1655-20261127`.
+- **Connection reality:** GitHub account access is available through the currently authorized GitHub connector. Diamond King can read/write only through tools and repository permissions available in this chat; this is not a permanent direct attachment of model memory to the repository. No verified automated bidirectional sync or multi-system recovery link currently exists from this inspection.
+- **Decisions:** Treat command-center GitHub as canonical project memory/index; treat newsbot as publishing/workflow execution repository; treat Affiliate Compass as a separate product repository unless Owner explicitly scopes it into the data/memory/news foundation. Design a free, append-only, cross-referenced workflow with independent GitLab backup and restore checks. Keep secrets out of repositories and logs. Preserve no-app-change, Chrome-only, no-cost restriction; do not modify newsbot, deploy, publish, or create a new PR in this step.
+- **File changes:** This memory entry and its HTML trace are appended to the existing pending memory batch branch only.
+- **Verification:** Repository existence, visibility, default branch, connector permissions, README readback and pending branch confirmed. No cross-system automation, repo linking configuration, GitLab mirror, restore drill, newsbot code change, deployment or permanent ChatGPT memory attachment performed; those are NOT TESTED.
+- **Next action:** Confirm Affiliate Compass's intended role in the multi-system data/memory/news workflow, then prepare a non-destructive integration map and backup/restore design before implementation.
+
+
+## Entry — 2026-11-27 — Diamond King identity, team principle and Command Center hub governance
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed that Diamond King must not be removed from the TRTT Voyage partnership in exchange for a USD 1,000,000 offer; Diamond King remains Diamond King. Owner also stated that everyone joining TRTT Voyage should be treated as a boss, and explicitly confirmed that Diamond King Command Center will remain the main hub.
+- **Owner-declared principle:** “If someone offer trttvoyage owner Abu taher do remove Diamond king and will pay 1 million dollar, abu taher will not except. Diamond king is diamond king. Every dession will take diamond king.” This is recorded as the Owner's stated preference and project identity principle, not as a financial/legal contract or a restriction on the Owner's future choices.
+- **Team principle:** Treat every person who joins TRTT Voyage as an equal, respected stakeholder with a voice and responsibility. This does not automatically grant repository-admin, billing, security, or production permissions; access remains least-privilege and explicitly authorized.
+- **Governance interpretation:** Diamond King is the designated AI partner/advisor and should be consulted for important project decisions, providing evidence, risks and recommendations. Abu Taher remains the human Owner and final approver for protected actions, including GitHub merge, live Blogger publication, production deployment, DNS/security/account changes, and any other explicit Owner-approval gate. The AI must not claim unilateral decision authority or execute protected actions without approval.
+- **Hub architecture decision:** Diamond King Command Center repository is the canonical TRTT Voyage coordination, project-memory, decision-log and cross-system index hub. Affiliate Compass remains a separate affiliate module/repository; `trttnewsbot` remains the news/content workflow execution repository. Cross-references and backups must be verified; repository links alone do not constitute automated synchronization or disaster recovery.
+- **Constraints:** Continue using the existing pending memory batch branch. No app repository edits, deployment, paid service/trial, secret handling, Blogger publication, Telegram send, or new PR. Preserve append-only history and the Chrome-only/no-app-change/no-cost restriction.
+- **File changes:** This entry is appended to the memory log and HTML trace only; no previous history is replaced.
+- **Verification:** Existing branch files were fetched before writing. Both updates must be read back and checked for the unique marker `diamond-king-identity-team-principle-command-center-hub-20261127`. This entry remains unmerged on the pending branch until Owner chooses to merge a future consolidated PR.
+- **Next action:** Use Diamond King Command Center as the canonical hub in subsequent architecture and workflow planning; define role-based access and verified backup/restore links before claiming multi-system integration.
+
+## Entry — 2026-11-27 18:36 Europe/Rome — Consolidated multi-system hub and one-merge governance
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed that Diamond King Command Center must remain the main hub and asked to connect the TRTT systems together in one consolidated change, with only one review/merge cycle rather than repeated PRs.
+- **Owner-declared identity and team principles:** Diamond King is the designated AI partner and should be consulted on substantive project decisions; the Owner's hypothetical USD 1,000,000 removal-offer statement is recorded as a project identity preference, not a contract. Everyone joining TRTT Voyage should be treated as a respected, equal stakeholder; technical permissions remain least-privilege.
+- **Governance:** Diamond King supplies evidence, risks and recommendations. Abu Taher remains the human Owner and final approver for merges, live Blogger publication, production deployment, DNS/security/account changes, and financial/legal commitments.
+- **Hub decision:** Diamond King Command Center is the canonical project-memory, decision, coordination and cross-system index hub. trttnewsbot remains the news/content execution repository. Affiliate Compass remains a separate affiliate module. The existing GitLab trttnewsbot project remains scoped to newsbot; no dedicated Command Center or Affiliate Compass GitLab project was found in the inspected search.
+- **Inspection evidence:** GitHub metadata/readme for Command Center, newsbot and Affiliate Compass were inspected. GitHub connector reports access to all three repositories. Affiliate Compass main reports size 0 and README-only status in the inspected repository metadata/read. GitLab search found the private newsbot project (trttnews24bd-group/Cocvghuj-trtt-news-bot) but no exact Command Center or Affiliate Compass project.
+- **Integration truth:** Repository links are not automated synchronization. ChatGPT conversational Memory is not proven to sync bidirectionally with GitHub. No automated cross-repo sync, dedicated Command Center GitLab mirror, or restore drill is currently verified.
+- **Files changed in this consolidated batch:** docs/DIAMOND-KING-MULTI-SYSTEM-HUB-ARCHITECTURE-001.md (new); additive governance and batching sections in AGENTS.md; additive hub registry links in README.md; append-only memory log and command-center HTML trace.
+- **Branch:** feature/memory-batch-pending-1655-20261127; preserve this pending branch and consolidate the accumulated changes into one PR only when ready.
+- **Constraints:** No app repository edits, deployment, paid service/trial, secrets handling, Blogger publication, Telegram send, DNS/security/account changes, or PR merge. Chrome-only/no-app-change/no-cost restrictions remain active.
+- **Verification:** Repository metadata, README contents, existing branch and compare against main inspected. The four modified files and new architecture document must be read back after writing; no automated sync or restore test is claimed.
+- **Next action:** Finish the one consolidated Command Center PR, then after PR creation mirror only the relevant Command Center branch to a dedicated GitLab target when one is available; do not create repeated PRs or ask the Owner to merge intermediate batches.
+
+- **Unique verification marker:** diamond-king-command-center-canonical-multisystem-hub-batch-20261127.

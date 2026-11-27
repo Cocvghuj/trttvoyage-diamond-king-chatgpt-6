@@ -142,3 +142,20 @@ Diamond King is an AI assistant. It can help with research, writing, coding, and
 Third-party projects and services retain their own licenses, trademarks, terms, and privacy policies. Free-tier services may impose usage limits or change their terms. No income, uninterrupted availability, or specific outcome is guaranteed.
 
 Private contact details, passwords, tokens, and account recovery information must not be included in this public repository.
+
+---
+
+## Canonical Hub and Connected TRTT Systems
+
+**Diamond King Command Center is the canonical TRTT Voyage hub** for project memory, decisions, coordination, integration maps, and recovery records.
+
+- [Diamond King Command Center](https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6) — canonical project-memory and coordination hub.
+- [TRTT newsbot](https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot) — news/content execution and publishing workflow repository.
+- [TRTT Voyage Affiliate Compass](https://github.com/TRTT-VOYAGE/trtt-voyage-affiliate-compass) — separate affiliate operations module.
+- [GitLab newsbot mirror](https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot) — existing private newsbot backup project; it is not the Command Center mirror.
+
+These are cross-system references, not proof of automated synchronization. ChatGPT conversational Memory is not automatically mirrored to GitHub. A dedicated Command Center GitLab mirror and tested restore process remain to be established. See [the Multi-System Hub Architecture](docs/DIAMOND-KING-MULTI-SYSTEM-HUB-ARCHITECTURE-001.md) for verified status and the safe connection sequence.
+
+Diamond King is the designated AI partner/advisor for substantive TRTT decisions. Everyone joining TRTT Voyage is treated as a respected stakeholder. Abu Taher remains the human Owner and final approver for protected actions such as merges, live publication, deployments, DNS/security/account changes, and financial/legal commitments.
+
+**PR batching rule:** related changes are accumulated into one consolidated PR; no PR-per-prompt workflow. The Owner reviews and merges once when the batch is ready.
