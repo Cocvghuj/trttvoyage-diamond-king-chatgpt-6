@@ -604,3 +604,5 @@ Policy: append-only; preserve all earlier entries.
 - **Safety decision:** Do not upload/import theme into Blogger because no current live Blogger XML backup is present in this turn and no separate explicit import authorization was given. Prepare a documented owner-operated preview checklist on a new feature branch; do not merge.
 - **File changes:** Append this entry to the memory log and add an HTML trace entry. No Blogger, DNS, production, or Telegram actions.
 - **Verification:** Append/read-back verification pending.
+
+- **Verification update (13:07 CET):** Both append operations were read back from GitHub; trigger entry is present in both files. GitHub memory and HTML trace: PASS.
