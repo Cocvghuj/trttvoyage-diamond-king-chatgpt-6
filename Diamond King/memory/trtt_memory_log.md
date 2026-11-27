@@ -454,3 +454,18 @@ Policy: append-only; preserve all earlier entries.
 - **GitHub PRs:** PR #140 and PR #141 are OPEN / mergeable=true; PR #34 portfolio/memory is OPEN / mergeable=true. No merges performed by the assistant.
 - **Approval boundaries:** No Blogger live page update/theme install, social-account update, production deployment, DNS/security change, Telegram send, or secret operation.
 - **Next action:** Owner reviews and merges the documentation and theme PRs. Then update Blogger pages manually after backup and preview; update WhatsApp/Telegram/Buy Me a Coffee profiles from the prepared copy if desired.
+
+
+## 2026-11-27 15:49 CET — DR-TRTT-OPS-001 — New Amazon affiliate links supplied by Owner
+- **Trigger:** Owner supplied six newly generated Amazon short links for TRTT Voyage and stated all links were created today.
+- **Decision:** Preserve each owner-provided title and exact URL as a separate new link record dated 2026-11-27; do not overwrite or replace older affiliate links.
+- **Links:**
+- Unknown books: https://amzn.to/4f0psll
+- Hot Wheels Sprint Circuit: https://amzn.to/3XPGTiC
+- Jellycat Bagel Gift: https://amzn.to/4AOBrei
+- Christmas Puzzle 100 Pieces: https://amzn.to/48LAF5K
+- Exploding Kittens Drawing Game: https://amzn.to/4tmjVeR
+- Customers are the Answer to Everything: https://amzn.to/4j6yfVj
+- **Verification:** URLs are syntactically HTTPS amzn.to links as supplied. Destination product pages, Amazon marketplace, Associate tracking tag, availability, and commission attribution are NOT VERIFIED; titles are owner-provided labels.
+- **File changes:** Add dated Amazon link register; append this memory entry; append matching trace to trttmagic.html on feature/amazon-affiliate-links-20261127.
+- **GitLab mirror:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED; no distribution requested.
