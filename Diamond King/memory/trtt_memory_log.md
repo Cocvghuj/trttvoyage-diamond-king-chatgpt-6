@@ -855,3 +855,15 @@ Policy: append-only; preserve all earlier entries.
 - **PR batching:** PR #65 is the one consolidated merge for the prior batch. This clarification is appended to the same ongoing feature branch for a later meaningful batch; no second PR is created for this trigger.
 - **Verification:** PR state checked through GitHub connector; PR #65 merge PASS. Five files read back from main. GitLab workflow intentionally NOT REQUIRED by Owner, not a failed backup.
 - **Unique marker:** owner-confirms-github-only-no-gitlab-workflow-20261127
+
+## Entry — 2026-11-27 18:00 Europe/Rome — Owner approves separate public Learning Journey repository
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner approved creating a separate public GitHub repository to preserve the human–AI learning journey, daily lessons, project decisions, mistakes, corrections, and useful knowledge, excluding secrets and private information.
+- **Proposed repository:** TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey. The name was checked against the TRTT-VOYAGE repository search and no existing match was returned.
+- **Publication policy:** Public, curated learning summaries only. Do not publish raw live chat automatically. Exclude credentials, API keys, tokens, passwords, private contact details, personal/sensitive information, and third-party confidential information. Seek Owner review where consent is unclear.
+- **Daily update intent:** One dated chapter per day, with verified outcomes, decisions, lessons, errors/corrections, evidence, and next steps. A scheduled update is not yet configured; ChatGPT cannot independently read all live chat or guarantee a daily run without an external authorized automation.
+- **Execution status:** GitHub repository creation is BLOCKED pending GitHub sign-in connection because no repository-creation API action is exposed in the connected GitHub tools. A GitHub browser sign-in handoff was opened in this chat; no credentials were requested or handled in chat.
+- **Files changed:** Append-only update to this memory log and additive HTML trace on the existing pending feature branch only.
+- **Verification:** Existing memory log and HTML trace were fetched from branch feature/memory-batch-pending-1655-20261127 before append. Read-back after write remains to be completed.
+- **Unique marker:** owner-approves-public-learning-journey-repository-20261127
