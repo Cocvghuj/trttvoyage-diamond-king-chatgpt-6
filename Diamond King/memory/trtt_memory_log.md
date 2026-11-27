@@ -423,3 +423,17 @@ Policy: append-only; preserve all earlier entries.
 - **Not verified:** Live HTTP resolution of trttvoyage.com and social links; Blogger custom-domain status; public access to SSO-protected Vercel previews; GitHub repository About metadata updates; Cloudflare account/configuration; complete test/build suite on all feature branches; full content/CI/license/security audit of every fork; live Blogger pages or theme; deployment/publication.
 - **Approval boundaries:** No PR merged by the assistant, no Blogger live publish, no Telegram send, no Vercel production deploy, no DNS/domain/security change, and no secret operation.
 - **Next action:** Owner reviews and merges the seven documentation PRs. Then proceed with the new Blogger theme candidate and the remaining repository audit as separate PRs. After workflow inspection, the Owner adds the fresh Travelpayouts token only to the exact GitHub Secret required by the verified workflow.
+
+
+## Entry — 2026-11-27 — TRTT Voyage Diamond Horizon Blogger theme candidate
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Continued the Owner's request to rebrand TRTT repositories and Blogger presentation under TRTT Voyage, with English public copy, organized links, and a new Diamond Horizon theme.
+- **Files changed on GitHub feature branch:** Added `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `scripts/validate_blogger_theme.py`, and `docs/TRTT-VOYAGE-DIAMOND-HORIZON-THEME-REVIEW-2026-11-27.md`; updated `.github/workflows/pr-validation.yml` to run the XML validator.
+- **Theme changes:** New separate candidate with TRTT Voyage hero, Home/News/Travel/AI/Tools/About menu, footer About/Contact/Privacy/Disclaimer and public-channel links, approved palette, and Blog1 share buttons disabled. Existing theme file and Blogger post/widget data were not overwritten. Removed legacy obfuscated eval block, malformed auto-link script, and deleted='true' attribute; retained reviewed main-branch trtt-loader.js.
+- **Pull request:** [Main TRTT theme candidate PR #141](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141), OPEN, mergeable=true, not merged.
+- **Verification:** GitHub Actions PR Asset & Syntax Validation completed successfully. Python XML parser/static theme validator PASS; TRTT tests PASS; production build output check PASS. Static checks also confirmed six menu items, hero text, footer pages, approved palette, no eval/location.href/deleted='true'/old Blogger URL/stale branch loader.
+- **Not verified:** Blogger Theme preview/import, live Blogger page installation, mobile/desktop rendering, live link resolution, trttvoyage.com routing, and Vercel Tools route public access.
+- **Approval boundaries:** No Blogger theme install or replacement, no live page update, no production deployment, no DNS/security change, and no secret operation.
+- **Next action:** Owner reviews PR #141. After merge, export a Blogger theme backup and preview/import only with explicit Owner approval.
