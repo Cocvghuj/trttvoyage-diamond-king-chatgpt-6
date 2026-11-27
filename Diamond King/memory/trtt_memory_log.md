@@ -595,3 +595,14 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions/safeguards:** Chrome-only/no-app-change/no-cost instruction remains active. No app repository edits, sync/rebase, merge of #146, deployment, paid service/trial, Blogger publish, or Telegram send.
 - **Files changed:** Append-only updates to this log and Diamond King/trttmagic.html on feature/memory-pr146-recheck-8-20261127.
 - **Verification:** GitHub metadata/compare PASS; Memory PR #52 merged status PASS. New memory file read-back and PR creation follow. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” — PR #146 merged
+- **Timestamp:** 2026-11-27 16:34 UTC (approximate check time).
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner requested a fresh GitHub status check. Rechecked TRTT News Bot PR #146 and command-center memory PR #53.
+- **App PR #146:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 is CLOSED and MERGED; GitHub reports merged_at 2026-11-27T16:29:13Z, merge commit 339532320419054da609bc4862b035299d88ead4. Head branch feature/blogger-amazon-six-item-menu-20261127, final head eb00e2d2fb00396ea6a062cbc76c1059a58b80fa; 13 commits; 3 files changed; 64 additions and 2 deletions. Compare of merge commit against main is identical (0 ahead, 0 behind), confirming it is present on main.
+- **Memory PR #53:** https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/53 is CLOSED and MERGED at 2026-11-27T16:33:52Z; merge commit da927f616905d61a110bbfe344135d5d750c6a07.
+- **Decisions/safeguards:** Owner completed the merge; no assistant merge action. Chrome-only/no-app-change/no-cost standing instruction remains in force. No further app edits, sync/rebase, deployment, paid service/trial, Blogger import/live publish, or Telegram send.
+- **Files changed:** Append-only update to this log and additive section in Diamond King/trttmagic.html on feature/memory-pr146-merged-recheck-9-20261127.
+- **Verification:** Current PR metadata PASS; merged commit comparison against main PASS; memory files fetched before update. Post-write read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
