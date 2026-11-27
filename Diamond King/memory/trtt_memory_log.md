@@ -987,3 +987,13 @@ Policy: append-only; preserve all earlier entries.
 - Other open PRs: PR #45 and #37 reported mergeable=false; PRs #28, #27, #26, #20, #17, #12 and #8 have stale/behind/conflict signals or explicit draft/special review conditions. They were not merged blindly; each requires separate conflict/diff/check/scope review before any safe action. Learning Journey repository had no open PRs.
 - Boundaries: This merge was a documentation-only repository change, not a production deployment or website/DNS change. No app repository edits, paid services, GitLab sync, Blogger publish, Telegram send, or secrets accessed.
 - Verification: PR metadata read-back confirms merged=true; main README read-back confirms canonical URL. External website reachability remains NOT VERIFIED.
+
+
+## 2026-11-27 — owner-submits-two-prompts-for-project-rules-repository-20261127
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner says they will provide two prompts authored by Diamond King and instructs Diamond King to use those prompts as the foundation for a new GitHub repository named "project rules", then update the Command Center memory.
+- Immediate action: Record the request in append-only memory. Await the two exact prompt texts before defining repository contents or creating files; do not invent or paraphrase missing prompt material.
+- Repository capability check: The currently available GitHub connector exposes repository search/list and file/branch/PR operations, but no repository-creation action. Creating a brand-new GitHub repository cannot be claimed through this connector. Once the prompts arrive, inspect the existing Project Rules naming/repository state and use available GitHub operations; if creation remains unsupported, report that limitation honestly and prepare the exact repository-ready structure without claiming it exists.
+- Merge authority: Owner's prior delegation for eligible GitHub PRs remains active; inspect all changes and merge only when safe.
+- Verification: Command Center feature-branch memory and HTML trace updates are to be read back after writing. New repository status remains NOT CREATED / NOT VERIFIED pending prompt content and repository-creation capability.
+- Constraints: GitHub-only, free-only, no secrets, no app-repository changes, no paid services, no production deployment or protected account/security changes.
