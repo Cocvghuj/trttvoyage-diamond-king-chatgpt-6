@@ -610,3 +610,5 @@ Policy: append-only; preserve all earlier entries.
 - **Build result (13:08 CET):** Created `docs/TRTT-BLOGGER-DIAMOND-HORIZON-PREVIEW-PREPARATION-2026-11-27.md` on `feature/blogger-diamond-horizon-preview-prep-20261127`. Read-back PASS (5,295 chars; blob SHA `6d7278a0a54d848b5921f0e66b206c45587f008b`); branch compare: 1 ahead / 0 behind, one new file, 84 additions, zero deletions.
 - **PR:** Draft PR #144 opened: https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/144. Open, draft, unmerged; assistant did not merge. Mergeability currently false/not confirmed; Owner review is pending.
 - **GitLab mirror:** Not yet attempted for this new PR branch/document; record outcome after GitLab inspection and sync.
+
+- **PR #144 status refresh (13:09 CET):** Re-fetched PR #144 after creation. State OPEN, draft=true, merged=false, mergeable=true. Owner review/merge remains pending; assistant did not merge.
