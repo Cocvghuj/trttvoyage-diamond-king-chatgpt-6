@@ -519,3 +519,13 @@ Policy: append-only; preserve all earlier entries.
 - **Checks:** Two Netlify deploy-preview statuses SUCCESS. GitHub combined status response contained those two statuses; no runtime test/CI execution evidenced. 
 - **File changes:** No TRTT News Bot/app files changed in response to this trigger. Only this append-only memory entry and matching HTML trace are being added in the memory repository.
 - **Verification:** PR Ready-for-review state PASS; app branch divergence evidence PASS; exact merge conflict/root cause NOT VERIFIED; Chrome opening on user's device NOT VERIFIED; no merge, app deployment, Blogger publish, or Telegram send.
+
+
+### PR #146 Mergeability Recheck — 2026-11-27
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger:** Owner asked to recheck why TRTT News Bot PR #146 is not merging.
+- **GitHub evidence:** PR #146 remains OPEN, not merged, and Ready for review (`draft=false`). GitHub reports `mergeable=false`; head `80b3c65d6c92c1ce365b6e40d0b998feab7621ff`; base `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`.
+- **Branch comparison:** `main...feature/blogger-amazon-six-item-menu-20261127` is `diverged`, 12 commits ahead and 1 behind; merge base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`. Changed files in PR: `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, `scripts/validate_blogger_theme.py`, `tests/test_amazon_six_item_policy.py`, `trtt_787950_master.py`.
+- **Checks:** Two Netlify deploy-preview statuses SUCCESS. Runtime tests/CI execution NOT VERIFIED. Exact conflicting file/root cause NOT VERIFIED; compare metadata establishes divergence but does not identify a conflict file.
+- **Decision:** No changes to TRTT News Bot/app repository, no branch sync/rebase, no deployment, no paid service/trial, no merge. Await explicit Owner instruction before any app-branch modification.
+- **Memory verification:** This entry and the matching HTML trace are appended on `feature/memory-pr146-recheck-20261127`; read-back verification pending.
