@@ -672,3 +672,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed this trigger:** Append-only memory and additive HTML trace only. No XML content, existing Blogger posts, or production settings changed.
 - **Verification:** PR base correction PASS; PR #36 open/unmerged; target comparison 8 commits ahead, 0 behind, 3 intended files. GitLab/Blogger/Telegram not tested.
 - **Cost:** Zero-cost tools only.
+
+
+## Memory Entry — 2026-11-27 — File-upload capability recheck
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉 to continue saving the uploaded legacy Blogger theme XML to GitHub at zero cost.
+- **Inspection:** Re-read the existing backup manifest and confirmed the expected source is `theme-6613996656611533868 (7).xml`, 440,824 bytes, SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`; source is Way2Themes Mitti Free Version 1.0.0.
+- **Upload capability check:** Inspected available GitHub file actions. GitHub create/update text endpoints accept UTF-8 strings; Git blob endpoint accepts base64 text, but no GitHub action accepts the attached local file/path as a binary upload input. No bytes were transferred.
+- **Decision:** Preserve existing manifest and PR; do not create a misleading placeholder or claim the XML is backed up. Actual XML remains **NOT SAVED** in GitHub. Do not merge PR #36.
+- **Files changed:** Append-only memory log and additive HTML trace only.
+- **Verification:** Existing memory, HTML trace, and manifest fetched successfully from branch `feature/blogger-theme-backup-record-20261127`. Actual XML repository storage NOT VERIFIED / NOT SAVED. GitLab, Blogger, Telegram not tested.
+- **Cost:** Zero-cost capability inspection; no paid services or trials.
