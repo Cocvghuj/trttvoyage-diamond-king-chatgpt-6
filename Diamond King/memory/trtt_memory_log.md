@@ -672,3 +672,14 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions/safeguards:** Owner completed merge; no assistant merge action. Chrome-only/no-app-change/no-cost instruction remains active. No app repository edits, sync/rebase, deployment, paid service/trial, Blogger import/live publish, or Telegram send.
 - **Files changed:** Append-only update to this log and additive section in Diamond King/trttmagic.html on feature/memory-pr59-merge-recheck-15-20261127.
 - **Verification:** PR #146 and #59 metadata checks PASS. New memory file read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” — Memory PR #60 merged
+- **Timestamp:** 2026-11-27 16:47 UTC (Europe/Rome 17:47).
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Rechecked app PR #146 and command-center memory PR #60; appended this trigger record.
+- **App PR #146:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 remains CLOSED and MERGED at 2026-11-27T16:29:13Z; merge commit 339532320419054da609bc4862b035299d88ead4. Runtime tests/CI, Blogger page creation/import/rendering, Amazon redirect destinations, marketplace, prices, stock and affiliate attribution remain NOT VERIFIED per PR description.
+- **Memory PR #60:** https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/60 is CLOSED and MERGED at 2026-11-27T16:46:28Z; merge commit ef07fb286e4a70f0b67880c5adefc19b0bfba71b; 2 files, 13 additions, 0 deletions.
+- **Decisions/safeguards:** Owner completed merge; no assistant merge action. Chrome-only/no-app-change/no-cost instruction remains active. No app repository edits, sync/rebase, deployment, paid service/trial, Blogger import/live publish, or Telegram send.
+- **Files changed:** Append-only update to this log and additive section in Diamond King/trttmagic.html on feature/memory-pr60-merge-recheck-16-20261127.
+- **Verification:** GitHub metadata for PR #146 and #60 PASS. New memory file read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
