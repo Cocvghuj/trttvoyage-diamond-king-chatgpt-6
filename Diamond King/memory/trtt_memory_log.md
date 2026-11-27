@@ -499,3 +499,12 @@ Policy: append-only; preserve all earlier entries.
 - **Files planned:** Blogger theme XML navigation, theme validator, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, article draft engine, and a policy test; append-only memory log and command-center HTML trace.
 - **Branch:** `feature/blogger-amazon-six-item-menu-20261127` in `TRTT-VOYAGE/Cocvghuj-trtt-news-bot`; memory/trace branch `feature/memory-amazon-blog-menu-20261127` in `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6`.
 - **Verification boundary:** GitHub files will be read back and static checks run. Blogger page creation/import, live menu rendering, actual Amazon redirect targets, regional marketplace, prices, availability and affiliate attribution are NOT VERIFIED. No PR merge, Blogger draft/live publish, Telegram send, deployment, DNS/security change, or secret operation.
+
+
+### Verification addendum — Blogger Amazon Six-Item Menu — 2026-11-27
+
+- **TRTT News Bot PR:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/145 — OPEN, DRAFT, NOT MERGED; branch `feature/blogger-amazon-six-item-menu-20261127`; head `65fcfb1e33cb5e460f930c4966b2d58f0ccb6200`.
+- **Memory PR:** https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/43 — OPEN, DRAFT, NOT MERGED; branch `feature/memory-amazon-blog-menu-20261127`; head `5d2bb3ede8bd565115ec11033e5ed7d898ec3a37`.
+- **Read-back:** All six TRTT News Bot files were fetched from the feature branch. Exact six Amazon URLs, six new-tab links, six sponsored/no-follow attributes, navigation path `/p/amazon-picks.html`, policy allowlist and article-engine hub link checks PASS. The previous generic Amazon product link was removed from the draft engine.
+- **CI/preview:** Netlify deploy-preview status is PENDING. No completed CI test run is evidenced. Command-center memory and HTML trace were read back after append.
+- **Limitations:** PR #145 reports `mergeable=false`; cause not established. Blogger page creation/import, live menu rendering, actual Amazon redirect destinations, marketplace, prices, stock and affiliate attribution remain NOT VERIFIED. No Blogger publishing, merge, Telegram send, deployment, DNS/security change, or secret operation.
