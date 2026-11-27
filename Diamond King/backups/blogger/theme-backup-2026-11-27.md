@@ -24,3 +24,14 @@ Then fetch/download that repository file and compare its SHA-256 with the value 
 ## Addendum — 2026-11-27 continuation check
 
 The GitHub connector also exposes a Git database blob endpoint that accepts base64 content. However, the available chat workflow does not provide a direct local-file handoff into that endpoint, and the 440,824-byte source was not transferred. Therefore the original XML remains **NOT SAVED** in this repository. The SHA-256 above remains the expected verification value for a later upload.
+
+
+## Addendum — 2026-11-27 — Original XML stored
+
+- Source repository: `Cocvghuj/Diamond-King-trttmagic.html`, branch `main`.
+- Source path: `Diamond King/theme-6613996656611533868 (7).xml`.
+- Backup path: `Diamond King/backups/blogger/theme-backup-2026-11-27.xml` in this repository.
+- Source Git blob SHA: `81a2e60fc6de5d68af3b58c43669e98d689490c4`.
+- Destination Git blob SHA: `81a2e60fc6de5d68af3b58c43669e98d689490c4`.
+- Verification: **PASS — exact Git blob SHA match**; source content was copied unchanged.
+- This confirms storage of the Mitti Free Version source/rollback XML, not the Diamond Horizon theme and not a Blogger import.
