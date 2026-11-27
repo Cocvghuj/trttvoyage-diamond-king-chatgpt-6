@@ -672,3 +672,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed this trigger:** Append-only memory and additive HTML trace only. No XML content, existing Blogger posts, or production settings changed.
 - **Verification:** PR base correction PASS; PR #36 open/unmerged; target comparison 8 commits ahead, 0 behind, 3 intended files. GitLab/Blogger/Telegram not tested.
 - **Cost:** Zero-cost tools only.
+
+
+## Memory Entry — 2026-11-27 — Original Blogger XML recovered from GitHub and backed up
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner supplied the exact GitHub URL for `theme-6613996656611533868 (7).xml` and sent the continuation trigger.
+- **Source:** `Cocvghuj/Diamond-King-trttmagic.html`, `main`, path `Diamond King/theme-6613996656611533868 (7).xml`.
+- **Discovery:** The original XML was present in that repository; prior statement that it was not accessible was incorrect.
+- **Source identity:** Way2Themes Mitti Free Version, template version 1.0.
+- **Backup:** Copied unchanged to `Diamond King/backups/blogger/theme-backup-2026-11-27.xml` in this repository on feature branch `feature/blogger-theme-xml-backup-20261127`.
+- **Verification:** Source Git blob SHA and destination Git blob SHA both equal `81a2e60fc6de5d68af3b58c43669e98d689490c4`; exact blob match PASS.
+- **Decisions:** Append-only; no old file deleted or overwritten. No Blogger import/live publish, GitLab sync, or Telegram delivery in this stage. PR will remain unmerged pending Owner review.
