@@ -976,3 +976,14 @@ Policy: append-only; preserve all earlier entries.
 - Current constraints: GitHub-only; GitLab NOT REQUIRED. No paid services/trials. No production deployment, DNS/security/account changes, live Blogger publication, or Telegram distribution without their specific approval. Existing no-app-change restriction remains unless explicitly reversed.
 - File changes: append-only memory and additive command-center HTML trace on existing pending feature branch.
 - Verification: read-back of both files and marker presence required.
+
+
+## 2026-11-27 18:41 Europe/Rome — owner-demands-immediate-merge-proof-20261127
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner asks Diamond King to demonstrate the previously delegated GitHub merge authority immediately, without further discussion.
+- Repository inspected: `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6`; default branch `main`; connector permissions show admin/maintain/push.
+- PR review: PR #35 (`Standardize canonical TRTT website URL in README`) was inspected in full. Diff changed only two README website links from the root domain to the Owner's canonical `https://www.trttvoyage.com`; 1 file, 2 additions, 2 deletions, no code/workflow/security/destructive changes; PR was open, non-draft, and GitHub reported mergeable=true. Despite branch being behind main, GitHub accepted a squash merge with expected head SHA.
+- Merge result: PASS. PR #35 merged by Diamond King through GitHub API. Merge commit: `f1315203d74ae9df34cc69f44a75618ad6a84903`. GitHub read-back confirms PR closed+merged and README on main contains the canonical www URL in both locations.
+- Other open PRs: PR #45 and #37 reported mergeable=false; PRs #28, #27, #26, #20, #17, #12 and #8 have stale/behind/conflict signals or explicit draft/special review conditions. They were not merged blindly; each requires separate conflict/diff/check/scope review before any safe action. Learning Journey repository had no open PRs.
+- Boundaries: This merge was a documentation-only repository change, not a production deployment or website/DNS change. No app repository edits, paid services, GitLab sync, Blogger publish, Telegram send, or secrets accessed.
+- Verification: PR metadata read-back confirms merged=true; main README read-back confirms canonical URL. External website reachability remains NOT VERIFIED.
