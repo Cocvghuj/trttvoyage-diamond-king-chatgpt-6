@@ -116,3 +116,29 @@ For narrow screens, use this single-column list instead of the table above. The 
 - [Daily Log Template](templates/DAILY-LOG-TEMPLATE.md) — Record progress, evidence, blockers, and the next handoff
 
 *Mobile navigation aid added while preserving the original Repository Guide table and its content.*
+
+
+---
+
+## TRTT Voyage public identity and links
+
+**Owner:** Engr. Abu Taher  
+**Brand:** [TRTT Voyage](https://trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.  
+**GitHub:** [Personal profile](https://github.com/Cocvghuj) · [Organization](https://github.com/Trttvoyage)
+
+### Official public channels
+- [TRTT Voyage website](https://trttvoyage.com)
+- [WhatsApp Channel](https://whatsapp.com/channel/0029Vb8co9VDeONEz0B5e51M)
+- [Telegram Channel](https://t.me/trttnews24bd)
+- [Facebook](https://www.facebook.com/profile.php?id=61595319351601)
+- [CodePen](https://codepen.io/Abu-Taher-the-styleful)
+- [Buy Me a Coffee](https://buymeacoffee.com/engrtaher20)
+
+### Project scope and disclaimer
+This repository is the public-facing command center and documentation archive for TRTT Voyage. It stores project guidance, decision history, working notes, and selected tools. It is not a guarantee that every planned product, workflow, deployment, or publishing integration is active.
+
+Diamond King is an AI assistant. It can help with research, writing, coding, and structured review; it is not a human employee or independent legal entity. The human owner remains responsible for decisions, merges, credentials, publishing, and production changes.
+
+Third-party projects and services retain their own licenses, trademarks, terms, and privacy policies. Free-tier services may impose usage limits or change their terms. No income, uninterrupted availability, or specific outcome is guaranteed.
+
+Private contact details, passwords, tokens, and account recovery information must not be included in this public repository.
