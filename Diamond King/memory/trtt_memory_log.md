@@ -519,3 +519,14 @@ Policy: append-only; preserve all earlier entries.
 - **Checks:** Two Netlify deploy-preview statuses SUCCESS. GitHub combined status response contained those two statuses; no runtime test/CI execution evidenced. 
 - **File changes:** No TRTT News Bot/app files changed in response to this trigger. Only this append-only memory entry and matching HTML trace are being added in the memory repository.
 - **Verification:** PR Ready-for-review state PASS; app branch divergence evidence PASS; exact merge conflict/root cause NOT VERIFIED; Chrome opening on user's device NOT VERIFIED; no merge, app deployment, Blogger publish, or Telegram send.
+
+
+## 2026-11-27 — PR #146 merge-status recheck after Android link-setting guidance
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner asked to recheck after changing Android GitHub app link handling.
+- **GitHub PR:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 remains OPEN, unmerged, and Ready for review (`draft=false`). API reports `mergeable=false`, `mergeable_state=dirty`, `rebaseable=false`.
+- **Branch comparison:** `feature/blogger-amazon-six-item-menu-20261127` is 12 commits ahead and 1 behind `main`; comparison is `diverged`. Merge base: `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`; current main SHA: `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`.
+- **Conflict investigation:** Comparing both sides from the merge base shows both main and the PR branch changed the same six paths: `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, `scripts/validate_blogger_theme.py`, `tests/test_amazon_six_item_policy.py`, and `trtt_787950_master.py`. This overlapping change is strong evidence for the dirty merge state, but exact line-level conflict hunks remain NOT VERIFIED.
+- **Checks:** Two Netlify deploy-preview statuses are SUCCESS; GitHub Actions workflow runs for the PR head commit: none returned. Runtime tests/CI NOT TESTED.
+- **Decisions:** Do not merge. Do not rebase/sync or modify the TRTT app repository/PR branch because Owner's no-app-changes/no-cost instruction remains active. No deployment, Blogger publish, Telegram send, or paid service/trial.
+- **Verification:** PR state and mergeability PASS; divergent branch and overlapping changed-path evidence PASS; exact conflict hunks NOT VERIFIED; user's Android Chrome-opening behavior NOT VERIFIED.
