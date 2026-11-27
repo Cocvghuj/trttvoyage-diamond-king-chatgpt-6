@@ -705,3 +705,13 @@ Policy: append-only; preserve all earlier entries.
 - **Safeguards/decisions:** Append-only. No app repository edits, sync/rebase, deployment, paid services/trials, Blogger import/live publish, or Telegram send. Chrome-only review constraint remains active. Owner retains merge authority.
 - **Files changed:** Append this entry to the memory log and matching HTML trace on feature/memory-pr62-merge-recheck-20261127.
 - **Verification:** PR #62 and #146 metadata recheck PASS. New branch read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” — Memory PR #63 merge recheck
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Rechecked Memory PR #63 and app PR #146; append this trigger to the command-center memory log and HTML trace.
+- **Memory PR #63:** CLOSED and MERGED at 2026-11-27T16:52:37Z; merge commit 43e3a8476db0713446b91e44dd88a54d8fbc5ab8; head a80170e28437ea03cf5d1a674852372b2ad7a416. https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/63
+- **App PR #146:** CLOSED and MERGED; merge commit 339532320419054da609bc4862b035299d88ead4. https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146
+- **Decisions/safeguards:** Append-only; no app repository edits, sync/rebase, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active. Owner retains merge authority.
+- **Files changed:** Append this record to Diamond King/memory/trtt_memory_log.md and a matching section to Diamond King/trttmagic.html on feature/memory-pr63-merge-recheck-20261127.
+- **Verification:** PR #63 and #146 metadata recheck PASS. File read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
