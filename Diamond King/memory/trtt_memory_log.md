@@ -628,3 +628,14 @@ Policy: append-only; preserve all earlier entries.
 - **Blocking input:** Current Blogger Theme XML backup has not been attached/provided in this turn. Blogger-native staging preview therefore remains NOT TESTED.
 - **File changes:** Append-only update to this memory log and additive trace section in `Diamond King/trttmagic.html`; no theme or Blogger content changed.
 - **Verification:** Pending read-back of both updated files.
+
+
+## Memory Entry — 2026-11-27 14:10 CET — Blogger theme backup received
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested the uploaded Blogger theme XML be saved in GitHub to avoid repeated uploads, with zero-cost tooling.
+- **Uploaded source:** `theme-6613996656611533868 (7).xml`; 440,824 bytes; SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`.
+- **Source inspection:** XML parser PASS. The file identifies itself as the Way2Themes “Mitti” free theme (template metadata visible near the top), so it is recorded as a source/rollback backup, not as the Diamond Horizon theme.
+- **GitHub storage limitation:** Available GitHub connector supports UTF-8 text file writes but no binary/raw attachment upload. Therefore the XML bytes have NOT been saved to GitHub in this operation. A backup manifest is committed with filename, size, hash and exact status so the source can be verified; do not claim the XML itself is stored.
+- **Files changed:** Append-only memory and HTML trace; add manifest at `Diamond King/backups/blogger/theme-backup-2026-11-27.md`. No existing theme, posts, or production settings changed.
+- **Verification:** Pending read-back of all three files. GitHub branch: `feature/blogger-theme-backup-record-20261127`.
+- **Cost:** No paid service or trial used; zero-cost connector route.
