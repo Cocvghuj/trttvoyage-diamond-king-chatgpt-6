@@ -269,3 +269,17 @@ $("build").addEventListener("click",makeList);$("reset").addEventListener("click
 
 
 <section id="reliability-architecture-proposal-20261127" style="margin:24px auto;max-width:1080px;padding:20px;border:1px solid #67E8F9;border-radius:14px;background:#11152D;color:#fff;font-family:Arial,sans-serif"><p style="color:#E98BAF;font-weight:bold;letter-spacing:2px">DR-TRTT-OPS-001 · MEMORY TRACE</p><h2>TRTT Reliability Architecture Proposal — 2026-11-27</h2><p><strong>Owner proposal:</strong> GitHub as the primary control center; GitLab as an independent backup; Blogger retaining the live theme, with a versioned export also stored in GitHub and GitLab.</p><p><strong>Decision:</strong> Adopt the layered architecture as the target. GitHub is the source of truth for code, instructions, append-only memory and reviewable changes. GitLab is the separately verified mirror. Blogger is the live site and theme store, but the active theme must also be exported and versioned in both repositories.</p><p><strong>Reliability rule:</strong> No 100% secure promise. Require independent copies, exact-content read-back, commit/SHA evidence and a documented restore test.</p><p><strong>Execution order:</strong> GitHub audit and remediation → recovery verification → GitLab mirror verification → exact active Blogger theme export → Owner asset checklist → blog operations. Live publishing, merges and production/security actions remain approval-gated.</p><p><strong>Verification:</strong> GitHub repositories and the active feature branch were confirmed accessible; memory and command-center files were read before append. Live Blogger theme, current PR state, GitLab full-history parity and end-to-end restore remain NOT VERIFIED. No protected action performed.</p></section>
+
+<section id="memory-2026-11-27-repository-identity-audit" class="memory-entry">
+  <h2>2026-11-27 — TRTT Voyage repository identity audit</h2>
+  <p><strong>Project:</strong> DR-TRTT-OPS-001. <strong>Inventory:</strong> 49 personal-account repositories and 7 organization repositories; private repository excluded from public portfolio.</p>
+  <ul>
+    <li>Personal profile hub and repository portfolio: <a href="https://github.com/Cocvghuj/Cocvghuj/pull/2">PR #2</a> — open; mergeable at audit time.</li>
+    <li>Muse Gift English README: <a href="https://github.com/Cocvghuj/trtt-muse-gift/pull/4">PR #4</a> — open; mergeable at audit time.</li>
+    <li>Muse Diary English README: <a href="https://github.com/Cocvghuj/trttvoyage--muse-diary/pull/2">PR #2</a> — open; mergeable at audit time.</li>
+    <li>Main website/app: <a href="https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/140">PR #140</a>; Blogger theme candidate: <a href="https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141">PR #141</a>.</li>
+    <li>GitLab app and theme backup branches exist. Full history parity and all-repository mirror audit remain NOT TESTED.</li>
+    <li>Organization README write attempt returned 403; no org file changed. Independent upstream forks remain untouched.</li>
+  </ul>
+  <p><strong>Safety:</strong> No merge, live Blogger publish, production deployment, DNS/security change, secret change, or Telegram delivery.</p>
+</section>
