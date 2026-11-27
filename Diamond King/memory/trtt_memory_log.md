@@ -530,3 +530,14 @@ Policy: append-only; preserve all earlier entries.
 - **Checks:** Two Netlify deploy-preview statuses are SUCCESS; GitHub Actions workflow runs for the PR head commit: none returned. Runtime tests/CI NOT TESTED.
 - **Decisions:** Do not merge. Do not rebase/sync or modify the TRTT app repository/PR branch because Owner's no-app-changes/no-cost instruction remains active. No deployment, Blogger publish, Telegram send, or paid service/trial.
 - **Verification:** PR state and mergeability PASS; divergent branch and overlapping changed-path evidence PASS; exact conflict hunks NOT VERIFIED; user's Android Chrome-opening behavior NOT VERIFIED.
+
+
+## 2026-11-27 — PR #146 status recheck (after Owner said “এবার দেখো”)
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested another status check.
+- **TRTT News Bot PR #146:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 remains OPEN, unmerged, and Ready for review (`draft=false`). Current GitHub API response still reports `mergeable=false`, `mergeable_state=dirty`, `rebaseable=false`; last updated timestamp remains 2026-11-27T15:37:45Z.
+- **Branch comparison:** `feature/blogger-amazon-six-item-menu-20261127` remains 12 commits ahead and 1 behind `main`, status `diverged`. PR head SHA `80b3c65d6c92c1ce365b6e40d0b998feab7621ff`; base SHA `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`; merge base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`.
+- **Changed paths:** The PR comparison still reports six files: `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, `scripts/validate_blogger_theme.py`, `tests/test_amazon_six_item_policy.py`, and `trtt_787950_master.py`. Exact line-level conflict hunks remain NOT VERIFIED.
+- **Memory PR #46:** Owner merged it; API reports merged=true, merge commit `3b1153c4a62777a82e169d920c47717995d62702`. The two memory files are now on main (read-back before this entry: log blob `d8e636a5406a857ef18f9097712320e9b385399f`; HTML blob `d7b30febad3c37b9b9348e38000406640d008acc`).
+- **Decision:** Prior Owner instruction remains active: no app repository/branch changes, no rebase/sync, no app deployment or paid services. No merge of PR #146, no Blogger publish, no Telegram send.
+- **Verification:** PR #146 current state PASS; memory PR #46 merged status PASS; GitHub Actions/runtime tests NOT TESTED; exact conflict hunks NOT VERIFIED; user's Android Chrome-opening behavior NOT VERIFIED.
