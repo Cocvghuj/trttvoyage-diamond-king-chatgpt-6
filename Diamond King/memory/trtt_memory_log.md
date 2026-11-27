@@ -316,3 +316,94 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** Remote read-back and static checks are recorded in the PR. CI/runtime behavior, Blogger account draft creation, Telegram delivery, and full Git history parity are NOT TESTED.
 - **Next Owner action:** Review the new PR in the morning. If accepted and merged, close the superseded PR #28 manually; do not merge both copies.
 - **Approval boundaries:** No protected action performed. Blogger draft upload and live publication remain separate approval gates.
+
+
+### TRTT Reliability Architecture Proposal — 2026-11-27
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner proposed making GitHub fully reliable as the primary control center for blog work, keeping GitLab as an independent backup, and storing the canonical Blogger theme in Blogger as well; after this foundation, the assistant should provide a precise list of blog assets/data needed from the Owner.
+- **Decision:** Agree with the layered architecture, with explicit scope boundaries: GitHub = source of truth for code, operating instructions, append-only memory, task records and reviewable changes; GitLab = separately verified backup/mirror; Blogger = live site plus a downloaded, versioned copy of the exact active theme in GitHub and GitLab. Blogger's theme editor alone is not a sufficient backup.
+- **Reliability standard:** Do not claim 100% secure or never lost. Require independent copies, exact-content read-back, commit/SHA evidence, dated theme exports, and a documented restore test. Avoid circular backup dependencies.
+- **Execution order proposed:** (1) audit GitHub repositories, default branch, feature branches, open PRs, workflows, permissions and required files; (2) resolve/merge only after Owner review; (3) verify GitHub recovery procedure; (4) mirror and verify GitLab; (5) export the exact live Blogger theme and archive it in both repositories; (6) prepare a concise asset checklist for Owner copy/paste; (7) only then proceed to blog operations and monetization work.
+- **Current inspection:** GitHub account repository listing confirmed Cocvghuj/trttvoyage-diamond-king-chatgpt-6 (default branch main) and Cocvghuj/Cocvghuj-trtt-news-bot (default branch main) are accessible. Branch feature/agents-guide-mainline-refresh-20261127 exists. Memory and command-center HTML were fetched from that feature branch before append.
+- **Limits:** Current live Blogger theme identity/content, Blogger export/restore, latest PR state, full GitLab history parity, and end-to-end recovery are NOT VERIFIED in this trigger. No merge, Blogger upload/publish, GitLab mutation, production deployment, Telegram send, DNS/security/account change performed.
+- **Next step:** Perform a dedicated GitHub foundation audit and create a minimal evidence-backed remediation PR; do not request blog assets until the repository/control-center checklist is stable.
+
+
+## 2026-11-27 — Gemini Prompt Review (3 submitted concepts)
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner submitted three Gemini prompt concepts for evaluation and possible GitHub retention: (1) custom Blogger HTML/CSS with Google-clean and GitHub/Termux dark-terminal styling; (2) launch post combining SaaS transition, “Smoke in the Valley” grind, and Diamond King story; (3) SEO and Answer-Engine formatting rules for future posts.
+- **Decisions:** (1) KEEP as a task-specific design brief, subordinate to the existing TRTT Diamond Horizon theme specification; do not replace the active theme requirements. (2) HOLD as a content concept until the SaaS transition and “Smoke in the Valley” details are supplied/verified; do not invent autobiographical facts. (3) KEEP as editorial guidance after revision: use helpful structure, clear headings, concise answer-first sections, relevant FAQs and valid structured data where appropriate; do not promise Google rankings or AI answer inclusion.
+- **Files:** Append this review to the memory log and add a matching trace to trttmagic.html on the existing feature branch only.
+- **Verification:** GitHub feature branch and both target files were read before editing. Read-back verification is required after each append. No merge, Blogger change, GitLab mirror, publication, production, DNS/security change, or Telegram send.
+- **Next action:** Owner may send the remaining Gemini prompts for the same review; do not promote any concept to a global operating rule without compatibility and evidence checks.
+
+
+## 2026-11-27 — Gemini Launch Post Draft Review
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner submitted a ready-to-use launch post concept titled “Why I Stopped Posting News to Build a Zero-Cost SaaS (Termux & GitOps Style)”. It claims a shift from news commentary to zero-cost SaaS, autonomous GitOps, terminal-first workflow, solo building for family, no API bills, 20-hour deep-work sessions with “Smoke in the Valley”, and a 98% autonomous AI engineering partner called Diamond King.
+- **Decision:** HOLD as a draft concept; do not publish or store as approved public copy yet. The absolute “stopped posting news” positioning conflicts with the current TRTT Voyage homepage scope (News, Travel, AI, Tools). “Zero-cost”, “no API bills”, “20-hour sessions”, and “98% autonomous” are unverified quantitative/operational claims and must be substantiated or rewritten as qualified first-person descriptions. “Autonomous AI engineering partner” must not imply human status or unsupported autonomy. “Build for my family” may be retained only if Owner wants this personal detail public.
+- **Recommended direction:** Position as “expanding from news coverage into practical tools and transparent build logs” rather than abandoning news. Describe the workflow as GitHub-first, GitLab-backed, Termux-assisted only where evidenced. Explain that free tiers can have limits and that zero-cost operation is not guaranteed.
+- **Files:** Append this review and matching command-center trace only; no Blogger draft creation or publication.
+- **Verification:** Existing feature branch and both target files fetched before editing. Read-back required after append. No merge, GitLab mirror, Blogger action, production deployment, DNS/security change, or Telegram send.
+- **Next action:** Await Owner confirmation of the personal/quantitative claims before turning this concept into final English launch copy.
+
+
+## 2026-11-27 — Gemini Design Vision and SaaS Storyline Review
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner submitted a more detailed direction: Google-clean/Answer-Engine-ready Blogger layout; GitHub README-like posts with commit/status/version indicators and repository links; Termux-inspired monospace terminal styling; a News-to-SaaS storyline; “Smoke in the Valley” as a focus/grit theme; and John Wick/Tesla as execution/innovation metaphors.
+- **Decision:** KEEP as a design and product-positioning brief, with the following constraints. (1) Preserve the current TRTT Voyage content architecture: News, Travel, AI and Tools. SaaS/build logs can be added within Tools or a clearly scoped section; do not claim regular news is stopped unless Owner explicitly changes the strategy. (2) Use clear answer-first summaries, question-led H1/H2 sections, readable white/dark cards, fast/mobile-first layout and accessible contrast; never promise Google indexing, ranking or Answer Engine inclusion. (3) GitHub-style status badges, version tags and repository links must be real and verified; never display fake BUILD: PASSING, ZERO-COST or commit claims. (4) Termux styling may use monospace fonts and illustrative command prompts, clearly distinguished from commands actually executed. (5) “Zero-cost” must be qualified as free-tier/low-cost where applicable; no guarantee of no API bills or unlimited free operation. (6) “20 hours straight” remains an unverified personal claim and must not be stated as fact without Owner confirmation. (7) John Wick and Tesla are high-level metaphors only; do not copy protected character dialogue, logos, trade dress or imply endorsement/affiliation.
+- **Recommended positioning:** “TRTT Voyage is expanding from news and travel coverage into practical tools, SaaS experiments and transparent engineering logs, using a GitHub-first workflow and Termux-assisted development.”
+- **Files:** Append this evaluation and matching command-center trace only, on the existing feature branch.
+- **Verification:** Existing branch and both target files fetched before editing. Post-write read-back required. No merge, GitLab mirror, Blogger draft/upload/publication, production deployment, DNS/security/account change or Telegram send.
+- **Next action:** Use this brief as a design reference only after the Owner confirms any personal story claims and the intended SaaS product scope.
+
+
+## 2026-11-27 — Three-Part Culture, Music and Falcon Content Roadmap
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner supplied a proposed three-post series: “Cutting Through the Phonies” (authenticity vs hype in tech/creator culture), “Smoke in the Valley” (music and resilience/storytelling), and “Eyes of the Falcon” (vision, precision, freedom, nature and travel).
+- **Decision:** KEEP as an editorial roadmap, not an instruction to create or publish Blogger drafts. The three themes can sit within TRTT Voyage's existing News, Travel, AI and Tools architecture; do not displace those sections or announce a halt to news coverage.
+- **Editorial safeguards:** (1) “Phonies” coverage must use specific, verifiable examples and fair comparisons; do not label a person, brand or tool fraudulent without reliable evidence and an opportunity for context. Validate current prices/features and distinguish opinion from fact. (2) Before writing about “Smoke in the Valley,” verify the track title, artist attribution (proposed: Ragal Ironbull), release details and source material. Discuss meaning in original wording; do not reproduce copyrighted lyrics beyond the permitted short-quotation limit. (3) Use the falcon as a symbol consistent with TRTT's falcon identity; do not conflate falcons and eagles as the same species. Wildlife and travel claims require reputable sources, and wildlife viewing advice must be responsible and non-disturbing.
+- **Suggested sequence:** 1. “Cutting Through the Phonies: Substance Over Digital Hype” (technology/media literacy); 2. “Smoke in the Valley: Music, Focus and the Independent Builder” (verified music feature plus clearly labelled personal reflection); 3. “Eyes of the Falcon: Vision, Precision and Responsible Exploration” (brand/nature/travel feature).
+- **No unsupported claims:** Do not claim Diamond King is already autonomous or can independently publish. “For your family” is a personal framing and should be included publicly only if Owner explicitly wants it. Avoid guaranteed zero-cost or guaranteed monetization claims.
+- **Files:** Append this decision and matching command-center trace only.
+- **Verification:** Existing feature branch and both target files fetched before editing; read-back required after append. No Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send.
+- **Next action:** Owner may select the first topic for a separately authorized research/drafting task.
+
+
+## 2026-11-27 — Founder Profile and Public Brand Links Supplied
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner supplied a founder/profile signature for Engr. Abu Taher, describing TRTT Voyage, a zero-cost GitOps and AI-driven workflow / indie-hacker positioning, and the statement “I build For My Family.” Owner also supplied public WhatsApp Channel, Telegram Channel, Facebook profile, CodePen profile and Buy Me a Coffee URLs, plus private/direct contact details.
+- **Decision:** Treat the supplied name, tagline and family statement as candidate profile copy. Treat the five supplied URLs as owner-provided public brand/profile links; do not invent or alter them. The phrase “zero-cost” must be qualified against actual free-tier limits and any operating costs; do not claim guaranteed zero-cost operation.
+- **Privacy:** Do not copy the supplied email address or personal phone number into the GitHub memory log, command-center HTML, Blogger footer, public pages or other public artifacts. Existing instruction to exclude personal WhatsApp number remains in force. Contact details require separate explicit publication authorization.
+- **Scope:** This entry records the supplied profile data and safe handling decision only. No website/footer change, Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send is authorized by this message.
+- **Verification:** Existing feature branch and target files fetched before append; post-write read-back required.
+- **Next action:** Await an explicit instruction if the Owner wants these verified public links added to a specific website/profile location.
+
+## 2026-11-27 — GitHub organization repository transfer audit
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner asked DIAMOND KING to choose the safest way to bring 2–4 repositories from the Trttvoyage GitHub organization into the Owner's personal GitHub account, explaining that paid transfer options are unaffordable.
+- **Decision:** Keep each project as its own fork in the personal account; do not combine unrelated codebases into one repository. Preserve upstream fork relationships and licenses. Avoid creating duplicate forks where a personal fork already exists.
+- **Inspection:** Trttvoyage organization currently exposes seven repositories: TRTT-Voyage-ARTEX, Claude-BugHunter, superpowers, DeepTutor, plannotator, stitch-skills, and trttvoyage-diamond-king-chatgpt-6.
+- **Verified personal-account forks:** Cocvghuj/Claude-BugHunter (upstream elementalsouls/Claude-BugHunter); Cocvghuj/superpowers (upstream obra/superpowers); Cocvghuj/DeepTutor (upstream HKUDS/DeepTutor); Cocvghuj/plannotator (upstream backnotprop/plannotator); Cocvghuj/stitch-skills (upstream google-labs-code/stitch-skills). Each inspected repo reports fork=true and the same upstream parent as its Trttvoyage organization counterpart.
+- **ARTEX exception:** Personal account has Cocvghuj/ARTEX, while organization has Trttvoyage/TRTT-Voyage-ARTEX. These are not the same repository name; fork-parent verification for Cocvghuj/ARTEX is still required before calling it a verified fork of the organization copy.
+- **Diamond King repo:** Both Trttvoyage/trttvoyage-diamond-king-chatgpt-6 and Cocvghuj/trttvoyage-diamond-king-chatgpt-6 exist, but the organization repo is not marked as a fork; do not treat it as a fork migration.
+- **Execution limitation:** Available GitHub connector supports repository inspection and file/branch/PR operations, but exposes no fork-creation or repository-transfer action. No unsupported API call or manual content copy was attempted. Therefore no new fork was created in this turn.
+- **Verification:** Organization inventory and source/personal repository metadata were read from GitHub. Fork metadata verified for five personal repositories. Commit-level equality/freshness not yet compared. GitLab mirror not tested.
+- **Next action:** If the Owner needs the exact fork button flow, open each organization repository and use Fork → Owner: Cocvghuj; however, the five listed personal forks already exist, so the immediate priority is checking whether they are up to date rather than creating duplicates.
+- **Protected actions:** No repository deleted, overwritten, transferred, merged, made private/public, or otherwise modified. No Blogger, Telegram, deployment, DNS or security action performed.
+
+
+## Entry — 2026-11-27 — TRTT GitHub Portfolio and Public Profile Refresh
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested a comprehensive English-language presentation for new GitHub repositories, with consistent public owner/brand information, organized links, About sections, disclaimers, and polished repository landing pages. The wider roadmap includes the TRTT Voyage Blogger theme, verified news, free tools, website/software, Vercel, and Cloudflare.
+- **Repository discovery:** GitHub search returned 7 repositories in the Trttvoyage organization and 49 repositories in the Cocvghuj personal account search.
+- **Verified upstream relationships:** Trttvoyage/TRTT-Voyage-ARTEX is a fork of BaaRai/ARTEX under AGPL-3.0. Organization forks previously verified include superpowers → obra/superpowers, Claude-BugHunter → elementalsouls/Claude-BugHunter, DeepTutor → HKUDS/DeepTutor, plannotator → backnotprop/plannotator, and stitch-skills → google-labs-code/stitch-skills.
+- **Decisions:** Keep unrelated repositories separate. Preserve upstream README, license, author attribution, and project identity in imported forks; do not overwrite upstream documentation with TRTT branding. Build a curated owner profile and portfolio index first, then handle owner-maintained TRTT repositories in separate reviewed stages. Public copy is English. Use only known public brand links. Private contact details and credentials are excluded. The future Travelpayouts token must be placed only in the exact GitHub Actions secret name established by the relevant workflow, never in repository files.
+- **Files changed:** Cocvghuj/Cocvghuj profile README updated additively on feature/trtt-public-profile-refresh-20261127; new docs/GITHUB-PORTFOLIO-INDEX-001.md; this append-only memory log and Diamond King/trttmagic.html trace.
+- **Verification:** The updated profile README was read back from its feature branch. Checks confirmed the new owner heading, TRTT website, Telegram and Buy Me a Coffee links, disclaimer, and preservation of previous profile content. GitHub repository inventory was read. ARTEX fork parent and AGPL-3.0 license were confirmed from repository metadata.
+- **Not verified:** Full metadata, license, security, branch, README, and CI audit for all 49 personal repositories; all organization fork freshness; all custom repository landing pages; GitLab mirror of this change; Blogger theme XML or live Blogger state; Vercel/Cloudflare configuration; Travelpayouts secret availability; production deployment or publication.
+- **Approval boundaries:** No PR merged, no Blogger live publish, no Telegram send, no production deployment, no DNS/security change, and no secret operation performed.
+- **Next action:** Owner reviews and merges the profile/portfolio PRs. Then continue with owner-maintained TRTT repositories and the Blogger theme as separate feature-branch stages. After merge, inspect the exact workflow secret name before the Owner adds the fresh Travelpayouts token.
