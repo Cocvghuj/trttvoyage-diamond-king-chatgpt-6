@@ -896,3 +896,16 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No app repository edits, paid services/trials, secrets, GitLab, Blogger publishing, Telegram send, deployment, DNS/security changes, or main-branch writes.
 - **Verification:** Existing organization repository metadata and README read-back PASS. Personal profile repository creation NOT TESTED / NOT VERIFIED. No PR opened.
 - **Marker:** `owner-delegates-personal-profile-repository-choice-20261127`
+
+
+## Entry — 2026-11-27 — Owner confirms GitHub username TRTT-VOYAGE
+
+- **Timestamp:** 2026-11-27 (Europe/Rome; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner clarified that the current GitHub username is `TRTT-VOYAGE` and delegated the repository naming/creation choice to Diamond King.
+- **Decision:** Use `TRTT-VOYAGE/TRTT-VOYAGE` as the intended new repository name for the Owner's public profile/portfolio presentation, subject to GitHub availability and the account's repository creation capability. The README should present TRTT Voyage, the Owner's blog and projects, and the Owner's direct, practical, curious, hands-on, evidence-oriented communication style. Public text in English; exclude secrets, credentials, private contact details and sensitive information.
+- **Inspection:** GitHub repository lookup for `TRTT-VOYAGE/TRTT-VOYAGE` returned 404; repository-name search did not return an existing exact-name repository. Existing `TRTT-VOYAGE/Cocvghuj` remains a separate populated public profile/portfolio repository and was not overwritten.
+- **Execution limitation:** Available GitHub tools expose repository search, metadata, branches, files, commits and PRs, but no create-repository operation. No browser session with authenticated GitHub UI was available. Therefore repository creation is NOT VERIFIED; no false creation claim.
+- **Next step:** Create `TRTT-VOYAGE` repository under the `TRTT-VOYAGE` account via GitHub UI, then send its URL; populate it through a feature branch and one reviewable PR.
+- **Safety:** No existing repository or main branch changed; no app edit, GitLab, paid service, secret, Blogger publish, Telegram send, deployment or DNS/security action.
+- **Marker:** `owner-confirms-github-username-trtt-voyage-20261127`
