@@ -841,3 +841,5 @@ Policy: append-only; preserve all earlier entries.
 - **Constraints:** No app repository edits, deployment, paid service/trial, secrets handling, Blogger publication, Telegram send, DNS/security/account changes, or PR merge. Chrome-only/no-app-change/no-cost restrictions remain active.
 - **Verification:** Repository metadata, README contents, existing branch and compare against main inspected. The four modified files and new architecture document must be read back after writing; no automated sync or restore test is claimed.
 - **Next action:** Finish the one consolidated Command Center PR, then after PR creation mirror only the relevant Command Center branch to a dedicated GitLab target when one is available; do not create repeated PRs or ask the Owner to merge intermediate batches.
+
+- **Unique verification marker:** diamond-king-command-center-canonical-multisystem-hub-batch-20261127.
