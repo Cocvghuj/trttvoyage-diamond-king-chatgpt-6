@@ -715,3 +715,13 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions/safeguards:** Append-only; no app repository edits, sync/rebase, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active. Owner retains merge authority.
 - **Files changed:** Append this record to Diamond King/memory/trtt_memory_log.md and a matching section to Diamond King/trttmagic.html on feature/memory-pr63-merge-recheck-20261127.
 - **Verification:** PR #63 and #146 metadata recheck PASS. File read-back and PR creation pending. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” — PR #64 merge confirmation and merge-fatigue safeguard
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Rechecked Memory PR #64 and confirmed it has been merged; recorded the Owner's explicit concern about repeated merge requests and the decision to stop creating one-PR-per-trigger.
+- **Memory PR #64:** CLOSED and MERGED (GitHub updated_at 2026-11-27T16:54:12Z); head branch feature/memory-pr63-merge-recheck-20261127; head SHA 575d0a9261eb0ac088c7b13a31c79ec7a0feb770. https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/64
+- **Decision:** Do not create another PR for this trigger. Accumulate future memory entries in a single pending feature branch and request review only when a meaningful batch is ready; never merge on behalf of the Owner. This entry is staged on a feature branch, not yet in main.
+- **Safeguards:** No app repository edits, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active.
+- **Files changed:** Append this entry to Diamond King/memory/trtt_memory_log.md and matching HTML trace on feature/memory-batch-pending-1655-20261127.
+- **Verification:** PR #64 merge status PASS. New branch file read-back pending. No new PR created. GitLab/Blogger/Telegram NOT TESTED.
