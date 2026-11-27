@@ -843,3 +843,15 @@ Policy: append-only; preserve all earlier entries.
 - **Next action:** Finish the one consolidated Command Center PR, then after PR creation mirror only the relevant Command Center branch to a dedicated GitLab target when one is available; do not create repeated PRs or ask the Owner to merge intermediate batches.
 
 - **Unique verification marker:** diamond-king-command-center-canonical-multisystem-hub-batch-20261127.
+
+## Entry — 2026-11-27 17:45 Europe/Rome — Owner confirms GitHub-only collaboration; GitLab not required
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked to recheck consolidated PR #65 and clarified that because no blog work is being done, GitLab is unnecessary; the desired working arrangement is Abu Taher + ChatGPT/Diamond King + GitHub.
+- **PR verification:** GitHub reports PR #65 CLOSED and MERGED at 2026-11-27T17:42:12Z, base main, head feature/memory-batch-pending-1655-20261127, head SHA 3200a282a4e35df1d8f237587c5867df797e7c95. Read-back of the five changed files from main confirms the canonical hub architecture and unique memory marker are present.
+- **Decision:** GitHub is the sole required project repository and durable project-memory/workflow record for the current scope. Do not create, configure, mirror, or maintain GitLab projects or GitLab backup workflows unless the Owner explicitly requests them later.
+- **Collaboration model:** Abu Taher (Owner) + ChatGPT/Diamond King (AI partner) + GitHub (canonical project hub and version history). Diamond King Command Center remains the main hub; newsbot and Affiliate Compass remain linked GitHub repositories/modules, not separate GitLab tasks.
+- **Scope boundary:** No blog work is currently requested; Blogger and Telegram remain NOT TESTED / inactive for this trigger. No app repository edits, deployments, paid services, secret handling, account permission changes, or live publishing.
+- **PR batching:** PR #65 is the one consolidated merge for the prior batch. This clarification is appended to the same ongoing feature branch for a later meaningful batch; no second PR is created for this trigger.
+- **Verification:** PR state checked through GitHub connector; PR #65 merge PASS. Five files read back from main. GitLab workflow intentionally NOT REQUIRED by Owner, not a failed backup.
+- **Unique marker:** owner-confirms-github-only-no-gitlab-workflow-20261127
