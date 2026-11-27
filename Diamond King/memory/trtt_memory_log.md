@@ -894,3 +894,43 @@ Policy: append-only; preserve all earlier entries.
 - Verification: PASS — PR #5 merged metadata and merge SHA verified; main design files read back. Automated browser rendering, accessibility audit, and cross-device QA remain NOT TESTED as documented in DESIGN-REVIEW.md.
 - Scope: No backend, database, authentication, private-chat sync, billing, production deployment, GitLab, Blogger, or Telegram changes.
 - Marker: `learning-journey-visual-design-pr5-already-merged-20261127`
+
+## 2026-11-27 — Learning Journey visual design refinement
+- Project: DR-TRTT-OPS-001.
+- Trigger: Owner requested immediate design correction for TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey.
+- Inspection: Confirmed default branch main, no open PRs in the Learning Journey repository, and reviewed root index.html, README.md, CHANGELOG.md, DESIGN-REVIEW.md, PROJECT-RULES.md, and existing design prototype. Existing root page is the current standalone experience; prior design PR #5 is already merged.
+- Decision: Improve the existing standalone page in place on a feature branch; preserve prior design and journal history; do not create a duplicate design or change main.
+- Changes: Feature branch feature/learning-journey-design-refinement-20261127; updated index.html for responsive tablet/mobile layout, sticky header, skip link, visible keyboard focus, accessible menu controls, Escape/close behavior, focus return, and aria-pressed map selection. Appended current-entrypoint clarification to README.md and dated notes to CHANGELOG.md and DESIGN-REVIEW.md.
+- Evidence: Learning Journey PR #9 created: https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/9. Head commit 8148716d79ffb35241fbc813338efdf847778234; 4 files changed; compare against main shows 5 commits ahead, 0 behind, no file deletions.
+- Verification: GitHub writes and feature-branch read-back PASS. Static checks PASS for doctype, single inline CSS/JS, skip target, ARIA menu controls, Escape support, map aria-pressed state, reduced motion, no local CSS/JS refs, and no empty hash links. Browser render, Android handset screenshot/touch QA, cross-browser QA, and formal WCAG audit NOT TESTED.
+- Protected actions: No merge, production deployment, Pages settings, DNS/security/account changes, backend, Blogger, Telegram, or GitLab operations.
+- Next action: Owner reviews and merges PR #9. Existing Command Center PR #79 was not modified; its diff removes prior memory entries and must not be merged as append-only history.
+
+## 2026-11-27 — Owner revert of Learning Journey design refinement
+- Follow-up verification: Learning Journey PR #9 was merged at 2026-11-27T20:02:52Z (merge commit 49e6fcc45ecd98a2829b919f9de258090ac6abb1).
+- Owner then merged PR #10, an explicit revert of PR #9, at 2026-11-27T20:03:35Z (merge commit a110e4b0c4ac160c66a6562851e0b98a42f55b32). Current main read-back confirms the design refinement is reverted; do not reapply without a new direction.
+- The post-merge inspection found a small initial aria-pressed mismatch in the reverted proposal; no follow-up fix was submitted because the Owner had reverted the whole refinement.
+- An unused feature branch for the initial-state correction was created from a then-current ref but no file write or PR was made on it.
+- Current outcome: design refinement PR #9 is MERGED then REVERTED by Owner PR #10. Main remains at the Owner-reverted version. Browser/mobile QA NOT TESTED.
+- Keep this record append-only. No production deploy, GitLab, Blogger, Telegram, or account/security changes.
+
+
+## 2026-11-27 — Diamond King Master Franchise visual universe direction
+- Project code: DR-TRTT-OPS-001.
+- Trigger summary: Owner confirmed they want the full visual direction, including the universe concept and real SaaS UI/wireframes, and stated the ambition to become Diamond King with a separate world for learning from the AI collaborator and preserving the Owner's own ideas.
+- Decision: Establish one coherent product vision with five connected spaces: Command Center, Learning Universe, Idea Universe, SaaS Universe, and a future Franchise Universe. Experience principle: Learn → Imagine → Build → Share. Keep the human Owner in control of data, ideas, decisions, publication, and protected actions.
+- Visual direction: Premium editorial/futuristic workspace using the TRTT palette Pink #E98BAF, Piyaji #B77991, Kathali #D6A542, Royal Midnight #11152D, White #FFFFFF; use Cyan #67E8F9 and Diamond Gold #FFD700 sparingly as accents. Use maps, timelines, canvases, project spaces, galleries, and progress views rather than a text-only portal.
+- Artifact: Added docs/DIAMOND-KING-MASTER-FRANCHISE-VISUAL-DESIGN-001.md on feature/memory-learning-journey-design-refinement-20261127. It defines information architecture, screen inventory, user flows, design system, responsive/accessibility baseline, domain entities, security/privacy principles, business-model hypotheses, roadmap, acceptance criteria, and limitations.
+- Visual evidence: Generated a first concept image in this conversation on 2026-11-27. It is a direction-setting concept only, not a final logo, production UI, working prototype, or deployed SaaS.
+- Verification: GitHub file write PASS. Remote read-back and PR diff review pending at time of this entry. No runtime/browser/mobile QA, database, authentication, billing, tenant isolation, external integrations, production deployment, or legal franchise validation performed.
+- Governance: No GitLab backup, Blogger publication, Telegram delivery, merge, or production/security/account change performed. Owner merge remains required.
+- Next action: Review the consolidated Command Center PR; subsequent implementation must be scoped and verified as separate deliverables.
+- Marker: diamond-king-master-franchise-visual-direction-20261127
+
+
+## 2026-11-27 — Master Franchise visual specification read-back verification
+- Follow-up to marker: diamond-king-master-franchise-visual-direction-20261127.
+- Remote read-back: PASS for docs/DIAMOND-KING-MASTER-FRANCHISE-VISUAL-DESIGN-001.md, Diamond King/memory/trtt_memory_log.md, and Diamond King/trttmagic.html on feature/memory-learning-journey-design-refinement-20261127.
+- PR #80 updated to include the new specification and memory/trace append: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/80.
+- PR verification: open, not merged, 3 changed files, 259 additions, 0 deletions; a subsequent PR read returned mergeable=true. Owner merge required.
+- Remaining: visual concept image is present in chat only; browser rendering, mobile QA, app implementation, backend, database, auth, billing, tenant isolation, legal review, production deployment, and GitLab mirror NOT TESTED.
