@@ -890,3 +890,11 @@ Policy: append-only; preserve all earlier entries.
 - Files changed in Learning Journey repo: added design/index.html, DESIGN-SYSTEM.md, DESIGN-REVIEW.md; appended visual prototype links and maturity disclosure to README.md.
 - Verification: Read back all four files from main. PR #5 merged. Merge commit 244a2ebe7e9641f07c343490dcc91e9fd737b2f7. Main read-back confirmed three universes, concept warning, and mobile navigation. Browser rendering, formal accessibility audit, and cross-browser QA remain NOT TESTED.
 - External systems: GitLab NOT REQUIRED under current GitHub-only direction; Blogger and Telegram NOT TESTED / NOT REQUIRED for this design task.
+
+
+## 2026-11-27 20:20 CET — DR-TRTT-OPS-001 — Repeat design request confirmation
+- Trigger: Owner repeated the request to design and merge the Learning Journey repository.
+- Result: Existing PR #5 was independently rechecked; closed/merged=true, merge commit `244a2ebe7e9641f07c343490dcc91e9fd737b2f7`. Main contains the responsive static design, design system, review, and README navigation.
+- Decision: No second design PR or merge is warranted; this avoids duplicate/competing implementations. The newly created alternate design branch `feature/diamond-king-universe-visual-design-20261127` remains unmerged and has no effect on main.
+- Verification: PASS for merged PR metadata and main read-back. Browser rendering, formal accessibility, and cross-device tests remain NOT TESTED.
+- Marker: `learning-journey-visual-design-repeat-confirmed-20261127-2020`
