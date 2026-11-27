@@ -508,3 +508,14 @@ Policy: append-only; preserve all earlier entries.
 - **Read-back:** All six TRTT News Bot files were fetched from the feature branch. Exact six Amazon URLs, six new-tab links, six sponsored/no-follow attributes, navigation path `/p/amazon-picks.html`, policy allowlist and article-engine hub link checks PASS. The previous generic Amazon product link was removed from the draft engine.
 - **CI/preview:** Netlify deploy-preview status is PENDING. No completed CI test run is evidenced. Command-center memory and HTML trace were read back after append.
 - **Limitations:** PR #145 reports `mergeable=false`; cause not established. Blogger page creation/import, live menu rendering, actual Amazon redirect destinations, marketplace, prices, stock and affiliate attribution remain NOT VERIFIED. No Blogger publishing, merge, Telegram send, deployment, DNS/security change, or secret operation.
+
+
+### Chrome Browser Only / No App Cost — 2026-11-27
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger:** Owner asked to make the Amazon menu/direct-link PR ready and open it in Chrome, and explicitly requested not to put/deploy this work in the TRTT app because available funds are exhausted.
+- **Decision:** Keep this workflow in the GitHub web/Chrome review path only. Do not add app features, deploy the app, activate paid services, start trials, or incur costs. No paid fallback.
+- **PR status:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 is OPEN and `draft=false` (Ready for review). GitHub reports `mergeable=false`.
+- **Root-cause evidence:** Comparing `main` with `feature/blogger-amazon-six-item-menu-20261127` returned `diverged`, `ahead_by=12`, `behind_by=1`; common merge-base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`; current main base SHA `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`. This confirms the feature branch is one commit behind main and diverged. Specific file conflict not yet identified.
+- **Checks:** Two Netlify deploy-preview statuses SUCCESS. GitHub combined status response contained those two statuses; no runtime test/CI execution evidenced. 
+- **File changes:** No TRTT News Bot/app files changed in response to this trigger. Only this append-only memory entry and matching HTML trace are being added in the memory repository.
+- **Verification:** PR Ready-for-review state PASS; app branch divergence evidence PASS; exact merge conflict/root cause NOT VERIFIED; Chrome opening on user's device NOT VERIFIED; no merge, app deployment, Blogger publish, or Telegram send.
