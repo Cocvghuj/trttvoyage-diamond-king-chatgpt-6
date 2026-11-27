@@ -19,3 +19,8 @@ Use GitHub web UI in this repository and branch `feature/blogger-theme-backup-re
 `Diamond King/backups/blogger/theme-backup-2026-11-27.xml`
 
 Then fetch/download that repository file and compare its SHA-256 with the value above. Until that comparison passes, the XML is not considered backed up in GitHub.
+
+
+## Addendum — 2026-11-27 continuation check
+
+The GitHub connector also exposes a Git database blob endpoint that accepts base64 content. However, the available chat workflow does not provide a direct local-file handoff into that endpoint, and the 440,824-byte source was not transferred. Therefore the original XML remains **NOT SAVED** in this repository. The SHA-256 above remains the expected verification value for a later upload.
