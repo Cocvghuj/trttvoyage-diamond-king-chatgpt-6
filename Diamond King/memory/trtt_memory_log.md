@@ -894,3 +894,14 @@ Policy: append-only; preserve all earlier entries.
 - Verification: PASS — PR #5 merged metadata and merge SHA verified; main design files read back. Automated browser rendering, accessibility audit, and cross-device QA remain NOT TESTED as documented in DESIGN-REVIEW.md.
 - Scope: No backend, database, authentication, private-chat sync, billing, production deployment, GitLab, Blogger, or Telegram changes.
 - Marker: `learning-journey-visual-design-pr5-already-merged-20261127`
+
+## 2026-11-27 — Learning Journey visual design refinement
+- Project: DR-TRTT-OPS-001.
+- Trigger: Owner requested immediate design correction for TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey.
+- Inspection: Confirmed default branch main, no open PRs in the Learning Journey repository, and reviewed root index.html, README.md, CHANGELOG.md, DESIGN-REVIEW.md, PROJECT-RULES.md, and existing design prototype. Existing root page is the current standalone experience; prior design PR #5 is already merged.
+- Decision: Improve the existing standalone page in place on a feature branch; preserve prior design and journal history; do not create a duplicate design or change main.
+- Changes: Feature branch feature/learning-journey-design-refinement-20261127; updated index.html for responsive tablet/mobile layout, sticky header, skip link, visible keyboard focus, accessible menu controls, Escape/close behavior, focus return, and aria-pressed map selection. Appended current-entrypoint clarification to README.md and dated notes to CHANGELOG.md and DESIGN-REVIEW.md.
+- Evidence: Learning Journey PR #9 created: https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/9. Head commit 8148716d79ffb35241fbc813338efdf847778234; 4 files changed; compare against main shows 5 commits ahead, 0 behind, no file deletions.
+- Verification: GitHub writes and feature-branch read-back PASS. Static checks PASS for doctype, single inline CSS/JS, skip target, ARIA menu controls, Escape support, map aria-pressed state, reduced motion, no local CSS/JS refs, and no empty hash links. Browser render, Android handset screenshot/touch QA, cross-browser QA, and formal WCAG audit NOT TESTED.
+- Protected actions: No merge, production deployment, Pages settings, DNS/security/account changes, backend, Blogger, Telegram, or GitLab operations.
+- Next action: Owner reviews and merges PR #9. Existing Command Center PR #79 was not modified; its diff removes prior memory entries and must not be merged as append-only history.
