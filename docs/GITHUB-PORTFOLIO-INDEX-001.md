@@ -189,3 +189,21 @@ These repositories are personal forks of third-party projects. Their upstream ow
 - **Repository About metadata:** GitHub description/homepage/topics are separate repository settings. The current GitHub connector supports file/PR operations but not repository metadata edits; those settings remain NOT TESTED and may need an Owner-side GitHub Settings update.
 - **Link verification:** a URL written in a README is not proof it resolves. The custom domain, Blogger custom-domain routing, and SSO-protected Vercel projects require separate live checks.
 
+
+
+## 10. Current review links — 2026-11-27
+
+### TRTT Voyage documentation PRs
+- [Main TRTT app README and About/Contact/Privacy/Disclaimer pages — PR #140](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/140)
+- [Command center README — PR #33](https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/33)
+- [MUSE Gift English README — PR #3](https://github.com/Cocvghuj/trtt-muse-gift/pull/3)
+- [MUSE Diary English README — PR #1](https://github.com/Cocvghuj/trttvoyage--muse-diary/pull/1)
+- [Rise From Ashes Studio README — PR #3](https://github.com/Cocvghuj/trtt-rise-from-ashes-studio/pull/3)
+- [TRTT MAGIC README — PR #1](https://github.com/Cocvghuj/Diamond-King-trttmagic.html/pull/1)
+- [Legacy fix repository README — PR #1](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot-fix/pull/1)
+- [Complete personal repository catalogue and append-only memory — PR #34](https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/34)
+
+### Blogger theme
+- [TRTT Voyage Diamond Horizon theme candidate — PR #141](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141)
+- Candidate file: `TRTT-Voyage-Generation-2-ULTIMATE.xml`
+- Automated XML, TRTT tests, and build checks: PASS. Blogger preview/import: NOT TESTED.
