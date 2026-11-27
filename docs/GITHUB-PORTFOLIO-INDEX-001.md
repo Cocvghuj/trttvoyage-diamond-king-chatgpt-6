@@ -115,3 +115,77 @@ Affiliate links, where present, must be clearly disclosed. Prices, availability,
 **Project:** DR-TRTT-OPS-001  
 **Brand:** [TRTT Voyage](https://trttvoyage.com)  
 **Motto:** ONE TEAM. ONE VISION. ONE JOURNEY.
+
+
+## 9. Complete public personal-account repository catalogue
+
+GitHub inventory snapshot: 2026-11-27. The authenticated personal account search returned 49 repositories; the public catalogue below lists the 48 public repositories. Private repositories are intentionally excluded from public documentation.
+
+### 9.1 TRTT-owned and owner-maintained repositories
+
+| Repository | Role | README status |
+|---|---|---|
+| [Cocvghuj](https://github.com/Cocvghuj) | Public GitHub profile and owner introduction | TRTT Voyage profile refresh merged |
+| [Cocvghuj-trtt-news-bot](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot) | Main TRTT website, Blogger source assets, tools, and Vercel-linked application | English TRTT Voyage README and page refresh proposed in PR #140 |
+| [Cocvghuj-trtt-news-bot-fix](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot-fix) | Legacy troubleshooting placeholder; currently no verified application source | English legacy notice proposed in PR #1 |
+| [trttvoyage-diamond-king-chatgpt-6](https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6) | Diamond King command center, memory, documentation, and workflow archive | Public identity addition proposed in PR #33 |
+| [trtt-muse-gift](https://github.com/Cocvghuj/trtt-muse-gift) | Standalone MUSE / Thinking Room creative microsite | English README and archived legacy drafts proposed in PR #3 |
+| [trttvoyage--muse-diary](https://github.com/Cocvghuj/trttvoyage--muse-diary) | MUSE Diamond Legacy single-page keepsake | English README and quotation update proposed in PR #1 |
+| [trtt-rise-from-ashes-studio](https://github.com/Cocvghuj/trtt-rise-from-ashes-studio) | Personal writing studio and Blogger DRAFT-only workflow | TRTT Voyage identity addition proposed in PR #3 |
+| [Diamond-King-trttmagic.html](https://github.com/Cocvghuj/Diamond-King-trttmagic.html) | Standalone TRTT MAGIC command-center presentation page | English README proposed in PR #1 |
+
+### 9.2 Personal open-source forks
+
+These repositories are personal forks of third-party projects. Their upstream owners remain the original authors/maintainers. Do not replace upstream README files, licenses, security policies, contribution instructions, or project names with TRTT branding. The central portfolio index is the appropriate place to identify the personal maintainer and link back to TRTT Voyage.
+
+| Personal fork | Upstream project | Declared license |
+|---|---|---|
+| [ARTEX](https://github.com/Cocvghuj/ARTEX) | [BaaRai/ARTEX](https://github.com/BaaRai/ARTEX) | AGPL-3.0 |
+| [Claude-BugHunter](https://github.com/Cocvghuj/Claude-BugHunter) | [elementalsouls/Claude-BugHunter](https://github.com/elementalsouls/Claude-BugHunter) | MIT |
+| [superpowers](https://github.com/Cocvghuj/superpowers) | [obra/superpowers](https://github.com/obra/superpowers) | MIT |
+| [CLI-Anything](https://github.com/Cocvghuj/CLI-Anything) | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | Apache-2.0 |
+| [minimind](https://github.com/Cocvghuj/minimind) | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | Apache-2.0 |
+| [plugins](https://github.com/Cocvghuj/plugins) | [cursor/plugins](https://github.com/cursor/plugins) | Not declared in retrieved metadata |
+| [firecrawl](https://github.com/Cocvghuj/firecrawl) | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | AGPL-3.0 |
+| [nginx](https://github.com/Cocvghuj/nginx) | [nginx/nginx](https://github.com/nginx/nginx) | BSD-2-Clause |
+| [openvino](https://github.com/Cocvghuj/openvino) | [openvinotoolkit/openvino](https://github.com/openvinotoolkit/openvino) | Apache-2.0 |
+| [diagram-design](https://github.com/Cocvghuj/diagram-design) | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | MIT |
+| [last30days-skill](https://github.com/Cocvghuj/last30days-skill) | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | MIT |
+| [stitch-skills](https://github.com/Cocvghuj/stitch-skills) | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | Apache-2.0 |
+| [app-store-compliance](https://github.com/Cocvghuj/app-store-compliance) | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | No license confirmed in retrieved metadata |
+| [opensre](https://github.com/Cocvghuj/opensre) | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | Apache-2.0 |
+| [AFFiNE](https://github.com/Cocvghuj/AFFiNE) | [toeverything/AFFiNE](https://github.com/toeverything/AFFiNE) | No license confirmed in retrieved metadata |
+| [Ghost-Downloader-3](https://github.com/Cocvghuj/Ghost-Downloader-3) | [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) | GPL-3.0 |
+| [autoclip](https://github.com/Cocvghuj/autoclip) | [zhouxiaoka/autoclip](https://github.com/zhouxiaoka/autoclip) | MIT |
+| [hallmark](https://github.com/Cocvghuj/hallmark) | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | MIT |
+| [security-audit-skill](https://github.com/Cocvghuj/security-audit-skill) | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT |
+| [OpenMausBot](https://github.com/Cocvghuj/OpenMausBot) | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | Apache-2.0 |
+| [t3code](https://github.com/Cocvghuj/t3code) | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | MIT |
+| [skills](https://github.com/Cocvghuj/skills) | [anthropics/skills](https://github.com/anthropics/skills) | Not declared in retrieved metadata |
+| [claude-mem](https://github.com/Cocvghuj/claude-mem) | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Apache-2.0 |
+| [instagram-agent-skill](https://github.com/Cocvghuj/instagram-agent-skill) | [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT |
+| [plannotator](https://github.com/Cocvghuj/plannotator) | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Apache-2.0 |
+| [dsh-our-free-model](https://github.com/Cocvghuj/dsh-our-free-model) | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | No license confirmed in retrieved metadata |
+| [DeepTutor](https://github.com/Cocvghuj/DeepTutor) | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 |
+| [magpie](https://github.com/Cocvghuj/magpie) | [yetone/magpie](https://github.com/yetone/magpie) | MIT |
+| [impeccable](https://github.com/Cocvghuj/impeccable) | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 |
+| [sherlock](https://github.com/Cocvghuj/sherlock) | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | MIT |
+| [agent-browser](https://github.com/Cocvghuj/agent-browser) | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 |
+| [framework](https://github.com/Cocvghuj/framework) | [laravel/framework](https://github.com/laravel/framework) | MIT |
+| [cluster-api](https://github.com/Cocvghuj/cluster-api) | [kubernetes-sigs/cluster-api](https://github.com/kubernetes-sigs/cluster-api) | Apache-2.0 |
+| [gatherpress](https://github.com/Cocvghuj/gatherpress) | [GatherPress/gatherpress](https://github.com/GatherPress/gatherpress) | GPL-2.0 |
+| [posthog-js](https://github.com/Cocvghuj/posthog-js) | [PostHog/posthog-js](https://github.com/PostHog/posthog-js) | No license confirmed in retrieved metadata |
+| [undici](https://github.com/Cocvghuj/undici) | [nodejs/undici](https://github.com/nodejs/undici) | MIT |
+| [kubevirt](https://github.com/Cocvghuj/kubevirt) | [kubevirt/kubevirt](https://github.com/kubevirt/kubevirt) | Apache-2.0 |
+| [freeradius-server](https://github.com/Cocvghuj/freeradius-server) | [FreeRADIUS/freeradius-server](https://github.com/FreeRADIUS/freeradius-server) | GPL-2.0 |
+| [DietPi](https://github.com/Cocvghuj/DietPi) | [MichaIng/DietPi](https://github.com/MichaIng/DietPi) | GPL-2.0 |
+| [AntennaPod](https://github.com/Cocvghuj/AntennaPod) | [AntennaPod/AntennaPod](https://github.com/AntennaPod/AntennaPod) | GPL-3.0 |
+
+### 9.3 README and About-page policy
+
+- **TRTT-owned repositories:** use English README/About pages with owner identity, TRTT Voyage links, purpose, features, status, setup, privacy/security, license, and a relevant disclaimer.
+- **Third-party forks:** keep upstream documentation and license intact. The central catalogue identifies the personal fork owner without implying that TRTT Voyage created or officially maintains the upstream software.
+- **Private repositories:** do not expose private URLs, internal notes, credentials, or account data in public pages.
+- **Repository About metadata:** GitHub description/homepage/topics are separate repository settings. The current GitHub connector supports file/PR operations but not repository metadata edits; those settings remain NOT TESTED and may need an Owner-side GitHub Settings update.
+- **Link verification:** a URL written in a README is not proof it resolves. The custom domain, Blogger custom-domain routing, and SSO-protected Vercel projects require separate live checks.
+
