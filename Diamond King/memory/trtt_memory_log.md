@@ -508,3 +508,12 @@ Policy: append-only; preserve all earlier entries.
 - **Read-back:** All six TRTT News Bot files were fetched from the feature branch. Exact six Amazon URLs, six new-tab links, six sponsored/no-follow attributes, navigation path `/p/amazon-picks.html`, policy allowlist and article-engine hub link checks PASS. The previous generic Amazon product link was removed from the draft engine.
 - **CI/preview:** Netlify deploy-preview status is PENDING. No completed CI test run is evidenced. Command-center memory and HTML trace were read back after append.
 - **Limitations:** PR #145 reports `mergeable=false`; cause not established. Blogger page creation/import, live menu rendering, actual Amazon redirect destinations, marketplace, prices, stock and affiliate attribution remain NOT VERIFIED. No Blogger publishing, merge, Telegram send, deployment, DNS/security change, or secret operation.
+
+## Addendum — 2026-11-27 — Direct Amazon Item Links in News Articles
+
+- **Project:** DR-TRTT-OPS-001
+- **Owner request:** Clicking an approved Amazon item mentioned in a TRTT Voyage article must open that exact item, not the general Amazon Picks page.
+- **Implementation:** Add an allowlist-driven linker to the draft engine. Exact product-name mentions map to their corresponding supplied Amazon URL in a new tab, with `rel="sponsored nofollow noopener"`; do not nest existing anchors or link unapproved products. Keep the Amazon Picks hub for generic calls to action.
+- **Safety:** No unrelated products are automatically inserted. The six-item menu remains unchanged. Remove the unsupported legacy Amazon link from draft validation.
+- **Files changed:** `trtt_787950_master.py`, `tests/test_amazon_six_item_policy.py`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`.
+- **Verification:** GitHub read-back and runtime tests pending. No Blogger publishing or PR merge.
