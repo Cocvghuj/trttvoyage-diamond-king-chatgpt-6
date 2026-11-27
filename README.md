@@ -123,11 +123,11 @@ For narrow screens, use this single-column list instead of the table above. The 
 ## TRTT Voyage public identity and links
 
 **Owner:** Engr. Abu Taher  
-**Brand:** [TRTT Voyage](https://trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.  
+**Brand:** [TRTT Voyage](https://www.trttvoyage.com) — From Vision to Global Brand! Explore Beyond. Discover Everything.  
 **GitHub:** [Personal profile](https://github.com/Cocvghuj) · [Organization](https://github.com/Trttvoyage)
 
 ### Official public channels
-- [TRTT Voyage website](https://trttvoyage.com)
+- [TRTT Voyage website](https://www.trttvoyage.com)
 - [WhatsApp Channel](https://whatsapp.com/channel/0029Vb8co9VDeONEz0B5e51M)
 - [Telegram Channel](https://t.me/trttnews24bd)
 - [Facebook](https://www.facebook.com/profile.php?id=61595319351601)
