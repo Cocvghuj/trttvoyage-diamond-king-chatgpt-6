@@ -909,3 +909,13 @@ Policy: append-only; preserve all earlier entries.
 - **Next step:** Create `TRTT-VOYAGE` repository under the `TRTT-VOYAGE` account via GitHub UI, then send its URL; populate it through a feature branch and one reviewable PR.
 - **Safety:** No existing repository or main branch changed; no app edit, GitLab, paid service, secret, Blogger publish, Telegram send, deployment or DNS/security action.
 - **Marker:** `owner-confirms-github-username-trtt-voyage-20261127`
+
+
+## 2026-11-27 — owner-requests-collaboration-record-file-learning-journey-20261127
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner clarified that the separate artifact requested for the Learning Journey is a file inside that repository, not another repository.
+- Decision: Add `COLLABORATION-RECORD.md` to `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey`; keep it distinct from the Owner's personal profile repository.
+- File change: Created the collaboration record on `feature/learning-journey-initial-setup-20261127`.
+- Verification: GitHub create-file operation succeeded; fetched the file from the branch and confirmed exact content read-back. Commit: `8ec36466dfda162cc64b277a212d5c2c27ada4f7`.
+- PR status: Existing PR #1 remains the review vehicle; no additional PR created and no merge performed.
+- GitLab: NOT REQUIRED per Owner's GitHub-only direction.
