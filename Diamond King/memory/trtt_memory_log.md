@@ -539,3 +539,21 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab memory mirror:** Updated `backup/github-agents-guide-mainline-refresh-20261127` with current GitHub memory and HTML. Exact raw read-back PASS: memory 82,707 chars and HTML 55,224 chars, each byte-identical to GitHub.
 - **Safety:** No main writes, PR merges/closes, deployment, Blogger import/publish, DNS/security/account change, Telegram send, or secret access/operation.
 - **Next actions:** Resolve theme provenance and widget requirements; reconcile PR branches against current main; audit remaining TRTT-owned README files and external URLs; complete backup coverage and runtime tests. Owner-only merge/live approvals remain in force.
+
+
+## 2026-11-27 09:28 Europe/Rome — Owner merge status and mainline verification
+- **Project:** DR-TRTT-OPS-001
+- **GitHub PR state:** Fresh GitHub PR snapshots confirm PRs #135, #136, #137, #140 and #141 are all CLOSED / MERGED. The agent did not invoke merge; merge timestamps and merge commit SHAs returned by GitHub:
+  - #135 — 2026-11-26T20:08:20Z, merge commit `eaa53a314859f6a68fb2e6c457f215edc741f594`.
+  - #136 — 2026-11-26T20:33:04Z, merge commit `a66e2005d5af4575b9d22e6eb75bc28ce49578d8`.
+  - #137 — 2026-11-26T21:35:11Z, merge commit `2ba0a47012c4d0757e44079eb72c5da12e0a5460`.
+  - #141 — 2026-11-27T05:40:58Z, merge commit `289416b757a5fc6e3b9f7c6c6ab8b06171d7970b`.
+  - #140 — 2026-11-27T05:41:36Z, merge commit `91dee9999e455dbd76dc622f3b7e5447806285ae`.
+- **Main read-back:** `trtt-hub.css`, `trtt-theme.css`, `vercel.json`, `terms.html`, Telegram forwarding workflow, legacy cross-blog draft workflow, and legacy `scripts/draft_news.py` were fetched from `main`. Diamond palette tokens are present in CSS. Telegram workflow is manual-dispatch/owner-confirmation gated; legacy cross-blog workflow is disabled; legacy draft script fails closed. These are source inspections, not runtime tests.
+- **PR #137 CI:** Workflow run 45896072699 completed SUCCESS for head `9ade1dce21cac2a46ac06bba4b2b318a3e293a58`; protected V106 run 45896072814 was SKIPPED as expected.
+- **PR #140/#141 scope:** PR #140 added/rebranded English public page sources and Vercel site assets; PR #141 added the Blogger theme candidate and validator. Merge status is verified, but Blogger theme import/live rendering is not.
+- **Theme blocker remains:** Main theme candidate XML explicitly names “Mitti — TRTT Voyage Diamond Horizon customization” and attributes Way2Themes. User's prior original-theme-only rule and required widget IDs (PopularPosts1/2, PageList1, Profile1, ReportAbuse1) are not met by the inspected XML. Do not describe the theme as original or import it until a fresh original theme candidate and widget compatibility are verified.
+- **Profile README:** Repaired personal README is present on main with same blob SHA as its feature branch; legacy README archive exists on main. Main app README also contains canonical www domain and no old Blogger URL.
+- **GitLab backup:** Memory and command-center HTML on `backup/github-agents-guide-mainline-refresh-20261127` were synced after the latest append and exact raw read-back matched GitHub: memory 85,784 chars; HTML 56,885 chars.
+- **Safety:** No PR merge was performed by the agent. No Blogger import/publish, production deployment, DNS/security/account change, Telegram send, or secret operation occurred.
+- **Next actions:** Build and validate a genuinely original Blogger theme that meets the full widget spec; run the Blogger preview/import only after Owner backup and approval; continue repository-wide README/link and backup-coverage audits. 100% overall completion is not yet supported by evidence.
