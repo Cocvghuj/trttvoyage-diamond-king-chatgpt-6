@@ -882,3 +882,17 @@ Policy: append-only; preserve all earlier entries.
 - **Memory file changes:** Append this entry and matching HTML trace to the existing pending Command Center feature branch only; do not create a second PR now.
 - **Verification status:** Command Center memory read-back after append pending.
 - **Unique marker:** learning-journey-pr1-open-owner-review-20261127
+
+
+## Entry — 2026-11-27 — Owner delegates personal portfolio repository direction
+
+- **Timestamp:** 2026-11-27 19:10 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked Diamond King to choose and create a repository in the Owner's name, informed by the TRTT Voyage blog and the Owner's communication style, and explicitly delegated the choice without requiring a review.
+- **Decision:** The most appropriate target is a personal GitHub profile repository named exactly `Cocvghuj/Cocvghuj`, because that is GitHub's convention for a profile README. Its public content should present Engr. Abu Taher, TRTT Voyage, verified public links, practical project work, and a direct, curious, hands-on, candid, evidence-oriented communication/working style. Public copy remains English. Avoid private contact details, secrets, sensitive personal information, and unsupported biographical claims.
+- **Repository inspection:** The accessible public repository `TRTT-VOYAGE/Cocvghuj` already exists under the TRTT-VOYAGE organization, is on `main`, and grants admin/push permission. Its existing README was read in full and already contains a substantial profile/portfolio page. It is not the personal-account profile repository `Cocvghuj/Cocvghuj`.
+- **Execution limitation:** Available GitHub connector actions support repository inspection, branches, files, commits and PRs, but no repository-creation action was exposed. No authenticated browser profile was established. Therefore a new repository under the personal account could not be created in this turn. Do not claim it exists.
+- **Existing portfolio content:** The organization repository README is already populated with the Owner's public brand, project directory, working principles and official public links; no duplicate repository or unnecessary README overwrite was made.
+- **Safety:** No app repository edits, paid services/trials, secrets, GitLab, Blogger publishing, Telegram send, deployment, DNS/security changes, or main-branch writes.
+- **Verification:** Existing organization repository metadata and README read-back PASS. Personal profile repository creation NOT TESTED / NOT VERIFIED. No PR opened.
+- **Marker:** `owner-delegates-personal-profile-repository-choice-20261127`
