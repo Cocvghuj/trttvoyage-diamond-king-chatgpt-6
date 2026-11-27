@@ -867,3 +867,18 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append-only update to this memory log and additive HTML trace on the existing pending feature branch only.
 - **Verification:** Existing memory log and HTML trace were fetched from branch feature/memory-batch-pending-1655-20261127 before append. Read-back after write remains to be completed.
 - **Unique marker:** owner-approves-public-learning-journey-repository-20261127
+
+## 2026-11-27 — Public Learning Journey repository initialized
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner supplied the new public Learning Journey repository URL and authorized Diamond King to prepare the initial repository content and pull request, while retaining Owner review/merge responsibility.
+- **Repository:** https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey
+- **Decisions:** Keep Diamond King Command Center as canonical hub; treat Learning Journey as a separate public companion archive. Use dated curated chapters, not raw chat transcripts. Exclude credentials, tokens, private contact details, sensitive personal information, and third-party confidential material. GitHub-only workflow; GitLab remains not required.
+- **Files changed in Learning Journey:** README.md, JOURNAL-RULES.md, PRIVACY-AND-SECURITY.md, chapters/2026-11-27.md, CHANGELOG.md.
+- **Branch:** feature/learning-journey-initial-setup-20261127.
+- **PR:** https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/1 — OPEN, not merged; Owner review required.
+- **Verification:** Repository public visibility and main branch verified; all five files read back from feature branch; comparison showed 5 commits ahead and 0 behind. PR reports 5 files changed, 107 additions, 2 deletions. Mergeable currently false; no merge attempted.
+- **Automation limitation:** ChatGPT does not have automatic access to all private live chats. No scheduled daily chat synchronization is configured or claimed. Future chapters are curated from available context and evidence.
+- **Memory file changes:** Append this entry and matching HTML trace to the existing pending Command Center feature branch only; do not create a second PR now.
+- **Verification status:** Command Center memory read-back after append pending.
+- **Unique marker:** learning-journey-pr1-open-owner-review-20261127
