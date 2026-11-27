@@ -997,3 +997,14 @@ Policy: append-only; preserve all earlier entries.
 - Merge authority: Owner's prior delegation for eligible GitHub PRs remains active; inspect all changes and merge only when safe.
 - Verification: Command Center feature-branch memory and HTML trace updates are to be read back after writing. New repository status remains NOT CREATED / NOT VERIFIED pending prompt content and repository-creation capability.
 - Constraints: GitHub-only, free-only, no secrets, no app-repository changes, no paid services, no production deployment or protected account/security changes.
+
+
+## 2026-11-27 — project-rules-prompt-1-capability-scope-received
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner supplied prompt 1 for the planned `project-rules` repository.
+- Prompt 1 scope, preserved as received: (1) Product Writing — all required English documentation; (2) UI/UX — user flows, wireframes, design specifications; (3) Branding — logo concepts, colour, visual identity; (4) Development — code writing and fixes; (5) Database — schema and architecture planning; (6) Testing — test cases, bug analysis, verification; (7) Security — threat model, privacy and permission design; (8) Business — pricing research, SaaS model, launch plan; (9) GitHub — branches, PRs, reviews and delegated merges.
+- Interpretation: These are requested capability/workstream categories for the Project Rules repository. Do not silently convert them into claims that every integration or execution capability is already available. Record tool limitations and evidence per task.
+- Status: Prompt 1 RECEIVED; prompt 2 PENDING. Do not finalize repository rules or create a PR until the second prompt is received and reconciled.
+- GitHub repository creation: connector currently has no create-repository action; new repository creation remains NOT VERIFIED. Continue preparing content in existing Command Center feature branch only.
+- Verification: This entry and the corresponding additive HTML trace must be read back from GitHub after writing.
+- Constraints: GitHub-only, free-only, no secrets, no app-repository changes, no paid services, no protected production/account/security actions without approval.
