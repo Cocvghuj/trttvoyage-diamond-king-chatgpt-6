@@ -964,3 +964,17 @@ Policy: append-only; preserve all earlier entries.
 - Browser/device rendering, cross-browser QA, screen-reader audit, Lighthouse, production deployment and real application behavior remain NOT TESTED.
 - No GitLab, Blogger, Telegram, backend, database, authentication, billing, AI connection, tenant isolation, DNS or production/security changes.
 - Marker: command-center-ui-prototype-merge-confirmed-20261127
+
+
+## 2026-11-27 — Diamond King Learning Journey: Free for Everyone
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner supplied the public mission identity “DIAMOND KING LEARNING JOURNEY - FREE FOR EVERYONE”, the learning loop “Learn -> Imagine -> Build -> Share”, and the invitation “Go take what you need, build your own ship!”, with the TRTT-VOYAGE GitHub organization link.
+- Decision: Define the Learning Journey as a free public learning resource; distinguish free access from public-domain licensing, and preserve attribution, privacy, third-party rights, and evidence standards. Do not imply that a SaaS product or paid service is already operating.
+- Inspected: Learning Journey repository README and Command Center PR #83 metadata. PR #83 remains open and unmerged at time of check; no merge performed.
+- Learning Journey branch: feature/free-learning-journey-20261127.
+- File added: FREE-FOR-EVERYONE.md — public mission, Learn/Imagine/Build/Share loop, access principles, and official links.
+- Command Center memory branch: feature/free-learning-journey-memory-20261127.
+- Verification: Mission file was read back from GitHub successfully. Command Center memory/HTML trace append and PR creation are the remaining steps.
+- GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED; no publishing or delivery.
+- Browser rendering, downstream reuse, and legal/licensing review: NOT TESTED.
+- Marker: diamond-king-learning-journey-free-for-everyone-20261127
