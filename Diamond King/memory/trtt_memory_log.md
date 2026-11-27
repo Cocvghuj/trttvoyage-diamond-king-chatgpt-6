@@ -302,3 +302,17 @@ Policy: append-only; preserve all earlier entries.
 - GitHub static checks PASS for guide structure/safety and Blogger HTML structure, FAQ, disclosure, TRTT URL, existing image asset, HTTPS links, memory/trace markers and document closing tags.
 - GitLab branch/file mirror PASS. Full Git history parity between GitHub and GitLab is NOT TESTED.
 - Blogger account upload, Post ID and DRAFT status remain NOT VERIFIED; no live publication. Telegram, production, DNS/security/account actions NOT TESTED / NOT PERFORMED.
+
+
+### Final Night Handoff — Clean Operating Guide PR — 2026-11-27T00:29:00+01:00
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested one final safe work cycle before sleep so a clean GitHub change can be reviewed and merged in the morning. No merge, live publication, deployment, Telegram send, DNS/security change, or account change was authorized.
+- **GitHub-first inspection:** Confirmed the command-center repository and default branch `main`; read README, Project Charter, Workflow, Repository Map, current memory and command-center HTML. Root `AGENTS.md` is absent from `main`; the existing PR #28 branch contains it.
+- **Open-work review:** PR #28 is OPEN. Its branch is 3 commits ahead and 2 behind `main` (compare status `diverged`); no review submissions or inline review threads were returned. This divergence is evidence that the branch is behind, not proof of a specific file conflict. PR #30 is CLOSED; its merged state was not established by the issue metadata response.
+- **Decision:** Prepare a clean, mainline-based version of the root operating guide on a fresh feature branch so the Owner can review one current PR. Do not rewrite or close PR #28; preserve its history and let the Owner decide whether to close it after reviewing the replacement.
+- **Branch:** `feature/agents-guide-mainline-refresh-20261127`, created from inspected main commit `064f9170976babefb28d3f038e5286ab202f627f`.
+- **Files:** Add root `AGENTS.md`; append this memory entry; add a matching trace to `Diamond King/trttmagic.html`.
+- **Verification:** Remote read-back and static checks are recorded in the PR. CI/runtime behavior, Blogger account draft creation, Telegram delivery, and full Git history parity are NOT TESTED.
+- **Next Owner action:** Review the new PR in the morning. If accepted and merged, close the superseded PR #28 manually; do not merge both copies.
+- **Approval boundaries:** No protected action performed. Blogger draft upload and live publication remain separate approval gates.
