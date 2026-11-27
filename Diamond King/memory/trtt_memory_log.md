@@ -661,3 +661,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append-only memory log and HTML trace only.
 - **Verification:** Local file size/hash PASS; GitHub XML upload NOT VERIFIED / NOT SAVED. GitLab, Blogger, Telegram not executed.
 - **Cost:** Zero-cost tools only.
+
+
+## Memory Entry — 2026-11-27 — PR scope correction and continuation
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉 to continue the pending zero-cost Blogger theme backup task.
+- **GitHub PR inspection:** Existing PR #36 was found open and unmerged. Its original target `main` made the comparison show 73 commits ahead / 8 behind, including unrelated AGENTS.md changes.
+- **Correction:** Verified that the backup feature branch is directly 8 commits ahead of `feature/agents-guide-mainline-refresh-20261127`, with exactly three intended files changed: the backup manifest, append-only memory log, and additive HTML trace. Updated PR #36 base to that feature branch and added a clear body stating that the actual XML bytes are NOT included or saved. PR remains open, unmerged; owner review required.
+- **XML status:** Local original file 440,824 bytes; SHA-256 `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`. Actual XML is still NOT SAVED in GitHub; do not merge or claim backup completion on the basis of the manifest.
+- **Files changed this trigger:** Append-only memory and additive HTML trace only. No XML content, existing Blogger posts, or production settings changed.
+- **Verification:** PR base correction PASS; PR #36 open/unmerged; target comparison 8 commits ahead, 0 behind, 3 intended files. GitLab/Blogger/Telegram not tested.
+- **Cost:** Zero-cost tools only.
