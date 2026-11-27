@@ -487,3 +487,15 @@ Policy: append-only; preserve all earlier entries.
 - **Decision status:** Recommendation only. No new repository created and no product links moved or changed. Await Owner approval before creating a separate repository.
 - **Verification:** Existing Amazon link register and prior PR #40 are known from previous project work; this turn records the design recommendation only. New repo availability/name and product destination/Associate attribution remain NOT VERIFIED.
 - **GitLab:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED.
+
+
+## Entry — 2026-11-27 — Blogger Amazon Six-Item Menu Build
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested a six-item Amazon menu on the TRTT Voyage Blogger site, with each item opening directly on Amazon and a return path that leaves the blog page available; future news posts must recommend no Amazon products outside the approved six-item list.
+- **Decisions:** Implement the menu in the TRTT News Bot/Blogger theme repository, not the Diamond King command-center repository. Add a dedicated Blogger page at `/p/amazon-picks.html`, link it from the theme navigation, open all six Amazon URLs in a new tab, disclose affiliate links, and constrain future article recommendations to the six Owner-supplied links. Keep non-Amazon travel partners separate. Do not fabricate product images, prices, destination details or tracking claims.
+- **Approved items:** Unknown books; Hot Wheels Sprint Circuit; Jellycat Bagel Gift; Christmas Puzzle 100 Pieces; Exploding Kittens Drawing Game; Customers are the Answer to Everything.
+- **Files planned:** Blogger theme XML navigation, theme validator, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, article draft engine, and a policy test; append-only memory log and command-center HTML trace.
+- **Branch:** `feature/blogger-amazon-six-item-menu-20261127` in `TRTT-VOYAGE/Cocvghuj-trtt-news-bot`; memory/trace branch `feature/memory-amazon-blog-menu-20261127` in `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6`.
+- **Verification boundary:** GitHub files will be read back and static checks run. Blogger page creation/import, live menu rendering, actual Amazon redirect targets, regional marketplace, prices, availability and affiliate attribution are NOT VERIFIED. No PR merge, Blogger draft/live publish, Telegram send, deployment, DNS/security change, or secret operation.
