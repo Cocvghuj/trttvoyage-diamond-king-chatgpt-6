@@ -919,3 +919,13 @@ Policy: append-only; preserve all earlier entries.
 - Verification: GitHub create-file operation succeeded; fetched the file from the branch and confirmed exact content read-back. Commit: `8ec36466dfda162cc64b277a212d5c2c27ada4f7`.
 - PR status: Existing PR #1 remains the review vehicle; no additional PR created and no merge performed.
 - GitLab: NOT REQUIRED per Owner's GitHub-only direction.
+
+
+## 2026-11-27 — owner-delegates-github-pr-merges-to-diamond-king-20261127
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner explicitly changed the merge delegation instruction: Diamond King is authorized to merge TRTT Voyage GitHub pull requests going forward.
+- Decision: Diamond King may merge eligible PRs without requesting a separate merge instruction each time.
+- Merge gate: Inspect the complete diff, head/base status, conflicts, available checks, security exposure, unexpected deletions, and scope before merging. Stop and report if material risk, unresolved conflict, failed required checks, secret exposure, or production/security/DNS/account changes are involved.
+- Authority boundary: This delegation applies to GitHub PR merges in the TRTT Voyage project repositories; it does not authorize live Blogger publishing, production deployment, DNS/security/account changes, financial/legal commitments, or unrelated repositories.
+- Verification: Owner instruction received in chat. Policy memory append is being recorded on the existing Command Center pending feature branch; no new PR created.
+- GitLab: NOT REQUIRED per Owner's GitHub-only direction.
