@@ -473,3 +473,13 @@ Policy: append-only; preserve all earlier entries.
 - **Organization alignment:** Organization README update and cross-repository PR creation remain blocked by GitHub integration HTTP 403. Five personal/org fork pairs (ARTEX, superpowers, Claude-BugHunter, DeepTutor, stitch-skills) compare identical; organization plannotator is 5 commits behind the personal fork. Cross-repository sync PR attempt also returned 403. No organization file or branch changed.
 - **GitLab:** Existing app/theme backup branches remain recorded. Latest command-center memory and HTML files are to be mirrored to `backup/github-agents-guide-mainline-refresh-20261127` and byte-compared. Full history parity and all-repository mirror coverage remain NOT TESTED.
 - **Safety:** No main merge, production deploy, Blogger live theme/page install, DNS/Cloudflare/security change, social profile edit, Telegram send, private contact disclosure, or secret operation. No bug-free guarantee made; full link, runtime, and all-repository QA remains pending.
+
+
+## 2026-11-27 06:17 CET — Production route and Vercel environment read-only checks
+- **Project:** DR-TRTT-OPS-001.
+- **Production route smoke test:** Current Vercel production deployment `dpl_E5D1Y2UCE1y2a1w93MRSNCQ3Zres` (main commit `8d6eb182`) returned HTTP 200 for `/`, `/about`, `/contact`, `/privacy`, `/disclaimer`, `/blog`, `/super-app`, and `/tools/flight-search`; `/terms` returned HTTP 404. PR #140 adds a Terms page source; no preview deployment exists to verify the fix yet.
+- **Runtime monitoring:** Vercel runtime error query over the selected 24-hour range returned no error clusters; error/fatal logs over the selected 50-minute range returned no entries. This is limited monitoring, not a zero-bug guarantee.
+- **Environment-variable inventory:** Read-only listing of the main Vercel project's production environment variable names showed no `TRAVELPAYOUTS_TOKEN` key. Values were not decrypted or exposed. Source code still reads `TRAVELPAYOUTS_TOKEN`, and the inspected 24/7 GitHub workflow does not reference it. Do not add a new token until code/runtime variable naming and injection are reconciled with the approved secret-name policy.
+- **Documentation:** Added production route smoke-test findings and Travelpayouts environment-variable absence to the portfolio doc in `Cocvghuj` profile branch; read-back PASS. PR #2 remains open/mergeable.
+- **PR #140:** Updated description with current production route results, /terms 404, limited runtime monitoring, and missing Travelpayouts environment key. PR remains open/mergeable.
+- **Safety:** No environment variable was created/edited, no secret value decrypted, no production deployment, no DNS/Cloudflare change, and no Blogger install occurred.
