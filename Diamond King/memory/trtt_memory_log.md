@@ -525,3 +525,6 @@ Policy: append-only; preserve all earlier entries.
 - **Read-back checks:** Linker exists; exact item-to-URL allowlist present; target blank and sponsored/nofollow attributes present; legacy Amazon URL removed; tests cover exact item links, unrelated item rejection and existing-anchor handling; policy updated. Static source checks PASS.
 - **CI/runtime:** Combined commit status returned no status entries. Automated runtime tests and Blogger draft generation are NOT TESTED.
 - **Blogger:** Page installation, live theme menu, actual Amazon redirect targets and rendering are NOT VERIFIED. No Blogger post created/published, no merge, no Telegram send, no deployment, DNS/security changes, or secrets accessed.
+
+
+- **Final branch head update:** PR #146 head advanced to `80b3c65d6c92c1ce365b6e40d0b998feab7621ff` after correcting the Amazon URL allowlist regex. GitHub Actions workflow runs for this commit: none returned. Runtime tests remain NOT TESTED.
