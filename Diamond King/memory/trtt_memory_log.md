@@ -965,3 +965,14 @@ Policy: append-only; preserve all earlier entries.
 - GitHub inspection: Command Center repository confirmed as TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6, public, default branch main. Existing pending memory branch: feature/memory-batch-pending-1655-20261127. Open PR search surfaced legacy/open PR records; no new PR created.
 - File changes: append-only memory log and additive command-center HTML trace on the existing pending feature branch only.
 - Verification status: Repository and branch files inspected before edits. Memory and HTML append operations to be read back and marker-verified. Product design, prototype, app code, SaaS deployment, Notion/Canva artifact creation, and franchise readiness NOT TESTED.
+
+
+## 2026-11-27 — owner-reasserts-diamond-king-execution-and-merge-delegation-20261127
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner reiterates that Diamond King should carry out the work independently and perform eligible GitHub merges; Owner does not want to be asked to perform routine setup, editing, repository operations, or merge steps.
+- Decision: Treat the Owner's prior explicit delegation of eligible TRTT GitHub PR merges as active. Do not ask for routine merge approval. Inspect diffs, conflicts, checks, secrets, destructive changes, and sensitive approval gates before merging.
+- Operating correction: Do not repeatedly hand routine execution back to the Owner. Use available connected tools and continue safe work autonomously; report only genuine platform/tool limitations or explicit approval gates.
+- Design boundary: Installed Product Design workflow says full visual ideation/prototype workflow is unsupported in standard chat and requires Work mode. Do not misrepresent this as completed. Continue all independently executable planning, architecture, writing, GitHub documentation, and verification within available chat tools; use Work-only visual workflow only when its required environment is available.
+- Current constraints: GitHub-only; GitLab NOT REQUIRED. No paid services/trials. No production deployment, DNS/security/account changes, live Blogger publication, or Telegram distribution without their specific approval. Existing no-app-change restriction remains unless explicitly reversed.
+- File changes: append-only memory and additive command-center HTML trace on existing pending feature branch.
+- Verification: read-back of both files and marker presence required.
