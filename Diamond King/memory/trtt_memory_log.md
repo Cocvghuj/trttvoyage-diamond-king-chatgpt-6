@@ -574,3 +574,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append-only update to this log and additive section in `Diamond King/trttmagic.html` on `feature/memory-pr146-recheck-6-20261127`.
 - **Verification:** Live PR metadata and compare results PASS; memory PR #49 merged status PASS; PR #50 open/mergeable status PASS. New memory file read-back verification pending PR creation.
 - **GitLab/Blogger/Telegram:** NOT TESTED.
+
+
+## 2026-11-27 — Owner trigger: “এবার দেখুন” (PR #146 and memory PRs #50–#51)
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner requested a fresh GitHub status check. Inspected app PR #146 and command-center memory PRs #50 and #51.
+- **App PR #146:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/146 remains OPEN, unmerged, non-draft; GitHub reports mergeable=false. Head branch feature/blogger-amazon-six-item-menu-20261127; head SHA 80b3c65d6c92c1ce365b6e40d0b998feab7621ff; base main SHA 94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9. Compare remains diverged: 12 commits ahead, 1 behind; merge base 1cd01fea3ff889982862c821c1d9ac37e1ab8e8c. Six changed paths remain: theme XML, Amazon Picks page, six-item policy, theme validator, policy tests, and trtt_787950_master.py. Exact conflict hunks NOT VERIFIED; runtime tests/CI NOT TESTED.
+- **Memory PR #50:** Owner merged it at 2026-11-27T16:14:47Z; merge commit 1bccd8dceeb068dcdc588520b8de77b9fe575f3d.
+- **Memory PR #51:** Owner merged it at 2026-11-27T16:22:18Z; merge commit d3fefd9e15bd39eccd7c17f032757147ee08263e.
+- **Decisions and safeguards:** Respect Chrome-only/no-app-change/no-cost instruction. No app repository edits, sync/rebase, merge of #146, deployment, paid service/trial, Blogger publish, or Telegram send.
+- **Files changed:** Append-only update to this memory log and additive memory trace in Diamond King/trttmagic.html on feature/memory-pr146-recheck-7-20261127.
+- **Verification:** GitHub PR metadata and compare results PASS. Memory PR #50 and #51 merged status PASS. New memory files require post-write read-back. GitLab/Blogger/Telegram NOT TESTED.
