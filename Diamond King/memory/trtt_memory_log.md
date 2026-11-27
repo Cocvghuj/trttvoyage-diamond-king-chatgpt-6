@@ -316,3 +316,15 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** Remote read-back and static checks are recorded in the PR. CI/runtime behavior, Blogger account draft creation, Telegram delivery, and full Git history parity are NOT TESTED.
 - **Next Owner action:** Review the new PR in the morning. If accepted and merged, close the superseded PR #28 manually; do not merge both copies.
 - **Approval boundaries:** No protected action performed. Blogger draft upload and live publication remain separate approval gates.
+
+
+### TRTT Reliability Architecture Proposal — 2026-11-27
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner proposed making GitHub fully reliable as the primary control center for blog work, keeping GitLab as an independent backup, and storing the canonical Blogger theme in Blogger as well; after this foundation, the assistant should provide a precise list of blog assets/data needed from the Owner.
+- **Decision:** Agree with the layered architecture, with explicit scope boundaries: GitHub = source of truth for code, operating instructions, append-only memory, task records and reviewable changes; GitLab = separately verified backup/mirror; Blogger = live site plus a downloaded, versioned copy of the exact active theme in GitHub and GitLab. Blogger's theme editor alone is not a sufficient backup.
+- **Reliability standard:** Do not claim 100% secure or never lost. Require independent copies, exact-content read-back, commit/SHA evidence, dated theme exports, and a documented restore test. Avoid circular backup dependencies.
+- **Execution order proposed:** (1) audit GitHub repositories, default branch, feature branches, open PRs, workflows, permissions and required files; (2) resolve/merge only after Owner review; (3) verify GitHub recovery procedure; (4) mirror and verify GitLab; (5) export the exact live Blogger theme and archive it in both repositories; (6) prepare a concise asset checklist for Owner copy/paste; (7) only then proceed to blog operations and monetization work.
+- **Current inspection:** GitHub account repository listing confirmed Cocvghuj/trttvoyage-diamond-king-chatgpt-6 (default branch main) and Cocvghuj/Cocvghuj-trtt-news-bot (default branch main) are accessible. Branch feature/agents-guide-mainline-refresh-20261127 exists. Memory and command-center HTML were fetched from that feature branch before append.
+- **Limits:** Current live Blogger theme identity/content, Blogger export/restore, latest PR state, full GitLab history parity, and end-to-end recovery are NOT VERIFIED in this trigger. No merge, Blogger upload/publish, GitLab mutation, production deployment, Telegram send, DNS/security/account change performed.
+- **Next step:** Perform a dedicated GitHub foundation audit and create a minimal evidence-backed remediation PR; do not request blog assets until the repository/control-center checklist is stable.
