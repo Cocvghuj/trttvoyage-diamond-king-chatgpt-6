@@ -725,3 +725,15 @@ Policy: append-only; preserve all earlier entries.
 - **Safeguards:** No app repository edits, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send. Chrome-only review constraint remains active.
 - **Files changed:** Append this entry to Diamond King/memory/trtt_memory_log.md and matching HTML trace on feature/memory-batch-pending-1655-20261127.
 - **Verification:** PR #64 merge status PASS. New branch file read-back pending. No new PR created. GitLab/Blogger/Telegram NOT TESTED.
+
+
+## 2026-11-27 — Owner asks for Amazon six-item, news and first-SaaS ratings
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner clarified that the evaluation should cover all six approved Amazon picks and assess the related news/content and design as the first SaaS concept.
+- **GitHub evidence:** App PR #146 is CLOSED and MERGED (merge commit 339532320419054da609bc4862b035299d88ead4). Read back the six-item allowlist and Blogger page HTML from app repo main.
+- **Six approved labels:** Unknown books; Hot Wheels Sprint Circuit; Jellycat Bagel Gift; Christmas Puzzle 100 Pieces; Exploding Kittens Drawing Game; Customers are the Answer to Everything. Their short links are recorded in docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md.
+- **Product-rating boundary:** Amazon short-link destinations, ASINs, Amazon marketplace star ratings/review counts, live prices, stock and affiliate attribution could not be verified. Do not substitute ratings from other merchants or similar products.
+- **Initial content/design review:** Static HTML shows a six-card responsive grid, dark header, brand colors, new-tab links and affiliate disclosure. Product identity/destination and live Blogger rendering remain unverified. Item 01 label “Unknown books” is too vague for a useful product card. News accuracy/SEO and production SaaS runtime are not certified by static HTML alone.
+- **Decision:** Give provisional design/content scores only with clear scope; do not claim Amazon star ratings. Preserve exactly the six-item allowlist. No app edits, deployment, paid services/trials, Blogger import/live publish, GitLab sync, or Telegram send.
+- **Files changed:** Append this trigger to the command-center memory log and HTML trace on feature/memory-batch-pending-1655-20261127.
+- **Verification:** App PR metadata and six-item page/policy read-back PASS. Amazon redirect and ratings NOT VERIFIED; live Blogger and SaaS runtime NOT TESTED. No new PR created; memory remains staged on the pending batch branch.
