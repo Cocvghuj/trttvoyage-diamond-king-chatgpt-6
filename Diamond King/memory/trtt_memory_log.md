@@ -1004,3 +1004,21 @@ Policy: append-only; preserve all earlier entries.
 - Verification: PR metadata and main-branch file read-back PASS. Public site deployment/browser rendering NOT TESTED. GitLab NOT REQUIRED under current GitHub-only direction. Blogger/Telegram NOT REQUIRED.
 - Memory branch: feature/owner-live-repo-verification-memory-20261128.
 - Marker: owner-live-repositories-verified-20261128
+
+
+## 2026-11-28 — Audit of Owner's two live GitHub Pages projects
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner supplied two live URLs and instructed Diamond King to inspect them:
+  1. https://trtt-voyage.github.io/trttvoyage-ashes-fall-king/index.html
+  2. https://trtt-voyage.github.io/trtt-ai/games.html
+- GitHub repository verification: both repositories exist, are public, and use main as the default branch:
+  - TRTT-VOYAGE/trttvoyage-ashes-fall-king; main index.html blob acff2164f4c945d02e5c8a8676a615c83da36408; repository tree confirms index.html (9,958 bytes), beacon.html, assets/ashes-crest.svg, and kingempire1png.jpg.
+  - TRTT-VOYAGE/trtt-ai; main games.html blob fdccdd27ebb6dc3b7762bc26480d5794150c6915; repository tree confirms app.html, index.html, king-game.html, throne-room.html, and games.html.
+- Source review findings:
+  - Ashes Fall King contains the visual command-centre layout and navigation controls, but index.html ends inside the JavaScript DATA object immediately after the learning entry. The script/object is syntactically incomplete; functions such as pick() are not present in the file. The Idea Star form also claims permanent saving, but no localStorage or IndexedDB implementation is present. Static HTML/CSS can render, but interactive controls are not supported by the checked source as committed.
+  - TRTT AI games.html contains three game entry points (King Game, Star Game, Diamond Game) and complete inline click-target logic. Related king-game.html and throne-room.html exist in main. Static source review only; gameplay was not browser-tested.
+- Live URL/browser verification: NOT TESTED. Direct page fetch was unavailable in this session; GitHub Pages deployment state and rendered browser behaviour were not confirmed. Do not equate repository source presence with live deployment health.
+- Decision: Do not modify either project in this audit trigger. Report source-level findings and wait for an explicit build/fix trigger.
+- No application files changed. Append-only Command Center memory and HTML trace only.
+- GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED.
+- Marker: two-live-sites-source-audit-20261128
