@@ -650,3 +650,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append-only memory and HTML trace only.
 - **Verification:** Branch and source file hash rechecked; actual repository XML storage remains NOT VERIFIED / NOT SAVED. GitLab, PR, Blogger, and Telegram not executed in this stage.
 - **Cost:** Zero-cost tools only; no paid service or trial.
+
+
+## Memory Entry — 2026-11-27 — Double-arrow continuation
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner sent 👉👉 to continue the pending original Blogger theme backup.
+- **Source recheck:** Local upload is present at the previously supplied path; size 440,824 bytes; SHA-256 verified again as `54a98a4b486f4d1cd5a7149c7053b335aaf81c06957fe592c9062404bab3b87b`.
+- **GitHub inspection:** Existing feature branch and manifest remain present. Available GitHub tools include base64 Git-blob creation, but the chat tool bridge accepts string content only and provides no local-file path/file-reference input for that action. No safe direct transfer of the local 440,824-byte source was available in this turn.
+- **Decision:** Do not create a placeholder or misrepresent the manifest as the XML. Keep source unchanged; original XML remains NOT SAVED in GitHub until actual bytes are uploaded and hash-verified.
+- **Files changed:** Append-only memory log and HTML trace only.
+- **Verification:** Local file size/hash PASS; GitHub XML upload NOT VERIFIED / NOT SAVED. GitLab, Blogger, Telegram not executed.
+- **Cost:** Zero-cost tools only.
