@@ -446,3 +446,14 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** Compare results directly returned by GitHub; five matching repository pairs are identical at comparison time; plannotator has a 5-commit lag.
 - **Safety:** No fork history changed, no force push, no merge, and no upstream repository modified.
 - **Next action:** Obtain organization write/PR permission or have Owner use GitHub's fork sync workflow for `Trttvoyage/plannotator`; review the five personal-ahead commits before syncing.
+
+
+## 2026-11-27 06:15 CET — Travelpayouts runtime variable and legacy privacy review
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Confirm the correct handling of the Owner's planned Travelpayouts token refresh and ensure legacy repository content does not expose private contact details in new public pages.
+- **Evidence:** Main repository API source `api/trtt_787950_master.py` reads environment variable `TRAVELPAYOUTS_TOKEN`; `.env.example` lists the same variable. Search found no `secrets.TRAVELPAYOUTS_TOKEN` reference, and inspected workflow `.github/workflows/trtt-24-7-pipeline.yml` does not reference it.
+- **Decision:** Do not claim the token is wired through GitHub Actions. Verify whether the runtime is Vercel or another execution environment before choosing GitHub Actions Secrets vs Vercel Environment Variables. Never ask Owner to paste token in chat or commit it.
+- **Privacy finding:** Search results exposed personal contact information in legacy TRTT and FlightScoutPro privacy-page source files. Values were not copied or repeated. New pages do not intentionally reuse them. Owner review/redaction is required before reusing those old policy pages.
+- **Legacy brand references:** Some `trttnews24bd` references remain in historical files and FlightScoutPro-specific assets. No global replacement was performed because it could break historical content or mix the separate FlightScoutPro project.
+- **PR #140:** Description updated to include these security/token caveats. PR remains open; no code change or deployment made by this description update.
+- **Safety:** No secret read, creation, update, display, or commit. No personal contact data copied. No Blogger publish, Vercel deploy, Cloudflare/DNS change, or Telegram send.
