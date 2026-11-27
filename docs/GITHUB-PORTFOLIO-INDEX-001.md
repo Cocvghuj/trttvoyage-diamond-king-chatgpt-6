@@ -207,3 +207,42 @@ These repositories are personal forks of third-party projects. Their upstream ow
 - [TRTT Voyage Diamond Horizon theme candidate — PR #141](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141)
 - Candidate file: `TRTT-Voyage-Generation-2-ULTIMATE.xml`
 - Automated XML, TRTT tests, and build checks: PASS. Blogger preview/import: NOT TESTED.
+
+
+## 11. Live public-link and Blogger audit — 27 November 2026
+
+### 11.1 Verified public destinations
+
+| Destination | Result | Notes |
+|---|---|---|
+| [TRTT Voyage](https://trttvoyage.com/) | PASS | Resolves to `https://www.trttvoyage.com/` and serves the live Blogger site. |
+| [GitHub profile](https://github.com/Cocvghuj) | PASS | Public profile resolves. |
+| [GitHub organization](https://github.com/Trttvoyage) | PASS | Public organization resolves. |
+| [WhatsApp Channel](https://whatsapp.com/channel/0029Vb8co9VDeONEz0B5e51M) | PASS | Link resolves; current channel title is “This Moment”, not TRTT Voyage. |
+| [Telegram Channel](https://t.me/trttnews24bd) | PASS | Link resolves; current username still contains the legacy `trttnews24bd` handle. |
+| [Facebook](https://www.facebook.com/profile.php?id=61595319351601) | PASS | Redirects to the public Abu Taher profile. |
+| [CodePen](https://codepen.io/Abu-Taher-the-styleful) | PASS | Public profile resolves. |
+| [Buy Me a Coffee](https://buymeacoffee.com/engrtaher20) | PASS | Public page resolves; current description is Italian. |
+| [TRTT Voyage Super App](https://cocvghuj-trtt-news-bot.vercel.app/super-app) | PASS | Public route returns the TRTT VoyageHub Super App page. |
+
+### 11.2 Live Blogger pages and categories
+
+- Home page is live, but the current first page includes personal `My dairy` posts and legacy PageList/Profile widgets. The Diamond Horizon theme candidate hides personal diary cards and hides the old PageList/Profile widgets without deleting posts or profile data.
+- About, Privacy, and Disclaimer routes resolve but still contain previous TRTT News 24 BD content. English source replacements are in [PR #140](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/140); they are not live until the Owner installs them.
+- `/p/contact-us.html` currently returns 404. A new English Contact source is in PR #140; the theme does not link to it until the live Blogger page exists.
+- News label, Travel search, AI label, and Tools app routes were checked and returned content. The theme uses those existing non-empty destinations.
+
+### 11.3 Account-level branding still requires Owner action
+
+- Rename the WhatsApp channel from “This Moment” to “TRTT Voyage” and replace its description with the English copy in `docs/SOCIAL-CHANNEL-REBRAND-READY-TO-PASTE.md`.
+- Decide whether to change the Telegram username; the existing public link still uses the old handle. Review the public description and remove any private contact detail.
+- Replace the Italian Buy Me a Coffee description with the English text in the social-channel guide if English-only public branding is desired.
+- The connected plugin search did not find a Cloudflare account connector. Cloudflare DNS, Workers, Pages, and security settings remain NOT TESTED; no DNS or security change was made.
+
+### 11.4 Current release gates
+
+- Main app README and public-page source: [PR #140](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/140) — OPEN, mergeable, CI PASS.
+- Diamond Horizon Blogger theme candidate: [PR #141](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141) — OPEN, mergeable, XML validator + TRTT tests + build PASS.
+- Full personal repository catalogue and append-only memory: [PR #34](https://github.com/Cocvghuj/trttvoyage-diamond-king-chatgpt-6/pull/34) — OPEN, mergeable.
+- No Blogger live page update or theme import, no social-account update, no production deployment, no DNS/security change, and no secret operation has been performed.
+
