@@ -392,3 +392,8 @@ Head: 8148716d79ffb35241fbc813338efdf847778234. Compare: 5 ahead / 0 behind; 4 f
 Static source checks PASS. Browser render, phone screenshot/touch QA, cross-browser and formal accessibility audit NOT TESTED. No merge or deployment.
 Command Center PR #79 was not changed because its diff deletes prior memory history; append-only integrity must be preserved.
 -->
+<!-- DR-TRTT-OPS-001 | 2026-11-27 | Owner reverted Learning Journey design refinement
+Learning Journey PR #9 merged at 20:02:52Z (49e6fcc45ecd98a2829b919f9de258090ac6abb1), then Owner merged explicit revert PR #10 at 20:03:35Z (a110e4b0c4ac160c66a6562851e0b98a42f55b32). Current main read-back confirms the refinement is reverted. Do not reapply without a new Owner direction.
+Initial aria-pressed mismatch was spotted in the proposal; no follow-up patch was submitted after the Owner revert. An initial-state branch was created but no file was written and no PR was opened.
+Browser/mobile QA NOT TESTED. No deployment, GitLab, Blogger, Telegram, or security/account changes.
+-->
