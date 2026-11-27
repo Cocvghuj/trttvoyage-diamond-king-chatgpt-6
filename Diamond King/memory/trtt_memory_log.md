@@ -977,3 +977,12 @@ Policy: append-only; preserve all earlier entries.
 - Verification planned: remote read-back and source-level checks. Browser/device QA, screen-reader audit, Lighthouse, and production behavior NOT TESTED.
 - GitLab NOT REQUIRED under current GitHub-only direction; Blogger/Telegram NOT REQUIRED.
 - Marker: learning-idea-universe-screens-20261127
+
+
+## 2026-11-27 — Learning/Idea Universe build verification
+- Created and remotely read back both HTML screens and the screen specification on feature/learning-idea-universe-screens-20261127.
+- Source checks PASS: HTML5 doctype, viewport, responsive layout, reduced-motion handling, live status feedback, labelled form controls, explicit local-only disclosure, and no eval()/location.href redirect patterns.
+- PR #83 created: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/83; open, not merged, mergeable=true at verification. 5 files changed, 108 additions, 1 deletion (newline normalization only in additive HTML trace; prior text preserved).
+- Browser rendering, Android/iOS device QA, cross-browser QA, screen-reader audit, Lighthouse, and production behavior remain NOT TESTED.
+- Owner review/merge required; no merge performed.
+- Marker: learning-idea-universe-build-verified-20261127
