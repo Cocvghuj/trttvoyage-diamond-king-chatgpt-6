@@ -407,3 +407,50 @@ Policy: append-only; preserve all earlier entries.
 - **Not verified:** Full metadata, license, security, branch, README, and CI audit for all 49 personal repositories; all organization fork freshness; all custom repository landing pages; GitLab mirror of this change; Blogger theme XML or live Blogger state; Vercel/Cloudflare configuration; Travelpayouts secret availability; production deployment or publication.
 - **Approval boundaries:** No PR merged, no Blogger live publish, no Telegram send, no production deployment, no DNS/security change, and no secret operation performed.
 - **Next action:** Owner reviews and merges the profile/portfolio PRs. Then continue with owner-maintained TRTT repositories and the Blogger theme as separate feature-branch stages. After merge, inspect the exact workflow secret name before the Owner adds the fresh Travelpayouts token.
+
+
+## Entry — 2026-11-27 — TRTT Voyage repository identity and page refresh
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested an English-language TRTT Voyage rebrand across personal GitHub repositories, READMEs, About/Contact/Disclaimer pages, organized public links, Blogger theme, website, tools, software, Vercel, and Cloudflare. Owner explicitly requested that TRTT Voyage be the visible brand rather than the old TRTT News 24 BD name.
+- **GitHub inventory:** Personal account search returned 49 repositories; metadata inspection identified 8 public owner-maintained repositories and 40 public third-party forks, plus private repositories excluded from public documentation. Trttvoyage organization search returned 7 repositories.
+- **Completed file work on feature branches:** Updated the main TRTT app README, About, Contact, Disclaimer, Privacy source pages, Blogger page setup guide, and Blogger menu brand label. Retained the legacy `pages/trttnews24bd/` directory as an internal compatibility identifier; the visible page content is TRTT Voyage. Updated command-center, MUSE gift, MUSE diary, writing-studio, TRTT MAGIC, and legacy-fix repository READMEs. Archived the old MUSE gift README drafts before replacing the active README. Translated one remaining Bangla quotation in the MUSE diary page into English.
+- **Pull requests opened:** Main TRTT app PR #140; command-center PR #33; MUSE gift PR #3; MUSE diary PR #1; writing-studio PR #3; TRTT MAGIC README PR #1; legacy-fix README PR #1. These PRs are OPEN and have not been merged.
+- **Vercel audit:** Connected team is TRTT Hobby. Three linked projects were found: `cocvghuj-trtt-news-bot`, `trtt-muse-gift`, and `trttvoyage-muse-diary`. Main project latest deployment reported READY, but project live flag is false. The two MUSE projects have SSO protection enabled for non-custom domains. `trttvoyage.com` was not found as a domain in the Vercel team.
+- **Decisions:** Use TRTT Voyage as public identity. Keep FlightScoutPro workflows and pages separate. Do not expose private contact details or credentials. Preserve original upstream README, license, author attribution, and project identity in third-party forks; list all personal forks centrally rather than misrepresenting them as TRTT-built software. Do not rename legacy integration folder paths until workflow mappings are migrated safely.
+- **Verification:** Read-back checks confirmed the seven new/updated owner-maintained READMEs are English and contain TRTT Voyage links, owner identity, and disclaimers. Fifteen main-repository files were read back; English checks passed, and private email/phone patterns plus old Blogger URL were absent from the TRTT pages. GitHub compare showed 16/0, 1/0, 4/0, 2/0, 1/0, 1/0, and 1/0 commits ahead/behind respectively for the seven feature branches. PRs are mergeable after GitHub recheck.
+- **Not verified:** Live HTTP resolution of trttvoyage.com and social links; Blogger custom-domain status; public access to SSO-protected Vercel previews; GitHub repository About metadata updates; Cloudflare account/configuration; complete test/build suite on all feature branches; full content/CI/license/security audit of every fork; live Blogger pages or theme; deployment/publication.
+- **Approval boundaries:** No PR merged by the assistant, no Blogger live publish, no Telegram send, no Vercel production deploy, no DNS/domain/security change, and no secret operation.
+- **Next action:** Owner reviews and merges the seven documentation PRs. Then proceed with the new Blogger theme candidate and the remaining repository audit as separate PRs. After workflow inspection, the Owner adds the fresh Travelpayouts token only to the exact GitHub Secret required by the verified workflow.
+
+
+## Entry — 2026-11-27 — TRTT Voyage Diamond Horizon Blogger theme candidate
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Continued the Owner's request to rebrand TRTT repositories and Blogger presentation under TRTT Voyage, with English public copy, organized links, and a new Diamond Horizon theme.
+- **Files changed on GitHub feature branch:** Added `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `scripts/validate_blogger_theme.py`, and `docs/TRTT-VOYAGE-DIAMOND-HORIZON-THEME-REVIEW-2026-11-27.md`; updated `.github/workflows/pr-validation.yml` to run the XML validator.
+- **Theme changes:** New separate candidate with TRTT Voyage hero, Home/News/Travel/AI/Tools/About menu, footer About/Contact/Privacy/Disclaimer and public-channel links, approved palette, and Blog1 share buttons disabled. Existing theme file and Blogger post/widget data were not overwritten. Removed legacy obfuscated eval block, malformed auto-link script, and deleted='true' attribute; retained reviewed main-branch trtt-loader.js.
+- **Pull request:** [Main TRTT theme candidate PR #141](https://github.com/Cocvghuj/Cocvghuj-trtt-news-bot/pull/141), OPEN, mergeable=true, not merged.
+- **Verification:** GitHub Actions PR Asset & Syntax Validation completed successfully. Python XML parser/static theme validator PASS; TRTT tests PASS; production build output check PASS. Static checks also confirmed six menu items, hero text, footer pages, approved palette, no eval/location.href/deleted='true'/old Blogger URL/stale branch loader.
+- **Not verified:** Blogger Theme preview/import, live Blogger page installation, mobile/desktop rendering, live link resolution, trttvoyage.com routing, and Vercel Tools route public access.
+- **Approval boundaries:** No Blogger theme install or replacement, no live page update, no production deployment, no DNS/security change, and no secret operation.
+- **Next action:** Owner reviews PR #141. After merge, export a Blogger theme backup and preview/import only with explicit Owner approval.
+
+
+## Entry — 2026-11-27 — TRTT Voyage live link, Blogger, and public channel audit
+
+- **Timestamp:** 2026-11-27 (date precision; exact UTC time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Continued the Owner's request to make TRTT Voyage the consistent English-language brand across personal repositories, public pages, links, Blogger theme, Vercel, and Cloudflare.
+- **Live website:** TinyFish fetch confirmed `https://trttvoyage.com/` redirects to `https://www.trttvoyage.com/` and serves the live TRTT Voyage Blogger site.
+- **Public link checks:** GitHub profile, GitHub organization, WhatsApp channel, Telegram channel, Facebook profile, CodePen, Buy Me a Coffee, and Vercel `/super-app` route all returned content. WhatsApp channel currently displays title “This Moment”; Telegram username retains legacy `trttnews24bd`; Buy Me a Coffee description is Italian. Suggested English copy is in `docs/SOCIAL-CHANNEL-REBRAND-READY-TO-PASTE.md`. No account-level changes were made.
+- **Blogger page status:** About, Privacy, and Disclaimer routes resolve but still display old TRTT News 24 BD content. Contact route `/p/contact-us.html` returns 404. New English page sources are in PR #140; no live Blogger page was changed.
+- **Category routes:** News label `/search/label/TRTT%20News24BD`, Travel search `/search?q=travel`, AI label `/search/label/AI`, and Vercel Tools route `/super-app` were fetched and returned content.
+- **Theme update:** PR #141 now uses verified category routes, hides personal Diary/My dairy cards outside their own label pages, hides legacy PageList/Profile widgets, hides legacy TRTT News label chips, and omits the broken Contact footer link until the page exists. Latest CI PASS: XML validator, TRTT tests, production build output.
+- **Vercel:** The main project reports latest deployment READY but project live flag false; its public `/super-app` route nevertheless returned the Super App page. Main site domain is Blogger-managed, not a Vercel custom domain. MUSE gift and diary previews remain SSO-protected.
+- **Cloudflare:** Plugin search did not find a Cloudflare connector. Cloudflare account/DNS/Workers/Pages/security state remains NOT TESTED.
+- **GitHub PRs:** PR #140 and PR #141 are OPEN / mergeable=true; PR #34 portfolio/memory is OPEN / mergeable=true. No merges performed by the assistant.
+- **Approval boundaries:** No Blogger live page update/theme install, social-account update, production deployment, DNS/security change, Telegram send, or secret operation.
+- **Next action:** Owner reviews and merges the documentation and theme PRs. Then update Blogger pages manually after backup and preview; update WhatsApp/Telegram/Buy Me a Coffee profiles from the prepared copy if desired.
