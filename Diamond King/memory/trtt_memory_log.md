@@ -369,3 +369,13 @@ Policy: append-only; preserve all earlier entries.
 - **Files:** Append this decision and matching command-center trace only.
 - **Verification:** Existing feature branch and both target files fetched before editing; read-back required after append. No Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send.
 - **Next action:** Owner may select the first topic for a separately authorized research/drafting task.
+
+
+## 2026-11-27 — Founder Profile and Public Brand Links Supplied
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner supplied a founder/profile signature for Engr. Abu Taher, describing TRTT Voyage, a zero-cost GitOps and AI-driven workflow / indie-hacker positioning, and the statement “I build For My Family.” Owner also supplied public WhatsApp Channel, Telegram Channel, Facebook profile, CodePen profile and Buy Me a Coffee URLs, plus private/direct contact details.
+- **Decision:** Treat the supplied name, tagline and family statement as candidate profile copy. Treat the five supplied URLs as owner-provided public brand/profile links; do not invent or alter them. The phrase “zero-cost” must be qualified against actual free-tier limits and any operating costs; do not claim guaranteed zero-cost operation.
+- **Privacy:** Do not copy the supplied email address or personal phone number into the GitHub memory log, command-center HTML, Blogger footer, public pages or other public artifacts. Existing instruction to exclude personal WhatsApp number remains in force. Contact details require separate explicit publication authorization.
+- **Scope:** This entry records the supplied profile data and safe handling decision only. No website/footer change, Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send is authorized by this message.
+- **Verification:** Existing feature branch and target files fetched before append; post-write read-back required.
+- **Next action:** Await an explicit instruction if the Owner wants these verified public links added to a specific website/profile location.
