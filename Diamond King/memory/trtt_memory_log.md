@@ -379,3 +379,16 @@ Policy: append-only; preserve all earlier entries.
 - **Scope:** This entry records the supplied profile data and safe handling decision only. No website/footer change, Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send is authorized by this message.
 - **Verification:** Existing feature branch and target files fetched before append; post-write read-back required.
 - **Next action:** Await an explicit instruction if the Owner wants these verified public links added to a specific website/profile location.
+
+## 2026-11-27 — GitHub organization repository transfer audit
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** Owner asked DIAMOND KING to choose the safest way to bring 2–4 repositories from the Trttvoyage GitHub organization into the Owner's personal GitHub account, explaining that paid transfer options are unaffordable.
+- **Decision:** Keep each project as its own fork in the personal account; do not combine unrelated codebases into one repository. Preserve upstream fork relationships and licenses. Avoid creating duplicate forks where a personal fork already exists.
+- **Inspection:** Trttvoyage organization currently exposes seven repositories: TRTT-Voyage-ARTEX, Claude-BugHunter, superpowers, DeepTutor, plannotator, stitch-skills, and trttvoyage-diamond-king-chatgpt-6.
+- **Verified personal-account forks:** Cocvghuj/Claude-BugHunter (upstream elementalsouls/Claude-BugHunter); Cocvghuj/superpowers (upstream obra/superpowers); Cocvghuj/DeepTutor (upstream HKUDS/DeepTutor); Cocvghuj/plannotator (upstream backnotprop/plannotator); Cocvghuj/stitch-skills (upstream google-labs-code/stitch-skills). Each inspected repo reports fork=true and the same upstream parent as its Trttvoyage organization counterpart.
+- **ARTEX exception:** Personal account has Cocvghuj/ARTEX, while organization has Trttvoyage/TRTT-Voyage-ARTEX. These are not the same repository name; fork-parent verification for Cocvghuj/ARTEX is still required before calling it a verified fork of the organization copy.
+- **Diamond King repo:** Both Trttvoyage/trttvoyage-diamond-king-chatgpt-6 and Cocvghuj/trttvoyage-diamond-king-chatgpt-6 exist, but the organization repo is not marked as a fork; do not treat it as a fork migration.
+- **Execution limitation:** Available GitHub connector supports repository inspection and file/branch/PR operations, but exposes no fork-creation or repository-transfer action. No unsupported API call or manual content copy was attempted. Therefore no new fork was created in this turn.
+- **Verification:** Organization inventory and source/personal repository metadata were read from GitHub. Fork metadata verified for five personal repositories. Commit-level equality/freshness not yet compared. GitLab mirror not tested.
+- **Next action:** If the Owner needs the exact fork button flow, open each organization repository and use Fork → Owner: Cocvghuj; however, the five listed personal forks already exist, so the immediate priority is checking whether they are up to date rather than creating duplicates.
+- **Protected actions:** No repository deleted, overwritten, transferred, merged, made private/public, or otherwise modified. No Blogger, Telegram, deployment, DNS or security action performed.
