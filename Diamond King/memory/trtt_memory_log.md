@@ -478,3 +478,12 @@ Policy: append-only; preserve all earlier entries.
 - **Verification boundary:** Exact URL storage/read-back can be verified. Redirect destinations, campaign validity, marker attribution, program status, app/store destinations, availability, commissions and conversions are NOT VERIFIED.
 - **File changes:** Create dated register; append memory and command-center trace on `feature/travelpayouts-affiliate-links-20261127`.
 - **GitLab:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED; no distribution requested.
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — Amazon six-item repository structure recommendation
+- **Trigger:** Owner asked whether the six newly supplied Amazon affiliate items should be stored in separate repositories.
+- **Recommendation:** Use one dedicated Amazon Affiliate repository with six individually maintained product records under `products/`, plus a README and append-only memory/link log. Keep Amazon isolated from the Travelpayouts register; do not create six repositories for six products because that adds unnecessary repository, permissions, PR and maintenance overhead.
+- **Proposed records:** `amazon-001.md` through `amazon-006.md`, preserving the six Owner-supplied product labels and exact amzn.to URLs already recorded in the existing register.
+- **Decision status:** Recommendation only. No new repository created and no product links moved or changed. Await Owner approval before creating a separate repository.
+- **Verification:** Existing Amazon link register and prior PR #40 are known from previous project work; this turn records the design recommendation only. New repo availability/name and product destination/Associate attribution remain NOT VERIFIED.
+- **GitLab:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED.
