@@ -1008,3 +1008,52 @@ Policy: append-only; preserve all earlier entries.
 - GitHub repository creation: connector currently has no create-repository action; new repository creation remains NOT VERIFIED. Continue preparing content in existing Command Center feature branch only.
 - Verification: This entry and the corresponding additive HTML trace must be read back from GitHub after writing.
 - Constraints: GitHub-only, free-only, no secrets, no app-repository changes, no paid services, no protected production/account/security actions without approval.
+
+
+## 2026-11-27 — project-rules-prompt-2-master-franchise-vision-received
+- Project: DR-TRTT-OPS-001
+- Trigger: Owner supplied prompt 2 for the planned \`project-rules\` repository. Prompt 2 includes the earlier capability discussion and the Owner's explicit product vision.
+- Prompt 2 — source text supplied by Owner (preserved verbatim):
+
+> ২.
+> Loading older messages…
+> Continued from
+> Diamond King Mode (121)
+> তুমি এবার বলো এটার সব লেখা কি, গিটহাব, গিটল্যব, চ্যটজিপিটি, কোন পান, নিয়ন, ক্যানেভার মত ছবি, পায়োনিক্স করতে পারবা।
+>
+> Worked for 20s
+> হ্যাঁ, পারব। শুধু লেখা নয়—এই প্রজেক্টকে একটি পূর্ণাঙ্গ SaaS Product হিসেবে পরিকল্পনা, ডিজাইন, ডকুমেন্টেশন, ডেভেলপমেন্ট ও পরীক্ষা পর্যন্ত এগিয়ে নিতে পারব।
+>
+> তবে কোন কাজ সরাসরি করতে পারব, কোনটির জন্য তোমার Account Connection বা Approval লাগবে, সেটা পরিষ্কার রাখছি।
+>
+> কোন কোন কাজ করতে পারব
+> GitHub — Project Control Center: Repository, README, Issues, Branch, PR, Code Review, Merge, Documentation ও Project Memory। নিরাপদ PR যাচাই করে delegated merge।
+> GitLab — Development & Backup: Repository, CI/CD, Issues, Merge Requests ও backup workflow; বর্তমান Owner সিদ্ধান্তে NOT REQUIRED।
+> Notion — Knowledge Management: Product Wiki, Database, SaaS Requirements, Roadmap, Meeting Notes, Team Documentation।
+> Canva — Visual Design: Logo, Brand Kit, UI Mockup, Presentation, Infographic, Social Media Design ও SaaS Marketing Graphics।
+> ChatGPT — AI Brain: Research, Product Strategy, Writing, Coding, Analysis, Testing Plans, Documentation ও Decision Support।
+> AI Image Generation: Original Logo Concepts, Hero Images, Illustrations, Product Visuals ও Marketing Images।
+>
+> SaaS workstreams:
+> Product Writing — all required English documentation.
+> UI/UX — user flow, wireframe, design specification.
+> Branding — logo concept, colour, visual identity.
+> Development — code writing and fixes.
+> Database — schema and architecture planning.
+> Testing — test cases, bug analysis, verification.
+> Security — threat model, privacy and permission design.
+> Business — pricing research, SaaS model, launch plan.
+> GitHub — branch, PR, review and delegated merge.
+>
+> Limitation: ChatGPT cannot independently read all private Live Chats or automatically sync them into the SaaS. Connected services require the necessary account connection and permissions. Owner asked what “পায়োনিক্স” means; its exact English product name remains unclear and must not be guessed.
+>
+> Owner's product vision: Build Diamond King Master Franchise as the SaaS “boss” / master-franchise platform, not merely a website or text blog. It must become a vast interactive universe with two distinct, attributable worlds: (1) Learning Universe — what the Owner learns from Diamond King, questions, lessons, experiments and progress; (2) Idea Universe — the Owner's own ideas, connections, experiments, prototypes and incubations; supported by (3) SaaS Universe — project memory, AI collaboration, knowledge maps, timelines, workspaces, dashboards, interactive prototypes and an eventual franchise platform.
+>
+> Required product characteristics: visual-first and interactive, not text-only; knowledge maps, visual timelines, idea connections, project spaces, learning paths, dashboards, prototype gallery, evidence/provenance; private by default with selective sharing; AI attribution and human ownership. Potential franchise architecture includes separate branded workspaces/universes, knowledge engine, visual universe, AI collaboration with human decision ownership, and validated subscription/team/partner/franchise licensing models.
+>
+> Owner's relationship instruction: Do not describe Diamond King as merely the Owner's subordinate AI agent. The intended framing is AI collaborator, thinking partner and building partner; Abu Taher remains Founder/Owner and final human decision-maker. Be honest; do not promise unavailable integrations or pretend that unbuilt features exist.
+>
+> - Reconciliation with Prompt 1: retain its nine workstreams exactly as capability categories. Prompt 2 adds the product vision, collaboration principles, franchise direction, visual/interactive requirements, and explicit capability limitations. No conflict requiring deletion; current GitLab NOT REQUIRED decision remains in force.
+> - Implementation constraints: concept/discovery first; GitHub-only and free-only unless Owner changes scope; no paid services/trials; no secrets; no automatic private-chat sync claims; no app repo changes or production deployment without explicit reversal/approval; protect privacy and distinguish Owner ideas from AI-generated material.
+> - Status: Prompt 2 RECEIVED. Both prompts now available for synthesis into Project Rules. Repository creation itself remains NOT VERIFIED; connector currently has no create-repository action. Next: prepare repository-ready rules/docs and investigate an authorized free repo-creation route; do not claim repo exists until verified.
+- Verification: read back this entry and matching HTML trace from the pending Command Center feature branch.
