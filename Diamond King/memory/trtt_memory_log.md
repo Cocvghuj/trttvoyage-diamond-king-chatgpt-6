@@ -978,3 +978,17 @@ Policy: append-only; preserve all earlier entries.
 - GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED; no publishing or delivery.
 - Browser rendering, downstream reuse, and legal/licensing review: NOT TESTED.
 - Marker: diamond-king-learning-journey-free-for-everyone-20261127
+
+
+## 2026-11-28 — Free Learning Journey front-page discovery
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner said “next” after the Free for Everyone mission was merged.
+- GitHub-first inspection: Learning Journey PR #11 verified merged at 2026-11-27T23:40:39Z, merge commit 978f26fe6774a06d0601e11779b6e5f2f20b5e68. Command Center PR #84 verified merged at 2026-11-27T23:41:06Z, merge commit 96cebbb6b140ca3531fda29121990a30114ac234.
+- Decision: Improve discoverability by adding a concise Free for Everyone / Learn → Imagine → Build → Share entry to the Learning Journey README, linking the canonical mission file and clarifying licence boundaries.
+- Learning Journey branch: feature/free-learning-journey-readme-entry-20261128.
+- File changed additively: README.md — appended the public mission entry; prior README content preserved.
+- Command Center memory branch: feature/free-learning-journey-discovery-memory-20261128.
+- Verification: README update API returned commit aa051e41e0d3ddcb0ed0c42b7809ccd7e15c24a0; remote read-back and PR creation pending.
+- GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED.
+- Browser rendering, accessibility audit, and public user comprehension: NOT TESTED.
+- Marker: free-learning-journey-readme-discovery-20261128
