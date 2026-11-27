@@ -469,3 +469,12 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** URLs are syntactically HTTPS amzn.to links as supplied. Destination product pages, Amazon marketplace, Associate tracking tag, availability, and commission attribution are NOT VERIFIED; titles are owner-provided labels.
 - **File changes:** Add dated Amazon link register; append this memory entry; append matching trace to trttmagic.html on feature/amazon-affiliate-links-20261127.
 - **GitLab mirror:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED; no distribution requested.
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — Owner supplied Travelpayouts affiliate link inventory
+- **Trigger:** Owner supplied TRTT Voyage Travelpayouts links for marker 787950, including direct tpo.lv short links and full tp.media tracking URLs.
+- **Decision:** Preserve all 43 supplied entries exactly in a dated register. Keep Kiwi.com locale/intent variants and the three GigSky links because they were explicitly included. Do not invent missing full URLs.
+- **File:** `Diamond King/affiliate-links/travelpayouts-787950-2026-11-27.md`.
+- **Verification boundary:** Exact URL storage/read-back can be verified. Redirect destinations, campaign validity, marker attribution, program status, app/store destinations, availability, commissions and conversions are NOT VERIFIED.
+- **File changes:** Create dated register; append memory and command-center trace on `feature/travelpayouts-affiliate-links-20261127`.
+- **GitLab:** NOT TESTED. **Blogger:** NOT TESTED. **Telegram:** NOT TESTED; no distribution requested.
