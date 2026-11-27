@@ -357,3 +357,15 @@ Policy: append-only; preserve all earlier entries.
 - **Files:** Append this evaluation and matching command-center trace only, on the existing feature branch.
 - **Verification:** Existing branch and both target files fetched before editing. Post-write read-back required. No merge, GitLab mirror, Blogger draft/upload/publication, production deployment, DNS/security/account change or Telegram send.
 - **Next action:** Use this brief as a design reference only after the Owner confirms any personal story claims and the intended SaaS product scope.
+
+
+## 2026-11-27 — Three-Part Culture, Music and Falcon Content Roadmap
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner supplied a proposed three-post series: “Cutting Through the Phonies” (authenticity vs hype in tech/creator culture), “Smoke in the Valley” (music and resilience/storytelling), and “Eyes of the Falcon” (vision, precision, freedom, nature and travel).
+- **Decision:** KEEP as an editorial roadmap, not an instruction to create or publish Blogger drafts. The three themes can sit within TRTT Voyage's existing News, Travel, AI and Tools architecture; do not displace those sections or announce a halt to news coverage.
+- **Editorial safeguards:** (1) “Phonies” coverage must use specific, verifiable examples and fair comparisons; do not label a person, brand or tool fraudulent without reliable evidence and an opportunity for context. Validate current prices/features and distinguish opinion from fact. (2) Before writing about “Smoke in the Valley,” verify the track title, artist attribution (proposed: Ragal Ironbull), release details and source material. Discuss meaning in original wording; do not reproduce copyrighted lyrics beyond the permitted short-quotation limit. (3) Use the falcon as a symbol consistent with TRTT's falcon identity; do not conflate falcons and eagles as the same species. Wildlife and travel claims require reputable sources, and wildlife viewing advice must be responsible and non-disturbing.
+- **Suggested sequence:** 1. “Cutting Through the Phonies: Substance Over Digital Hype” (technology/media literacy); 2. “Smoke in the Valley: Music, Focus and the Independent Builder” (verified music feature plus clearly labelled personal reflection); 3. “Eyes of the Falcon: Vision, Precision and Responsible Exploration” (brand/nature/travel feature).
+- **No unsupported claims:** Do not claim Diamond King is already autonomous or can independently publish. “For your family” is a personal framing and should be included publicly only if Owner explicitly wants it. Avoid guaranteed zero-cost or guaranteed monetization claims.
+- **Files:** Append this decision and matching command-center trace only.
+- **Verification:** Existing feature branch and both target files fetched before editing; read-back required after append. No Blogger draft, live publication, PR merge, GitLab mirror, production deployment, DNS/security/account change or Telegram send.
+- **Next action:** Owner may select the first topic for a separately authorized research/drafting task.
