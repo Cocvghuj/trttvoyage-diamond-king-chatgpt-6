@@ -442,3 +442,13 @@ $("build").addEventListener("click",makeList);$("reset").addEventListener("click
 </section>
 
 <section class="memory-verification"><p><strong>Preview access caveat — 2026-11-27 13:12 CET:</strong> GitHub status contexts show both Netlify previews SUCCESS, but direct page inspection via the available web reader returned inaccessible/internal error for both URLs. Preview page content/visual rendering: NOT VERIFIED. Blogger preview: NOT TESTED.</p></section>
+
+<section class="memory-entry" data-project="DR-TRTT-OPS-001">
+  <h2>Memory entry — 2026-11-27 14:10 CET</h2>
+  <p><strong>Trigger:</strong> User sent “👉” after the request for the current Blogger Theme XML backup.</p>
+  <p><strong>Decision:</strong> Continue safe preparation only. The arrow is not the backup file and does not authorize Blogger production changes, live publishing, GitHub merge, DNS/security changes, or Telegram distribution.</p>
+  <p><strong>Evidence:</strong> PR #142 previously confirmed Owner-merged; PR #144 open/draft/unmerged. Netlify status SUCCESS, but visual preview NOT VERIFIED. GitLab file-content mirror PASS; history parity/restore NOT TESTED.</p>
+  <p><strong>Blocker:</strong> Current Blogger Theme XML backup not provided; Blogger-native staging preview NOT TESTED.</p>
+  <p><strong>File changes:</strong> Append-only memory and HTML trace entry. No Blogger/theme production changes.</p>
+  <p><strong>Verification:</strong> Pending read-back.</p>
+</section>
