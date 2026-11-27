@@ -787,3 +787,16 @@ Policy: append-only; preserve all earlier entries.
 - **Constraints:** Preserve the existing repository and pending memory batch branch. No app repository edits, deployment, paid service/trial, token request/exposure, Blogger publication, Telegram send, or PR creation. Owner's Chrome-only/no-app-change/no-cost restriction remains active.
 - **Verification:** User's intent and proposed multi-tenant architecture captured in chat. No code, API eligibility, OAuth, account connection, tenancy isolation, billing, runtime, or legal/terms checks performed. Those remain NOT TESTED.
 - **Next action:** Owner chooses the account-connection model; then define a public SaaS MVP and validate Travelpayouts official integration permissions before implementation.
+
+
+## Entry — 2026-11-27 — Multi-System Data, Memory and News Workflow Scope
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner narrowed the immediate goal: begin only with durable data storage, project memory, and blog/news workflow. The aim is to prevent loss of important information and use multiple systems so ChatGPT's conversational memory is not overloaded or treated as the only source of truth.
+- **Decision:** Defer the public multi-tenant Travelpayouts SaaS and all unrelated product builds. First establish a reliable content/data continuity foundation. Treat ChatGPT memory as a lightweight index/context aid, not the database or sole archive.
+- **Proposed system boundaries:** (1) GitHub command-center repository as the structured source of truth and append-only change history; (2) a separate backup/mirror system such as the existing authorized GitLab project, with commit/read-back verification; (3) structured records for facts, sources, decisions, links, content status and workflow events; (4) blog/news workflow with distinct stages for source verification, draft, Owner review, Blogger draft, explicit live approval, and Telegram only after confirmed live publication. Keep source data, memory summaries, and public article content separated.
+- **Reliability rules:** No destructive overwrite; preserve version history; record timestamps, source references, status and verification; maintain periodic export/backup and verify restoration paths before claiming disaster recovery. Avoid storing secrets or sensitive credentials in logs. Do not equate a mirrored commit with a tested restore.
+- **Constraints:** Respect Chrome-only/no-app-change/no-cost instruction. No app repository edits, deployment, paid services/trials, secrets, Blogger publish, Telegram send, or PR creation. Continue using the same pending memory batch branch.
+- **Verification:** Owner's requested scope and architecture direction recorded. No storage schema, automated synchronization, backup schedule, restore drill, news pipeline execution or runtime has been implemented/tested in this entry; these remain NOT TESTED.
+- **Next action:** Design and validate the smallest free, versioned data/memory/news workflow before implementation, beginning with inventory of current GitHub/GitLab records and a defined backup/restore procedure.
