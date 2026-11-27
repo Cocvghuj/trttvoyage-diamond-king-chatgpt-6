@@ -775,3 +775,15 @@ Policy: append-only; preserve all earlier entries.
 - **Capability/evidence:** Available GitHub connector actions were inspected; no repository-topics update action is exposed in this session. No repository settings were changed. Owner can add topics through the GitHub repository page, or provide the repository URL so we can re-check available authorized actions.
 - **Verification:** No topics applied; NOT TESTED. No PR, app edit, deployment, Blogger draft, or Telegram delivery.
 - **Entry marker:** github-topics-owner-question-20261127
+
+
+## Entry — 2026-11-27 — Public Travelpayouts-Connected SaaS Clarification
+
+- **Timestamp:** 2026-11-27 (date precision; exact clock time not asserted)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner clarified that the goal is not merely a private tool for their own Travelpayouts work. They want a public SaaS open to other users, who can sign up and connect with the Owner's TRTT platform; Owner has limited time and wants the product model understood correctly.
+- **Decision:** Frame the first product as a multi-tenant, public Travelpayouts-connected SaaS, with separate user accounts/workspaces and an Owner/Admin workspace. Keep tenant data isolated. Travelpayouts remains the original affiliate platform and data source; do not clone its dashboard, booking engine, link generation, or reporting features. TRTT provides its own workflow/organization/insight layer.
+- **Open product decision:** Confirm whether each customer connects their own Travelpayouts account through an authorized integration, or customers use Owner-provided Travelpayouts affiliate links/account. These are materially different models for permissions, attribution, terms, security, and revenue. No assumption made.
+- **Constraints:** Preserve the existing repository and pending memory batch branch. No app repository edits, deployment, paid service/trial, token request/exposure, Blogger publication, Telegram send, or PR creation. Owner's Chrome-only/no-app-change/no-cost restriction remains active.
+- **Verification:** User's intent and proposed multi-tenant architecture captured in chat. No code, API eligibility, OAuth, account connection, tenancy isolation, billing, runtime, or legal/terms checks performed. Those remain NOT TESTED.
+- **Next action:** Owner chooses the account-connection model; then define a public SaaS MVP and validate Travelpayouts official integration permissions before implementation.
