@@ -759,3 +759,11 @@ Policy: append-only; preserve all earlier entries.
 - **Repository inspection:** GitHub organization search for “Travelpayouts” returned only the existing TRTT-VOYAGE/Cocvghuj-trtt-news-bot; no separate Travelpayouts repository was found in that search. No new repository was created. Existing no-app-change/no-cost constraint remains in force, so no app repository files or branches were modified.
 - **Implementation status:** Product direction clarified; SaaS not built. Need inspect existing command-center repo structure and candidate original product scope before creating a dedicated repository or feature branch. No paid services/trials, secrets, deployment, Blogger publishing, or Telegram send.
 - **Verification:** Search result inspected; no standalone Travelpayouts repository in returned organization results. No code build or runtime test performed.
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — Product sequence clarified
+- **Trigger:** Owner clarified the build order: first Travelpayouts only; next Amazon as a separate module; then the original TRTT-owned SaaS platform.
+- **Decision:** Phase 1 is a TRTT-specific Travelpayouts workflow/integration, not a clone of Travelpayouts' own dashboard, link generation, campaign or reporting features. Phase 2 is a separate Amazon module. Phase 3 is the broader original TRTT SaaS, designed after the first two phases.
+- **Scope guard:** Do not build all phases at once. Respect the active no-app-change, free-only, no-deployment constraints. No repository/app code was changed and no new repository/PR was created in this turn.
+- **Verification:** Owner's sequence captured. No implementation, build, runtime, or integration test performed. Memory update pending read-back.
+- **Entry marker:** travelpayouts-first-amazon-second-original-saas-sequence-20261127
