@@ -857,3 +857,20 @@ Policy: append-only; preserve all earlier entries.
 - Merge request: Owner explicitly requests merge of the Project Rules records into the existing Command Center repository so they can inspect the result. A previous 56-commit pending branch PR #66 was inspected and found mergeable=false, containing five files and legacy governance text that contradicts the current delegated-merge instruction. It must not be merged blindly. This clean branch is based directly on current main and contains only the Project Rules prompt records and this trust/evidence trigger.
 - Verification: New branch created from main; both target files fetched before append. Read-back and PR review/merge status to be recorded after execution.
 - Marker: project-rules-prompts-and-owner-merge-request-20261127
+
+
+## 2026-11-27 — Learning Journey Project Rules merge request
+- Timestamp: 2026-11-27T19:05Z (GitHub merge event time; UTC)
+- Project code: DR-TRTT-OPS-001
+- Trigger: Owner instructed, “project rules ও মার্জ করো”, following identification of the omitted Project Rules batch in the Learning Journey repository.
+- Decisions: Preserve existing history; use a feature branch; document the nine capability workstreams and Master Franchise vision additively; distinguish the Learning, Idea and SaaS universes; retain privacy, provenance, AI-attribution and concept-stage limits. No standalone `TRTT-VOYAGE/project-rules` repository was found; this task therefore added the rules as documentation in the existing Learning Journey repository, not as a new repository.
+- Learning Journey repository: `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey`
+- Branch: `feature/project-rules-and-master-franchise-vision-20261127`
+- PR: https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/3
+- Files: `PROJECT-RULES.md` (new), `MASTER-FRANCHISE-VISION.md` (new), `README.md` (two navigation links added), `CHANGELOG.md` (five lines appended).
+- Diff: 4 commits ahead, 0 behind before merge; 4 files changed; 202 additions; 0 deletions. Read-back completed on feature branch and main. PR reported mergeable=true before merge; no combined status checks were reported.
+- Merge: PASS — squash merge succeeded. Merge commit: `870feac9c0e453335cba9de98ac32340162e9346`. PR #3 read-back: closed, merged=true, merged_at 2026-11-27T19:05:17Z.
+- Main read-back: Master Franchise vision, README links and changelog verified. Project Rules document read-back confirmed; automated keyword check was overly case-sensitive, so content verification should use its actual headings/terms rather than the lowercase phrase test.
+- Boundaries: Documentation only. No app code, deployment, paid services, secrets, live publication, or franchise readiness claimed. GitLab NOT REQUIRED.
+- Verification status: PASS — PR metadata and merge SHA verified; changed files read back from main.
+- Marker: learning-journey-project-rules-master-franchise-merge-20261127
