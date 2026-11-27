@@ -905,3 +905,11 @@ Policy: append-only; preserve all earlier entries.
 - Verification: GitHub writes and feature-branch read-back PASS. Static checks PASS for doctype, single inline CSS/JS, skip target, ARIA menu controls, Escape support, map aria-pressed state, reduced motion, no local CSS/JS refs, and no empty hash links. Browser render, Android handset screenshot/touch QA, cross-browser QA, and formal WCAG audit NOT TESTED.
 - Protected actions: No merge, production deployment, Pages settings, DNS/security/account changes, backend, Blogger, Telegram, or GitLab operations.
 - Next action: Owner reviews and merges PR #9. Existing Command Center PR #79 was not modified; its diff removes prior memory entries and must not be merged as append-only history.
+
+## 2026-11-27 — Owner revert of Learning Journey design refinement
+- Follow-up verification: Learning Journey PR #9 was merged at 2026-11-27T20:02:52Z (merge commit 49e6fcc45ecd98a2829b919f9de258090ac6abb1).
+- Owner then merged PR #10, an explicit revert of PR #9, at 2026-11-27T20:03:35Z (merge commit a110e4b0c4ac160c66a6562851e0b98a42f55b32). Current main read-back confirms the design refinement is reverted; do not reapply without a new direction.
+- The post-merge inspection found a small initial aria-pressed mismatch in the reverted proposal; no follow-up fix was submitted because the Owner had reverted the whole refinement.
+- An unused feature branch for the initial-state correction was created from a then-current ref but no file write or PR was made on it.
+- Current outcome: design refinement PR #9 is MERGED then REVERTED by Owner PR #10. Main remains at the Owner-reverted version. Browser/mobile QA NOT TESTED.
+- Keep this record append-only. No production deploy, GitLab, Blogger, Telegram, or account/security changes.
