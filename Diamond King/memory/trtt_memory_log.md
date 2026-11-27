@@ -933,3 +933,12 @@ Policy: append-only; preserve all earlier entries.
 - Evidence: PR https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/7; merge commit 8f1c64b4498c3913b0586d519ea1edeeab1bef4a. Main read-back blob d2d2dfa64f83ddbcdefdb92351897af96525d89e, 27,823 characters; embedded style/script present; local assets/css and assets/js references absent.
 - Verification: GitHub source update and main read-back PASS. Browser rendering, actual phone screenshot, and GitHub Pages deployment NOT TESTED. No claim of live preview.
 - GitLab NOT REQUIRED; Blogger and Telegram NOT REQUIRED.
+
+
+## 2026-11-27 — DR-TRTT-OPS-001 — Owner supplied HTML / execute request
+- Trigger: Owner supplied the complete standalone Diamond King Universe HTML and instructed “তো করে দাও ভাই”.
+- Repository inspected before edit: TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey, main/index.html already contained the matching 27,823-character standalone experience with inline CSS and JavaScript; initial doctype was lowercase.
+- Decision/change: Standardized the doctype to `<!DOCTYPE html>`; changed only root `index.html`.
+- Evidence: Learning Journey PR #8 https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/8 merged; merge commit e9624244c6013e1e0ffefcc19e09c303b796fb94. Main read-back confirms first line `<!DOCTYPE html>`, 27,823 characters, inline CSS/JS retained.
+- Verification: GitHub edit, PR merge, and main read-back PASS. Browser render, phone screenshot, and GitHub Pages deployment NOT TESTED.
+- GitLab NOT REQUIRED; Blogger/Telegram NOT REQUESTED.
