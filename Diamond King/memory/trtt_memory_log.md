@@ -590,3 +590,5 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append-only update to this memory log and additive HTML trace only; no product, website, Blogger, GitLab, or Telegram content changed.
 - **Verification:** GitHub source files were fetched from `feature/agents-guide-mainline-refresh-20261127`; append commit/read-back verification pending.
 - **Approval gates:** No merge, live Blogger publish, production deploy, DNS/security change, or Telegram send performed.
+
+- **Verification update (13:05 CET):** Both append operations succeeded and both files were fetched again from the same branch. The new memory entry and HTML trace are present. GitHub memory/trace verification: PASS.
