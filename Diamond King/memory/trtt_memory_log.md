@@ -541,3 +541,13 @@ Policy: append-only; preserve all earlier entries.
 - **Memory PR #46:** Owner merged it; API reports merged=true, merge commit `3b1153c4a62777a82e169d920c47717995d62702`. The two memory files are now on main (read-back before this entry: log blob `d8e636a5406a857ef18f9097712320e9b385399f`; HTML blob `d7b30febad3c37b9b9348e38000406640d008acc`).
 - **Decision:** Prior Owner instruction remains active: no app repository/branch changes, no rebase/sync, no app deployment or paid services. No merge of PR #146, no Blogger publish, no Telegram send.
 - **Verification:** PR #146 current state PASS; memory PR #46 merged status PASS; GitHub Actions/runtime tests NOT TESTED; exact conflict hunks NOT VERIFIED; user's Android Chrome-opening behavior NOT VERIFIED.
+
+
+## 2026-11-27 — User trigger: “আবার দেখো” — PR #146 recheck
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner requested another live GitHub status check for TRTT app PR #146.
+- **GitHub evidence:** PR #146 remains OPEN, unmerged, non-draft, with `mergeable=false`. Head branch `feature/blogger-amazon-six-item-menu-20261127`, head SHA `80b3c65d6c92c1ce365b6e40d0b998feab7621ff`; base `main`, base SHA `94e952fa09d888ca0bf9b33103d3cfd7b7a4c2b9`. Last PR update remains `2026-11-27T15:37:45Z`.
+- **Compare:** branch is `diverged`, 12 commits ahead and 1 behind; merge base `1cd01fea3ff889982862c821c1d9ac37e1ab8e8c`. Six changed paths remain: `TRTT-Voyage-Generation-2-ULTIMATE.xml`, `blogger-pages/amazon-picks.html`, `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`, `scripts/validate_blogger_theme.py`, `tests/test_amazon_six_item_policy.py`, and `trtt_787950_master.py`.
+- **Decisions:** Respect Owner's current no-app-change/no-cost instruction. No app branch sync/rebase/fix, merge, production deployment, paid service/trial, Blogger publish, or Telegram send.
+- **File changes:** Only this command-center append-only memory log and matching `Diamond King/trttmagic.html` trace are updated on the dedicated feature branch; no app repository files changed.
+- **Verification:** GitHub PR metadata and compare status PASS; memory PR #47 is now merged by Owner (merge commit `75e9e9186ce07126c5410b5227d913f6f072708e`). Netlify deploy-preview bot comments exist, but runtime tests/CI NOT TESTED; exact conflict hunks NOT VERIFIED; user's Chrome app-link behavior NOT VERIFIED. GitLab, Blogger and Telegram stages NOT TESTED.
