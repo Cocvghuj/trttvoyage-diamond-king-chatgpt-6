@@ -79,14 +79,15 @@
         "path": "integrations/trttvoyag-blog/",
         "branch": "feature/trtt-blog-github-gitlab-bridge-20261128",
         "mergeRequest": "https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot/-/merge_requests/31",
-        "status": "snapshot-and-readme-mirrored-mr-open-github-ci-pass-gitlab-ci-quota-blocked",
+        "status": "manual-snapshot-mr-open-automatic-sync-blocked-missing-gitlab-token-ci-quota-blocked",
         "syncWorkflow": "TRTT-VOYAGE/TRTTVOYAG-BLOG/.github/workflows/sync-gitlab-mirror.yml",
         "requiredSecret": "GITLAB_TOKEN",
         "secretPresence": "not-verified",
         "direction": "github-to-gitlab-only",
-        "latestMirrorCommit": "ab96fe46e7d7b3a12d1720a8e73e7e8119f4a77f",
-        "sourceCommit": "0124cdbc8b615133200808b937db2d436f98a3e4",
-        "sourcePR": "https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/3"
+        "latestMirrorCommit": "3abcc39642e0f3d48c7d11df5c7a207a6100f68a",
+        "sourceCommit": "2b321fe5bae2e194616f18abbfcabddd7d537a51",
+        "sourcePR": "https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/3",
+        "automaticSync": "blocked-token-empty"
       }
     }
   ],
