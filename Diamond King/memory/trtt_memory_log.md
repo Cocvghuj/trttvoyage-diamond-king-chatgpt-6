@@ -1399,3 +1399,13 @@ Policy: append-only; preserve all earlier entries.
 - **Blog package PR #1:** OPEN, unmerged, mergeable=true; final observed Blog CI run 46105164431 SUCCESS. Package tests had 13 passing cases.
 - **Boundary:** five-repository bridge remains manual/version-controlled links only. No automatic data replication, webhooks, background agent or ChatGPT Memory sync. No Blogger import/publication, Telegram, production deployment, DNS/security or GitLab action.
 - **Marker:** trtt-blogger-ready-package-v1-20261128-central-pr-112
+
+
+## Follow-up — 2026-11-28 — Blogger menu route and final CI verification
+
+- **Source check:** Re-read the approved Blogger menu configuration in Cocvghuj-trtt-news-bot main (blog-control.json).
+- **Correction:** News route aligned to /search/label/TRTT%20News24BD; Travel route aligned to /search?q=travel. This replaced earlier assumptions based on the theme candidate alone.
+- **Evidence:** Blog PR #1 latest checked head before this memory append: b9d229fa73db6cee95c44b3f3e8756949be80e35. GitHub Actions run 46105479389 SUCCESS; package validator PASS; 13 tests PASS.
+- **Status:** Blog PR #1 OPEN/unmerged/mergeable=true at last check. Command Center PR #112 remains the fifth-module registry/bridge PR. Neither PR was merged.
+- **Remaining NOT TESTED:** Blogger live route resolution, theme compiler/import, static page installation, browser/device QA, Blogger API access, partner redirect/attribution, live publication, Telegram, production deployment and DNS.
+- **Marker:** trtt-blogger-ready-package-v1-20261128-final-menu-ci
