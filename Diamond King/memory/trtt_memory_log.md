@@ -1278,3 +1278,13 @@ Policy: append-only; preserve all earlier entries.
 - **Boundaries:** This is a static partner directory, not live fare/hotel search, booking checkout or provider API integration. No Owner-supplied hotel URL in the latest register. Redirects, campaigns, marker attribution, live API access, commissions/conversions, manual browser/device QA and deployment remain NOT VERIFIED/NOT TESTED. No credentials, paid services, analytics, cookies, database, production deployment, DNS change, Blogger publication or Telegram distribution.
 - **Governance:** Command Center AGENTS.md requires Owner approval for PR merges and production actions. PR #1 is not merged. No GitLab operation under current GitHub-only direction.
 - **Marker:** `travelpayout-hub-mvp-build-20261128`.
+
+
+### Travelpayout Hub verification addendum — 2026-11-28
+- Corrected the partner hub stylesheet syntax and made the “All services” filter interactive; extended the validator to assert this behavior.
+- Re-read the 43-row source register and the generated catalog. Exact comparison confirms all 40 active short URLs and all supplied full tracking URLs are preserved verbatim. Three GigSky entries remain excluded from the active directory.
+- Re-read all 11 Travelpayout changed files after the fixes. PR #1 is OPEN, not merged, and mergeable=true.
+- GitHub Actions run 46096393061 (“Validate Travelpayout Hub”) completed with conclusion SUCCESS on head 653deac079779d5ae14ca1924b02a166d6a2da7e. Node syntax check and catalog/source assertions passed.
+- Manual real-browser, mobile, screen-reader, provider redirect/campaign/marker attribution, live API, commission reporting and production deployment remain NOT TESTED/NOT VERIFIED.
+- Command Center PR #108 contains this task's append-only memory/HTML trace. It remains Owner-approval-gated for merge under AGENTS.md.
+- Marker: `travelpayout-hub-mvp-build-20261128`.
