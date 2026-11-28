@@ -1339,3 +1339,13 @@ Policy: append-only; preserve all earlier entries.
 - **PR status:** PR #1 OPEN, not merged; mergeability recalculation pending after latest push. Repository-level merge/deploy approval gates remain active.
 - **Other stages:** GitLab NOT REQUIRED under current GitHub-only direction; no Blogger draft/live publish or Telegram send.
 - **Marker:** amazon-picks-build-ci-repair-20261128
+
+
+## Verification addendum — Amazon Picks CI repair — 2026-11-28 04:06 CET
+
+- Owner edited the Amazon README while the first repair was being validated, changing the wording again. The test assertion was updated to match the latest actual README phrase without changing the product allowlist.
+- Final test commit: `6f022f5d7c6b89e294f472fc101ee2e27e0376e7`.
+- GitHub Actions run `46101205552` (run #10) completed with conclusion **success** on that commit. Validation step completed successfully.
+- Latest read-back confirms the README phrase and test assertion align; catalog still contains exactly six entries.
+- PR #1 remains OPEN and unmerged. Browser/device/screen-reader QA, Amazon redirect/marketplace/price/stock/attribution, GitHub Pages activation and production deployment remain NOT TESTED/NOT VERIFIED.
+- **Marker:** amazon-picks-ci-success-20261128
