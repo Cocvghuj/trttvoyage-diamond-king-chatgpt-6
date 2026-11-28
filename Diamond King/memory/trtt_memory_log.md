@@ -1585,3 +1585,15 @@ Policy: append-only; preserve all earlier entries.
 - **Files planned in this PR:** `docs/AUTOMATED-GITOPS-AI-CONTENT-PIPELINE.md`, `automation/repository-registry.json`, README navigation link, and this append-only memory trace.
 - **Verification:** Pending PR creation, content read-back and workflow/runtime execution. No external automation execution is claimed.
 - **Marker:** trtt-automated-gitops-ai-content-pipeline-blueprint-20261128
+
+
+## Trigger Memory — External Automation Benchmark References — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger summary:** Owner shared a benchmark summary describing TRTT Voyage's Telegram Bot + GitHub Actions + Blogger workflow, naming zenjahid and MS-Jahan projects as potentially similar Bangladesh open-source examples, and mentioning commercial n8n/Python/Headless CMS implementations.
+- **Decision:** Treat these names and observations as owner-supplied research leads, not independently verified facts. Evaluate comparable capabilities against the target architecture: Telegram command/status interface, GitHub Actions orchestration, PR-first GitOps, Blogger draft handoff, idempotency, audit trail, free-tier constraints and safe multi-repository dispatch. n8n/Python/Headless CMS remain optional alternatives, not mandatory dependencies.
+- **Scope:** No external project capability has been confirmed in this trigger. No third-party code copied, no new integration enabled, no credentials configured, and no content published or distributed.
+- **GitHub milestone:** PR #130 blueprint merged after CodeQL Security Analysis completed successfully. Merge commit: d6059bf0214add661bdc89ffcdcdc5d06c35f5ff. Main-branch read-back confirmed architecture, two-repository pilot registry, and prior memory markers.
+- **Next action:** Research the named reference projects and compare only verifiable public features before deciding whether any pattern should influence the central dispatcher or content pipeline.
+- **Verification:** PR #130 merge and main-branch read-back PASS. External reference-project research NOT TESTED. GitLab, Blogger and Telegram integrations NOT TESTED.
+- **Marker:** trtt-external-automation-benchmark-references-20261128
