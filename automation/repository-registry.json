@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "project_code": "DR-TRTT-OPS-001",
+  "system_name": "Automated_GitOps_&_AI-Driven_Workflow",
+  "content_pipeline": "Headless_AI-Powered_Content_Pipeline",
+  "source_of_truth": "github",
+  "default_mode": "dry_run",
+  "runtime_enabled": false,
+  "delete_operations_enabled": false,
+  "default_branch_writes_allowed": false,
+  "automatic_overwrite_allowed": false,
+  "repositories": [
+    {
+      "id": "command-center",
+      "repository": "TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6",
+      "default_branch": "main",
+      "class": "command-center",
+      "enrolled": true,
+      "pilot_candidate": true,
+      "runtime_enabled": false,
+      "risk_tier": "high",
+      "allowed_operations": [
+        "inspect",
+        "dry_run",
+        "create_feature_branch",
+        "create_pull_request",
+        "read_back_verify",
+        "append_memory"
+      ],
+      "forbidden_operations": [
+        "delete",
+        "force_push",
+        "direct_default_branch_write",
+        "automatic_overwrite",
+        "secret_read_or_export",
+        "live_publish",
+        "production_deploy"
+      ],
+      "backup": {
+        "provider": "gitlab",
+        "enabled": false,
+        "verification_required": true,
+        "restore_test_required": true
+      }
+    },
+    {
+      "id": "profile-hub",
+      "repository": "TRTT-VOYAGE/abu-taher",
+      "default_branch": "main",
+      "class": "profile",
+      "enrolled": true,
+      "pilot_candidate": true,
+      "runtime_enabled": false,
+      "risk_tier": "low",
+      "allowed_operations": [
+        "inspect",
+        "dry_run",
+        "create_feature_branch",
+        "create_pull_request",
+        "read_back_verify"
+      ],
+      "forbidden_operations": [
+        "delete",
+        "force_push",
+        "direct_default_branch_write",
+        "automatic_overwrite",
+        "secret_read_or_export",
+        "live_publish",
+        "production_deploy"
+      ],
+      "backup": {
+        "provider": "gitlab",
+        "enabled": false,
+        "verification_required": true,
+        "restore_test_required": true
+      }
+    }
+  ],
+  "enrollment_policy": "Explicit allowlist only. Repository discovery does not automatically enroll repositories.",
+  "secrets_policy": "Store credentials only in the authorized provider secret store. Never commit or log secret values.",
+  "notes": [
+    "This is a pilot registry, not a live automation configuration.",
+    "Runtime remains disabled until dispatcher, workers, permissions, dry-run tests and recovery checks are implemented.",
+    "Expand in reviewed batches; do not fan out to all visible repositories."
+  ]
+}
