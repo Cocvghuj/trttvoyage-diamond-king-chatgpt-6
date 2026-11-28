@@ -1086,3 +1086,16 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab:** NOT REQUIRED under the current GitHub-only direction. Blogger and Telegram are unrelated and NOT REQUIRED.
 - **Owner authorization:** Owner explicitly authorized checking, fixing, and merging these project changes; repository merge permission is treated as granted for these scoped PRs only.
 - **Marker:** master-franchise-two-repository-audit-repair-20261128
+
+
+## Verification Addendum — Master Franchise Two-Repository Audit — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001.
+- **Command Center:** Replacement PR #92 successfully merged; merge commit `6e091ddef725af1f96c0034c92454c85607f9f42`. It restores the Learning Universe and Idea Universe prototypes/specification onto current main, with 5 files changed, 110 additions, 0 deletions. The prior stale PR #83 was closed as superseded; its history and branch were preserved.
+- **Learning Journey:** PR #13 successfully merged; merge commit `d09b7887c5c3e52213fb1bfab53f45b2a425abb5`. Root `index.html` mobile navigation now closes after link selection, supports Escape-to-close and focus return, resets on desktop resize, and exposes the toggle/nav relationship via ARIA.
+- **Main read-back:** PASS. Both Universe screens, the memory log and HTML trace marker, and the Learning Journey navigation repair were fetched from their respective `main` branches after merge.
+- **Source verification:** PASS for doctype, labelled idea form, live status, safe `textContent` rendering, local-only disclosure, memory/trace marker, Escape handling, focus return, link-close behavior, resize reset, and ARIA state/control relationship.
+- **Open legacy PR audit:** Command Center still has 12 older open PRs (#69, #66, #45, #37, #28, #27, #26, #20, #17, #12, #8, #7). GitHub currently reports `mergeable=false` for these PRs. PR #8 is Draft and explicitly awaits qualified medical review, licensed images, editorial checks, and Blogger preview; it was not merged. The remaining PRs are older, separate scopes (memory-only records, governance docs, theme backup, calculator/blog drafts, or historical status checks) and were not force-merged or closed in this Master Franchise batch. Learning Journey has no open PRs; TRTT AI has no open PRs.
+- **Browser/device QA:** NOT TESTED. Screen-reader and formal WCAG testing: NOT TESTED. GitHub Pages live runtime/deployment: NOT TESTED. No claim of 100% production readiness.
+- **GitLab:** NOT REQUIRED under the current GitHub-only direction. Blogger and Telegram: NOT REQUIRED; no draft creation, publication, or delivery performed.
+- **Marker:** master-franchise-two-repository-audit-completion-20261128
