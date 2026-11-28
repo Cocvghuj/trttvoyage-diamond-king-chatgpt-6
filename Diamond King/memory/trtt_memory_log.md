@@ -1838,3 +1838,14 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append this memory entry and mirror it in `Diamond King/trttmagic.html` only.
 - **Verification:** Pending read-back after append.
 - **Marker:** trtt-abu-taher-social-post-draft-20261128
+
+
+## 2026-11-28 — Abu Taher README enhancement from supplied HTML concept
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** User supplied a Bengali HTML profile concept and instructed the agent to incorporate selected ideas into the `TRTT-VOYAGE/abu-taher` README and merge the change.
+- **Decision:** Adapt the strongest reusable ideas into the English README: Learn → Imagine → Build → Share; practical open learning; build useful tools; and a clear TRTT Voyage identity. Do not copy generic placeholder social URLs, the fake WhatsApp number, or unverified `muse.ai` destination. Preserve the existing verified ChatGPT/DIAMOND KING and Muse repository links side by side. Avoid unsupported claims such as a verified count of 20+ free tools.
+- **Authorization:** User explicitly requested this README change and merge for this repository.
+- **Scope:** GitHub repository only. No external social publishing, GitLab, Blogger, Telegram, production, DNS/security, or secrets actions.
+- **File changes:** README.md only in `TRTT-VOYAGE/abu-taher`; this append-only memory log and its HTML mirror.
+- **Verification:** Pending PR, CI/status inspection, merge and main-branch read-back.
+- **Marker:** trtt-abu-taher-readme-learning-build-share-20261128
