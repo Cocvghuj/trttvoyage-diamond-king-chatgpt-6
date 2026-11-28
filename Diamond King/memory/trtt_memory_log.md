@@ -1544,3 +1544,17 @@ Policy: append-only; preserve all earlier entries.
 - **Decisions:** Keep the two README examples honest and useful; next portfolio step should be a repository inventory and classification before bulk changes. Do not create empty/duplicate repositories to inflate the target of 1,000. Seven-day target is aspirational, not guaranteed.
 - **Scope:** GitHub only. GitLab backup, Blogger draft/live publishing, Telegram distribution and production deployment were not performed.
 - **Marker:** trtt-two-hub-github-showcase-verification-20261128
+
+
+## Entry — 2026-11-28 — Two-Repository Security & Governance Hardening
+
+- **Project:** DR-TRTT-OPS-001.
+- **Trigger:** Owner asked to redesign the two central GitHub repositories with professional design, documentation and security policies, aiming for a highly distinctive engineering standard.
+- **Scope:** `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6` and `TRTT-VOYAGE/abu-taher` only. GitHub-hosted documentation and repository-native configuration; no external platform changes.
+- **Inspection:** Both repositories are public and use `main` as default branch. Existing README files are present. Root `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SUPPORT.md`, PR template and Dependabot configuration were not found in either repository at inspection time.
+- **Security configuration inspection:** GitHub REST rulesets endpoint returned an empty array for both repositories. Branch protection read returned HTTP 403 (integration lacks access), so actual branch protection status is NOT VERIFIED. No settings were changed.
+- **Planned additive files:** Security policy, contribution guide, code of conduct, support guide, PR template, issue forms, Dependabot configuration for GitHub Actions, a JavaScript/TypeScript CodeQL workflow where appropriate, and a security baseline/threat model document for the Command Center.
+- **Security design:** Least privilege for workflow permissions; no secrets in source or logs; private vulnerability reporting only where the GitHub feature is enabled; verify untrusted input and third-party actions; review dependencies; protect default branch; use short-lived credentials and owner-controlled production approvals. Documentation must distinguish recommendations from platform settings that are actually enabled.
+- **Safety:** No secrets requested or exposed. No production deploy, DNS, billing, account-access, live publication, or external distribution. No direct pushes to default branches. Use feature branches and PRs.
+- **Verification:** Repository metadata, existing file paths, and ruleset endpoint inspected. Branch protection not verified because of API 403. Workflow execution and live vulnerability features are not yet verified.
+- **Marker:** trtt-two-repository-security-governance-hardening-20261128
