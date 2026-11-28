@@ -1691,3 +1691,15 @@ Policy: append-only; preserve all earlier entries.
 - Command Center memory PR #117 remains OPEN/unmerged and mergeable=false; this append is on its feature branch, not main. Owner merge is still needed to bring the memory history into Command Center main.
 - Next Owner action is one explicit approval for GitHub PR #147 only. That merge triggers the Pages deploy workflow; verify the resulting deployment URL and browser behavior before beginning Blogger. No Blogger/Telegram/DNS/custom-domain action performed.
 - **Marker:** trtt-github-pages-final-owner-handoff-20261128
+
+
+## Blogger frontend architecture planning — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked whether the TRTT Voyage Blogger HTML, CSS and JavaScript should be planned and organized before proceeding with Blogger work.
+- **GitHub-first inspection:** Inspected `TRTT-VOYAGE/TRTTVOYAG-BLOG` main, repository instructions, README, Blogger theme directory, roadmap, theme design brief, build log and workflows. Confirmed an existing Diamond Horizon Blogger XML theme candidate, seven static-page sources, a 100-part quality roadmap and draft-only Blogger workflow.
+- **Key decisions:** Plan and audit the existing theme before changing code. Blogger's production theme is XML containing Blogger-compatible HTML, CSS and JavaScript, not a standalone three-file website. Preserve the existing Diamond Horizon candidate and its 20 observed widget IDs; do not alter the live theme, import theme, or rewrite existing posts/pages without separate Owner approval. Follow the repository's current-live-theme freeze and preserve the Owner-identified 2–3 news articles.
+- **PR #5 status correction:** GitHub read-back shows Blogger article PR #5 is CLOSED and MERGED at commit `ecf2f46984ec008b3f06e7d3685fc63ffa9a37a2`; this confirms source merge only, not a Blogger DRAFT creation.
+- **File changes:** No Blogger repository files changed in this planning turn. Append this trigger to Command Center memory log and HTML mirror only.
+- **Verification:** Blogger repository and existing theme/docs inspected. Live Blogger XML import, live layout, browser/device behavior, Blogger draft creation and live publication remain NOT TESTED/NOT VERIFIED.
+- **Marker:** trtt-blogger-frontend-architecture-planning-20261128
