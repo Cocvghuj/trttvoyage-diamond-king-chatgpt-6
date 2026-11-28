@@ -1557,3 +1557,17 @@ Policy: append-only; preserve all earlier entries.
 - **GitHub memory:** This entry is appended to the existing Command Center PR #117 feature branch; the mirrored HTML trace carries the same marker.
 - **Verification:** Pending updated memory-file read-back and PR #117 status refresh.
 - **Marker:** trtt-blogger-pointer-draft-readiness-20261128
+
+
+## Research addendum — First Blogger article draft — 2026-11-28
+
+- **Trigger continuation:** After the pointer trigger, selected the safest content task and researched an evergreen Sardinia travel guide rather than changing the live theme.
+- **Topic:** Su Nuraxi di Barumini: A Visitor’s Guide to Sardinia’s Nuragic Heritage.
+- **Evidence checked:** UNESCO World Heritage Centre page for Su Nuraxi (inscription 1997 and heritage significance); Fondazione Barumini official site page (site description and guided-visit information); Fondazione Barumini official ticket/opening-hours page (current visitor arrangements and combined-ticket scope). Checked 2026-11-28. Prices and live transport details deliberately omitted.
+- **Image rights:** Wikimedia Commons photograph by Domimf, CC BY-SA 3.0; license page and attribution embedded in HTML. No image edits.
+- **TRTT Blogger repository:** Created branch `feature/trtt-first-article-su-nuraxi-20261128`; added `blog/drafts/2026-11-28-su-nuraxi-barumini-guide.html` and appended a source/image/claim record to `blog/drafts/ARTICLE-RESEARCH-BRIEF.md`. Main unchanged.
+- **GitHub PR:** #5 created: https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/5. It is OPEN, not merged. Read-back verifies exactly one H1, eight H2 headings, HTTPS image, marker 787950 and https://trttvoyage.com. CI run 46141822769 was IN_PROGRESS at last check; no success claim.
+- **Blogger:** No Blogger DRAFT exists yet. The workflow can create one only after Owner merge and only if all four Blogger secrets are configured; availability has not been tested. No Blogger API call or live change.
+- **GitLab:** Mirror update not yet executed; existing MR !31 remains separate and open. No GitLab main mutation.
+- **Telegram / production / DNS / security:** No action.
+- **Marker:** trtt-first-su-nuraxi-draft-pr-20261128
