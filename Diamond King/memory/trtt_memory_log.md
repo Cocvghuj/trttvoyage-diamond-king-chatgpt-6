@@ -1491,3 +1491,108 @@ Policy: append-only; preserve all earlier entries.
 - **Pre-merge inspection:** PR #116 was OPEN and GitHub reported `mergeable=true`; both memory files contain marker `trtt-merge-complete-verification-20261128`.
 - **Execution status at append:** Merge action and main-branch read-back pending; no merge success claimed yet.
 - **Marker:** trtt-pr116-owner-approval-20261128
+
+
+## Entry — 2026-11-28 — TRTT Blogger work start / readiness audit
+
+- **Timestamp:** 2026-11-28 12:20 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed Diamond King to begin the TRTT Voyage Blogger work.
+- **GitHub-first inspection:** Inspected `TRTT-VOYAGE/TRTTVOYAG-BLOG` repository metadata, default branch, branches, PR history, root tree, AGENTS.md, README, Blogger pages, draft directory, draft script, workflow and release checklist.
+- **Verified source state:** Blogger theme package PR #3 is merged to main at `fd063018962f35475466105e6728128bc1ca024d`. Diamond Horizon theme source and seven static-page source files are present. Package docs explicitly distinguish GitHub source merge from Blogger installation.
+- **Draft readiness:** `blog/drafts/` currently contains only README.md; no article HTML is available to submit. Draft workflow supports push of HTML files under that folder or manual workflow dispatch. It validates the article, checks duplicates, creates only with `isDraft=True`, and reads back Blogger post ID/title/content/status. It contains no publish or Telegram step.
+- **Safety gates:** No Blogger connector is available in this session. No live Blogger import, page installation, post creation, live publication, Telegram delivery, DNS/security or production action performed. Theme/page installation requires separate Owner approval and current live-theme backup/layout verification. Blogger API secret values were not accessed; availability is not verified.
+- **Decision / next step:** Treat this trigger as Blogger readiness and draft-work start, not as permission to mutate the live Blogger account. The next actionable content step needs a selected article topic/source material, or explicit Owner approval and live-theme backup evidence before theme import/page installation.
+- **GitHub memory:** This entry is appended on feature branch `feature/trtt-blogger-work-start-audit-20261128`; Command Center HTML trace mirrors the same audit. PR creation and branch read-back are pending at entry time.
+- **Marker:** trtt-blogger-work-start-audit-20261128
+
+
+## Entry — 2026-11-28 — Diamond Version Blogger execution trigger
+
+- **Timestamp:** 2026-11-28 12:29 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested a visibly Diamond-styled 👑💎 TRTT MAGIC COMMAND CENTER trigger after rejecting the previous plain trigger presentation.
+- **Decision:** Provide a dedicated in-chat Diamond trigger for the Blogger execution stage. It instructs the agent to inspect first, preserve existing content, use a feature branch, verify changes, create a PR and merge only after successful verification. Blogger Live Publish and Telegram distribution remain excluded.
+- **File changes:** Append this entry and mirrored HTML trace on existing feature branch `feature/trtt-blogger-work-start-audit-20261128`; preserve prior PR #117 changes.
+- **Verification status:** PR #117 was inspected OPEN and mergeable before this append. Updated files require read-back after write; PR remains unmerged until verification and owner-triggered execution.
+- **Marker:** trtt-diamond-blogger-trigger-20261128
+
+
+## Entry — 2026-11-28 — Blogger editorial intake brief execution
+
+- **Timestamp:** 2026-11-28 12:31 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner activated the Diamond Blogger execution trigger and explicitly authorized merging the Blogger-work PR after successful verification.
+- **Inspection:** Rechecked Command Center PR #117 (OPEN, mergeable at inspection) and TRTTVOYAG-BLOG main, AGENTS.md, draft README, editorial standards, release checklist, draft-only workflow, draft validator/tests, build log and recursive repository tree.
+- **Finding:** No article HTML, verified topic/source packet, or cleared real article image exists in blog/drafts. Existing draft workflow is already DRAFT-only with duplicate protection and post read-back; no Blogger connector is available in this session.
+- **Build decision:** Instead of inventing an article or image, created blog/drafts/ARTICLE-RESEARCH-BRIEF.md as a Markdown research worksheet (not .html, so it cannot trigger Blogger draft creation), updated the draft README, and appended docs/BUILD-LOG.md.
+- **Safety:** No live Blogger theme/page change, post creation, live publication, Telegram, production, DNS/security action, or secret access. Protected posts and all affiliate catalogs untouched.
+- **Files changed:** TRTTVOYAG-BLOG feature branch feature/trtt-blogger-editorial-brief-20261128; three paths listed above.
+- **Verification:** GitHub read-back and PR validation pending at append time; merge only after successful CI and file verification.
+- **GitLab:** Mirror remains subject to MR !31 and quota/token blockers; no GitLab main mutation.
+- **Marker:** trtt-blogger-editorial-intake-brief-20261128
+
+
+## Verification addendum — Blogger editorial intake brief — 2026-11-28
+
+- **Blogger PR:** #4 successfully squash-merged to GitHub main after successful CI and mergeability re-check.
+- **Merge commit:** cf0407bd5475d4fcc1cdd6127beb64bbac1360d0.
+- **CI:** GitHub Actions run 46140633597 completed SUCCESS for the PR head; package validation and unit tests passed.
+- **Main read-back:** blog/drafts/ARTICLE-RESEARCH-BRIEF.md exists; README links the brief; docs/BUILD-LOG.md contains marker trtt-blogger-editorial-intake-brief-20261128.
+- **GitLab mirror:** appended the same three files to existing MR !31 feature branch. Commit 73d1fdd14d3dfdd734cc0daf18dbcac7881709f5. Raw read-back exact-match PASS for all three files. MR !31 remains OPEN; its pipeline 3126511035 failed with ci_quota_exceeded before runner startup (python_validation started_at=null).
+- **Command Center PR #117:** remains OPEN and unmerged; it is the append-only memory PR for this work, not the Blogger-work PR.
+- **Blogger:** No article HTML was produced because no verified topic/source packet or cleared image was present. No Blogger API draft, theme import, static page install or live publication occurred. No Telegram, production, DNS/security action or secret access.
+- **Marker:** trtt-blogger-editorial-brief-merge-verified-20261128
+
+
+## Entry — 2026-11-28 — Blogger execution continuation (pointer trigger)
+
+- **Timestamp:** 2026-11-28 12:49 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner sent pointer (👉) after being asked whether to install the Diamond Horizon theme or prepare the first article draft. Interpreted as instruction to continue with the safer non-production task: article-draft readiness.
+- **Inspection:** Re-read TRTTVOYAG-BLOG main README, blog/drafts/README.md, ARTICLE-RESEARCH-BRIEF.md, draft-only Python validator/API script, Blogger draft GitHub Actions workflow and release checklist. Re-inspected Command Center PR #117.
+- **Finding:** ARTICLE-RESEARCH-BRIEF.md already exists and remains an unfilled worksheet. No verified article topic/source packet, cleared real HTTPS image URL/license, or article HTML exists. The script requires one H1, at least six H2 headings, a real HTTPS image, marker 787950 and https://trttvoyage.com. Workflow creates only DRAFTs after merge and only if all four Blogger secrets are configured; no Blogger connector is available here and secret availability was not tested.
+- **Decision:** Do not fabricate an article, sources or image. Keep the existing research brief as the next content intake gate. Theme installation was not authorized by the pointer and remains gated by current live-theme backup/layout verification and separate Owner approval.
+- **Actions:** No TRTTVOYAG-BLOG files changed in this trigger. No Blogger API call, theme/page installation, post creation, live publication, Telegram delivery, production/DNS/security action or secret access.
+- **GitHub memory:** This entry is appended to the existing Command Center PR #117 feature branch; the mirrored HTML trace carries the same marker.
+- **Verification:** Pending updated memory-file read-back and PR #117 status refresh.
+- **Marker:** trtt-blogger-pointer-draft-readiness-20261128
+
+
+## Research addendum — First Blogger article draft — 2026-11-28
+
+- **Trigger continuation:** After the pointer trigger, selected the safest content task and researched an evergreen Sardinia travel guide rather than changing the live theme.
+- **Topic:** Su Nuraxi di Barumini: A Visitor’s Guide to Sardinia’s Nuragic Heritage.
+- **Evidence checked:** UNESCO World Heritage Centre page for Su Nuraxi (inscription 1997 and heritage significance); Fondazione Barumini official site page (site description and guided-visit information); Fondazione Barumini official ticket/opening-hours page (current visitor arrangements and combined-ticket scope). Checked 2026-11-28. Prices and live transport details deliberately omitted.
+- **Image rights:** Wikimedia Commons photograph by Domimf, CC BY-SA 3.0; license page and attribution embedded in HTML. No image edits.
+- **TRTT Blogger repository:** Created branch `feature/trtt-first-article-su-nuraxi-20261128`; added `blog/drafts/2026-11-28-su-nuraxi-barumini-guide.html` and appended a source/image/claim record to `blog/drafts/ARTICLE-RESEARCH-BRIEF.md`. Main unchanged.
+- **GitHub PR:** #5 created: https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/5. It is OPEN, not merged. Read-back verifies exactly one H1, eight H2 headings, HTTPS image, marker 787950 and https://trttvoyage.com. CI run 46141822769 was IN_PROGRESS at last check; no success claim.
+- **Blogger:** No Blogger DRAFT exists yet. The workflow can create one only after Owner merge and only if all four Blogger secrets are configured; availability has not been tested. No Blogger API call or live change.
+- **GitLab:** Mirror update not yet executed; existing MR !31 remains separate and open. No GitLab main mutation.
+- **Telegram / production / DNS / security:** No action.
+- **Marker:** trtt-first-su-nuraxi-draft-pr-20261128
+
+
+## Verification addendum — First Blogger article draft PR and mirror — 2026-11-28
+
+- **GitHub Blogger PR #5:** https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/5 remains OPEN and unmerged. Branch `feature/trtt-first-article-su-nuraxi-20261128`; head `2614bb15cd43289e525620c4ec808269d4443b14`.
+- **GitHub CI:** Workflow run 46141822769 completed SUCCESS on PR #5. Repository validator and unit tests passed.
+- **GitHub read-back:** Article and research brief were read back from the feature branch. Article has one H1, eight H2 headings, a real HTTPS image with Wikimedia Commons author/license attribution, marker 787950 and the official TRTT URL.
+- **GitLab mirror:** Mirrored the two changed files into the existing MR !31 branch `feature/trtt-blog-github-gitlab-bridge-20261128` under `integrations/trttvoyag-blog/blog/drafts/`. GitLab raw read-back exact-match PASS for both files. New GitLab branch head `cc423c01cbd2033d65420d5199275ec0384f34b3`; MR !31 remains OPEN. Its head pipeline 3126530906 is FAILED with `started_at=null`; GitLab CI is not passing. GitLab main was not changed and MR !31 was not merged.
+- **Command Center memory:** This verification addendum is appended to the existing PR #117 branch and mirrored in HTML; read-back pending.
+- **Blogger:** No Blogger DRAFT Post ID/status exists. GitHub PR #5 must be Owner-merged before the DRAFT-only workflow can run; secret availability remains NOT TESTED. No live publish or Telegram.
+- **Marker:** trtt-first-su-nuraxi-pr-ci-mirror-verified-20261128
+
+
+## Entry — 2026-11-28 — Blogger continuation pointer / article PR verification
+
+- **Timestamp:** 2026-11-28 12:49 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner sent a second pointer (👉) to continue the selected safe Blogger content task.
+- **GitHub inspection:** Re-read TRTTVOYAG-BLOG PR #5, changed-file list and workflow runs. PR #5 is OPEN, mergeable and unmerged; branch feature/trtt-first-article-su-nuraxi-20261128; head 2614bb15cd43289e525620c4ec808269d4443b14. Exactly two files changed: the Su Nuraxi article HTML and its appended research record.
+- **Verification:** GitHub Actions run 46141822769 completed SUCCESS. Article diff read-back confirms one H1, eight H2 headings, an HTTPS Wikimedia Commons image with Domimf / CC BY-SA 3.0 attribution, marker 787950, official TRTT URL, and UNESCO/Fondazione Barumini sources. No affiliate links or prices are used.
+- **Decision:** Article source package is ready for Owner review. Do not merge PR #5 without explicit Owner merge approval. Blogger DRAFT remains blocked until merge and confirmation that all four required Blogger Actions secrets exist; no Blogger connector is available in this session.
+- **GitLab:** Existing MR !31 remains OPEN; its latest pipeline previously failed before runner start due quota. No GitLab main mutation.
+- **Actions / safety:** No Blogger API draft, theme import, static-page installation, live publication, Telegram, production, DNS/security change or secret access.
+- **Command Center memory:** Append this entry and mirror HTML trace on existing PR #117 feature branch; read-back required.
+- **Marker:** trtt-blogger-pointer-pr5-ci-verified-20261128
