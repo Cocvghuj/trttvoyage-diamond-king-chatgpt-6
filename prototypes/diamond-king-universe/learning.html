@@ -39,7 +39,7 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
   function load() {
     try {
       const value = JSON.parse(localStorage.getItem(KEY) || "[]");
-      records = Array.isArray(value) ? value.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.outcome === "string" && paths.includes(item.path) && typeof item.completed === "boolean").slice(0,100) : [];
+      records = Array.isArray(value) ? value.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.outcome === "string" && paths.includes(item.path) && typeof item.completed === "boolean").slice(0,100).map(item => ({...item,source:(typeof item.source === "string" && /^https:\/\//i.test(item.source)) ? item.source : ""})) : [];
     } catch (error) { records = []; announce("Local storage is unavailable or unreadable. Existing browser data was not changed."); }
   }
   function save() {
@@ -96,7 +96,7 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
     if(rawSource){try{const url=new URL(rawSource);if(url.protocol!=="https:"){announce("Source links must use HTTPS.");return;}source=url.href;}catch(error){announce("Enter a valid HTTPS source URL.");return;}}
     if(!title||!outcome||!paths.includes(path)){announce("Complete the title, pathway and expected outcome.");return;}
     if(records.length>=100){announce("Local limit reached (100 plans). Export and remove older records first.");return;}
-    records.push({id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+"-"+String(Math.random()).slice(2)),title,path,outcome,source,completed:false,createdAt:new Date().toISOString()});
+    records.push({id:(typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():String(Date.now())+"-"+String(Math.random()).slice(2)),title,path,outcome,source,completed:false,createdAt:new Date().toISOString()});
     if(!save()){records.pop();return;}
     form.reset(); render(); announce("Learning plan saved on this device. It has not been uploaded or shared.");
   });
