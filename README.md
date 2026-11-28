@@ -3,6 +3,56 @@ The official AI command center and evolving knowledge archive of TRTT Voyage and
 
 ---
 
+
+<div align="center">
+
+# 👑💎 DIAMOND KING COMMAND CENTER
+
+### The operating hub for building TRTT Voyage with evidence, reusable workflows and responsible AI collaboration.
+
+**DR-TRTT-OPS-001 · TRTT VOYAGE · GITHUB-FIRST**
+
+[Project Charter](docs/PROJECT-CHARTER.md) · [Workflow](docs/WORKFLOW.md) · [Repository Map](docs/REPOSITORY-MAP.md) · [Changelog](CHANGELOG.md)
+
+**From Vision to Global Brand. Explore Beyond. Discover Everything.**
+
+</div>
+
+> This repository is the working control desk and public documentation hub for the TRTT Voyage / Diamond King collaboration. It records decisions, maps connected projects, and provides repeatable ways to plan, build, review and verify work. It is not proof that every listed idea, integration or product is already live.
+
+## Command Center at a Glance
+
+| Area | What belongs here |
+|---|---|
+| **Mission & decisions** | Project charter, scope, operating principles and dated decision records |
+| **Memory & continuity** | Append-only project memory and the matching command-center trace |
+| **Delivery workflow** | Repository inspection, feature branches, focused changes, PR review and read-back verification |
+| **Product portfolio** | Links to real TRTT projects, tools, experiments and their documented status |
+| **Automation architecture** | Proposed integrations, workflow maps, safety gates and recovery notes |
+| **Learning & improvement** | Reusable templates, lessons, checklists and next actions |
+
+### Start here
+
+1. **Understand the mission:** read the [Project Charter](docs/PROJECT-CHARTER.md).
+2. **Follow the delivery path:** use [Inspect → Plan → Build → Verify](docs/WORKFLOW.md).
+3. **Find the right project:** open the [Repository Map](docs/REPOSITORY-MAP.md).
+4. **Check the evidence:** review the [Changelog](CHANGELOG.md), relevant PR and post-change read-back.
+5. **Leave a clean handoff:** record what changed, what was tested, what remains unverified and the next useful action.
+
+### Diamond King delivery standard
+
+**Discover → Inspect → Document → Design → Build → Test → Review → Merge safely → Read back → Report honestly**
+
+- Routine, low-risk GitHub changes may be reviewed and merged under the Owner's standing delegation after scope, diff, mergeability and available checks are inspected.
+- Pause for secrets, account access, privacy-sensitive data, security controls, DNS, billing/legal commitments, destructive changes, production deployment, live publishing or unclear high-impact actions.
+- Never push directly to the default branch. Use a feature branch and a traceable pull request.
+- Never call an idea, mockup, plan or untested artifact a live product.
+
+### Portfolio growth rule
+
+Grow the portfolio through useful, distinct and documented work—not empty repositories or duplicate names. Classify each repository as an original TRTT product, active project, learning import, upstream fork, experiment, archive or template before deciding what to improve. Repository count is a metric; usefulness, maintenance and clear ownership are the quality gates.
+
+---
 ## A Daily Place to Begin
 
 **TRTT Voyage — From Vision to Global Brand.**  
@@ -55,11 +105,11 @@ Some folders are planned destinations and may not exist until the first relevant
 4. **Build safely.** Use a dedicated feature branch and keep secrets, credentials, and private personal data out of commits.
 5. **Verify the saved result.** Read changed files back from GitHub and run relevant checks where available.
 6. **Report exact status.** Use `PASS`, `FAIL`, `NOT TESTED`, `BLOCKED`, or `WAITING FOR OWNER`.
-7. **Keep production protected.** No live publishing, production deployment, DNS/security changes, or default-branch merge without the required owner approval.
+7. **Keep production protected.** Routine, low-risk PRs may be reviewed and merged under the Owner's standing delegation after scope, diff, mergeability and available checks are inspected. Owner approval remains mandatory for secrets, account access, security controls, DNS, billing/legal commitments, destructive changes, production deployment and live publication.
 
 ## Mobile-First GitHub Handoff
 
-Assistant-authored changes are delivered through a feature branch and a GitHub Pull Request (PR). The owner can open the PR in the GitHub mobile app, review **Files changed**, and decide whether to merge. A commit or open PR is **not** a merge. The work is reported as merged only after GitHub confirms it and the base branch is checked again.
+Assistant-authored changes are delivered through a feature branch and a GitHub Pull Request (PR). The Owner can inspect **Files changed** from the GitHub mobile app. Under the standing delegation, routine low-risk PRs may be reviewed and merged by the assistant after checking the exact diff, scope, mergeability and available checks. The Owner retains approval authority for protected actions. A commit or open PR is **not** a merge; report a merge only after GitHub confirms it and the base branch is read back.
 
 ## Project Principles
 
@@ -156,7 +206,7 @@ Private contact details, passwords, tokens, and account recovery information mus
 
 These are cross-system references, not proof of automated synchronization. ChatGPT conversational Memory is not automatically mirrored to GitHub. A dedicated Command Center GitLab mirror and tested restore process remain to be established. See [the Multi-System Hub Architecture](docs/DIAMOND-KING-MULTI-SYSTEM-HUB-ARCHITECTURE-001.md) for verified status and the safe connection sequence.
 
-Diamond King is the designated AI partner/advisor for substantive TRTT decisions. Everyone joining TRTT Voyage is treated as a respected stakeholder. Abu Taher remains the human Owner and final approver for protected actions such as merges, live publication, deployments, DNS/security/account changes, and financial/legal commitments.
+Diamond King is the designated AI partner/advisor for substantive TRTT decisions. Everyone joining TRTT Voyage is treated as a respected stakeholder. Abu Taher remains the human Owner. The standing delegation permits routine, low-risk GitHub PR merges after review; the Owner's explicit approval remains required for live publication, production deployment, DNS/security/account changes, secrets, and financial/legal commitments.
 
 **PR batching rule:** related changes are accumulated into one consolidated PR; no PR-per-prompt workflow. The Owner reviews and merges once when the batch is ready.
 
