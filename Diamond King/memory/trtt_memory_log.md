@@ -1368,3 +1368,21 @@ Policy: append-only; preserve all earlier entries.
 - GitHub Actions run `46101315994` (run #16) completed **success**; validation step PASS on that head.
 - PR #1 remains OPEN, unmerged, and mergeable at final check. Protected merge/deploy gate remains in force.
 - **Marker:** amazon-picks-latest-head-ci-pass-20261128
+
+
+## Entry — 2026-11-28 04:07 Europe/Rome — DR-TRTT-OPS-001 — AMAZON repository build
+
+- **Trigger:** Owner supplied `https://github.com/TRTT-VOYAGE/AMAZON` as the next project target.
+- **Discovery:** The AMAZON repository was public, unarchived, and initially contained only a minimal README on `main`; no feature branches, open issues, open PRs, or repository-local `AGENTS.md`/`PROJECT-RULES.md` were found. The Command Center governance remains applicable to this project.
+- **Source-of-truth recovery:** Recovered the exact six Owner-approved Amazon item labels and affiliate URLs from merged `TRTT-VOYAGE/Cocvghuj-trtt-news-bot` PR #145 and its main-branch `blogger-pages/amazon-picks.html` / `docs/AMAZON-SIX-ITEM-RECOMMENDATION-POLICY.md`. The six values were preserved verbatim. The historical general URL `https://amzn.to/4shg6Hn` is not a product-specific link and was excluded.
+- **Build decision:** Create a standalone, static TRTT Voyage Amazon Picks directory with exactly six approved items, direct item links opening in new tabs, visible affiliate disclosure, search/category filters, responsive layout, safe DOM text rendering, privacy/security documentation, and dependency-free validation.
+- **Repository:** `TRTT-VOYAGE/AMAZON`.
+- **Branch:** `feature/trtt-amazon-picks-hub-v1-20261128`.
+- **PR:** https://github.com/TRTT-VOYAGE/AMAZON/pull/1 — OPEN, not merged; latest observed head `44f4e272aad1d5c9cfda3a9789fd48819f29b6c7`, mergeable=true.
+- **Files:** `index.html`, `assets/css/site.css`, `assets/js/app.js`, `data/products.json`, `tests/validate.js`, `package.json`, `README.md`, `PRIVACY.md`, `SECURITY.md`, `docs/PRODUCT-SCOPE.md`, `.github/workflows/validate.yml`.
+- **Verification PASS:** All 11 files fetched/read back; catalog has exactly six unique HTTPS URLs and exact approved names/URLs; visible disclosure, direct new-tab sponsored links, safe DOM rendering, and absence of an unverified canonical URL confirmed. GitHub Actions run #16 (`46101315994`) completed SUCCESS on the latest observed PR head.
+- **Test correction:** Earlier CI attempts failed on brittle README wording assertions; wording was aligned with the policy assertions. The final workflow run passed. No failure is hidden.
+- **Not tested / not verified:** Real browser/mobile/screen-reader QA; Amazon short-link redirects, marketplace/product identity, current price, stock and affiliate attribution; GitHub Pages activation and production hosting.
+- **Safety:** No new products, product images, prices, ratings, stock claims, tracking, cookies, analytics, accounts, checkout, or payment collection. No secrets accessed or exposed. No PR merge, Pages activation, Blogger import/live publication, Telegram delivery, DNS/security/account change, or production deployment.
+- **GitLab:** NOT REQUIRED under the current GitHub-only workflow.
+- **Marker:** amazon-picks-hub-build-20261128
