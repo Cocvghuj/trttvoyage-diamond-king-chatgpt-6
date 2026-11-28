@@ -1597,3 +1597,16 @@ Policy: append-only; preserve all earlier entries.
 - **Next action:** Research the named reference projects and compare only verifiable public features before deciding whether any pattern should influence the central dispatcher or content pipeline.
 - **Verification:** PR #130 merge and main-branch read-back PASS. External reference-project research NOT TESTED. GitLab, Blogger and Telegram integrations NOT TESTED.
 - **Marker:** trtt-external-automation-benchmark-references-20261128
+
+
+## Research Follow-up — Automation Benchmark Findings — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001.
+- **Research scope:** Public GitHub repository inspection for the Owner-supplied references zenjahid and MS-Jahan.
+- **MS-Jahan finding:** Located `MS-Jahan/newspaper-bot-tg` (public). Its README describes Python scrapers for Bangladeshi news and university notices, Telegram channel posting, categorization/tagging, rate limiting, health-check/error reporting, and a Cloudflare Worker that can trigger GitHub Actions about every 30 minutes. This is a relevant reference for the source-ingestion + scheduled Telegram-distribution portion, not proof of a Blogger drafting or multi-repository GitOps platform.
+- **MS-Jahan broader profile signal:** The public profile describes Telegram-bot automation/scraping pipelines scheduled via GitHub Actions, alongside AI and full-stack automation projects. These are profile claims, not independently tested runtime evidence.
+- **zenjahid finding:** Located `zenjahid/telegram-bot-worker` (public). Its README describes a generic multi-bot Telegram webhook worker on Cloudflare Workers with configurable bot methods and request logging. The README points to an implementation hosted under another GitHub owner; treat this as an architecture/reference lead, not verified evidence that zenjahid authored the referenced worker implementation. No direct Blogger/GitHub Actions content pipeline was established from the inspected README.
+- **Decision:** Reuse patterns only at the concept level: Cloudflare Worker/webhook as an optional Telegram ingress, GitHub Actions as scheduler/dispatcher, modular scraping workers, rate limits, health/error notifications, and channel-specific routing. Keep GitHub as source of truth and retain our own PR-only GitOps, allowlist, source verification, duplicate prevention, append-only audit and human live-publish gates.
+- **Not established:** Neither inspected repository proves the complete TRTT target system (central multi-repo dispatcher + AI fact-check + Blogger draft + Telegram post + verified backup). No code copied and no third-party repo modified.
+- **Verification:** Public README/profile inspection PASS. Runtime execution, security audit, license compatibility beyond visible README references, cost/quota validation and integration tests NOT TESTED.
+- **Marker:** trtt-automation-benchmark-research-findings-20261128
