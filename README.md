@@ -226,3 +226,16 @@ Read the [three-repository bridge specification](docs/DIAMOND-KING-THREE-REPOSIT
 ## Blogger Publishing Module
 
 The fifth connected module is [TRTTVOYAG-BLOG](https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG). It contains the original Diamond Horizon Blogger theme candidate, seven Blogger page sources, reconciled Travelpayout and Amazon catalog snapshots, editorial rules, offline tests and a Blogger DRAFT-only workflow. It does not import the live theme, publish posts or send Telegram messages. See the [five-repository bridge addendum](docs/DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md).
+
+
+## Security, Governance & Contribution Standards
+
+This hub follows documented security and contribution practices. Start with:
+
+- [Security Policy](SECURITY.md) — private vulnerability reporting and secret-exposure guidance.
+- [Security Baseline & Threat Model](docs/SECURITY-BASELINE-AND-THREAT-MODEL.md) — assets, trust boundaries, threat controls and platform-setting verification.
+- [Contributing Guide](CONTRIBUTING.md) — branch, PR and quality workflow.
+- [Code of Conduct](CODE_OF_CONDUCT.md) — community expectations.
+- [Support Guide](SUPPORT.md) — where to ask for help.
+
+Repository automation includes a least-privilege CodeQL workflow for JavaScript/TypeScript analysis and weekly Dependabot checks for GitHub Actions. Workflow execution and GitHub Advanced Security features must be verified in GitHub; the presence of policy files does not mean those platform settings are enabled.
