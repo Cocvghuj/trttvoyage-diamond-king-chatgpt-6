@@ -77,3 +77,28 @@ Future automation requires a separate design, least-privilege permissions, a fre
 
 ---
 **Marker:** diamond-king-three-repository-bridge-001-20261128
+
+
+## Addendum — Fourth module: Amazon Picks (2026-11-28)
+
+The original three-repository bridge remains preserved as its historical baseline. The active source-level topology is expanded to four repositories:
+
+| Repository | Role | Owns |
+|---|---|---|
+| [Command Center](https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6) | Canonical coordination hub | Cross-project memory, decisions, registry and governance |
+| [Learning Journey](https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey) | Learning and Idea Universe | Curated learning records and idea artifacts |
+| [Travelpayout](https://github.com/TRTT-VOYAGE/Travelpayout) | Travel partner/referral module | Travel partner catalog and outbound referral data |
+| [Amazon Picks](https://github.com/TRTT-VOYAGE/AMAZON) | Amazon recommendation module | Six-item Owner-approved product allowlist, Amazon Picks UI, disclosure and catalog tests |
+
+Amazon Picks must preserve the six approved labels and exact supplied affiliate URLs. It must not import or alter Travelpayout's partner catalog. The central registry now includes `systemId: amazon-picks`. Reciprocal repository guides, README links and project navigation are being added in each module.
+
+The bridge remains manual and version-controlled. No automatic data replication, webhooks, background agent, private-chat ingestion or ChatGPT Memory↔GitHub synchronization is implemented.
+
+- [x] Four repository identities and roles recorded in central registry.
+- [x] Amazon module bridge guide created.
+- [x] Reciprocal README/navigation references prepared in all four repositories.
+- [ ] Owner-reviewed PRs merged.
+- [ ] Browser/mobile/accessibility QA completed.
+- [ ] Runtime automation and production deployment (not part of this bridge).
+
+**Marker:** diamond-king-four-repository-bridge-20261128
