@@ -1719,3 +1719,15 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No merge, Blogger theme import, live Blogger post/page mutation, draft creation, publication, Telegram, DNS/security change or secret access.
 - **Next gate:** Owner reviews/merges GitHub PR #6; implementation/theme installation remains a separate approved stage.
 - **Marker:** trtt-blogger-frontend-architecture-plan-execution-20261128
+
+
+## Entry — 2026-11-28 — GitHub-only scope correction
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed Diamond King to stop expanding work across GitLab, Google Blogger and Telegram, and to configure and organize everything inside GitHub first.
+- **Decision:** Scope is restricted to GitHub repositories, files, branches, pull requests, GitHub Actions workflows, secrets references (names only; never values), documentation and append-only memory. GitLab mirroring, Blogger account/theme/draft work and Telegram distribution are excluded until the Owner explicitly reopens those scopes.
+- **Execution discipline:** Inspect existing GitHub state before editing; consolidate existing work instead of creating unnecessary projects or parallel workflows; preserve history; use feature branches and PRs; do not merge without explicit approval; do not access, print or log secret values.
+- **Inspection:** Command Center PR #117 is OPEN and unmerged; branch `feature/trtt-blogger-work-start-audit-20261128`; head `ad9b8e455cabe57d5531930ed863e7d876498887`; GitHub currently reports mergeable=false. Blogger architecture PR #6 is already CLOSED/MERGED at `c1f99a7c9c6dad4367c947710425a83ff57ef382`; this is GitHub source history only and does not authorize Blogger account actions.
+- **Files changed:** Append this entry to the canonical memory log and mirror it in the Command Center HTML trace on the existing PR #117 feature branch.
+- **Verification:** Pre-write read-back PASS. Post-write read-back pending. No GitLab, Blogger or Telegram tool/action invoked.
+- **Marker:** trtt-github-only-scope-20261128
