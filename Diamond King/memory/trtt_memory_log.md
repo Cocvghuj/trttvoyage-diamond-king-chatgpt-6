@@ -1236,3 +1236,15 @@ Policy: append-only; preserve all earlier entries.
 - Browser, actual mobile device, screen-reader, cross-browser, Lighthouse and production deployment tests remain NOT TESTED. No backend, account, cloud sync, AI runtime, database, billing or tenant isolation is claimed.
 - Separate Command Center PR #8 remains an unrelated Wellness content Draft requiring qualified medical review, image licensing and editorial/localization review; it is not being published or merged as part of this build.
 - Marker: make-two-projects-100-workflows-20261128
+
+
+### Final two-project merge verification — 2026-11-28
+- Owner's instruction was followed: the agent did not ask Owner to merge the current project PRs.
+- Command Center PR #103 merged successfully. Merge commit: 5fbcc5a87e659e2961da133764e32549e085e72c.
+- Learning Journey PR #16 merged successfully. Merge commit: dd0666171c0779deeba71e361502584bfdd6f660.
+- Main read-back PASS: Command Center contains browser-local Idea save/delete/JSON export, browser-local Learning plans/self-recorded completion/pathway progress/JSON export, working dashboard routes, return-to-Command-Center links, and updated specification.
+- Main read-back PASS: Learning Journey contains START-HERE.md, README and homepage links, mobile nav close-on-link, Escape close with focus return, and desktop resize reset; changelog/status documentation updated.
+- JavaScript syntax PASS. Mock-DOM/localStorage PASS for Idea save/render/delete and Learning save/render/mark-complete/progress. Source navigation/focus checks PASS.
+- Learning Journey open PR count: 0. Command Center open PRs: #8 Wellness educational article Draft (medical review, licensed images, editorial/localization review and Blogger preview still pending) and #102 stale verification record. #102 is superseded by this final record and will be closed without deleting its branch/history.
+- Browser, actual mobile device, screen-reader, cross-browser, Lighthouse, real export download, and production deployment QA remain NOT TESTED. These are not 100% production-ready SaaS products: no server backend, account/authentication, database, cloud sync, AI runtime, billing or tenant isolation is present.
+- Marker: final-two-project-merge-verification-20261128
