@@ -2,7 +2,7 @@
 
 Project: DR-TRTT-OPS-001  
 Repository: TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6  
-Prototype branch: feature/learning-idea-universe-rebased-20261128  
+Implementation branch: feature/offline-learning-idea-workflows-20261128  
 Date: 2026-11-27
 
 ## Purpose
@@ -10,7 +10,7 @@ Extend the Diamond King Command Center with two dedicated spaces under the produ
 
 ## Screens
 - `prototypes/diamond-king-universe/learning.html`: learning pathways, lesson/library preview, learning evidence principles.
-- `prototypes/diamond-king-universe/ideas.html`: idea atlas, lifecycle, idea intake form, local-only preview.
+- `prototypes/diamond-king-universe/ideas.html`: idea atlas, lifecycle, idea intake form, browser-local records and JSON export.
 
 ## Shared design
 Royal Midnight #11152D, Pink #E98BAF, Piyaji #B77991, Kathali #D6A542, White #FFFFFF; Cyan #67E8F9 accent. Responsive 12-column desktop grid collapsing to one column on narrow screens. Semantic landmarks, labelled controls, visible focus behavior from native controls, aria-live status, and reduced-motion support.
