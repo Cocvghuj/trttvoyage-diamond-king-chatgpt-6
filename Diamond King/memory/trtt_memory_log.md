@@ -1437,3 +1437,15 @@ Policy: append-only; preserve all earlier entries.
 - **NOT TESTED:** Blogger template import/compiler, seven page installations, live rendering, Blogger API access/secrets, real comments/pagination, live post creation, browser/device QA and production deployment.
 - **Not performed:** no live Blogger publication, Telegram delivery, DNS/security/account change, payment action or GitLab operation.
 - **Marker:** trtt-blogger-five-module-merge-complete-20261128
+
+
+## Entry — 2026-11-28 — TRTT Blogger Diamond Horizon theme application
+- **Trigger:** Owner requested the Blogger theme remembered in the Diamond King Command Center be applied to `TRTT-VOYAGE/TRTTVOYAG-BLOG`.
+- **Source verification:** Original Diamond Horizon candidate is `TRTT-VOYAGE/Cocvghuj-trtt-news-bot/TRTT-Voyage-Generation-2-ULTIMATE.xml`, merged in PR #141 at `289416b757a5fc6e3b9f7c6c6ab8b06171d7970b`. The Command Center `theme-backup-2026-11-27.xml` is the old Mitti Free Version rollback archive and is not the active Diamond Horizon design.
+- **Decisions:** preserve the Blogger package's full Blog1 includables and 20 widget IDs; use the approved six-item Home/News/Travel/AI/Tools/About menu; four homepage discovery cards; separate Travel Booking and Amazon Picks hero actions; accessible persistent Dark/Light mode; responsive horizontal menu; footer links to prepared policy/contact pages and verified public brand channels only.
+- **Privacy decisions:** filter Diary, My dairy and THINKING ROOM labels from homepage cards only; keep post/label routes; suppress the legacy TRTT News24BD label chip without changing stored labels; hide PageList1/Profile1 without deleting widgets; retain ReportAbuse1.
+- **Files:** canonical theme updated; previous package theme and original Diamond Horizon source archived; validator/tests, README, release checklist, build log, bridge guide and design review updated.
+- **Blog branch:** `feature/trtt-blog-command-center-theme-20261128`. **Command Center branch:** `feature/trtt-blog-command-center-theme-memory-20261128`.
+- **Verification at entry:** source read PASS; implementation prepared. GitHub CI, remote read-back and Blogger proprietary compiler/import remain pending. Live Blogger theme/page installation, browser/device/screen-reader QA, affiliate redirect/attribution, production deployment, Blogger API access, post publication and Telegram delivery NOT TESTED.
+- **No action:** no live theme import, no existing post/page deletion, no live publication, no Telegram send, no DNS/security/account change, no GitLab sync, no secret access.
+- **Marker:** `trtt-blog-command-center-theme-restore-20261128`
