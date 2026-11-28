@@ -1793,3 +1793,14 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** PR #4 merge and merged README state PASS. Repository rename NOT TESTED / NOT PERFORMED because the required write action is unavailable in this session. Existing repository remains `TRTT-VOYAGE/Cocvghuj`.
 - **Next action:** Repository admin must open the existing repository's Settings → General → Repository name, enter `abu-taher`, and confirm Rename. GitHub normally redirects old repository URLs, but update local remotes and links after the rename.
 - **Scope:** GitHub only. No GitLab, Blogger, Telegram, production, DNS/security, or secret action.
+
+
+## Verification — Repository Rename Completed — 2026-11-28
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner asked to recheck the requested repository rename.
+- **GitHub verification:** Queried both `TRTT-VOYAGE/Cocvghuj` and `TRTT-VOYAGE/abu-taher`. Both resolve to the same repository ID `529331693`; canonical full name is `TRTT-VOYAGE/abu-taher`, default branch `main`.
+- **Result:** Repository rename to `abu-taher` is PASS. This is the original repository, not a replacement; history and identity are preserved.
+- **URL:** `https://github.com/TRTT-VOYAGE/abu-taher`.
+- **File changes:** Append-only verification entry and matching HTML trace.
+- **Scope:** GitHub only. No GitLab, Blogger, Telegram, production, DNS/security, or secret action.
