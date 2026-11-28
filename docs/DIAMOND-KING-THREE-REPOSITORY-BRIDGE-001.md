@@ -102,3 +102,19 @@ The bridge remains manual and version-controlled. No automatic data replication,
 - [ ] Runtime automation and production deployment (not part of this bridge).
 
 **Marker:** diamond-king-four-repository-bridge-20261128
+
+
+## Addendum — Fifth repository: TRTT Blogger Publishing — 2026-11-28
+
+[TRTT Blogger Package](https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG) is added as the fifth module in the Diamond King project bridge. It owns Blogger theme/page source, editorial standards and the draft-only Blogger workflow. Travelpayout and Amazon remain authoritative for their own partner/product catalogs; the Blogger repository holds publication snapshots only.
+
+- [x] Blogger package repository inspected and source package prepared.
+- [x] Blogger PR #1 opened; source CI and 13 tests PASS.
+- [x] Central registry addendum prepared on the feature branch.
+- [ ] Owner review/merge of Blog PR #1.
+- [ ] Owner review/merge of central registry/bridge PR.
+- [ ] Blogger import, pages and real rendering verified.
+
+This is a manual version-controlled bridge. Automatic replication, webhooks, background execution and ChatGPT Memory↔GitHub synchronization remain NOT IMPLEMENTED.
+
+**Marker:** trtt-blogger-ready-package-v1-20261128
