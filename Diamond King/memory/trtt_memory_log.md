@@ -1638,3 +1638,17 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No live Blogger publish, no Telegram send, no Blogger account mutation, no production/DNS/security action, and no secret access. Article source is on GitHub main only; it is not a Blogger post.
 - **Decision / next step:** Blogger DRAFT is blocked until Owner configures all four required Blogger Actions secrets through GitHub settings and then authorizes a safe workflow rerun. Do not publish or distribute.
 - **Marker:** trtt-blogger-trigger3-pr5-merged-draft-blocked-20261128
+
+
+## Entry — 2026-11-28 — Final Blogger readiness audit / consolidated Owner handoff
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested the remaining TRTT Blogger work be made final, fixed where possible, and reduced to one consolidated Owner approval trigger before the Owner manually handles live publication/review.
+- **GitHub source:** Re-fetched TRTT-VOYAGE/TRTTVOYAG-BLOG PR #5. It is CLOSED/MERGED at merge commit ecf2f46984ec008b3f06e7d3685fc63ffa9a37a2. Article source is on Blogger repo main; PR #5 CI run 46141822769 passed earlier.
+- **Blogger Draft execution evidence:** Workflow run 46146834677 and job 140984624257 completed SUCCESS as a workflow only. Log confirms BLOGGER_BLOG_ID, BLOGGER_CLIENT_ID, BLOGGER_CLIENT_SECRET and BLOGGER_REFRESH_TOKEN were empty in the runner environment; values were not accessed. Draft creation steps 5 and 6 were SKIPPED. No Blogger Post ID; no DRAFT was created. Therefore live publication is NOT READY and must not be approved yet.
+- **Draft script review:** scripts/create_blogger_html_draft.py validates the HTML, restricts blog destination to approved TRTT domains, checks duplicate titles across LIVE/DRAFT posts, refuses overwrite when existing content differs, inserts with isDraft=True, and verifies read-back ID/title/content/status. It contains no publish or Telegram operation.
+- **GitLab mirror:** Workflow run 46146834721 completed SUCCESS as a workflow only; its log confirms GITLAB_TOKEN was empty and mirror preparation was SKIPPED. GitLab MR !31 remains OPEN at head cc423c01cbd2033d65420d5199275ec0384f34b3; pipeline 3126530906 FAILED before runner startup (started_at=null). No mirror commit was created by this run; GitLab main/MR not merged.
+- **Unresolved Owner-side prerequisites:** Configure all four exact Blogger Actions secrets in TRTTVOYAG-BLOG repository settings, and configure GITLAB_TOKEN with GitLab write_repository scope if GitLab mirror automation is required. Never share values in chat. After configuration, run only the DRAFT workflow manually with file_path blog/drafts/2026-11-28-su-nuraxi-barumini-guide.html; verify actual Post ID and DRAFT status. Do not publish through this workflow.
+- **Final handoff:** No further code change is justified before the required credentials exist; no fabricated success or guaranteed result. A single consolidated Owner approval trigger may be issued only after credentials are configured and a Blogger DRAFT is actually verified. Owner will separately decide/manualize Live publication. Telegram remains excluded until a confirmed LIVE URL and separate approval.
+- **Memory branch:** Appended this entry to the existing PR #117 feature branch and mirrored it in trttmagic.html; read-back verification pending.
+- **Marker:** trtt-final-blogger-readiness-handoff-20261128
