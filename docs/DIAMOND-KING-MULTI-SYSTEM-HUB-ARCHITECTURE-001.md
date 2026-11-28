@@ -125,3 +125,8 @@ The Blogger module stores versioned snapshots of the authoritative Travelpayout 
 **Current evidence:** Blog repository PR #1 is open and unmerged. Its GitHub Actions validator and 13 tests passed (run 46105082563). Blogger import, page installation, API credentials, live rendering and production deployment are NOT TESTED.
 
 **Marker:** trtt-blogger-ready-package-v1-20261128
+
+
+## Fifth-module merge status — 2026-11-28
+
+TRTTVOYAG-BLOG package PR #1 has now been merged to its main branch. Merge commit: `d1c290cace951e31e720cc962801aee6253f0047`. The central fifth-module registry/dashboard update remains in PR #112 until merged. This confirms GitHub source availability only; it does not install the theme or static pages in Blogger.
