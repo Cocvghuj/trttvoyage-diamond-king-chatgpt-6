@@ -1109,3 +1109,15 @@ Policy: append-only; preserve all earlier entries.
 - Verification: GitHub branch creation and file write PASS. Source-level read-back and syntax/logic checks pending. Browser/device QA, Pages deployment/runtime, live URL and Blogger draft creation NOT TESTED. Calculator uses user-entered estimates only; no live fares, availability, or FX conversion.
 - Other systems: GitLab NOT REQUIRED under current GitHub-only direction. Blogger and Telegram NOT REQUIRED; no publication or delivery.
 - Marker: europe-budget-calculator-safe-extraction-20261128
+
+
+## Verification Addendum — Blogger Mitti Theme Backup Restoration — 2026-11-28
+
+- Project: DR-TRTT-OPS-001.
+- Source branch: feature/agents-guide-mainline-refresh-20261127; original XML file fetched from the prior reviewed backup branch.
+- Destination: Diamond King/backups/blogger/theme-backup-2026-11-27.xml on feature/blogger-theme-backup-restoration-20261128.
+- Git blob SHA: 81a2e60fc6de5d68af3b58c43669e98d689490c4 (matches the source SHA recorded in the existing backup manifest).
+- Content checks: 440,776 characters; XML/HTML document opening and closing tags present; no email address matches or common private-key/API-token patterns found. Phone-like digit regex matches were numeric CSS/JavaScript constants and were not treated as personal numbers.
+- Preservation: The original backup manifest is retained with a dated addendum; this is the Mitti Free Version rollback source, not the active Diamond Horizon theme and not a Blogger import.
+- Verification status: Source read PASS; destination file write PASS; remote read-back and XML parser validation pending. Blogger import, active-theme identity and live-site runtime NOT TESTED.
+- Marker: blogger-mitti-theme-backup-restoration-20261128
