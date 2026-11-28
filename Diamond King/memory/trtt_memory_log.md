@@ -1516,3 +1516,18 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append this entry and mirrored HTML trace on existing feature branch `feature/trtt-blogger-work-start-audit-20261128`; preserve prior PR #117 changes.
 - **Verification status:** PR #117 was inspected OPEN and mergeable before this append. Updated files require read-back after write; PR remains unmerged until verification and owner-triggered execution.
 - **Marker:** trtt-diamond-blogger-trigger-20261128
+
+
+## Entry — 2026-11-28 — Blogger editorial intake brief execution
+
+- **Timestamp:** 2026-11-28 12:31 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner activated the Diamond Blogger execution trigger and explicitly authorized merging the Blogger-work PR after successful verification.
+- **Inspection:** Rechecked Command Center PR #117 (OPEN, mergeable at inspection) and TRTTVOYAG-BLOG main, AGENTS.md, draft README, editorial standards, release checklist, draft-only workflow, draft validator/tests, build log and recursive repository tree.
+- **Finding:** No article HTML, verified topic/source packet, or cleared real article image exists in blog/drafts. Existing draft workflow is already DRAFT-only with duplicate protection and post read-back; no Blogger connector is available in this session.
+- **Build decision:** Instead of inventing an article or image, created blog/drafts/ARTICLE-RESEARCH-BRIEF.md as a Markdown research worksheet (not .html, so it cannot trigger Blogger draft creation), updated the draft README, and appended docs/BUILD-LOG.md.
+- **Safety:** No live Blogger theme/page change, post creation, live publication, Telegram, production, DNS/security action, or secret access. Protected posts and all affiliate catalogs untouched.
+- **Files changed:** TRTTVOYAG-BLOG feature branch feature/trtt-blogger-editorial-brief-20261128; three paths listed above.
+- **Verification:** GitHub read-back and PR validation pending at append time; merge only after successful CI and file verification.
+- **GitLab:** Mirror remains subject to MR !31 and quota/token blockers; no GitLab main mutation.
+- **Marker:** trtt-blogger-editorial-intake-brief-20261128
