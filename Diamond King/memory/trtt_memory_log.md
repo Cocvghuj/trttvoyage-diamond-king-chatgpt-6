@@ -1449,3 +1449,13 @@ Policy: append-only; preserve all earlier entries.
 - **Verification at entry:** source read PASS; implementation prepared. GitHub CI, remote read-back and Blogger proprietary compiler/import remain pending. Live Blogger theme/page installation, browser/device/screen-reader QA, affiliate redirect/attribution, production deployment, Blogger API access, post publication and Telegram delivery NOT TESTED.
 - **No action:** no live theme import, no existing post/page deletion, no live publication, no Telegram send, no DNS/security/account change, no GitLab sync, no secret access.
 - **Marker:** `trtt-blog-command-center-theme-restore-20261128`
+
+
+## Verification addendum — TRTT Blogger Diamond Horizon theme — 2026-11-28
+- Blogger package PR #3 is OPEN, clean/mergeable, not merged: https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/3.
+- GitHub Actions run 46128610584 completed SUCCESS; XML/package validation and unit-test steps PASS.
+- Remote read-back PASS for all 10 changed/added Blogger package files. Static checks confirm six menu items, four homepage cards, approved routes, persistent accessible Dark/Light switch, homepage-only personal-label filtering, legacy News chip suppression, footer routes/public links, all 20 widget IDs and hardened Blog1 includes.
+- Command Center memory and HTML trace markers read back. Memory PR #114 OPEN, clean/mergeable, not merged.
+- Blogger compiler/import, pages/live routes, browser/device/screen-reader QA, affiliate redirect/attribution, Blogger API, publication, Telegram and production deployment NOT TESTED.
+- No live Blogger changes, publication, Telegram, DNS/security, GitLab or secret actions.
+- Marker: `trtt-blog-command-center-theme-restore-20261128-verification`
