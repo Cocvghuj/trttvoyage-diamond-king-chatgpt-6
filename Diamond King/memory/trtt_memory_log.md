@@ -1290,3 +1290,16 @@ Policy: append-only; preserve all earlier entries.
 - Existing unrelated Command Center PR #8 remains Draft and merge-blocked pending qualified medical review, licensed images, editorial/localization review and Blogger preview.
 - Next project prepared: SaaS Universe MVP Discovery 001; discovery only, no implementation/deployment authorization. Start command is in the new prep brief.
 - Marker: two-project-reaudit-complete-20261128
+
+
+## Entry — 2026-11-28 — DR-TRTT-OPS-001 — Diamond King three-repository bridge
+
+- **Trigger summary:** Owner directed that the Command Center, Learning Journey and Travelpayout repositories be connected through Diamond King, and that the previous alternative AI workflow be dropped.
+- **Decision:** Keep Diamond King (ChatGPT) as the named AI collaborator and Command Center as the canonical hub. Connect the three repositories with reciprocal navigation, a central machine-readable registry, and a shared cross-repository record contract.
+- **Repositories:** `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6`; `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey`; `TRTT-VOYAGE/Travelpayout`.
+- **Implementation:** Added the central bridge specification and registry; added module-specific bridge guides and reciprocal links in each repository's README/entry page. Existing product data remains owned by its source repository.
+- **Synchronization truth:** This is a manual, version-controlled reference bridge. No automatic cross-repository sync, private ChatGPT conversation ingestion, or ChatGPT Memory↔GitHub synchronization is implemented or claimed.
+- **Governance:** Changes are on feature branches and pending PR review. No merge, production deployment, Pages activation, DNS/security/account change, Blogger publication or Telegram delivery performed.
+- **Verification scope:** Remote read-back and source/link assertions to be performed before PR updates. Browser/mobile/accessibility QA and live deployment remain NOT TESTED/NOT VERIFIED.
+- **Correction note:** An earlier HTML trace addendum for the Travelpayout MVP cited workflow run `46096290851`; the authoritative successful run ID is `46096393061`. This entry records the correction without deleting prior history.
+- **Marker:** diamond-king-three-repository-bridge-001-20261128
