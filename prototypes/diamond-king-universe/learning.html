@@ -38,10 +38,19 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
   const paths = ["AI & Digital Intelligence","Product & SaaS Building","Global Brand & Travel"];
   let records = [];
   function announce(message) { status.textContent = message; }
+  function normalizeSource(value) {
+    if (typeof value !== "string" || !value.trim()) return "";
+    try { const url = new URL(value); return url.protocol === "https:" ? url.href : ""; }
+    catch (error) { return ""; }
+  }
   function load() {
     try {
       const value = JSON.parse(localStorage.getItem(KEY) || "[]");
-      records = Array.isArray(value) ? value.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.outcome === "string" && paths.includes(item.path) && typeof item.completed === "boolean").slice(0,100).map(item => ({...item,source:(typeof item.source === "string" && /^https:\/\//i.test(item.source)) ? item.source : ""})) : [];
+      records = Array.isArray(value)
+        ? value.filter(item => item && typeof item.id === "string" && item.id.trim() && item.id.length <= 160 && typeof item.title === "string" && item.title.trim() && typeof item.outcome === "string" && item.outcome.trim() && paths.includes(item.path) && typeof item.completed === "boolean")
+          .slice(0,100)
+          .map(item => ({...item,id:item.id.trim(),title:item.title.trim().slice(0,120),outcome:item.outcome.trim().slice(0,1000),source:normalizeSource(item.source),createdAt:typeof item.createdAt === "string" && Number.isFinite(Date.parse(item.createdAt)) ? new Date(item.createdAt).toISOString() : ""}))
+        : [];
     } catch (error) { records = []; announce("Local storage is unavailable or unreadable. Existing browser data was not changed."); }
   }
   function save() {
@@ -127,12 +136,9 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
         if (!item || typeof item.id !== "string" || !item.id || item.id.length > 160 ||
             typeof item.title !== "string" || typeof item.outcome !== "string" ||
             !paths.includes(item.path) || typeof item.completed !== "boolean" ||
-            typeof item.createdAt !== "string" || !Number.isFinite(Date.parse(item.createdAt)) || seen.has(item.id)) continue;
-        let source = "";
-        if (typeof item.source === "string" && item.source.trim()) {
-          try { const url = new URL(item.source); if (url.protocol === "https:") source = url.href; } catch (error) {}
-        }
-        const clean = {id:item.id,title:item.title.trim().slice(0,120),path:item.path,outcome:item.outcome.trim().slice(0,1000),source,completed:item.completed,createdAt:new Date(item.createdAt).toISOString()};
+            typeof item.createdAt !== "string" || (item.createdAt && !Number.isFinite(Date.parse(item.createdAt))) || seen.has(item.id)) continue;
+        const source = normalizeSource(item.source);
+        const clean = {id:item.id,title:item.title.trim().slice(0,120),path:item.path,outcome:item.outcome.trim().slice(0,1000),source,completed:item.completed,createdAt:item.createdAt ? new Date(item.createdAt).toISOString() : ""};
         if (!clean.title || !clean.outcome) continue;
         records.push(clean); seen.add(clean.id); added++;
       }
