@@ -1437,3 +1437,35 @@ Policy: append-only; preserve all earlier entries.
 - **NOT TESTED:** Blogger template import/compiler, seven page installations, live rendering, Blogger API access/secrets, real comments/pagination, live post creation, browser/device QA and production deployment.
 - **Not performed:** no live Blogger publication, Telegram delivery, DNS/security/account change, payment action or GitLab operation.
 - **Marker:** trtt-blogger-five-module-merge-complete-20261128
+
+
+## TRTT Smart Invoice ↔ Ashes Fall King repository links — 2026-11-28
+
+- **Owner trigger:** Owner directed Diamond King to proceed with the pending TRTT cross-repository navigation work, noting the separate TRTT Blogger work is stalled.
+- **Repositories inspected:** `TRTT-VOYAGE/trttvoyage-smart-invoice-saas` and `TRTT-VOYAGE/trttvoyage-ashes-fall-king`; both are public repositories with `main` as default branch. Existing open PRs: none in either repository at inspection.
+- **SaaS invoice:** Added an external link in `invoice.html` to the verified Ashes Fall King GitHub repository. Feature branch: `feature/trtt-ashes-reciprocal-link-20261128`; commit: `e8b5a49cc0bea11a0091d97a45e5762364de5fac`.
+- **Ashes Fall King:** Added an external link in the homepage `.links` navigation to the verified Smart Invoice SaaS GitHub repository. Feature branch: `feature/trtt-saas-reciprocal-link-20261128`; commit: `35bc76cc9d1d64b42796f65b26f5ee45ddeda757`.
+- **SaaS dashboard limitation:** `index.html` was inspected at current main and at both historical commits that touched the path. Both versions end mid-script; the first ends at the initial script declaration and the latest ends inside `updateChronometer()`. The file history contains only those two path commits, so no complete historical version was recoverable. The dashboard back-link was not inserted; no truncated file was overwritten or reconstructed by guesswork.
+- **Status at memory append:** Both feature branches created and file writes returned commits. Remote read-back, static checks and PR creation are the next verification steps. No merge, Blogger import/publication, Telegram delivery, production deployment, DNS/security changes or GitLab mirror performed in this stage.
+- **Marker:** trtt-cross-repo-links-source-integrity-20261128
+
+
+## Cross-repository link PR status — 2026-11-28
+
+- **Smart Invoice SaaS:** GitHub PR #1 was created from `feature/trtt-ashes-reciprocal-link-20261128` and GitHub reports it merged by `TRTT-VOYAGE` at 2026-11-28T10:41:07Z. Main-branch read-back confirms the invoice link is present. Diamond King did not call a merge action.
+- **Ashes Fall King:** PR #2 is OPEN and mergeable=true: https://github.com/TRTT-VOYAGE/trttvoyage-ashes-fall-king/pull/2. Homepage change remains on feature branch pending review/merge.
+- **Command Center memory:** PR #115 is OPEN and mergeable=true: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/115. Both append-only memory files contain this trigger's trace.
+- **Unresolved SaaS dashboard link:** `index.html` remains unchanged because both path-history versions are truncated. The reciprocal link is currently implemented from the invoice page, not the dashboard home page.
+- **GitLab:** No matching GitLab projects were found for either Smart Invoice SaaS or Ashes Fall King. The existing Blogger mirror is a separate project; no cross-project mirror was attempted.
+- **Blogger status inspected:** Command Center PR #114 remains OPEN/mergeable. It references TRTTVOYAG-BLOG PR #3 and GitLab MR !31. GitLab MR !31 is OPEN/mergeable, but its latest pipeline is FAILED before runner start due to `ci_quota_exceeded`; GitHub package CI run 46131171917 is recorded SUCCESS in the PR evidence. No Blogger import, draft creation, live publish or Telegram delivery performed.
+- **Marker:** trtt-cross-repo-links-pr-status-20261128
+
+
+## Owner merge authorization — 2026-11-28
+
+- **Owner trigger:** Explicit approval received: `MERGE APPROVED` for GitHub PR #2 (Ashes Fall King), PR #115 (Command Center append-only memory), and PR #3 (TRTT Blogger theme package).
+- **Pre-merge inspection:** All three PRs were OPEN and GitHub reported `mergeable=true`. PR #2 changes only Ashes homepage navigation; PR #115 appends the project memory log and HTML trace; PR #3 applies the reviewed Diamond Horizon Blogger package and supporting validation/docs/workflow.
+- **CI evidence:** Blogger PR #3 head commit `2b321fe5bae2e194616f18abbfcabddd7d537a51` has GitHub Actions validation run `46131171917` completed with conclusion `success`. PR #2 and #115 had no PR-triggered workflow runs or commit statuses reported.
+- **Authorization boundary:** Owner approval authorizes these three GitHub PR merges only. It does not authorize Blogger theme import, Blogger draft/live publication, Telegram delivery, GitLab MR merge, DNS/security changes or production deployment.
+- **Execution status at append:** Merge actions and post-merge read-back are pending; no merge success is claimed yet.
+- **Marker:** trtt-merge-approved-20261128
