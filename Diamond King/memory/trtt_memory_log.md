@@ -1610,3 +1610,17 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab / Telegram:** No GitLab write/sync in this trigger. Telegram remains blocked until confirmed live publication and Owner approval.
 - **Safety:** No PR merged, no Blogger API action, no live publication, no Telegram send, no production/DNS/security change, and no secret values accessed.
 - **Marker:** trtt-blogger-execution-trigger-verified-20261128
+
+
+## Entry — 2026-11-28 — Blogger stage continuation / PR and CI reinspection
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed continuation of the TRTT Blogger stage, reinspection of Blogger PR #5 and Command Center PR #117, current CI/workflow, append-only memory update, and GitLab MR !31 pipeline status. Explicitly prohibited merges, Blogger mutations, publication and Telegram delivery.
+- **GitHub PR #5:** OPEN, unmerged, mergeable=true at inspection. Branch `feature/trtt-first-article-su-nuraxi-20261128`; head `2614bb15cd43289e525620c4ec808269d4443b14`. Changed files remain the Su Nuraxi article HTML and appended research brief.
+- **CI:** Workflow run `46141822769` completed SUCCESS. Job `validate`, including `Validate source package` and `Run unit tests`, completed SUCCESS.
+- **Blogger workflow:** Re-read main `.github/workflows/blogger-draft.yml`. It checks four Blogger secrets without printing values and creates DRAFT only on main push of article HTML or manual dispatch when all secrets are configured. No publish or Telegram step. Secret presence NOT TESTED. No workflow dispatch, Blogger API call or post creation performed.
+- **Command Center PR #117:** OPEN, unmerged; branch `feature/trtt-blogger-work-start-audit-20261128`; head `8c2314ee3bf9b6a8b51189ce46e5019c361dd177`; mergeable=false at inspection.
+- **GitLab MR !31:** OPEN; source branch `feature/trtt-blog-github-gitlab-bridge-20261128`; head `cc423c01cbd2033d65420d5199275ec0384f34b3`; head pipeline `3126530906` status FAILED. Prior pipeline evidence shows runner did not start (`started_at=null`), so GitLab CI is not passing.
+- **Actions / safety:** No PR merged; no Blogger mutation, DRAFT creation, live publication, Telegram delivery, GitLab write, production/DNS/security change or secret access. GitHub main and GitLab main unchanged.
+- **Memory action:** Append this entry and mirrored HTML trace on the existing Command Center PR #117 feature branch; verify both files by read-back.
+- **Marker:** trtt-blogger-stage-reinspection-20261128
