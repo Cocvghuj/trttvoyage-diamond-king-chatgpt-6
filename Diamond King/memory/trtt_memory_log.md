@@ -1558,3 +1558,17 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No secrets requested or exposed. No production deploy, DNS, billing, account-access, live publication, or external distribution. No direct pushes to default branches. Use feature branches and PRs.
 - **Verification:** Repository metadata, existing file paths, and ruleset endpoint inspected. Branch protection not verified because of API 403. Workflow execution and live vulnerability features are not yet verified.
 - **Marker:** trtt-two-repository-security-governance-hardening-20261128
+
+
+## Verification Addendum — Two-Repository Security Governance — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001.
+- **Command Center PR #126:** MERGED at `35e031cdaa46133320611f7e68574798347c8909`. Eleven paths changed: SECURITY.md, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SUPPORT.md, README governance links, PR template, two issue forms, Dependabot config, CodeQL workflow, and security baseline/threat model.
+- **CodeQL:** Workflow run `46162122874` completed with conclusion `success`; analyze job and its steps succeeded. This verifies the initial CodeQL workflow run on the PR head, not a comprehensive security audit or absence of all vulnerabilities.
+- **Command Center read-back:** README, SECURITY.md, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SUPPORT.md, threat model, Dependabot configuration and CodeQL workflow were fetched from main; expected content checks PASS.
+- **Abu Taher profile PR #13:** MERGED at `64538407cab87eec4202d2671254f39f6936b985`. Eight paths changed: SECURITY.md, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SUPPORT.md, README governance links, PR template and two issue forms. Main read-back of README and core policy files PASS.
+- **Memory trigger PR #125:** MERGED at `f27be5fdf797bdcb6eb04de8a18a9d84431227fc`; append-only log and HTML marker were verified on main.
+- **GitHub settings:** Rulesets endpoint returned an empty list for both repos. Branch protection read returned HTTP 403; actual branch protection remains NOT VERIFIED. Dependabot alerts, secret scanning, push protection, private vulnerability reporting, Actions policy and account-level 2FA are NOT VERIFIED. No platform settings were changed.
+- **Limitations:** Profile issue-form rendering/validation and both repos' browser/mobile/accessibility behaviour are NOT TESTED. Dependabot alerting is configured for GitHub Actions in Command Center, but alert service state is NOT VERIFIED. No CodeQL workflow was added to the profile README-only repository because it has no application code/workflow surface inspected for that purpose.
+- **Scope:** GitHub only. No GitLab backup, Blogger publishing, Telegram distribution, production deployment, DNS or billing actions.
+- **Marker:** trtt-two-repository-security-governance-verification-20261128
