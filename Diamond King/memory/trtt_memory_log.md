@@ -1779,3 +1779,17 @@ Policy: append-only; preserve all earlier entries.
 - **Risk note:** Renaming a GitHub repository changes its URL and may affect existing links/integrations. GitHub redirects are generally provided, but references should still be audited.
 - **Verification:** NOT TESTED — repository rename capability unavailable. Existing repo name remains `Cocvghuj`.
 - **Marker:** trtt-remove-cocvghuj-repo-name-request-20261128
+
+
+## Entry — 2026-11-28 — Repository Rename Request: abu-taher
+
+- **Timestamp:** 2026-11-28 15:07 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner approved changing the GitHub repository name from `Cocvghuj` to `abu-taher`.
+- **Inspection:** Re-fetched `TRTT-VOYAGE/Cocvghuj`; repository ID `529331693`, public, default branch `main`, admin/push permission confirmed. PR #4 is CLOSED/MERGED at merge commit `8c6a54467768e79bb3b89eb5b2a898ebed6a74cd`; merged README heading is Abu Taher.
+- **Decision:** Preserve repository identity/history and use GitHub's native repository rename rather than creating a replacement repository. The available GitHub connector exposes no rename/update-repository action; its fetch operation is read-only. No unsafe workaround, duplicate repository, or speculative transfer was attempted.
+- **Requested target:** `TRTT-VOYAGE/abu-taher`; intended URL `https://github.com/TRTT-VOYAGE/abu-taher`.
+- **File changes:** Append-only memory entry and matching command-center HTML trace on the existing feature branch.
+- **Verification:** PR #4 merge and merged README state PASS. Repository rename NOT TESTED / NOT PERFORMED because the required write action is unavailable in this session. Existing repository remains `TRTT-VOYAGE/Cocvghuj`.
+- **Next action:** Repository admin must open the existing repository's Settings → General → Repository name, enter `abu-taher`, and confirm Rename. GitHub normally redirects old repository URLs, but update local remotes and links after the rename.
+- **Scope:** GitHub only. No GitLab, Blogger, Telegram, production, DNS/security, or secret action.
