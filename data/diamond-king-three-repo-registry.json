@@ -95,5 +95,5 @@
     "copySensitivePersonalData": false,
     "ownerApprovalRequiredForMergeAndProduction": true
   },
-  "status": "five-repository-source-bridge-prepared-open-pr-manual-links-only"
+  "status": "five-repository-source-bridge-merged-to-main-manual-links-only"
 }
