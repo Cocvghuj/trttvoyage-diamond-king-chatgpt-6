@@ -1849,3 +1849,8 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** README.md only in `TRTT-VOYAGE/abu-taher`; this append-only memory log and its HTML mirror.
 - **Verification:** Pending PR, CI/status inspection, merge and main-branch read-back.
 - **Marker:** trtt-abu-taher-readme-learning-build-share-20261128
+
+- **Completion:** PR [#7](https://github.com/TRTT-VOYAGE/abu-taher/pull/7) successfully squash-merged. Merge commit: `a6d4318dc628b0ce6713b9b741c79af68a373b6c`.
+- **Main verification:** README read back from `main`; confirmed the learning sequence and Build Philosophy section are present. Generic placeholder social URLs, fake WhatsApp number, and unverified muse.ai URL are absent.
+- **CI:** No PR workflow runs and no commit status checks were returned for head `02b237e244d81211624234d34df155c5bf30d470`; CI NOT TESTED.
+- **Final marker:** trtt-abu-taher-readme-learning-build-share-merged-20261128
