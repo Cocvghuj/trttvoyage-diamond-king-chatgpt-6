@@ -108,3 +108,20 @@ The machine-readable registry in `data/diamond-king-three-repo-registry.json` is
 **Verification status:** branch changes are being prepared for review; no runtime synchronization, production deployment, Pages activation, or restore automation is claimed.
 
 **Marker:** diamond-king-four-repository-bridge-20261128
+
+
+## Addendum — Fifth module: TRTT Blogger Publishing — 2026-11-28
+
+The connected repository set now includes a fifth module:
+
+| Repository | Role | Owns |
+|---|---|---|
+| [TRTT Blogger Package](https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG) | TRTT Voyage Blogger publishing source package | Original Diamond Horizon theme candidate, static page sources, editorial/affiliate rules, draft validation and DRAFT-only Blogger workflow |
+
+The Blogger module stores versioned snapshots of the authoritative Travelpayout and Amazon catalogs; it does not replace those source repositories. Command Center remains the canonical memory and governance hub. Learning Journey remains the learning/idea source of truth.
+
+**Bridge mode:** manual, version-controlled references only. No automatic cross-repository replication, webhook, background agent or ChatGPT Memory synchronization is implemented.
+
+**Current evidence:** Blog repository PR #1 is open and unmerged. Its GitHub Actions validator and 13 tests passed (run 46105082563). Blogger import, page installation, API credentials, live rendering and production deployment are NOT TESTED.
+
+**Marker:** trtt-blogger-ready-package-v1-20261128
