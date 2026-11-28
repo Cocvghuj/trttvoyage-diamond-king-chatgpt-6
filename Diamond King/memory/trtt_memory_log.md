@@ -1190,3 +1190,13 @@ Policy: append-only; preserve all earlier entries.
 - Read-back PASS for all changed source and memory/trace files. Static assertions confirm the focus-visible selectors exist. Actual keyboard/browser/screen-reader/mobile testing NOT TESTED.
 - No PR merged; current repository governance says Owner reviews and merges. No production service or SaaS capability was fabricated.
 - Marker: two-project-100-build-result-20261128
+
+
+### Owner instruction and merge verification — 2026-11-28
+- Owner explicitly ordered: do not ask Owner to merge; execute the merge as part of completing the two projects. This instruction was treated as scoped approval for the two current accessibility PRs only.
+- Command Center PR #99 merged successfully. Merge commit: 030025ed52d7ea52ba90c613bfa142f97a5cc5c8.
+- Learning Journey PR #14 merged successfully. Merge commit: 91295a5644fb6921eee45f72f78443864b51153a.
+- Main-branch read-back PASS: Command Center learning.html and ideas.html contain :focus-visible; Learning Journey index.html contains :focus-visible; prior memory marker remains in both memory log and HTML trace.
+- Current open PR audit: Command Center still has PR #8, a separate Wellness educational article Draft; Learning Journey has zero open PRs. PR #8 remains unmerged because medical review, licensed image rights, editorial/localization review and Blogger preview are outstanding.
+- Production readiness is still NOT 100%. Source changes and GitHub merges are verified; browser/mobile/screen-reader/production runtime tests are NOT TESTED. Backend/database/authentication/tenant isolation/AI runtime/billing are not implemented in the Command Center concept prototype.
+- Marker: two-project-accessibility-pr-merge-verified-20261128
