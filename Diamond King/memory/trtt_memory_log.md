@@ -1624,3 +1624,17 @@ Policy: append-only; preserve all earlier entries.
 - **Actions / safety:** No PR merged; no Blogger mutation, DRAFT creation, live publication, Telegram delivery, GitLab write, production/DNS/security change or secret access. GitHub main and GitLab main unchanged.
 - **Memory action:** Append this entry and mirrored HTML trace on the existing Command Center PR #117 feature branch; verify both files by read-back.
 - **Marker:** trtt-blogger-stage-reinspection-20261128
+
+
+## Entry — 2026-11-28 — Trigger 3 Blogger draft execution / PR #5 merge
+
+- **Timestamp:** 2026-11-28 13:52 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner explicitly approved PR #5 merge; requested current head/CI recheck, merge only PR #5, inspect Blogger workflow for Blogger Post ID and DRAFT status, append memory and mirror HTML, inspect GitLab, and do not publish or send Telegram.
+- **Pre-merge verification:** Re-fetched TRTT-VOYAGE/TRTTVOYAG-BLOG PR #5. State OPEN, unmerged, mergeable=true; branch feature/trtt-first-article-su-nuraxi-20261128; head SHA 2614bb15cd43289e525620c4ec808269d4443b14. GitHub Actions run 46141822769 completed SUCCESS; job validate, Validate source package and Run unit tests all SUCCESS.
+- **Merge:** PR #5 was squash-merged with expected head SHA guard. GitHub confirmed merged=true; merge commit ecf2f46984ec008b3f06e7d3685fc63ffa9a37a2. Scope was only PR #5. PR #117 and GitLab MR !31 were not merged.
+- **Blogger workflow:** Push triggered TRTT Voyage Blogger Draft Only, run 46146834677, on merge commit ecf2f46984ec008b3f06e7d3685fc63ffa9a37a2. Workflow conclusion SUCCESS, but this is not a Blogger post success. Job create-draft reports secret-presence check step SUCCESS; log explicitly says one or more Blogger secrets are absent and no post was created. Blogger API client installation and draft creation steps were SKIPPED. Blogger Post ID: none. Blogger DRAFT status: NOT CREATED / NOT VERIFIED. Secret values were not accessed or displayed.
+- **GitLab mirror:** GitHub sync workflow run 46146834721 (Mirror TRTT Blogger source to GitLab) was IN_PROGRESS at inspection. GitLab MR !31/pipeline requires current read-back; no GitLab merge authorized or performed.
+- **Safety:** No live Blogger publish, no Telegram send, no Blogger account mutation, no production/DNS/security action, and no secret access. Article source is on GitHub main only; it is not a Blogger post.
+- **Decision / next step:** Blogger DRAFT is blocked until Owner configures all four required Blogger Actions secrets through GitHub settings and then authorizes a safe workflow rerun. Do not publish or distribute.
+- **Marker:** trtt-blogger-trigger3-pr5-merged-draft-blocked-20261128
