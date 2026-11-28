@@ -1459,3 +1459,18 @@ Policy: append-only; preserve all earlier entries.
 - Blogger compiler/import, pages/live routes, browser/device/screen-reader QA, affiliate redirect/attribution, Blogger API, publication, Telegram and production deployment NOT TESTED.
 - No live Blogger changes, publication, Telegram, DNS/security, GitLab or secret actions.
 - Marker: `trtt-blog-command-center-theme-restore-20261128-verification`
+
+
+## Entry — 2026-11-28 — Blogger GitHub/GitLab bridge and 100-part roadmap
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested the Blogger repository be bridged between GitHub and GitLab, kept as-is for the first live release, and divided into 100 small future improvement units; Owner also requested an optional Gemini second-opinion lane.
+- **GitHub source:** `TRTT-VOYAGE/TRTTVOYAG-BLOG`, branch `feature/trtt-blog-command-center-theme-20261128`, source head at initial mirror `5a9d682026381dcbd23822150f27e0a5beaa4059`, PR #3 remains open.
+- **GitLab discovery:** No dedicated GitLab project named TRTTVOYAG-BLOG was found. Existing private project `trttnews24bd-group/Cocvghuj-trtt-news-bot` (ID 88270725) is the established backup destination.
+- **GitLab mirror:** isolated folder `integrations/trttvoyag-blog/`; branch `feature/trtt-blog-github-gitlab-bridge-20261128`; latest snapshot commit `99b8d5ec58eb50fe2e39e746b5bc1d3b1f3a4e4a`; MR !31 open: https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot/-/merge_requests/31.
+- **Source verification:** exact byte-for-byte GitHub/GitLab read-back PASS for canonical Diamond Horizon theme, Travelpayout catalog, Amazon catalog and the 100-part roadmap. GitLab tree confirms the full 28-file Blogger package plus the added roadmap and manifest under the isolated mirror folder.
+- **Automation:** GitHub Actions one-way sync workflow `.github/workflows/sync-gitlab-mirror.yml` configured for GitHub main pushes; it updates only the dedicated GitLab mirror branch. Requires `GITLAB_TOKEN`; presence and write scope NOT VERIFIED. No GitLab main push, no bidirectional sync.
+- **GitLab CI:** MR !31 pipeline 3126314864 / job 18449826162 failed before runner start with `ci_quota_exceeded`; no project code/test failure was reported. GitLab CI status therefore NOT PASS; rerun when quota is available.
+- **100-part roadmap:** `docs/100-PART-TRTT-BLOG-QUALITY-ROADMAP-001.md` added. Planning only; one small unit at a time. Current theme and Owner's 2–3 new news articles remain frozen and unmodified.
+- **Gemini:** optional second-opinion lane documented for public/non-sensitive artifacts only. No Gemini connector/API credential available or verified in this chat; no secret assumed.
+- **Boundaries:** no live Blogger theme import, static page install, post edit/publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- **Marker:** `trtt-blog-github-gitlab-bridge-100-part-roadmap-20261128`
