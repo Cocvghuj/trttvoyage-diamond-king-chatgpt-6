@@ -1815,3 +1815,16 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** On `feature/abu-taher-profile-hub-20261128`, update `README.md` and add `docs/PROJECT-DIRECTORY.md`. README replacement commit `ee900dc0362932551366a8fb11a0842c730d4513`; project directory commit `650300a0a071539c5819ecedd54df4ecc3811547`.
 - **Verification:** Files written successfully. Read-back, PR creation, CI, merge, and post-merge verification are pending.
 - **Marker:** trtt-abu-taher-profile-hub-build-20261128
+
+
+## Verification — Abu Taher Profile Hub PR #6 Merged
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner explicitly authorized building and agent self-merging the first showcase repository.
+- **Pull request:** [PR #6](https://github.com/TRTT-VOYAGE/abu-taher/pull/6) CLOSED/MERGED.
+- **Merge commit:** `6f8c725a360be0bf14f83171202f942df7bb438b`.
+- **Main read-back:** `README.md` blob `907eb0110e4ce4318d42221e590bf8be1497e97e`; `docs/PROJECT-DIRECTORY.md` blob `bdcfe119d30b9181b3452508b1bdd3a915636c31`.
+- **Checks:** PR mergeable=true before merge. No GitHub Actions workflow runs or commit status checks were configured/reported for the head commit; CI therefore NOT TESTED (not reported as passing).
+- **Content verification:** Main README includes ChatGPT and Muse links, existing public social links, curated TRTT project links, and no legacy `github.com/Cocvghuj` URL. Project directory includes classification and upstream/fork policy. Private repositories excluded.
+- **Scope:** GitHub repository content only. No GitLab, Blogger, Telegram distribution, production deployment, DNS/security, or secrets action.
+- **Result:** Repository profile hub build and merge PASS; automated CI NOT TESTED.
+- **Marker:** trtt-abu-taher-profile-hub-merged-20261128
