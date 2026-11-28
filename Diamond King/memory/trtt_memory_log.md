@@ -1768,3 +1768,14 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** PR creation confirmed. Read-back verification pending; Google indexing is not guaranteed by a README heading alone.
 - **Scope:** No repo rename, profile pin reorder, external service action, GitLab, Blogger, or Telegram work.
 - **Marker:** trtt-abu-taher-profile-heading-pr4-20261128
+
+
+## Entry — 2026-11-28 — Remove Cocvghuj from repository name
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner said the technical repository name `Cocvghuj` is unattractive and asked to remove it.
+- **Recommendation:** Rename repository `TRTT-VOYAGE/Cocvghuj` to `abu-taher` so the URL/name matches the personal profile identity; preserve README branding as `Abu Taher` with TRTT Voyage founder subtitle.
+- **Inspection:** PR #3 is merged; PR #4 remains open/unmerged. The GitHub connector available in this session exposes no repository-rename/update-repository action; its fetch endpoint is read-only. No rename was attempted.
+- **Risk note:** Renaming a GitHub repository changes its URL and may affect existing links/integrations. GitHub redirects are generally provided, but references should still be audited.
+- **Verification:** NOT TESTED — repository rename capability unavailable. Existing repo name remains `Cocvghuj`.
+- **Marker:** trtt-remove-cocvghuj-repo-name-request-20261128
