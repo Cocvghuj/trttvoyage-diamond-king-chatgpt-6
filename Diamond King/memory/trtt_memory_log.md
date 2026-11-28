@@ -1571,3 +1571,14 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab:** Mirror update not yet executed; existing MR !31 remains separate and open. No GitLab main mutation.
 - **Telegram / production / DNS / security:** No action.
 - **Marker:** trtt-first-su-nuraxi-draft-pr-20261128
+
+
+## Verification addendum — First Blogger article draft PR and mirror — 2026-11-28
+
+- **GitHub Blogger PR #5:** https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/5 remains OPEN and unmerged. Branch `feature/trtt-first-article-su-nuraxi-20261128`; head `2614bb15cd43289e525620c4ec808269d4443b14`.
+- **GitHub CI:** Workflow run 46141822769 completed SUCCESS on PR #5. Repository validator and unit tests passed.
+- **GitHub read-back:** Article and research brief were read back from the feature branch. Article has one H1, eight H2 headings, a real HTTPS image with Wikimedia Commons author/license attribution, marker 787950 and the official TRTT URL.
+- **GitLab mirror:** Mirrored the two changed files into the existing MR !31 branch `feature/trtt-blog-github-gitlab-bridge-20261128` under `integrations/trttvoyag-blog/blog/drafts/`. GitLab raw read-back exact-match PASS for both files. New GitLab branch head `cc423c01cbd2033d65420d5199275ec0384f34b3`; MR !31 remains OPEN. Its head pipeline 3126530906 is FAILED with `started_at=null`; GitLab CI is not passing. GitLab main was not changed and MR !31 was not merged.
+- **Command Center memory:** This verification addendum is appended to the existing PR #117 branch and mirrored in HTML; read-back pending.
+- **Blogger:** No Blogger DRAFT Post ID/status exists. GitHub PR #5 must be Owner-merged before the DRAFT-only workflow can run; secret availability remains NOT TESTED. No live publish or Telegram.
+- **Marker:** trtt-first-su-nuraxi-pr-ci-mirror-verified-20261128
