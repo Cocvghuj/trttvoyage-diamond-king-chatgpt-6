@@ -14,7 +14,7 @@
     "mode": "authorized-tool-assisted",
     "automaticChatMemorySync": false
   },
-  "bridgeMode": "manual-version-controlled-references",
+  "bridgeMode": "one-way-github-to-gitlab-branch-mirror",
   "automaticCrossRepositorySync": false,
   "repositories": [
     {
@@ -71,7 +71,20 @@
         "Blogger-static-page-sources",
         "editorial-and-affiliate-policy",
         "Blogger-draft-validation-and-release-gates"
-      ]
+      ],
+      "gitlabMirror": {
+        "project": "trttnews24bd-group/Cocvghuj-trtt-news-bot",
+        "projectId": 88270725,
+        "url": "https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot",
+        "path": "integrations/trttvoyag-blog/",
+        "branch": "feature/trtt-blog-github-gitlab-bridge-20261128",
+        "mergeRequest": "https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot/-/merge_requests/31",
+        "status": "initial-snapshot-committed-mr-open-ci-quota-exceeded",
+        "syncWorkflow": "TRTT-VOYAGE/TRTTVOYAG-BLOG/.github/workflows/sync-gitlab-mirror.yml",
+        "requiredSecret": "GITLAB_TOKEN",
+        "secretPresence": "not-verified",
+        "direction": "github-to-gitlab-only"
+      }
     }
   ],
   "sharedRecordFields": [
@@ -95,5 +108,5 @@
     "copySensitivePersonalData": false,
     "ownerApprovalRequiredForMergeAndProduction": true
   },
-  "status": "five-repository-source-bridge-merged-to-main-manual-links-only"
+  "status": "five-repository-source-bridge-plus-gitlab-blog-mirror-snapshot-open"
 }
