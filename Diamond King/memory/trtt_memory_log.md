@@ -1358,3 +1358,13 @@ Policy: append-only; preserve all earlier entries.
 - GitHub Actions run `46101270003` (run #14) completed **success**; validation step PASS.
 - Amazon PR #1 remains OPEN, unmerged; latest observed mergeable=true. No deployment/publication.
 - **Marker:** amazon-picks-final-ci-pass-20261128
+
+
+## Latest concurrent-update verification — Amazon Picks — 2026-11-28 04:08 CET
+
+- Owner continued editing the Amazon feature branch during this task; those edits were preserved and re-read rather than overwritten.
+- Latest observed PR head: `44f4e272aad1d5c9cfda3a9789fd48819f29b6c7`.
+- The robust README assertions remain present in `tests/validate.js` and the test source was read back.
+- GitHub Actions run `46101315994` (run #16) completed **success**; validation step PASS on that head.
+- PR #1 remains OPEN, unmerged, and mergeable at final check. Protected merge/deploy gate remains in force.
+- **Marker:** amazon-picks-latest-head-ci-pass-20261128
