@@ -1703,3 +1703,19 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** No Blogger repository files changed in this planning turn. Append this trigger to Command Center memory log and HTML mirror only.
 - **Verification:** Blogger repository and existing theme/docs inspected. Live Blogger XML import, live layout, browser/device behavior, Blogger draft creation and live publication remain NOT TESTED/NOT VERIFIED.
 - **Marker:** trtt-blogger-frontend-architecture-planning-20261128
+
+
+## TRTT Blogger frontend architecture plan execution — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001
+- **Owner trigger:** "দাও বস" — create the TRTT Blogger frontend architecture plan.
+- **GitHub source:** `TRTT-VOYAGE/TRTTVOYAG-BLOG`, branch `feature/trtt-blogger-frontend-architecture-plan-20261128`.
+- **PR:** https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/6 — OPEN/unmerged. Latest source head after CI/build-log addendum: `81b65f7a7f0df69904a0108f3115c94a127274ba`.
+- **Files:** Added `docs/BLOGGER-FRONTEND-ARCHITECTURE-PLAN-001.md`; appended `docs/BUILD-LOG.md`. Both files were read back from GitHub. Existing theme XML, posts, page sources, affiliate catalogs and workflows were not modified.
+- **Plan decisions:** Blogger's theme is XML containing Blogger-compatible HTML, CSS in `b:skin`, and guarded JavaScript. Keep Diamond Horizon as the existing theme candidate; preserve 20 observed widget IDs and native Blog1 behavior. Keep the six-item Home/News/Travel/AI/Tools/About menu and four homepage discovery cards. No live theme import or post/page changes.
+- **PR #5 correction:** CLOSED/MERGED at `ecf2f46984ec008b3f06e7d3685fc63ffa9a37a2`; source merge is not proof of Blogger DRAFT creation.
+- **GitHub CI:** run `46150824295` SUCCESS; package validator and Python unit-test job passed.
+- **GitLab mirror:** MR !31 remains OPEN. Mirror commit `9acb2ea95c165124cdb7dd1526f2213bbed63ddd` added the plan; source file read-back matched. GitLab pipeline `3126712201` / job `18452146403` failed before runner start with `ci_quota_exceeded`; GitLab CI NOT PASS.
+- **Safety:** No merge, Blogger theme import, live Blogger post/page mutation, draft creation, publication, Telegram, DNS/security change or secret access.
+- **Next gate:** Owner reviews/merges GitHub PR #6; implementation/theme installation remains a separate approved stage.
+- **Marker:** trtt-blogger-frontend-architecture-plan-execution-20261128
