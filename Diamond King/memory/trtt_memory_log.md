@@ -1510,3 +1510,15 @@ Policy: append-only; preserve all earlier entries.
 - **Read-back:** theme, Travelpayout catalog, Amazon catalog and 100-part roadmap match GitHub exactly; roadmap count = 100.
 - **Preservation:** current theme and Owner's 2–3 new news articles unchanged. No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
 - **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Entry — 2026-11-28 — Owner trigger: confirm Blogger bridge and staged 100-part plan
+- GitHub `TRTT-VOYAGE/TRTTVOYAG-BLOG` PR #3 OPEN/mergeable; source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`; GitHub Actions run `46131171917` SUCCESS.
+- GitLab private project `trttnews24bd-group/Cocvghuj-trtt-news-bot` (ID `88270725`); mirror branch `feature/trtt-blog-github-gitlab-bridge-20261128`; mirror commit `3abcc39642e0f3d48c7d11df5c7a207a6100f68a`; MR !31 OPEN/mergeable. GitLab main remains unchanged at `95cff41c0ca8453c6e8519f6f59899d5b576edc5`.
+- Byte-for-byte raw mirror read-back PASS for Diamond Horizon XML, Travelpayout catalog, Amazon catalog and 100-part roadmap.
+- Automatic one-way GitHub Actions workflow configured, but prior runs found `GITLAB_TOKEN` empty; automatic sync BLOCKED pending Owner configuration of GitHub Actions secret `GITLAB_TOKEN` with GitLab `write_repository` scope. No token requested or exposed.
+- GitLab MR pipeline `3126329659` failed before runner start with `ci_quota_exceeded`; GitLab CI NOT PASS. GitHub CI PASS.
+- Roadmap contains exactly 100 unique numbered tasks across 10 phases; execute one unit per trigger after live baseline.
+- Theme remains frozen; 2–3 new news articles and existing Blogger content untouched. Gemini is an optional reviewer for public/non-sensitive artifacts; connector/free access NOT TESTED.
+- No merge, live Blogger import, publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- Marker: `trtt-blog-bridge-owner-trigger-final-check-20261128`
