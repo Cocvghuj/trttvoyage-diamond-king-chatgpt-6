@@ -1505,3 +1505,14 @@ Policy: append-only; preserve all earlier entries.
 - **Decision / next step:** Treat this trigger as Blogger readiness and draft-work start, not as permission to mutate the live Blogger account. The next actionable content step needs a selected article topic/source material, or explicit Owner approval and live-theme backup evidence before theme import/page installation.
 - **GitHub memory:** This entry is appended on feature branch `feature/trtt-blogger-work-start-audit-20261128`; Command Center HTML trace mirrors the same audit. PR creation and branch read-back are pending at entry time.
 - **Marker:** trtt-blogger-work-start-audit-20261128
+
+
+## Entry — 2026-11-28 — Diamond Version Blogger execution trigger
+
+- **Timestamp:** 2026-11-28 12:29 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested a visibly Diamond-styled 👑💎 TRTT MAGIC COMMAND CENTER trigger after rejecting the previous plain trigger presentation.
+- **Decision:** Provide a dedicated in-chat Diamond trigger for the Blogger execution stage. It instructs the agent to inspect first, preserve existing content, use a feature branch, verify changes, create a PR and merge only after successful verification. Blogger Live Publish and Telegram distribution remain excluded.
+- **File changes:** Append this entry and mirrored HTML trace on existing feature branch `feature/trtt-blogger-work-start-audit-20261128`; preserve prior PR #117 changes.
+- **Verification status:** PR #117 was inspected OPEN and mergeable before this append. Updated files require read-back after write; PR remains unmerged until verification and owner-triggered execution.
+- **Marker:** trtt-diamond-blogger-trigger-20261128
