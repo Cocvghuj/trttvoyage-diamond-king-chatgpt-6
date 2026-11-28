@@ -20,7 +20,7 @@ body{margin:0;background:radial-gradient(circle at 10% 5%,#49314f 0,transparent 
 <aside class="card span5"><div class="eyebrow">Idea lifecycle</div><h2>Make thinking testable</h2><div class="steps"><span>01 Capture</span><span>02 Research</span><span>03 Score</span><span>04 Prototype</span><span>05 Review</span></div><p class="muted">Never label an idea as validated until evidence exists. Keep original notes and revisions traceable.</p></aside>
 <article class="card span6"><h3>Idea intake template</h3><form class="form" id="ideaForm"><label for="ideaTitle">Idea title</label><input id="ideaTitle" required placeholder="Give the idea a clear name"><label for="ideaNote">Original thought</label><textarea id="ideaNote" required placeholder="Write the idea in your own words"></textarea><label for="ideaStage">Current stage</label><select id="ideaStage"><option>Captured</option><option>Researching</option><option>Testing</option><option>Ready to prototype</option></select><button type="submit">Save idea on this device</button></form></article>
 <article class="card span6"><h3>Evidence checklist</h3><ul><li>What problem does it solve?</li><li>Who benefits and why?</li><li>What is fact versus assumption?</li><li>What evidence would disprove it?</li><li>What is the smallest safe test?</li></ul><p class="muted">This checklist is a guide, not a validation result.</p></article>
-<article class="card span12"><div class="top"><div><h3>My saved ideas</h3><p class="muted">Stored only in this browser on this device. Nothing is uploaded.</p></div><button type="button" class="secondary" id="exportIdeas">Export JSON</button></div><p class="muted" id="ideaCount">0 saved ideas</p><div id="ideaRecords" aria-live="polite"></div></article>
+<article class="card span12"><div class="top"><div><h3>My saved ideas</h3><p class="muted">Stored only in this browser on this device. Nothing is uploaded.</p></div><div class="record-actions"><button type="button" class="secondary" id="exportIdeas">Export JSON</button><button type="button" class="secondary" id="importIdeasButton">Import JSON</button><input id="importIdeas" type="file" accept=".json,application/json" hidden></div></div><p class="muted" id="ideaCount">0 saved ideas</p><div id="ideaRecords" aria-live="polite"></div></article>
 </section><p class="notice" role="status" id="status">Browser-local mode — saved ideas stay on this device and are not cloud-synced. Export a backup if you need to move them.</p></main>
 <footer class="foot">TRTT Voyage · From Vision to Global Brand! Explore Beyond. Discover Everything.</footer></div>
 <script>
@@ -31,6 +31,8 @@ body{margin:0;background:radial-gradient(circle at 10% 5%,#49314f 0,transparent 
   const count = document.getElementById("ideaCount");
   const status = document.getElementById("status");
   const exportButton = document.getElementById("exportIdeas");
+  const importButton = document.getElementById("importIdeasButton");
+  const importInput = document.getElementById("importIdeas");
   let records = [];
   const allowedStages = ["Captured", "Researching", "Testing", "Ready to prototype"];
   function announce(message) { status.textContent = message; }
@@ -114,6 +116,37 @@ body{margin:0;background:radial-gradient(circle at 10% 5%,#49314f 0,transparent 
     link.remove();
     URL.revokeObjectURL(url);
     announce("JSON backup generated from this device.");
+  });
+
+  importButton.addEventListener("click", () => importInput.click());
+  importInput.addEventListener("change", async () => {
+    const file = importInput.files && importInput.files[0];
+    if (!file) return;
+    if (file.size > 1048576) { announce("Import file is too large (maximum 1 MB)."); importInput.value = ""; return; }
+    try {
+      const payload = JSON.parse(await file.text());
+      if (!payload || payload.format !== "diamond-king-ideas-v1" || !Array.isArray(payload.records)) {
+        announce("This is not a valid Diamond King Ideas backup."); return;
+      }
+      const previous = records;
+      const seen = new Set(records.map(record => record.id));
+      let added = 0;
+      for (const item of payload.records) {
+        if (records.length >= 100) break;
+        if (!item || typeof item.id !== "string" || !item.id || item.id.length > 160 ||
+            typeof item.title !== "string" || typeof item.note !== "string" ||
+            !allowedStages.includes(item.stage) || typeof item.createdAt !== "string" ||
+            !Number.isFinite(Date.parse(item.createdAt)) || seen.has(item.id)) continue;
+        const clean = {id:item.id,title:item.title.trim().slice(0,100),note:item.note.trim().slice(0,2000),stage:item.stage,createdAt:new Date(item.createdAt).toISOString()};
+        if (!clean.title || !clean.note) continue;
+        records.push(clean); seen.add(clean.id); added++;
+      }
+      if (!save()) { records = previous; render(); return; }
+      render();
+      announce(added + " idea(s) imported on this device. Existing records were kept; duplicate IDs were skipped.");
+    } catch (error) {
+      announce("Could not read this backup. Choose a valid Diamond King Ideas JSON export.");
+    } finally { importInput.value = ""; }
   });
   load();
   render();
