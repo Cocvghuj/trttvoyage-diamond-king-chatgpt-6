@@ -1742,3 +1742,16 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append this entry and mirror HTML trace only; no changes to the profile repository itself.
 - **Verification:** Repository metadata read via GitHub API; no profile pin/order action performed.
 - **Marker:** trtt-profile-hub-name-and-priority-20261128
+
+
+## Entry — 2026-11-28 — Profile HQ display name PR created
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed the agent to set the chosen name immediately, not defer the task.
+- **Chosen name:** **TRTT Voyage — Diamond King HQ**.
+- **GitHub target:** `TRTT-VOYAGE/Cocvghuj`, profile README.
+- **Change:** Updated only the README's two-line heading on feature branch `feature/trtt-diamond-king-hq-profile-name-20261128`; preserved owner identity, all existing links, project directory and remaining content.
+- **Commit:** `2950ec9552106f83d46a8f18fb38cf44ff5dd99a`.
+- **PR:** #3 — https://github.com/TRTT-VOYAGE/Cocvghuj/pull/3 ; OPEN, unmerged, mergeable=true; head SHA `2950ec9552106f83d46a8f18fb38cf44ff5dd99a`.
+- **Verification:** Branch README read-back confirms the new heading. The change is not yet on main until PR #3 is merged. Repository rename and profile pinned-repository ordering are separate GitHub settings and were not changed; available connector does not expose those settings actions.
+- **Marker:** trtt-profile-hq-display-name-pr3-20261128
