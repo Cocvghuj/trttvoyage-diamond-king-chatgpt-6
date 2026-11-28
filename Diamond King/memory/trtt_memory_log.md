@@ -1448,3 +1448,14 @@ Policy: append-only; preserve all earlier entries.
 - **SaaS dashboard limitation:** `index.html` was inspected at current main and at both historical commits that touched the path. Both versions end mid-script; the first ends at the initial script declaration and the latest ends inside `updateChronometer()`. The file history contains only those two path commits, so no complete historical version was recoverable. The dashboard back-link was not inserted; no truncated file was overwritten or reconstructed by guesswork.
 - **Status at memory append:** Both feature branches created and file writes returned commits. Remote read-back, static checks and PR creation are the next verification steps. No merge, Blogger import/publication, Telegram delivery, production deployment, DNS/security changes or GitLab mirror performed in this stage.
 - **Marker:** trtt-cross-repo-links-source-integrity-20261128
+
+
+## Cross-repository link PR status — 2026-11-28
+
+- **Smart Invoice SaaS:** GitHub PR #1 was created from `feature/trtt-ashes-reciprocal-link-20261128` and GitHub reports it merged by `TRTT-VOYAGE` at 2026-11-28T10:41:07Z. Main-branch read-back confirms the invoice link is present. Diamond King did not call a merge action.
+- **Ashes Fall King:** PR #2 is OPEN and mergeable=true: https://github.com/TRTT-VOYAGE/trttvoyage-ashes-fall-king/pull/2. Homepage change remains on feature branch pending review/merge.
+- **Command Center memory:** PR #115 is OPEN and mergeable=true: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/115. Both append-only memory files contain this trigger's trace.
+- **Unresolved SaaS dashboard link:** `index.html` remains unchanged because both path-history versions are truncated. The reciprocal link is currently implemented from the invoice page, not the dashboard home page.
+- **GitLab:** No matching GitLab projects were found for either Smart Invoice SaaS or Ashes Fall King. The existing Blogger mirror is a separate project; no cross-project mirror was attempted.
+- **Blogger status inspected:** Command Center PR #114 remains OPEN/mergeable. It references TRTTVOYAG-BLOG PR #3 and GitLab MR !31. GitLab MR !31 is OPEN/mergeable, but its latest pipeline is FAILED before runner start due to `ci_quota_exceeded`; GitHub package CI run 46131171917 is recorded SUCCESS in the PR evidence. No Blogger import, draft creation, live publish or Telegram delivery performed.
+- **Marker:** trtt-cross-repo-links-pr-status-20261128
