@@ -1121,3 +1121,25 @@ Policy: append-only; preserve all earlier entries.
 - Preservation: The original backup manifest is retained with a dated addendum; this is the Mitti Free Version rollback source, not the active Diamond Horizon theme and not a Blogger import.
 - Verification status: Source read PASS; destination file write PASS; remote read-back and XML parser validation pending. Blogger import, active-theme identity and live-site runtime NOT TESTED.
 - Marker: blogger-mitti-theme-backup-restoration-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Legacy Command Center PR history consolidation
+
+- Trigger: Owner requested the two authorized project repositories be checked, repaired and brought to 100% where verifiable (“Make all 100 now”).
+- GitHub audit: Reviewed legacy Command Center PRs #69, #66, #45, #37, #28, #27, #26, #20, #17, #12, #8 and #7. All reported mergeable=false at initial inspection. Their file scopes and patches were inspected; no stale branch was force-merged.
+- Historical records preserved in this consolidated log:
+  - PR #69: Project Rules repository request and Master Franchise / Learning, Idea and SaaS Universe product direction. No separate Project Rules repository creation is claimed.
+  - PR #45: historical PR #146 mergeability recheck. Its divergence and deployment-preview notes are historical evidence only, not current app status.
+  - PR #28: root AGENTS.md/lightweight trigger proposal. The operating guide is already present on current main; the old PR copy is redundant.
+  - PR #27: full Master Trigger activation record; activation alone did not authorize unrelated builds.
+  - PR #26: compact Diamond Trigger and read-only PR #137 post-merge verification request; no production action implied.
+  - PR #20: daily verified-content and software-improvement workflow proposal; no background execution or Blogger/Telegram delivery claimed.
+  - PR #17: Blogger draft delivery request; repository HTML was not proof of Blogger submission, Post ID or DRAFT status.
+  - PR #12: Rise From Ashes Blogger draft workflow history; no verified Blogger Post ID or DRAFT state was established by that record.
+- Current repairs completed during this trigger:
+  - PR #94 merged (3513eafc53a78f9d4a40b8f01e14b68a0f071f99): calculator moved from conflicting root trttmagic.html path to tools/europe-travel-budget-calculator/index.html; corrected draft and limitations documentation read back from main. Old PR #7 was closed as superseded; branch/history retained.
+  - PR #95 merged (8fb8b34cfe6c103df4d536973c1a36686d2e13f2): Mitti Free Version theme XML restored to the backup path. Source/destination Git blob SHA matched 81a2e60fc6de5d68af3b58c43669e98d689490c4; main read-back and manifest present. This is an archive, not the active Diamond Horizon theme or a Blogger import.
+- Still gated / unresolved: PR #8 remains Draft pending qualified medical review, licensed images, editorial checks and Blogger preview. PR #66 contains a separate architecture/README proposal requiring a sanitized, current review before inclusion. PR #37 contains a backup/operating-guide batch; the XML backup has been extracted to PR #95, while duplicate AGENTS and legacy memory content require consolidation. No claim that all 12 old PRs are merged.
+- Verification: GitHub PR merge confirmations and main-branch read-back PASS for #94 and #95. Calculator source-level checks PASS. Browser/mobile QA, calculator runtime, Pages deployment, XML parser validation, Blogger import, live theme identity and Blogger draft creation NOT TESTED.
+- Protected actions: No Blogger live publication, Telegram delivery, production deployment, DNS/security/account changes, or paid service use.
+- Marker: legacy-command-center-pr-history-consolidation-20261128
