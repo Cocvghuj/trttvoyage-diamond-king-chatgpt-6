@@ -1349,3 +1349,12 @@ Policy: append-only; preserve all earlier entries.
 - Latest read-back confirms the README phrase and test assertion align; catalog still contains exactly six entries.
 - PR #1 remains OPEN and unmerged. Browser/device/screen-reader QA, Amazon redirect/marketplace/price/stock/attribution, GitHub Pages activation and production deployment remain NOT TESTED/NOT VERIFIED.
 - **Marker:** amazon-picks-ci-success-20261128
+
+
+## Final CI addendum — Amazon Picks — 2026-11-28 04:07 CET
+
+- Preserved the Owner's latest README wording update and made the test assert the independent facts (`exactly six` and `Owner-approved`) rather than a brittle exact phrase.
+- Latest Amazon branch head at verification: `d92aefc696344c8a828a609179ddf9d0886e9ed2`.
+- GitHub Actions run `46101270003` (run #14) completed **success**; validation step PASS.
+- Amazon PR #1 remains OPEN, unmerged; latest observed mergeable=true. No deployment/publication.
+- **Marker:** amazon-picks-final-ci-pass-20261128
