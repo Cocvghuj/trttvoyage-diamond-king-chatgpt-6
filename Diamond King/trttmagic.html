@@ -485,3 +485,11 @@ Inspected main/games.html: both mini-games could show repeated victory alerts af
 Static and interaction checks/read-back pending. Browser/mobile QA and Pages runtime NOT TESTED. No main edit, merge, deployment, secrets, GitLab, Blogger or Telegram action. Owner merge required.
 Marker: trtt-ai-mini-game-win-state-20261128
 -->
+
+
+<!-- DR-TRTT-OPS-001 | 2026-11-28 | Mini-game keyboard accessibility
+Verified TRTT AI PR #2 merged at 2026-11-28T00:08:22Z (8c6b892a7f9ccc2e79e3c2572b5089195f7686f4) and Command Center PR #90 merged at 2026-11-28T00:08:43Z (0509eb2666abc5d72a4160f486cda7309e734917).
+Inspected remaining TRTT AI pages. In games.html, interactive star/diamond targets were div elements without native button semantics or keyboard activation. On feature/trtt-mini-game-accessibility-20261128, changed targets to native buttons, added descriptive Bengali aria-labels and visible keyboard focus styling. Existing game logic and visual layout preserved. Changed games.html only; commit 44f1476c1b8d100f80bde0b083c0031ce89277ff.
+Source syntax/semantics and read-back verification pending. Real keyboard, browser, mobile and assistive-technology testing NOT TESTED. No main merge or deployment. Owner merge required.
+Marker: trtt-ai-mini-game-keyboard-accessibility-20261128
+-->
