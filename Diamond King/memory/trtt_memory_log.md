@@ -1409,3 +1409,16 @@ Policy: append-only; preserve all earlier entries.
 - **Status:** Blog PR #1 OPEN/unmerged/mergeable=true at last check. Command Center PR #112 remains the fifth-module registry/bridge PR. Neither PR was merged.
 - **Remaining NOT TESTED:** Blogger live route resolution, theme compiler/import, static page installation, browser/device QA, Blogger API access, partner redirect/attribution, live publication, Telegram, production deployment and DNS.
 - **Marker:** trtt-blogger-ready-package-v1-20261128-final-menu-ci
+
+
+## Owner-authorized merge — TRTT Blogger package — 2026-11-28
+
+- Owner instruction explicitly authorized merging the prepared Blogger package and GitHub bridge updates.
+- TRTTVOYAG-BLOG PR #1 merged successfully to main.
+- Merge commit: d1c290cace951e31e720cc962801aee6253f0047.
+- Main read-back PASS: Blogger theme XML, README, Travelpayout catalog (40 active placements), Amazon catalog (6 approved entries), validator, tests, release checklist, build log and Blogger page sources all fetched from main.
+- Blog1 core template features read back: postsLoop, comments, pagination, feedLinks, status-message, nextprev, postMetadataJSON and commentForm.
+- Approved News/Travel menu route strings read back.
+- Blogger live theme import and seven static page installations remain NOT TESTED; no live publication, Telegram, DNS/security or production deployment.
+- Central fifth-module bridge PR #112 is still OPEN pending its own merge.
+- Marker: trtt-blogger-package-owner-merge-verified-20261128
