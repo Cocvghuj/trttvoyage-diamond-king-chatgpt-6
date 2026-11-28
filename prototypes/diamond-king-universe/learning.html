@@ -21,7 +21,7 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
 </div></article>
 <aside class="card span4"><div class="eyebrow">Learning principles</div><h2>Build real capability</h2><p class="muted">Every pathway should include a clear outcome, reliable learning material, practice, and evidence of completion.</p><ul><li>Source-backed knowledge</li><li>Hands-on exercises</li><li>Progress only when verified</li><li>Owner-controlled learning records</li></ul></aside>
 <article class="card span6"><h3>Plan a learning session</h3><p class="muted">Create a personal learning task. Add a source when you have verified one.</p><form class="form" id="lessonForm"><label for="lessonTitle">Lesson or task title</label><input id="lessonTitle" maxlength="120" required placeholder="What will you learn or practise?"><label for="lessonPath">Learning pathway</label><select id="lessonPath"><option>AI & Digital Intelligence</option><option>Product & SaaS Building</option><option>Global Brand & Travel</option></select><label for="lessonOutcome">Expected outcome</label><textarea id="lessonOutcome" maxlength="1000" required placeholder="What evidence will show you learned it?"></textarea><label for="lessonSource">Verified source URL (optional)</label><input id="lessonSource" type="url" placeholder="https://..."><button type="submit">Save learning plan</button></form></article>
-<article class="card span6"><div class="top"><div><h3>My learning plans</h3><p class="muted">Mark a task complete only after you have evidence.</p></div><button type="button" class="secondary" id="exportLearning">Export JSON</button></div><p class="muted" id="learningCount">0 plans</p><div id="learningRecords" aria-live="polite"></div></article>
+<article class="card span6"><div class="top"><div><h3>My learning plans</h3><p class="muted">Mark a task complete only after you have evidence.</p></div><div class="record-actions"><button type="button" class="secondary" id="exportLearning">Export JSON</button><button type="button" class="secondary" id="importLearningButton">Import JSON</button><input id="importLearning" type="file" accept=".json,application/json" hidden></div></div><p class="muted" id="learningCount">0 plans</p><div id="learningRecords" aria-live="polite"></div></article>
 <article class="card span12"><h3>Learning evidence</h3><p class="muted">Progress is calculated from plans you mark complete on this device. These records are personal, browser-local, and are not verified by a teacher or synced to an account.</p></article>
 </section><p class="notice" role="status" aria-live="polite" id="status">Browser-local mode — plans stay on this device. No account, cloud sync, or instructor verification is connected.</p></main>
 <footer class="foot">TRTT Voyage · From Vision to Global Brand! Explore Beyond. Discover Everything.</footer></div>
@@ -33,6 +33,8 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
   const count = document.getElementById("learningCount");
   const status = document.getElementById("status");
   const exportButton = document.getElementById("exportLearning");
+  const importButton = document.getElementById("importLearningButton");
+  const importInput = document.getElementById("importLearning");
   const paths = ["AI & Digital Intelligence","Product & SaaS Building","Global Brand & Travel"];
   let records = [];
   function announce(message) { status.textContent = message; }
@@ -105,6 +107,41 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
     const url=URL.createObjectURL(blob); const a=document.createElement("a");
     a.href=url; a.download="diamond-king-learning-backup.json"; document.body.append(a); a.click(); a.remove(); URL.revokeObjectURL(url);
     announce("Learning-plan JSON backup generated from this device.");
+  });
+
+  importButton.addEventListener("click", () => importInput.click());
+  importInput.addEventListener("change", async () => {
+    const file = importInput.files && importInput.files[0];
+    if (!file) return;
+    if (file.size > 1048576) { announce("Import file is too large (maximum 1 MB)."); importInput.value = ""; return; }
+    try {
+      const payload = JSON.parse(await file.text());
+      if (!payload || payload.format !== "diamond-king-learning-v1" || !Array.isArray(payload.records)) {
+        announce("This is not a valid Diamond King Learning backup."); return;
+      }
+      const previous = records;
+      const seen = new Set(records.map(record => record.id));
+      let added = 0;
+      for (const item of payload.records) {
+        if (records.length >= 100) break;
+        if (!item || typeof item.id !== "string" || !item.id || item.id.length > 160 ||
+            typeof item.title !== "string" || typeof item.outcome !== "string" ||
+            !paths.includes(item.path) || typeof item.completed !== "boolean" ||
+            typeof item.createdAt !== "string" || !Number.isFinite(Date.parse(item.createdAt)) || seen.has(item.id)) continue;
+        let source = "";
+        if (typeof item.source === "string" && item.source.trim()) {
+          try { const url = new URL(item.source); if (url.protocol === "https:") source = url.href; } catch (error) {}
+        }
+        const clean = {id:item.id,title:item.title.trim().slice(0,120),path:item.path,outcome:item.outcome.trim().slice(0,1000),source,completed:item.completed,createdAt:new Date(item.createdAt).toISOString()};
+        if (!clean.title || !clean.outcome) continue;
+        records.push(clean); seen.add(clean.id); added++;
+      }
+      if (!save()) { records = previous; render(); return; }
+      render();
+      announce(added + " learning plan(s) imported on this device. Existing records were kept; duplicate IDs were skipped.");
+    } catch (error) {
+      announce("Could not read this backup. Choose a valid Diamond King Learning JSON export.");
+    } finally { importInput.value = ""; }
   });
   load(); render();
 })();
