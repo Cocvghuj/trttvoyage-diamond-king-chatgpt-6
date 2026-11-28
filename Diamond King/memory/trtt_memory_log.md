@@ -1437,3 +1437,14 @@ Policy: append-only; preserve all earlier entries.
 - **NOT TESTED:** Blogger template import/compiler, seven page installations, live rendering, Blogger API access/secrets, real comments/pagination, live post creation, browser/device QA and production deployment.
 - **Not performed:** no live Blogger publication, Telegram delivery, DNS/security/account change, payment action or GitLab operation.
 - **Marker:** trtt-blogger-five-module-merge-complete-20261128
+
+
+## TRTT Smart Invoice ↔ Ashes Fall King repository links — 2026-11-28
+
+- **Owner trigger:** Owner directed Diamond King to proceed with the pending TRTT cross-repository navigation work, noting the separate TRTT Blogger work is stalled.
+- **Repositories inspected:** `TRTT-VOYAGE/trttvoyage-smart-invoice-saas` and `TRTT-VOYAGE/trttvoyage-ashes-fall-king`; both are public repositories with `main` as default branch. Existing open PRs: none in either repository at inspection.
+- **SaaS invoice:** Added an external link in `invoice.html` to the verified Ashes Fall King GitHub repository. Feature branch: `feature/trtt-ashes-reciprocal-link-20261128`; commit: `e8b5a49cc0bea11a0091d97a45e5762364de5fac`.
+- **Ashes Fall King:** Added an external link in the homepage `.links` navigation to the verified Smart Invoice SaaS GitHub repository. Feature branch: `feature/trtt-saas-reciprocal-link-20261128`; commit: `35bc76cc9d1d64b42796f65b26f5ee45ddeda757`.
+- **SaaS dashboard limitation:** `index.html` was inspected at current main and at both historical commits that touched the path. Both versions end mid-script; the first ends at the initial script declaration and the latest ends inside `updateChronometer()`. The file history contains only those two path commits, so no complete historical version was recoverable. The dashboard back-link was not inserted; no truncated file was overwritten or reconstructed by guesswork.
+- **Status at memory append:** Both feature branches created and file writes returned commits. Remote read-back, static checks and PR creation are the next verification steps. No merge, Blogger import/publication, Telegram delivery, production deployment, DNS/security changes or GitLab mirror performed in this stage.
+- **Marker:** trtt-cross-repo-links-source-integrity-20261128
