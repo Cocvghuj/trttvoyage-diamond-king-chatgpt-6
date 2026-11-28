@@ -1325,3 +1325,17 @@ Policy: append-only; preserve all earlier entries.
 - Current verified PR states at this trigger: Command Center #107 OPEN/mergeable (head 0608decb5d35c70d2474e12c42e0b6c64805f54c); Learning Journey #17 OPEN/mergeable (head 582e3fe905bd10a36ff50d2f01eca6eeab4e0f2e); Travelpayout #1 OPEN/mergeable (head 1a4419cb9210f529da21f69571a924933ddee9a9).
 - No code, workflow, deployment, merge, Blogger publication, or Telegram delivery was authorized or performed by this instruction.
 - Marker: owner-autonomous-execution-instruction-20261128
+
+
+## Entry — 2026-11-28 04:04 CET — Amazon Picks repository build and CI repair
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner approved work on `TRTT-VOYAGE/AMAZON` after sharing the repository.
+- **Source verification:** Recovered the exact six approved labels and short URLs from this Command Center's `Diamond King/affiliate-links/amazon-2026-11-27.md`; verified against the AMAZON repository's `data/products.json` and PR #1. All six labels/URLs match exactly. Historical generic URL `https://amzn.to/4shg6Hn` remains excluded.
+- **Repository:** `TRTT-VOYAGE/AMAZON`; feature branch `feature/trtt-amazon-picks-hub-v1-20261128`; PR #1 `https://github.com/TRTT-VOYAGE/AMAZON/pull/1`.
+- **Build:** Static responsive six-item directory, category/search filtering, affiliate disclosure, privacy/security documentation, and dependency-free validation. No product images, prices, ratings, stock claims, tracking, cookies, accounts, checkout, or payment collection.
+- **CI finding and repair:** GitHub Actions run 46101068467 failed because a README wording assertion in `tests/validate.js` did not match the actual README sentence. Updated the assertion to match the verified README text. Fix commit: `dd61c17506006ce6209c56e0da533619811c4144`; remote read-back PASS.
+- **Verification boundary:** Exact six product records and URLs, HTTPS, affiliate disclosure, safe DOM rendering, and link protections verified from source. New CI run after the fix was not yet returned at log time. Browser/device/screen-reader QA, Amazon redirect/marketplace/price/stock/affiliate attribution, Pages activation and production deployment NOT TESTED/NOT VERIFIED.
+- **PR status:** PR #1 OPEN, not merged; mergeability recalculation pending after latest push. Repository-level merge/deploy approval gates remain active.
+- **Other stages:** GitLab NOT REQUIRED under current GitHub-only direction; no Blogger draft/live publish or Telegram send.
+- **Marker:** amazon-picks-build-ci-repair-20261128
