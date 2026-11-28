@@ -1925,3 +1925,17 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** Pre-write read-back PASS. Post-write read-back, static content checks, PR creation and CI status pending at entry creation. Browser/mobile rendering NOT TESTED.
 - **Scope:** GitHub only. No GitLab, Blogger, Telegram, production deployment, DNS/security settings or secret access. No merge performed.
 - **Marker:** trtt-abu-taher-product-delivery-capabilities-20261128
+
+
+## Entry — 2026-11-28 — Owner Delegates Routine GitHub PR Merge Authority
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner stated that repeated merge requests are burdensome due to illness and explicitly asked the agent to carry out work independently and merge it, so the SaaS and Master Franchise work can progress.
+- **Decision / standing delegation:** For routine, in-scope GitHub documentation, design-specification, code, test and project-planning changes, the agent may create feature branches, open PRs, review its own changes, and merge suitable PRs without asking for separate approval each time, provided the diff is understood, repository scope is correct, and applicable checks pass (or no required checks exist and the risk is low). After merge, read back the target branch and report commit/evidence.
+- **Safety boundaries retained:** Do not merge when checks fail, conflicts exist, the diff is destructive or not understood, or the change materially affects secrets, credentials, account access, personal/private data, security controls, DNS, billing/payment, legal commitments, production deployment, or live publishing/distribution. Pause for owner decision on those high-impact or irreversible actions. Never expose secrets. Preserve append-only history and never push directly to main; use feature branch + PR.
+- **Communication change:** Do not repeatedly ask the owner to merge routine PRs. Report completed work and any genuine blocker only. Owner is unwell; minimize manual actions and avoid asking them to repeat instructions.
+- **GitHub inspection:** Confirmed Command Center PR #120 was merged at `4fcfb47981cce26fcda7bd831c00e0fb5536ab43`; current memory source branch is `feature/trtt-blogger-work-start-audit-20261128`.
+- **Files:** Append this entry to `Diamond King/memory/trtt_memory_log.md` and the matching HTML comment to `Diamond King/trttmagic.html` on `feature/abu-taher-delegated-merge-authority-20261128`.
+- **Verification at write time:** Branch created and source files inspected. Post-write read-back, PR and CI status pending.
+- **Scope:** GitHub governance only. No product PR merged as part of this trigger. GitLab, Blogger and Telegram remain outside current scope.
+- **Marker:** trtt-owner-delegated-routine-pr-merge-authority-20261128
