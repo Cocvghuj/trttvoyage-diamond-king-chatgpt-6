@@ -1368,3 +1368,22 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No secrets accessed or exposed. No production deployment, Blogger publication, Telegram delivery, DNS/security/account change, or GitLab operation performed. GitLab is not required in the current GitHub-only workflow.
 - **GitHub memory update:** This entry and the matching HTML trace are being appended on feature branch `feature/diamond-king-bridge-merge-record-20261128`; no prior history is replaced.
 - **Marker:** `diamond-king-four-repo-bridge-owner-merge-20261128`
+
+
+## Entry — 2026-11-28 — TRTTVOYAG-BLOG repository prepared
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested the empty TRTT-VOYAG/TRTTVOYAG-BLOG repository be made Blogger-ready, using all established project rules and the supplied Travelpayout and Amazon sources.
+- **Repository baseline:** public repository; main contained only the original two-line README; no existing workflows, pages, data catalogs, theme or issues.
+- **Build branch:** feature/trtt-blogger-ready-package-v1-20261128.
+- **Blog PR:** #1 — https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/1 — OPEN, unmerged; latest head recorded in PR metadata. Owner merge required by repository rules.
+- **Theme:** original TRTT Diamond Horizon source adapted; 20 observed Blogger widget IDs preserved; menu includes Home, News, Travel, AI, Tools, Amazon Picks, Travel Booking and About. Blog1 includes main/post/postsLoop/comments/pagination/feedLinks/status-message/nextprev/postMetadataJSON/commentForm. Removed reduced post loop, legacy ad/Disqus/social-share includes and placeholder-image fallbacks. Blog share buttons disabled.
+- **Pages:** seven Blogger static page sources (Travel Booking, Amazon Picks, About, Privacy, Disclaimer, Affiliate Disclosure, Contact).
+- **Travelpayout:** 43 Owner register entries reconciled; 40 active short URLs preserved; three GigSky entries excluded per Owner direction; no hotel URL supplied; marker 787950 and trs=606759 preserved where present.
+- **Amazon:** exactly six Owner-approved product names/URLs reconciled and preserved; no fabricated price, rating, stock, image or specifications.
+- **Automation:** dependency-free package validator and 13 regression tests PASS; optional Blogger API workflow creates only DRAFTS, skips if secrets are absent, checks duplicates and reads back ID/title/content/DRAFT status. It never publishes or sends Telegram.
+- **GitHub Actions evidence:** run 46105082563 completed SUCCESS; validator PASS; 13 tests PASS.
+- **Central bridge:** five-repository registry and architecture addendum prepared on feature branch feature/trtt-blog-module-bridge-20261128; Blog module added as manual version-controlled reference only. Central PR pending creation/read-back.
+- **Limitations:** Blogger live compiler/import, Layout, actual comments/pagination, browser/mobile/screen-reader QA, static page installation, Blogger API secret availability, live partner redirects/attribution, live publication, Telegram, DNS and production deployment remain NOT TESTED/NOT VERIFIED.
+- **Safety:** no secrets accessed or displayed; no Blogger write, theme import, publication, Telegram delivery, production deployment, DNS/security change or GitLab operation performed.
+- **Marker:** trtt-blogger-ready-package-v1-20261128
