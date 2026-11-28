@@ -118,3 +118,14 @@ The bridge remains manual and version-controlled. No automatic data replication,
 This is a manual version-controlled bridge. Automatic replication, webhooks, background execution and ChatGPT Memory↔GitHub synchronization remain NOT IMPLEMENTED.
 
 **Marker:** trtt-blogger-ready-package-v1-20261128
+
+
+## Blogger package merge verification — 2026-11-28
+
+- [x] TRTTVOYAG-BLOG package PR #1 merged to main (merge SHA d1c290cace951e31e720cc962801aee6253f0047).
+- [x] Main read-back verified theme, page sources, affiliate snapshots, validator/tests and release checklist.
+- [ ] Central fifth-module registry/bridge PR #112 merge.
+- [ ] Blogger theme import and seven page installations.
+- [ ] Live Blogger rendering, comments, pagination, browser/mobile QA and Blogger API verification.
+
+The GitHub package merge is not a live Blogger deployment.
