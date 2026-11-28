@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "projectCode": "DR-TRTT-OPS-001",
+  "hub": {
+    "systemId": "command-center",
+    "name": "Diamond King Command Center",
+    "repository": "TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6",
+    "url": "https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6",
+    "role": "canonical-coordination-memory-and-governance"
+  },
+  "aiCollaborator": {
+    "name": "Diamond King",
+    "platform": "ChatGPT",
+    "mode": "authorized-tool-assisted",
+    "automaticChatMemorySync": false
+  },
+  "bridgeMode": "manual-version-controlled-references",
+  "automaticCrossRepositorySync": false,
+  "repositories": [
+    {
+      "systemId": "command-center",
+      "repository": "TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6",
+      "url": "https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6",
+      "role": "coordination-memory-decisions-system-registry",
+      "sourceOfTruth": ["project-memory", "cross-project-decisions", "governance"]
+    },
+    {
+      "systemId": "learning-journey",
+      "repository": "TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey",
+      "url": "https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey",
+      "role": "learning-universe-idea-universe-curated-journal",
+      "sourceOfTruth": ["learning-chapters", "learning-path", "curated-idea-and-learning-artifacts"]
+    },
+    {
+      "systemId": "travelpayout",
+      "repository": "TRTT-VOYAGE/Travelpayout",
+      "url": "https://github.com/TRTT-VOYAGE/Travelpayout",
+      "role": "travel-partner-catalog-outbound-referral-hub",
+      "sourceOfTruth": ["partner-catalog", "affiliate-link-placement", "referral-ui-and-tests"]
+    }
+  ],
+  "sharedRecordFields": [
+    "project_code",
+    "system_id",
+    "record_type",
+    "record_id",
+    "title",
+    "owner",
+    "status",
+    "source_repo",
+    "source_path",
+    "source_commit",
+    "evidence_urls",
+    "updated_at",
+    "visibility"
+  ],
+  "security": {
+    "copyRawPrivateChats": false,
+    "copySecrets": false,
+    "copySensitivePersonalData": false,
+    "ownerApprovalRequiredForMergeAndProduction": true
+  },
+  "status": "bridge-specification-pending-owner-review"
+}
