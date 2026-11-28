@@ -477,3 +477,11 @@ Owner sent “Next”. Verified Ashes Fall King PR #1 merged at 2026-11-28T00:01
 Inspected TRTT-VOYAGE/trtt-ai main/king-game.html; timer intervals were not tracked or cleared on game over/restart. On feature/king-game-loop-cleanup-20261128, tracked and cleared both intervals on game over, changed Again to reset the current game and begin a clean run, and removed existing falling items during reset. Existing game presentation/scoring retained.
 Changed king-game.html only; commit 7c67a3dfcdf7beccdc7a84a3d9024bead4a61dfa. Remote read-back and V8 syntax/source checks PASS. Real-browser gameplay and mobile touch QA NOT TESTED. No main merge or deployment. Owner merge required. Marker: trtt-ai-king-game-loop-repair-20261128
 -->
+
+
+<!-- DR-TRTT-OPS-001 | 2026-11-28 | TRTT AI mini-game win-state repair
+Verified TRTT AI PR #1 merged at 2026-11-28T00:05:45Z (80090e795b0dd350b801f4233988d0ad1eeab97a) and Command Center PR #89 merged at 2026-11-28T00:06:05Z (43dfc567034836cc448ce9a7d323818d0c2a8043).
+Inspected main/games.html: both mini-games could show repeated victory alerts after reaching 100 points. On feature/trtt-mini-game-win-state-20261128, added a per-run win guard and disabled target clicks after the first win; Start resets the guard for a fresh run. Bengali copy and existing layout preserved. Changed games.html only; commit 717c1c69d014471c5f3ce68bdeeb7453f58aaf5c.
+Static and interaction checks/read-back pending. Browser/mobile QA and Pages runtime NOT TESTED. No main edit, merge, deployment, secrets, GitLab, Blogger or Telegram action. Owner merge required.
+Marker: trtt-ai-mini-game-win-state-20261128
+-->
