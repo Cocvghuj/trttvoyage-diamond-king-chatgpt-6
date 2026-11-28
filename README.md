@@ -171,3 +171,8 @@ The Command Center coordinates four connected project repositories through Diamo
 - [Amazon Picks](https://github.com/TRTT-VOYAGE/AMAZON) — six-item Owner-approved Amazon catalog and referral UI.
 
 Read the [three-repository bridge specification](docs/DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md) and [machine-readable registry](data/diamond-king-three-repo-registry.json). These are version-controlled references, not automatic synchronization.
+
+
+## Blogger Publishing Module
+
+The fifth connected module is [TRTTVOYAG-BLOG](https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG). It contains the original Diamond Horizon Blogger theme candidate, seven Blogger page sources, reconciled Travelpayout and Amazon catalog snapshots, editorial rules, offline tests and a Blogger DRAFT-only workflow. It does not import the live theme, publish posts or send Telegram messages. See the [five-repository bridge addendum](docs/DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md).
