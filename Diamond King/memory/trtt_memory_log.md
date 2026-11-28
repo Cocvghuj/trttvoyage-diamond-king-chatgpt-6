@@ -1543,3 +1543,17 @@ Policy: append-only; preserve all earlier entries.
 - **Command Center PR #117:** remains OPEN and unmerged; it is the append-only memory PR for this work, not the Blogger-work PR.
 - **Blogger:** No article HTML was produced because no verified topic/source packet or cleared image was present. No Blogger API draft, theme import, static page install or live publication occurred. No Telegram, production, DNS/security action or secret access.
 - **Marker:** trtt-blogger-editorial-brief-merge-verified-20261128
+
+
+## Entry — 2026-11-28 — Blogger execution continuation (pointer trigger)
+
+- **Timestamp:** 2026-11-28 12:49 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner sent pointer (👉) after being asked whether to install the Diamond Horizon theme or prepare the first article draft. Interpreted as instruction to continue with the safer non-production task: article-draft readiness.
+- **Inspection:** Re-read TRTTVOYAG-BLOG main README, blog/drafts/README.md, ARTICLE-RESEARCH-BRIEF.md, draft-only Python validator/API script, Blogger draft GitHub Actions workflow and release checklist. Re-inspected Command Center PR #117.
+- **Finding:** ARTICLE-RESEARCH-BRIEF.md already exists and remains an unfilled worksheet. No verified article topic/source packet, cleared real HTTPS image URL/license, or article HTML exists. The script requires one H1, at least six H2 headings, a real HTTPS image, marker 787950 and https://trttvoyage.com. Workflow creates only DRAFTs after merge and only if all four Blogger secrets are configured; no Blogger connector is available here and secret availability was not tested.
+- **Decision:** Do not fabricate an article, sources or image. Keep the existing research brief as the next content intake gate. Theme installation was not authorized by the pointer and remains gated by current live-theme backup/layout verification and separate Owner approval.
+- **Actions:** No TRTTVOYAG-BLOG files changed in this trigger. No Blogger API call, theme/page installation, post creation, live publication, Telegram delivery, production/DNS/security action or secret access.
+- **GitHub memory:** This entry is appended to the existing Command Center PR #117 feature branch; the mirrored HTML trace carries the same marker.
+- **Verification:** Pending updated memory-file read-back and PR #117 status refresh.
+- **Marker:** trtt-blogger-pointer-draft-readiness-20261128
