@@ -1264,3 +1264,64 @@ Policy: append-only; preserve all earlier entries.
 - JavaScript syntax PASS. Mock import tests PASS for both formats; valid records restored, invalid records skipped, duplicate-safe merge behavior verified, and learning source links restricted to HTTPS.
 - Browser file picker, actual downloaded JSON file, Android/iOS device, screen-reader, cross-browser and production deployment tests remain NOT TESTED.
 - Marker: json-backup-restore-merge-verified-20261128
+
+
+## 2026-11-28 02:43 CET — DR-TRTT-OPS-001 — Two-project re-audit started
+
+- Owner trigger: double-check the Command Center and Learning Journey projects, fix verified problems, and prepare the next project.
+- Audit targets: `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6` (main `af68a223c224b2b4cc860ae560dc95e5ec5fdb6f`) and `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey` (main `dd0666171c0779deeba71e361502584bfdd6f660`).
+- Read repository operating rules, READMEs, Command Center/Idea/Learning screens, Learning Journey homepage and Start Here guide. Command Center `AGENTS.md` requires feature branches, append-only memory, PR review, and Owner approval for merge/production deployment. Learning Journey `PROJECT-RULES.md` independently requires feature branches and owner authorization for merge/deployment.
+- Initial source finding: Idea local-storage load accepted records without validating `createdAt`; rendering could display “Invalid Date”. Learning local-storage load did not normalize stored source URLs or timestamps robustly. These are targeted local-data integrity fixes.
+- Learning Journey source review: homepage mobile navigation has labelled toggle, `aria-controls`, `aria-expanded`, link-close, Escape/focus-return and desktop-resize handling; Start Here guide and README/homepage discovery links are present. No additional confirmed source defect identified in this pass.
+- No production, GitHub Pages, Blogger, Telegram, DNS, account, or security-setting action authorized or performed. Browser/device QA and live deployment remain NOT TESTED/NOT VERIFIED.
+- Working branch: `feature/two-project-audit-next-saas-prep-20261128`. Further changes and final PR/test evidence will be appended separately.
+- Marker: two-project-reaudit-start-20261128
+
+
+### Two-project re-audit completion — 2026-11-28 02:46 CET
+- Command Center PR #107 created: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/107 (feature branch `feature/two-project-audit-next-saas-prep-20261128`; initial GitHub response OPEN; mergeability subsequently read back as true). Per repository AGENTS.md, it is not merged by the agent.
+- Fixed Idea local record validation: IDs/content are checked and bounded; invalid/missing timestamps are retained as unavailable and shown as “Date not recorded”; JSON restore accepts an empty timestamp only when the date is unknown, while non-empty invalid dates are rejected.
+- Fixed Learning local record validation: IDs/content are checked and bounded; timestamps are normalized without inventing dates; source URLs are parsed and only HTTPS URLs are retained; JSON restore rejects non-empty invalid timestamps.
+- Existing localStorage keys and JSON format versions are unchanged. No records are migrated, uploaded or deleted remotely.
+- Added `docs/TWO-PROJECT-RE-AUDIT-2026-11-28.md`, `docs/NEXT-PROJECT-SAAS-UNIVERSE-MVP-DISCOVERY-001.md`, and an additive screen-spec QA addendum.
+- Verification PASS: both updated page scripts parse; static assertions for local-data validation/import and date fallback; HTTPS allow/reject cases (HTTPS kept; HTTP, non-HTTPS and malformed values rejected); Learning Journey homepage script parse, menu controls, Escape/focus-return and Start Here README link; all changed files and both memory markers read back from GitHub.
+- Learning Journey source audit found no additional confirmed source defect, so no unnecessary code change or PR was made there. Its main commit inspected: `dd0666171c0779deeba71e361502584bfdd6f660`.
+- Remaining NOT TESTED: actual browser rendering, Android/iOS device, screen reader, cross-browser, Lighthouse, real file picker/download restore. GitHub Pages/live deployment for both projects remains NOT VERIFIED. Neither prototype is production SaaS.
+- Existing unrelated Command Center PR #8 remains Draft and merge-blocked pending qualified medical review, licensed images, editorial/localization review and Blogger preview.
+- Next project prepared: SaaS Universe MVP Discovery 001; discovery only, no implementation/deployment authorization. Start command is in the new prep brief.
+- Marker: two-project-reaudit-complete-20261128
+
+
+## Entry — 2026-11-28 — DR-TRTT-OPS-001 — Diamond King three-repository bridge
+
+- **Trigger summary:** Owner directed that the Command Center, Learning Journey and Travelpayout repositories be connected through Diamond King, and that the previous alternative AI workflow be dropped.
+- **Decision:** Keep Diamond King (ChatGPT) as the named AI collaborator and Command Center as the canonical hub. Connect the three repositories with reciprocal navigation, a central machine-readable registry, and a shared cross-repository record contract.
+- **Repositories:** `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6`; `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey`; `TRTT-VOYAGE/Travelpayout`.
+- **Implementation:** Added the central bridge specification and registry; added module-specific bridge guides and reciprocal links in each repository's README/entry page. Existing product data remains owned by its source repository.
+- **Synchronization truth:** This is a manual, version-controlled reference bridge. No automatic cross-repository sync, private ChatGPT conversation ingestion, or ChatGPT Memory↔GitHub synchronization is implemented or claimed.
+- **Governance:** Changes are on feature branches and pending PR review. No merge, production deployment, Pages activation, DNS/security/account change, Blogger publication or Telegram delivery performed.
+- **Verification scope:** Remote read-back and source/link assertions to be performed before PR updates. Browser/mobile/accessibility QA and live deployment remain NOT TESTED/NOT VERIFIED.
+- **Correction note:** An earlier HTML trace addendum for the Travelpayout MVP cited workflow run `46096290851`; the authoritative successful run ID is `46096393061`. This entry records the correction without deleting prior history.
+- **Marker:** diamond-king-three-repository-bridge-001-20261128
+
+
+### Three-repository bridge verification — 2026-11-28
+
+- Command Center PR #107: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/107 — branch `feature/two-project-audit-next-saas-prep-20261128`, head `4680d58ada690a843cf2cbbbd8fcb9da428e6642`, OPEN, mergeable.
+- Learning Journey PR #17: https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey/pull/17 — branch `feature/diamond-king-three-repo-bridge-20261128`, head `582e3fe905bd10a36ff50d2f01eca6eeab4e0f2e`, OPEN, mergeable.
+- Travelpayout PR #1: https://github.com/TRTT-VOYAGE/Travelpayout/pull/1 — branch `feature/trtt-travel-booking-affiliate-hub-v1-20261128`, head `1a4419cb9210f529da21f69571a924933ddee9a9`, OPEN, mergeable.
+- Read-back PASS: central bridge specification, JSON registry, Command Center README/architecture/dashboard/memory/HTML trace, Learning Journey bridge guide/README/homepage, and Travelpayout bridge guide/README/homepage.
+- Validation PASS: registry JSON parsed; all three system IDs and shared record field names present; reciprocal navigation targets match the intended repositories; append-only memory and HTML marker match.
+- Travelpayout GitHub Actions run `46097556211` completed successfully on the updated PR head.
+- Governance: no PR merged. No Pages/production deployment, DNS/security/account change, Blogger publication or Telegram delivery.
+- Runtime browser/mobile/screen-reader/cross-browser QA remains NOT TESTED. Live deployment and automatic cross-repository synchronization remain NOT VERIFIED / NOT IMPLEMENTED.
+- **Marker:** diamond-king-three-repository-bridge-verification-20261128
+
+
+### Owner operating instruction — 2026-11-28
+- Owner confirmed they are actively working in GitHub and requested concise communication, no unnecessary status talk, and autonomous execution of all safe/in-scope work from the agent side on future triggers.
+- Decision: inspect GitHub and repository governance first; execute the complete safe task without repeated questions; preserve append-only history; report evidence only.
+- This message did not specify a new implementation target. Existing three-repository bridge PRs remain open; repository rules still require Owner approval before merge or production deployment.
+- Current verified PR states at this trigger: Command Center #107 OPEN/mergeable (head 0608decb5d35c70d2474e12c42e0b6c64805f54c); Learning Journey #17 OPEN/mergeable (head 582e3fe905bd10a36ff50d2f01eca6eeab4e0f2e); Travelpayout #1 OPEN/mergeable (head 1a4419cb9210f529da21f69571a924933ddee9a9).
+- No code, workflow, deployment, merge, Blogger publication, or Telegram delivery was authorized or performed by this instruction.
+- Marker: owner-autonomous-execution-instruction-20261128

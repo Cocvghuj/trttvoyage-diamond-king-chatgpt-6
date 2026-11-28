@@ -33,3 +33,11 @@ No authentication, server database, user profile, cloud sync, AI integration, bi
 
 ## QA status
 Source-level inspection only. Functional localStorage flows, browser rendering, Android/iOS device QA, cross-browser QA, screen-reader audit, Lighthouse, and production deployment are NOT TESTED.
+
+
+## Re-audit hardening addendum — 2026-11-28
+
+- Idea and Learning localStorage readers now validate non-empty IDs and content, enforce the existing field limits, and normalize stored timestamps without inventing a date. Missing or invalid timestamps are represented as unavailable rather than rendered as “Invalid Date”.
+- Learning source URLs are parsed with the URL API and retained only when the parsed protocol is HTTPS; malformed or non-HTTPS stored values are cleared from the in-memory normalized record.
+- JSON import accepts an empty timestamp only to preserve a legacy record whose date is unavailable; any non-empty timestamp must parse successfully. Existing valid timestamps are normalized to ISO format.
+- No existing storage key or backup format version changed. Browser/device QA and real import/export picker testing remain NOT TESTED.
