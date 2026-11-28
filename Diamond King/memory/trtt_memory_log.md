@@ -1482,3 +1482,12 @@ Policy: append-only; preserve all earlier entries.
 - **Blogger / Telegram:** No Blogger theme import, static page installation, draft creation, live publication or Telegram delivery performed. No live Blogger or production state changed.
 - **Unresolved source limitation:** Smart Invoice SaaS dashboard `index.html` remains unchanged because available current/history versions are truncated mid-script; no guessed reconstruction was made.
 - **Marker:** trtt-merge-complete-verification-20261128
+
+
+## Owner approval to merge verification log — 2026-11-28
+
+- **Owner trigger:** Explicit `MERGE APPROVED` received for Command Center GitHub PR #116 only.
+- **Scope:** Merge the append-only post-merge verification record into GitHub `main`. This approval does not authorize GitLab MR !31 merge, Blogger import/draft/live publication, Telegram delivery, production deployment, or DNS/security changes.
+- **Pre-merge inspection:** PR #116 was OPEN and GitHub reported `mergeable=true`; both memory files contain marker `trtt-merge-complete-verification-20261128`.
+- **Execution status at append:** Merge action and main-branch read-back pending; no merge success claimed yet.
+- **Marker:** trtt-pr116-owner-approval-20261128
