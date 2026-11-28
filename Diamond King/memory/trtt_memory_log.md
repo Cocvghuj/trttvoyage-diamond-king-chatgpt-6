@@ -1522,3 +1522,17 @@ Policy: append-only; preserve all earlier entries.
 - Theme remains frozen; 2–3 new news articles and existing Blogger content untouched. Gemini is an optional reviewer for public/non-sensitive artifacts; connector/free access NOT TESTED.
 - No merge, live Blogger import, publication, Telegram, DNS/security, GitLab main mutation or secret access.
 - Marker: `trtt-blog-bridge-owner-trigger-final-check-20261128`
+
+
+## Entry — 2026-11-28 — Blogger bridge refresh completed
+- **Owner instruction:** continue configuring the GitHub/GitLab bridge for the Blogger package; preserve the current theme and recent news items; maintain a 100-part phased improvement plan.
+- **GitHub source:** `TRTT-VOYAGE/TRTTVOYAG-BLOG`, branch `feature/trtt-blog-command-center-theme-20261128`, source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`, PR #3 remains OPEN/mergeable.
+- **GitLab mirror:** private project `trttnews24bd-group/Cocvghuj-trtt-news-bot`, project ID `88270725`; dedicated branch `feature/trtt-blog-github-gitlab-bridge-20261128`; MR !31 OPEN/mergeable; latest branch head `1e8a7b341bf211a20327751dc9b6ce6447cdb146`.
+- **Sync action:** refreshed 14 reviewed GitHub PR #3 files into `integrations/trttvoyag-blog/`; workflow stored as `automation/sync-gitlab-mirror.yml`. Raw GitLab read-back compared byte-for-byte against GitHub: all 14 refreshed files EXACT MATCH. GitLab commit `536d9054eb2c12f8b9228a71151389de78ff9a9c`; manifest/evidence commit `1e8a7b341bf211a20327751dc9b6ce6447cdb146`.
+- **100-part plan:** exactly 100 unique numbered work units, 1–100, arranged as 10 phases × 10; planning only, to be executed one small unit per Owner trigger after the blog is live and baseline is available.
+- **Automation boundary:** GitHub Actions one-way sync workflow is configured, but runs found `GITLAB_TOKEN` empty. Automatic sync remains BLOCKED until Owner adds GitHub Actions secret `GITLAB_TOKEN` with GitLab `write_repository` scope. No token requested/read/logged. GitLab manual snapshot/MR is committed and reviewable.
+- **CI:** GitHub package CI run `46131171917` SUCCESS. GitLab MR pipeline `3126329659` failed before runner start due to `ci_quota_exceeded`; GitLab CI NOT PASS.
+- **Gemini:** no connected Gemini tool/API credential verified. Optional free second-opinion lane may be used only for public, non-sensitive artifacts if Owner independently enables a free service; no Gemini integration or credential was added.
+- **Preservation:** Diamond Horizon theme unchanged by this bridge refresh; the 2–3 new news articles, existing posts, Blogger pages and live layout untouched. No live Blogger import, publication, Telegram, DNS/security changes, GitLab main change, production deployment or secret access.
+- **Owner gates:** review/merge GitHub PR #3, GitHub Command Center PR #114 and GitLab MR !31; configure the GitHub Actions `GITLAB_TOKEN` secret. Blogger live import remains Owner-controlled.
+- **Marker:** `trtt-blog-github-gitlab-bridge-refresh-20261128`
