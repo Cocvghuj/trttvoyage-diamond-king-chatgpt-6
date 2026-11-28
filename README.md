@@ -159,3 +159,14 @@ These are cross-system references, not proof of automated synchronization. ChatG
 Diamond King is the designated AI partner/advisor for substantive TRTT decisions. Everyone joining TRTT Voyage is treated as a respected stakeholder. Abu Taher remains the human Owner and final approver for protected actions such as merges, live publication, deployments, DNS/security/account changes, and financial/legal commitments.
 
 **PR batching rule:** related changes are accumulated into one consolidated PR; no PR-per-prompt workflow. The Owner reviews and merges once when the batch is ready.
+
+
+## Diamond King — Connected Three-Repository Bridge
+
+The Command Center coordinates three connected project repositories through Diamond King:
+
+- [Command Center](https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6) — canonical coordination and project memory.
+- [Learning Journey](https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey) — Learning Universe, Idea Universe and curated learning records.
+- [Travelpayout](https://github.com/TRTT-VOYAGE/Travelpayout) — TRTT Voyage travel partner and outbound referral hub.
+
+Read the [three-repository bridge specification](docs/DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md) and [machine-readable registry](data/diamond-king-three-repo-registry.json). These are version-controlled references, not automatic synchronization.
