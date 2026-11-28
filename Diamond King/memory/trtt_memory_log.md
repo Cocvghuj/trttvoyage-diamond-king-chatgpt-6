@@ -1143,3 +1143,17 @@ Policy: append-only; preserve all earlier entries.
 - Verification: GitHub PR merge confirmations and main-branch read-back PASS for #94 and #95. Calculator source-level checks PASS. Browser/mobile QA, calculator runtime, Pages deployment, XML parser validation, Blogger import, live theme identity and Blogger draft creation NOT TESTED.
 - Protected actions: No Blogger live publication, Telegram delivery, production deployment, DNS/security/account changes, or paid service use.
 - Marker: legacy-command-center-pr-history-consolidation-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Legacy backlog final status after repairs
+
+- Trigger: Owner requested “Make all 100 now” for the two active project repositories and the pending work reviewed in the Command Center.
+- Completed in this trigger: Command Center PR #94 (Europe Budget Calculator extraction) merged; PR #95 (Mitti theme backup restoration) merged; PR #96 (legacy history consolidation) merged. Main read-back confirmed for tool, draft, memory/trace and backup XML/manifest.
+- Superseded historical PRs closed with explanatory comments while retaining their branches/history: #7, #12, #17, #20, #26, #27, #28, #37, #45, #66 and #69. Their useful current decisions are summarized in append-only memory; duplicate or stale content was not reintroduced wholesale.
+- Remaining Command Center PR: #8 only. It remains OPEN and Draft by design. Its package contains ten wellness/sexual-health education article drafts but still lacks qualified medical review, licensed image assets, final editorial/localization review and Blogger preview. No medical approval is claimed; do not merge or publish until those gates are satisfied.
+- Learning Journey repository: current open PR search returned zero. Its navigation accessibility repair PR #13 and prior approved work are already merged; browser/screen-reader runtime testing remains NOT TESTED.
+- TRTT AI repository: current open PR search returned zero. Prior game timer/win-state/keyboard-accessibility fixes are merged; real browser/device/assistive-technology testing remains NOT TESTED.
+- Command Center current open PR search returned only #8. This does not mean the product is 100% production-ready; the Master Franchise screens remain prototypes without backend, database, authentication, multi-tenant isolation, AI runtime or billing.
+- Verification: GitHub search and PR metadata PASS for current open-PR inventory. PR #94/#95/#96 merged PASS; main read-back PASS for calculator and backup XML; superseded PRs closed PASS. Formal XML parser, real browser/mobile/screen-reader QA, Pages deployment/runtime, Blogger draft creation, live publication and Telegram delivery NOT TESTED.
+- Current stage boundary: GitHub-only direction remains active. GitLab NOT REQUIRED. No Blogger or Telegram operation was performed. No production deploy, DNS/security/account change or paid service used.
+- Marker: legacy-backlog-final-status-20261128
