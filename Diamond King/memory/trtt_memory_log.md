@@ -1072,3 +1072,17 @@ Policy: append-only; preserve all earlier entries.
 - Verification: syntax, keyboard semantics and feature-branch remote read-back pending at entry creation. Actual keyboard/browser/mobile assistive-technology testing NOT TESTED.
 - Safety: no main edit, merge, deployment, deletion, paid service, secret access, GitLab, Blogger or Telegram action. Owner merge required.
 - Marker: trtt-ai-mini-game-keyboard-accessibility-20261128
+
+
+## Entry — 2026-11-28 — Master Franchise pending-project audit and repair
+
+- **Project code:** DR-TRTT-OPS-001.
+- **Trigger:** Owner authorized a full check, repair, and merge of the two pending project repositories: the Diamond King Command Center and the public Learning Journey.
+- **Repository inspection:** Rechecked Command Center PR #83 and the Learning Journey repository history. TRTT AI PR #3 and Command Center PR #91 were already merged; Learning Journey PRs #3, #5, #6, #9, #10, #11, and #12 were verified merged. No re-merge was needed for those changes.
+- **Command Center finding:** PR #83 remained open but GitHub reported mergeable=false after main advanced beyond its original base. The original Learning/Idea Universe screens and specification are being re-based additively onto current main in branch feature/learning-idea-universe-rebased-20261128; the prior PR and historical memory remain preserved.
+- **Learning Journey finding:** Root index.html mobile navigation did not close after selecting a menu link, did not support Escape-to-close/focus return, and did not reset its expanded state on desktop resize. A scoped accessibility repair is being prepared on branch feature/learning-journey-accessibility-repair-20261128.
+- **Preservation:** Existing files and memory history are preserved. No secrets, private chat exports, personal contact data, backend credentials, or destructive changes are included.
+- **Verification boundary:** Source checks and remote read-back are planned. Browser/device QA, screen-reader testing, production deployment, and actual live-site behavior are not claimed unless separately tested.
+- **GitLab:** NOT REQUIRED under the current GitHub-only direction. Blogger and Telegram are unrelated and NOT REQUIRED.
+- **Owner authorization:** Owner explicitly authorized checking, fixing, and merging these project changes; repository merge permission is treated as granted for these scoped PRs only.
+- **Marker:** master-franchise-two-repository-audit-repair-20261128
