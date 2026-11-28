@@ -1514,3 +1514,18 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append this entry to both memory files on the existing feature branch.
 - **Verification:** Post-write read-back pending.
 - **Marker:** trtt-trigger-activation-issue-20261128
+
+
+## Entry — 2026-11-28 — Two-Hub GitHub Showcase & Repository Growth Plan
+
+- **Timestamp:** 2026-11-28 16:00 Europe/Rome (approximate local time; minute-level timestamp recorded for this trigger)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked Diamond King to independently redesign its two central GitHub-facing repositories as high-quality examples, so the owner can learn from the READMEs and use the work as a model for organizing approximately 187 repositories and two profile surfaces, with an ambitious target of reaching 1,000 repositories within seven days.
+- **Scope interpretation:** Treat the two central hubs as the Diamond King Command Center repository and the Abu Taher GitHub profile repository. Inspect the TRTT Voyage organization profile surface separately before editing; do not assume its repository name or contents.
+- **Decisions:** Create clear, useful, evidence-led README experiences that explain the mission, navigation, capabilities, operating model, product portfolio, status discipline, and safe GitHub workflow. Keep public-facing documentation in English. Use verified repository links only. Distinguish active original TRTT projects from upstream forks, imported learning repositories, experiments, archives, and templates before any bulk curation. Do not promise that 1,000 repositories in seven days is achievable; treat it as a target requiring a measured plan. Do not create empty or duplicate repositories to inflate a count.
+- **Delegated authority:** Owner's standing delegation permits routine, low-risk GitHub PR review and merge after checking scope, diff, mergeability, and available checks. Continue to pause for security, secrets, account access, destructive changes, billing/legal commitments, production deployment, DNS, live publishing, or unclear/high-impact changes.
+- **Prior work recheck:** Abu Taher profile PR #11 is already merged. GitHub reports merge commit `e12d42b946b043f75ef86edea91152496ebaba53` at 2026-11-28T15:23:19Z. The PR head has no workflow runs and no combined status entries; CI/runtime/accessibility are not thereby verified.
+- **File changes planned:** Append this entry and an additive matching HTML trace; then prepare README improvements on feature branches for the two central hubs after inspecting their current state and the organization profile surface.
+- **Safety:** No direct pushes to default branches; no deletion, secrets, paid services, mass repository creation, production deployment, Blogger publishing, or Telegram distribution.
+- **Verification:** Repository metadata, current README files, memory log, command-center HTML, and PR #11 state were fetched from GitHub. Repository inventory is only partially enumerated by the available listing response; an exact organization-wide count is NOT VERIFIED.
+- **Marker:** trtt-two-hub-github-showcase-and-187-repo-growth-plan-20261128
