@@ -1248,3 +1248,11 @@ Policy: append-only; preserve all earlier entries.
 - Learning Journey open PR count: 0. Command Center open PRs: #8 Wellness educational article Draft (medical review, licensed images, editorial/localization review and Blogger preview still pending) and #102 stale verification record. #102 is superseded by this final record and will be closed without deleting its branch/history.
 - Browser, actual mobile device, screen-reader, cross-browser, Lighthouse, real export download, and production deployment QA remain NOT TESTED. These are not 100% production-ready SaaS products: no server backend, account/authentication, database, cloud sync, AI runtime, billing or tenant isolation is present.
 - Marker: final-two-project-merge-verification-20261128
+
+
+### JSON backup restore — 2026-11-28
+- Added validated JSON backup import to Idea Universe and Learning Universe, complementing existing export controls.
+- Import accepts only the matching versioned format, caps files at 1 MB and records at 100, validates required fields/stages/pathways/timestamps, skips duplicate IDs, restricts imported learning-source links to HTTPS, and preserves existing local records.
+- Import rendering uses textContent and validated data; no imported HTML is executed or injected.
+- JavaScript syntax PASS. Mock file/localStorage import tests PASS for both spaces; invalid records were skipped and valid records restored. Browser download picker and actual file-selection flows NOT TESTED in a real browser.
+- Marker: learning-idea-json-backup-restore-20261128
