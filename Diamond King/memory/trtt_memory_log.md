@@ -1325,3 +1325,32 @@ Policy: append-only; preserve all earlier entries.
 - Current verified PR states at this trigger: Command Center #107 OPEN/mergeable (head 0608decb5d35c70d2474e12c42e0b6c64805f54c); Learning Journey #17 OPEN/mergeable (head 582e3fe905bd10a36ff50d2f01eca6eeab4e0f2e); Travelpayout #1 OPEN/mergeable (head 1a4419cb9210f529da21f69571a924933ddee9a9).
 - No code, workflow, deployment, merge, Blogger publication, or Telegram delivery was authorized or performed by this instruction.
 - Marker: owner-autonomous-execution-instruction-20261128
+
+
+## Entry — 2026-11-28 — Diamond King four-repository bridge
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested “Make bridge” for the newly built and merged `TRTT-VOYAGE/AMAZON` repository.
+- **Inspection:** Confirmed Amazon Picks PR #1 was merged to main (merge commit `22aa7ecd3a3e7c2eda33243482f21455400f1d8e`). Confirmed Command Center PR #107 merged (merge commit `08817b488fb927908fc22543f0a75a8e0500cdb6`); three-repository baseline exists on main.
+- **Decision:** Expand the Diamond King manual, version-controlled bridge from three modules to four. Command Center remains canonical; Learning Journey, Travelpayout and Amazon Picks retain their own source data.
+- **Branches:** `feature/diamond-king-four-repo-bridge-20261128` created in Command Center, Learning Journey, Travelpayout and AMAZON repositories.
+- **Changes:** Central registry adds `amazon-picks`; Command Center README, architecture addendum and dashboard navigation updated; original bridge spec receives an additive fourth-module addendum. Amazon receives `docs/DIAMOND-KING-BRIDGE-001.md`, README and header navigation links. Learning Journey and Travelpayout bridge docs, README and navigation receive reciprocal Amazon references.
+- **Source-of-truth boundary:** Amazon owns the six approved product names/URLs; Travelpayout owns its travel partner catalog; Learning Journey owns learning/idea records; Command Center owns cross-project memory, decisions and registry.
+- **Verification:** All four branches created. File writes returned commit SHAs. Remote read-back and PR/CI validation still pending at memory-entry time. No automatic synchronization, webhook, background agent, raw chat ingestion or automatic ChatGPT Memory↔GitHub sync implemented.
+- **Protected actions:** No PR merged by Diamond King; no production deployment, Pages activation, DNS/security/account change, Blogger publication or Telegram delivery.
+- **Marker:** diamond-king-four-repo-bridge-20261128
+
+
+## Final verification — Diamond King four-repository bridge — 2026-11-28
+
+- **Central registry:** JSON parsed; four repositories present, including `amazon-picks`. PASS.
+- **Command Center:** README and dashboard navigation link to Amazon Picks; architecture and bridge spec contain additive four-module addenda. PASS.
+- **Amazon:** module bridge guide, README and navigation link to Command Center, Learning Journey and Travelpayout. PASS.
+- **Learning Journey:** bridge guide, README and homepage navigation link to Amazon Picks. PASS.
+- **Travelpayout:** bridge guide, README and homepage navigation link to Amazon Picks. PASS.
+- **Memory:** this append-only log and `Diamond King/trttmagic.html` contain the bridge marker and verification evidence. PASS.
+- **Amazon CI:** GitHub Actions run `46102158116` (run #22) completed success on bridge branch head `cc6da163d1dcf7801f17ad9a40d613f306e36d42`. PASS.
+- **PRs:** Command Center #110, Amazon #2, Learning Journey #18, Travelpayout #2 are OPEN, unmerged and mergeable at final metadata check. Owner review/merge remains required.
+- **Not implemented:** automatic cross-repository sync, webhooks, background agent, raw private chat ingestion, ChatGPT Memory↔GitHub sync, Pages activation or production deployment.
+- **Not tested:** browser/mobile/screen-reader/cross-browser QA and live production navigation.
+- **Marker:** diamond-king-four-repo-bridge-final-verification-20261128
