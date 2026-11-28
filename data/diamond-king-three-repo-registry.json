@@ -83,5 +83,5 @@
     "copySensitivePersonalData": false,
     "ownerApprovalRequiredForMergeAndProduction": true
   },
-  "status": "four-repository-source-bridge-prepared-owner-review"
+  "status": "four-repository-source-bridge-merged-to-main-manual-links-only"
 }
