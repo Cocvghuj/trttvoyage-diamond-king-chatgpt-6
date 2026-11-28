@@ -1582,3 +1582,17 @@ Policy: append-only; preserve all earlier entries.
 - **Command Center memory:** This verification addendum is appended to the existing PR #117 branch and mirrored in HTML; read-back pending.
 - **Blogger:** No Blogger DRAFT Post ID/status exists. GitHub PR #5 must be Owner-merged before the DRAFT-only workflow can run; secret availability remains NOT TESTED. No live publish or Telegram.
 - **Marker:** trtt-first-su-nuraxi-pr-ci-mirror-verified-20261128
+
+
+## Entry — 2026-11-28 — Blogger continuation pointer / article PR verification
+
+- **Timestamp:** 2026-11-28 12:49 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner sent a second pointer (👉) to continue the selected safe Blogger content task.
+- **GitHub inspection:** Re-read TRTTVOYAG-BLOG PR #5, changed-file list and workflow runs. PR #5 is OPEN, mergeable and unmerged; branch feature/trtt-first-article-su-nuraxi-20261128; head 2614bb15cd43289e525620c4ec808269d4443b14. Exactly two files changed: the Su Nuraxi article HTML and its appended research record.
+- **Verification:** GitHub Actions run 46141822769 completed SUCCESS. Article diff read-back confirms one H1, eight H2 headings, an HTTPS Wikimedia Commons image with Domimf / CC BY-SA 3.0 attribution, marker 787950, official TRTT URL, and UNESCO/Fondazione Barumini sources. No affiliate links or prices are used.
+- **Decision:** Article source package is ready for Owner review. Do not merge PR #5 without explicit Owner merge approval. Blogger DRAFT remains blocked until merge and confirmation that all four required Blogger Actions secrets exist; no Blogger connector is available in this session.
+- **GitLab:** Existing MR !31 remains OPEN; its latest pipeline previously failed before runner start due quota. No GitLab main mutation.
+- **Actions / safety:** No Blogger API draft, theme import, static-page installation, live publication, Telegram, production, DNS/security change or secret access.
+- **Command Center memory:** Append this entry and mirror HTML trace on existing PR #117 feature branch; read-back required.
+- **Marker:** trtt-blogger-pointer-pr5-ci-verified-20261128
