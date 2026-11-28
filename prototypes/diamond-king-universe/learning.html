@@ -7,7 +7,7 @@
 <style>
 :root{--pink:#E98BAF;--piyaji:#B77991;--gold:#D6A542;--midnight:#11152D;--cyan:#67E8F9;--white:#fff;--muted:#b9bfd2;--panel:#1a203b;--line:#343b59}
 *{box-sizing:border-box}:where(a,button,input,textarea,select,[tabindex]):focus-visible{outline:3px solid var(--pink);outline-offset:3px;}
-body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 34%),var(--midnight);color:var(--white);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.04em}.brand span{color:var(--pink)}nav{display:flex;gap:10px;flex-wrap:wrap}nav a,.pill,button{border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:#ffffff0a;color:var(--white)}nav a[aria-current=page]{border-color:var(--pink);background:#E98BAF22}.hero{padding:54px 0 30px;max-width:820px}.eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.02;margin:12px 0}h1 em{font-style:normal;color:var(--pink)}.lead{color:var(--muted);font-size:1.12rem;max-width:680px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:linear-gradient(145deg,#222947,#171d36);border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0}.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}.card h2,.card h3{margin:0 0 8px}.muted{color:var(--muted)}.track{height:8px;background:#ffffff18;border-radius:20px;overflow:hidden;margin:12px 0}.track i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--pink),var(--gold));border-radius:20px}.items{display:grid;gap:12px;margin-top:16px}.item{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid var(--line)}.tag{font-size:.75rem;color:var(--cyan)}button{cursor:pointer;font:inherit}.notice{color:var(--gold);font-size:.86rem;margin-top:18px}.foot{padding:28px 0;color:var(--muted);font-size:.85rem}@media(max-width:760px){.span8,.span4,.span6{grid-column:span 12}.shell{padding:16px}.hero{padding:38px 0 22px}}
+body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 34%),var(--midnight);color:var(--white);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{font-weight:850;letter-spacing:.04em}.brand span{color:var(--pink)}nav{display:flex;gap:10px;flex-wrap:wrap}nav a,.pill,button{border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:#ffffff0a;color:var(--white)}nav a[aria-current=page]{border-color:var(--pink);background:#E98BAF22}.hero{padding:54px 0 30px;max-width:820px}.eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.02;margin:12px 0}h1 em{font-style:normal;color:var(--pink)}.lead{color:var(--muted);font-size:1.12rem;max-width:680px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:linear-gradient(145deg,#222947,#171d36);border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0}.span8{grid-column:span 8}.span4{grid-column:span 4}.span6{grid-column:span 6}.span12{grid-column:span 12}.card h2,.card h3{margin:0 0 8px}.muted{color:var(--muted)}.track{height:8px;background:#ffffff18;border-radius:20px;overflow:hidden;margin:12px 0}.track i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--pink),var(--gold));border-radius:20px}.items{display:grid;gap:12px;margin-top:16px}.form{display:grid;gap:10px;margin-top:12px}.form input,.form textarea,.form select{width:100%;padding:11px;border:1px solid var(--line);border-radius:12px;background:#10162c;color:white;font:inherit}.form textarea{min-height:78px;resize:vertical}.record{border-top:1px solid var(--line);padding:13px 0;display:grid;gap:7px}.record-actions{display:flex;gap:8px;flex-wrap:wrap}.record-actions button{font-size:.82rem}.secondary{background:transparent}.empty{color:var(--muted);padding:12px 0}.item{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid var(--line)}.tag{font-size:.75rem;color:var(--cyan)}button{cursor:pointer;font:inherit}.notice{color:var(--gold);font-size:.86rem;margin-top:18px}.foot{padding:28px 0;color:var(--muted);font-size:.85rem}@media(max-width:760px){.span8,.span4,.span6{grid-column:span 12}.shell{padding:16px}.hero{padding:38px 0 22px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style></head>
 <body><div class="shell">
@@ -15,14 +15,97 @@ body{margin:0;background:radial-gradient(circle at 85% 0,#30365c 0,transparent 3
 <main><section class="hero"><div class="eyebrow">01 / Learn</div><h1>Learning <em>Universe</em></h1><p class="lead">A structured space to turn curiosity into skills, skills into capability, and knowledge into work you can show.</p><span class="pill">Learn → Practice → Master → Share</span></section>
 <section class="grid" aria-label="Learning dashboard">
 <article class="card span8"><div class="eyebrow">Your learning map</div><h2>Choose a learning pathway</h2><p class="muted">Start with a focused path. Add lessons and milestones as they are actually created.</p><div class="items">
-<div><div class="item"><div><strong>AI & Digital Intelligence</strong><div class="muted">Prompting, research, responsible AI use</div></div><span class="tag">PATHWAY</span></div><div class="track"><i style="--w:0%"></i></div></div>
-<div><div class="item"><div><strong>Product & SaaS Building</strong><div class="muted">Product thinking, UX, code, testing</div></div><span class="tag">PATHWAY</span></div><div class="track"><i style="--w:0%"></i></div></div>
-<div><div class="item"><div><strong>Global Brand & Travel</strong><div class="muted">Storytelling, publishing, travel systems</div></div><span class="tag">PATHWAY</span></div><div class="track"><i style="--w:0%"></i></div></div>
+<div><div class="item"><div><strong>AI & Digital Intelligence</strong><div class="muted">Prompting, research, responsible AI use</div></div><span class="tag">PATHWAY</span></div><div class="track" data-path="AI & Digital Intelligence"><i style="--w:0%"></i></div></div>
+<div><div class="item"><div><strong>Product & SaaS Building</strong><div class="muted">Product thinking, UX, code, testing</div></div><span class="tag">PATHWAY</span></div><div class="track" data-path="Product & SaaS Building"><i style="--w:0%"></i></div></div>
+<div><div class="item"><div><strong>Global Brand & Travel</strong><div class="muted">Storytelling, publishing, travel systems</div></div><span class="tag">PATHWAY</span></div><div class="track" data-path="Global Brand & Travel"><i style="--w:0%"></i></div></div>
 </div></article>
 <aside class="card span4"><div class="eyebrow">Learning principles</div><h2>Build real capability</h2><p class="muted">Every pathway should include a clear outcome, reliable learning material, practice, and evidence of completion.</p><ul><li>Source-backed knowledge</li><li>Hands-on exercises</li><li>Progress only when verified</li><li>Owner-controlled learning records</li></ul></aside>
-<article class="card span6"><h3>Continue learning</h3><p class="muted">No lessons have been connected yet. Add a verified course or create an original lesson plan.</p><button type="button" data-action="lesson">Plan a lesson</button></article>
-<article class="card span6"><h3>Knowledge library</h3><p class="muted">Organize notes, references, examples, and completed work into reusable knowledge.</p><button type="button" data-action="library">Open library preview</button></article>
-<article class="card span12"><h3>Learning evidence</h3><p class="muted">Future records can include source links, exercise submissions, review notes, and dated milestones. No progress is claimed in this prototype.</p></article>
-</section><p class="notice" role="status" aria-live="polite" id="status">Prototype preview — sample pathways only; no learner account or saved progress is connected.</p></main>
+<article class="card span6"><h3>Plan a learning session</h3><p class="muted">Create a personal learning task. Add a source when you have verified one.</p><form class="form" id="lessonForm"><label for="lessonTitle">Lesson or task title</label><input id="lessonTitle" maxlength="120" required placeholder="What will you learn or practise?"><label for="lessonPath">Learning pathway</label><select id="lessonPath"><option>AI & Digital Intelligence</option><option>Product & SaaS Building</option><option>Global Brand & Travel</option></select><label for="lessonOutcome">Expected outcome</label><textarea id="lessonOutcome" maxlength="1000" required placeholder="What evidence will show you learned it?"></textarea><label for="lessonSource">Verified source URL (optional)</label><input id="lessonSource" type="url" placeholder="https://..."><button type="submit">Save learning plan</button></form></article>
+<article class="card span6"><div class="top"><div><h3>My learning plans</h3><p class="muted">Mark a task complete only after you have evidence.</p></div><button type="button" class="secondary" id="exportLearning">Export JSON</button></div><p class="muted" id="learningCount">0 plans</p><div id="learningRecords" aria-live="polite"></div></article>
+<article class="card span12"><h3>Learning evidence</h3><p class="muted">Progress is calculated from plans you mark complete on this device. These records are personal, browser-local, and are not verified by a teacher or synced to an account.</p></article>
+</section><p class="notice" role="status" aria-live="polite" id="status">Browser-local mode — plans stay on this device. No account, cloud sync, or instructor verification is connected.</p></main>
 <footer class="foot">TRTT Voyage · From Vision to Global Brand! Explore Beyond. Discover Everything.</footer></div>
-<script>document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>document.getElementById('status').textContent=b.dataset.action==='lesson'?'Lesson planning preview only — no lesson was created.':'Library preview only — no records are stored.'));</script></body></html>
+<script>
+(() => {
+  const KEY = "diamondKing.learning.v1";
+  const form = document.getElementById("lessonForm");
+  const list = document.getElementById("learningRecords");
+  const count = document.getElementById("learningCount");
+  const status = document.getElementById("status");
+  const exportButton = document.getElementById("exportLearning");
+  const paths = ["AI & Digital Intelligence","Product & SaaS Building","Global Brand & Travel"];
+  let records = [];
+  function announce(message) { status.textContent = message; }
+  function load() {
+    try {
+      const value = JSON.parse(localStorage.getItem(KEY) || "[]");
+      records = Array.isArray(value) ? value.filter(item => item && typeof item.id === "string" && typeof item.title === "string" && typeof item.outcome === "string" && paths.includes(item.path) && typeof item.completed === "boolean").slice(0,100).map(item => ({...item,source:(typeof item.source === "string" && /^https:\/\//i.test(item.source)) ? item.source : ""})) : [];
+    } catch (error) { records = []; announce("Local storage is unavailable or unreadable. Existing browser data was not changed."); }
+  }
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(records)); return true; }
+    catch (error) { announce("Could not save locally. Browser storage may be full or disabled."); return false; }
+  }
+  function button(label, action, id) {
+    const el = document.createElement("button");
+    el.type = "button"; el.className = "secondary"; el.textContent = label;
+    el.addEventListener("click", () => action(id));
+    return el;
+  }
+  function render() {
+    list.replaceChildren();
+    count.textContent = records.length + (records.length === 1 ? " learning plan" : " learning plans") + " · " + records.filter(x=>x.completed).length + " completed";
+    if (!records.length) { const p=document.createElement("p"); p.className="empty"; p.textContent="No learning plans yet. Create your first one."; list.append(p); }
+    records.slice().reverse().forEach(record => {
+      const article=document.createElement("article"); article.className="record";
+      const title=document.createElement("h4"); title.textContent=record.title;
+      const meta=document.createElement("p"); meta.className="tag"; meta.textContent=record.path+" · "+(record.completed?"COMPLETED":"IN PROGRESS");
+      const outcome=document.createElement("p"); outcome.className="muted"; outcome.textContent=record.outcome;
+      article.append(title,meta,outcome);
+      if(record.source) { const a=document.createElement("a"); a.href=record.source; a.target="_blank"; a.rel="noopener noreferrer"; a.textContent="Open learning source"; article.append(a); }
+      const actions=document.createElement("div"); actions.className="record-actions";
+      actions.append(button(record.completed?"Reopen":"Mark complete",toggleComplete,record.id),button("Delete",deleteRecord,record.id));
+      article.append(actions); list.append(article);
+    });
+    document.querySelectorAll(".track[data-path]").forEach(track => {
+      const group=records.filter(x=>x.path===track.dataset.path);
+      const done=group.filter(x=>x.completed).length;
+      const percent=group.length?Math.round(done/group.length*100):0;
+      track.querySelector("i").style.setProperty("--w",percent+"%");
+      track.setAttribute("aria-label",track.dataset.path+": "+percent+" percent of personal plans completed");
+    });
+  }
+  function toggleComplete(id) {
+    const previous=records;
+    records=records.map(x=>x.id===id?{...x,completed:!x.completed,updatedAt:new Date().toISOString()}:x);
+    if(!save()){records=previous;return;}
+    render(); announce("Learning plan status updated on this device. Completion is self-recorded, not externally verified.");
+  }
+  function deleteRecord(id) {
+    const previous=records; records=records.filter(x=>x.id!==id);
+    if(!save()){records=previous;return;}
+    render(); announce("Learning plan deleted from this device.");
+  }
+  form.addEventListener("submit",event=>{
+    event.preventDefault();
+    const title=document.getElementById("lessonTitle").value.trim().slice(0,120);
+    const path=document.getElementById("lessonPath").value;
+    const outcome=document.getElementById("lessonOutcome").value.trim().slice(0,1000);
+    const rawSource=document.getElementById("lessonSource").value.trim();
+    let source="";
+    if(rawSource){try{const url=new URL(rawSource);if(url.protocol!=="https:"){announce("Source links must use HTTPS.");return;}source=url.href;}catch(error){announce("Enter a valid HTTPS source URL.");return;}}
+    if(!title||!outcome||!paths.includes(path)){announce("Complete the title, pathway and expected outcome.");return;}
+    if(records.length>=100){announce("Local limit reached (100 plans). Export and remove older records first.");return;}
+    records.push({id:(typeof crypto!=="undefined"&&crypto.randomUUID?crypto.randomUUID():String(Date.now())+"-"+String(Math.random()).slice(2)),title,path,outcome,source,completed:false,createdAt:new Date().toISOString()});
+    if(!save()){records.pop();return;}
+    form.reset(); render(); announce("Learning plan saved on this device. It has not been uploaded or shared.");
+  });
+  exportButton.addEventListener("click",()=>{
+    const blob=new Blob([JSON.stringify({format:"diamond-king-learning-v1",exportedAt:new Date().toISOString(),records},null,2)],{type:"application/json"});
+    const url=URL.createObjectURL(blob); const a=document.createElement("a");
+    a.href=url; a.download="diamond-king-learning-backup.json"; document.body.append(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    announce("Learning-plan JSON backup generated from this device.");
+  });
+  load(); render();
+})();
+</script></body></html>

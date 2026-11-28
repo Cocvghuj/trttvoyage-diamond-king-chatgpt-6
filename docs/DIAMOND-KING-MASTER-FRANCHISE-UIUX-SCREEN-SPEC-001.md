@@ -150,3 +150,15 @@ Not tested:
 - No feature is described as live when it is only a visual placeholder.
 
 **Status:** Source prototype and specification created; visual rendering/device QA NOT TESTED.
+
+
+## Implementation addendum — 2026-11-28
+
+The Command Center navigation now links directly to the Learning Universe and Idea Universe screens. The primary learning and idea actions open those working screens rather than displaying a fake navigation result. Dynamic navigation headings are constructed with DOM text nodes rather than HTML string insertion.
+
+The Learning Universe and Idea Universe now provide useful single-browser workflows:
+- Idea capture: save up to 100 records in localStorage, view, delete, and export JSON.
+- Learning plans: save up to 100 tasks, optionally attach HTTPS source URLs, mark/reopen completion, delete, calculate self-recorded progress by pathway, and export JSON.
+- Both screens use safe text-node rendering, visible keyboard focus, and clear local-only storage disclosures.
+- These are local browser prototypes, not a server database, cloud sync, user account, secure vault, or production SaaS. Clearing browser data may erase records; export backups. Do not store secrets or sensitive personal data.
+- Source syntax and mock-DOM workflow tests were run for save/delete and save/complete/progress. Real browser, cross-device, screen-reader, export-download, and production QA remain NOT TESTED.
