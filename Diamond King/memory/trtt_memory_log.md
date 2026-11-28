@@ -1437,3 +1437,102 @@ Policy: append-only; preserve all earlier entries.
 - **NOT TESTED:** Blogger template import/compiler, seven page installations, live rendering, Blogger API access/secrets, real comments/pagination, live post creation, browser/device QA and production deployment.
 - **Not performed:** no live Blogger publication, Telegram delivery, DNS/security/account change, payment action or GitLab operation.
 - **Marker:** trtt-blogger-five-module-merge-complete-20261128
+
+
+## Entry — 2026-11-28 — TRTT Blogger Diamond Horizon theme application
+- **Trigger:** Owner requested the Blogger theme remembered in the Diamond King Command Center be applied to `TRTT-VOYAGE/TRTTVOYAG-BLOG`.
+- **Source verification:** Original Diamond Horizon candidate is `TRTT-VOYAGE/Cocvghuj-trtt-news-bot/TRTT-Voyage-Generation-2-ULTIMATE.xml`, merged in PR #141 at `289416b757a5fc6e3b9f7c6c6ab8b06171d7970b`. The Command Center `theme-backup-2026-11-27.xml` is the old Mitti Free Version rollback archive and is not the active Diamond Horizon design.
+- **Decisions:** preserve the Blogger package's full Blog1 includables and 20 widget IDs; use the approved six-item Home/News/Travel/AI/Tools/About menu; four homepage discovery cards; separate Travel Booking and Amazon Picks hero actions; accessible persistent Dark/Light mode; responsive horizontal menu; footer links to prepared policy/contact pages and verified public brand channels only.
+- **Privacy decisions:** filter Diary, My dairy and THINKING ROOM labels from homepage cards only; keep post/label routes; suppress the legacy TRTT News24BD label chip without changing stored labels; hide PageList1/Profile1 without deleting widgets; retain ReportAbuse1.
+- **Files:** canonical theme updated; previous package theme and original Diamond Horizon source archived; validator/tests, README, release checklist, build log, bridge guide and design review updated.
+- **Blog branch:** `feature/trtt-blog-command-center-theme-20261128`. **Command Center branch:** `feature/trtt-blog-command-center-theme-memory-20261128`.
+- **Verification at entry:** source read PASS; implementation prepared. GitHub CI, remote read-back and Blogger proprietary compiler/import remain pending. Live Blogger theme/page installation, browser/device/screen-reader QA, affiliate redirect/attribution, production deployment, Blogger API access, post publication and Telegram delivery NOT TESTED.
+- **No action:** no live theme import, no existing post/page deletion, no live publication, no Telegram send, no DNS/security/account change, no GitLab sync, no secret access.
+- **Marker:** `trtt-blog-command-center-theme-restore-20261128`
+
+
+## Verification addendum — TRTT Blogger Diamond Horizon theme — 2026-11-28
+- Blogger package PR #3 is OPEN, clean/mergeable, not merged: https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/3.
+- GitHub Actions run 46128610584 completed SUCCESS; XML/package validation and unit-test steps PASS.
+- Remote read-back PASS for all 10 changed/added Blogger package files. Static checks confirm six menu items, four homepage cards, approved routes, persistent accessible Dark/Light switch, homepage-only personal-label filtering, legacy News chip suppression, footer routes/public links, all 20 widget IDs and hardened Blog1 includes.
+- Command Center memory and HTML trace markers read back. Memory PR #114 OPEN, clean/mergeable, not merged.
+- Blogger compiler/import, pages/live routes, browser/device/screen-reader QA, affiliate redirect/attribution, Blogger API, publication, Telegram and production deployment NOT TESTED.
+- No live Blogger changes, publication, Telegram, DNS/security, GitLab or secret actions.
+- Marker: `trtt-blog-command-center-theme-restore-20261128-verification`
+
+
+## Entry — 2026-11-28 — Blogger GitHub/GitLab bridge and 100-part roadmap
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner requested the Blogger repository be bridged between GitHub and GitLab, kept as-is for the first live release, and divided into 100 small future improvement units; Owner also requested an optional Gemini second-opinion lane.
+- **GitHub source:** `TRTT-VOYAGE/TRTTVOYAG-BLOG`, branch `feature/trtt-blog-command-center-theme-20261128`, source head at initial mirror `5a9d682026381dcbd23822150f27e0a5beaa4059`, PR #3 remains open.
+- **GitLab discovery:** No dedicated GitLab project named TRTTVOYAG-BLOG was found. Existing private project `trttnews24bd-group/Cocvghuj-trtt-news-bot` (ID 88270725) is the established backup destination.
+- **GitLab mirror:** isolated folder `integrations/trttvoyag-blog/`; branch `feature/trtt-blog-github-gitlab-bridge-20261128`; latest snapshot commit `99b8d5ec58eb50fe2e39e746b5bc1d3b1f3a4e4a`; MR !31 open: https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot/-/merge_requests/31.
+- **Source verification:** exact byte-for-byte GitHub/GitLab read-back PASS for canonical Diamond Horizon theme, Travelpayout catalog, Amazon catalog and the 100-part roadmap. GitLab tree confirms the full 28-file Blogger package plus the added roadmap and manifest under the isolated mirror folder.
+- **Automation:** GitHub Actions one-way sync workflow `.github/workflows/sync-gitlab-mirror.yml` configured for GitHub main pushes; it updates only the dedicated GitLab mirror branch. Requires `GITLAB_TOKEN`; presence and write scope NOT VERIFIED. No GitLab main push, no bidirectional sync.
+- **GitLab CI:** MR !31 pipeline 3126314864 / job 18449826162 failed before runner start with `ci_quota_exceeded`; no project code/test failure was reported. GitLab CI status therefore NOT PASS; rerun when quota is available.
+- **100-part roadmap:** `docs/100-PART-TRTT-BLOG-QUALITY-ROADMAP-001.md` added. Planning only; one small unit at a time. Current theme and Owner's 2–3 new news articles remain frozen and unmodified.
+- **Gemini:** optional second-opinion lane documented for public/non-sensitive artifacts only. No Gemini connector/API credential available or verified in this chat; no secret assumed.
+- **Boundaries:** no live Blogger theme import, static page install, post edit/publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- **Marker:** `trtt-blog-github-gitlab-bridge-100-part-roadmap-20261128`
+
+
+## Final verification addendum — Blogger GitHub/GitLab bridge — 2026-11-28
+- **GitHub source:** TRTT-VOYAGE/TRTTVOYAG-BLOG PR #3 remains OPEN/mergeable; final checked head `207b2d4fae76dce5f2a9290607b4633f0233704c`.
+- **GitHub CI:** run `46130780286` completed SUCCESS on that head; package validator and unit-test steps PASS.
+- **GitLab destination:** private project `trttnews24bd-group/Cocvghuj-trtt-news-bot`, project ID 88270725. Mirror branch `feature/trtt-blog-github-gitlab-bridge-20261128`; latest verified branch commit `6230726386aeb1df272a4dec0711421be06bda0d`; MR !31 OPEN.
+- **Exact read-back:** canonical Diamond Horizon XML, Travelpayout JSON, Amazon JSON and 100-part roadmap match GitHub source byte-for-byte. Roadmap count exactly 100.
+- **GitLab CI:** latest MR pipeline `3126321676` failed before runner start; job `python_validation` failure reason `ci_quota_exceeded`. This is a GitLab quota blocker, not a reported test assertion failure. GitLab CI status NOT PASS.
+- **Automation:** GitHub one-way sync workflow is committed, only writes the dedicated GitLab branch, and uses `GITLAB_TOKEN` without printing it. Secret presence/scope NOT VERIFIED; workflow has not yet run on GitHub main.
+- **Preservation:** current theme unchanged; 2–3 new news articles protected; no Blogger live import, page install, post edits/publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- **Roadmap:** exactly 100 small work units, planning only.
+- **Gemini:** optional public/non-sensitive second-opinion lane documented; connector/API NOT VERIFIED.
+- **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Correction — Final Blogger mirror and CI state — 2026-11-28
+- Latest GitHub source head is `0124cdbc8b615133200808b937db2d436f98a3e4`; PR #3 remains OPEN/mergeable, not merged.
+- GitHub Actions run `46130925601` completed SUCCESS on this exact head; package validator and unit-test steps PASS.
+- Latest GitLab mirror branch commit is `ab96fe46e7d7b3a12d1720a8e73e7e8119f4a77f`; MR !31 remains OPEN.
+- GitLab main SHA remains `95cff41c0ca8453c6e8519f6f59899d5b576edc5`; no GitLab main change.
+- GitLab MR pipeline `3126323743` failed before runner start with `ci_quota_exceeded`; NOT PASS due quota.
+- README read-back confirms the initial manual snapshot and automatic sync are clearly distinguished. The GitHub Actions sync workflow remains configured but `GITLAB_TOKEN` presence/scope NOT VERIFIED.
+- Exact mirror read-back previously confirmed theme, Travelpayout/Amazon catalogs and roadmap. Current theme and 2–3 new news articles remain unchanged.
+- No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
+- Marker: `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Automatic mirror preflight result — 2026-11-28
+- **GitHub source:** TRTT-VOYAGE/TRTTVOYAG-BLOG PR #3 remains OPEN/mergeable; current source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`.
+- **GitHub CI:** run `46131171917` SUCCESS; package validator and unit-test steps PASS.
+- **GitLab manual snapshot:** branch `feature/trtt-blog-github-gitlab-bridge-20261128`, latest checked commit `3abcc39642e0f3d48c7d11df5c7a207a6100f68a`, MR !31 OPEN. GitLab main unchanged.
+- **Automatic sync test:** GitHub Actions runs `46131067990`, `46131071172` and `46131165595` completed successfully as jobs, but logs explicitly show `GITLAB_TOKEN` was empty and the GitLab push step was SKIPPED. Automatic sync is therefore BLOCKED until Owner configures the GitHub Actions repository secret with GitLab `write_repository` scope. No token requested or exposed.
+- **GitLab CI:** latest MR pipeline `3126329659` failed before runner start with `ci_quota_exceeded`; GitLab CI NOT PASS due quota.
+- **Read-back:** theme, Travelpayout catalog, Amazon catalog and 100-part roadmap match GitHub exactly; roadmap count = 100.
+- **Preservation:** current theme and Owner's 2–3 new news articles unchanged. No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
+- **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Entry — 2026-11-28 — Owner trigger: confirm Blogger bridge and staged 100-part plan
+- GitHub `TRTT-VOYAGE/TRTTVOYAG-BLOG` PR #3 OPEN/mergeable; source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`; GitHub Actions run `46131171917` SUCCESS.
+- GitLab private project `trttnews24bd-group/Cocvghuj-trtt-news-bot` (ID `88270725`); mirror branch `feature/trtt-blog-github-gitlab-bridge-20261128`; mirror commit `3abcc39642e0f3d48c7d11df5c7a207a6100f68a`; MR !31 OPEN/mergeable. GitLab main remains unchanged at `95cff41c0ca8453c6e8519f6f59899d5b576edc5`.
+- Byte-for-byte raw mirror read-back PASS for Diamond Horizon XML, Travelpayout catalog, Amazon catalog and 100-part roadmap.
+- Automatic one-way GitHub Actions workflow configured, but prior runs found `GITLAB_TOKEN` empty; automatic sync BLOCKED pending Owner configuration of GitHub Actions secret `GITLAB_TOKEN` with GitLab `write_repository` scope. No token requested or exposed.
+- GitLab MR pipeline `3126329659` failed before runner start with `ci_quota_exceeded`; GitLab CI NOT PASS. GitHub CI PASS.
+- Roadmap contains exactly 100 unique numbered tasks across 10 phases; execute one unit per trigger after live baseline.
+- Theme remains frozen; 2–3 new news articles and existing Blogger content untouched. Gemini is an optional reviewer for public/non-sensitive artifacts; connector/free access NOT TESTED.
+- No merge, live Blogger import, publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- Marker: `trtt-blog-bridge-owner-trigger-final-check-20261128`
+
+
+## Entry — 2026-11-28 — Blogger bridge refresh completed
+- **Owner instruction:** continue configuring the GitHub/GitLab bridge for the Blogger package; preserve the current theme and recent news items; maintain a 100-part phased improvement plan.
+- **GitHub source:** `TRTT-VOYAGE/TRTTVOYAG-BLOG`, branch `feature/trtt-blog-command-center-theme-20261128`, source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`, PR #3 remains OPEN/mergeable.
+- **GitLab mirror:** private project `trttnews24bd-group/Cocvghuj-trtt-news-bot`, project ID `88270725`; dedicated branch `feature/trtt-blog-github-gitlab-bridge-20261128`; MR !31 OPEN/mergeable; latest branch head `1e8a7b341bf211a20327751dc9b6ce6447cdb146`.
+- **Sync action:** refreshed 14 reviewed GitHub PR #3 files into `integrations/trttvoyag-blog/`; workflow stored as `automation/sync-gitlab-mirror.yml`. Raw GitLab read-back compared byte-for-byte against GitHub: all 14 refreshed files EXACT MATCH. GitLab commit `536d9054eb2c12f8b9228a71151389de78ff9a9c`; manifest/evidence commit `1e8a7b341bf211a20327751dc9b6ce6447cdb146`.
+- **100-part plan:** exactly 100 unique numbered work units, 1–100, arranged as 10 phases × 10; planning only, to be executed one small unit per Owner trigger after the blog is live and baseline is available.
+- **Automation boundary:** GitHub Actions one-way sync workflow is configured, but runs found `GITLAB_TOKEN` empty. Automatic sync remains BLOCKED until Owner adds GitHub Actions secret `GITLAB_TOKEN` with GitLab `write_repository` scope. No token requested/read/logged. GitLab manual snapshot/MR is committed and reviewable.
+- **CI:** GitHub package CI run `46131171917` SUCCESS. GitLab MR pipeline `3126329659` failed before runner start due to `ci_quota_exceeded`; GitLab CI NOT PASS.
+- **Gemini:** no connected Gemini tool/API credential verified. Optional free second-opinion lane may be used only for public, non-sensitive artifacts if Owner independently enables a free service; no Gemini integration or credential was added.
+- **Preservation:** Diamond Horizon theme unchanged by this bridge refresh; the 2–3 new news articles, existing posts, Blogger pages and live layout untouched. No live Blogger import, publication, Telegram, DNS/security changes, GitLab main change, production deployment or secret access.
+- **Owner gates:** review/merge GitHub PR #3, GitHub Command Center PR #114 and GitLab MR !31; configure the GitHub Actions `GITLAB_TOKEN` secret. Blogger live import remains Owner-controlled.
+- **Marker:** `trtt-blog-github-gitlab-bridge-refresh-20261128`
