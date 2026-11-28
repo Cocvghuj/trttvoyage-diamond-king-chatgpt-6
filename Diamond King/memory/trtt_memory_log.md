@@ -1099,3 +1099,13 @@ Policy: append-only; preserve all earlier entries.
 - **Browser/device QA:** NOT TESTED. Screen-reader and formal WCAG testing: NOT TESTED. GitHub Pages live runtime/deployment: NOT TESTED. No claim of 100% production readiness.
 - **GitLab:** NOT REQUIRED under the current GitHub-only direction. Blogger and Telegram: NOT REQUIRED; no draft creation, publication, or delivery performed.
 - **Marker:** master-franchise-two-repository-audit-completion-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Europe Budget Calculator extraction and legacy PR audit
+- Trigger: Owner requested “Make all 100 now”, continuing the authorized audit/repair of the Command Center and Learning Journey repositories.
+- GitHub inspection: Confirmed both repositories exist and current default branch is main. Rechecked 12 open legacy Command Center PRs (#69, #66, #45, #37, #28, #27, #26, #20, #17, #12, #8, #7); all currently report mergeable=false. Their scopes were inspected before changes.
+- Decision: Do not force-merge stale/conflicting PRs. PR #8 remains Draft with explicit qualified-medical-review, licensed-image, editorial and Blogger-preview gates. PR #37 contains a backup manifest stating the XML bytes were not included in that PR patch; verify the separate source before treating the archive as backed up. PR #28 duplicates the already-present root AGENTS.md. PR #7 attempted to add a root trttmagic.html tool file that conflicts with the existing Command Center page; extract the calculator into a dedicated tools path instead.
+- Changes: On feature/europe-budget-calculator-tool-20261128, copied the standalone calculator HTML from PR #7 into tools/europe-travel-budget-calculator/index.html. Preparing matching draft/documentation and append-only memory/HTML trace. Existing main files and history preserved.
+- Verification: GitHub branch creation and file write PASS. Source-level read-back and syntax/logic checks pending. Browser/device QA, Pages deployment/runtime, live URL and Blogger draft creation NOT TESTED. Calculator uses user-entered estimates only; no live fares, availability, or FX conversion.
+- Other systems: GitLab NOT REQUIRED under current GitHub-only direction. Blogger and Telegram NOT REQUIRED; no publication or delivery.
+- Marker: europe-budget-calculator-safe-extraction-20261128
