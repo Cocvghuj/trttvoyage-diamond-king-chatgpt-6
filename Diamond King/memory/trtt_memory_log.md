@@ -1047,3 +1047,16 @@ Policy: append-only; preserve all earlier entries.
 - Verification: Remote source read-back and V8 JavaScript syntax parse PASS. Source checks confirm interval handles, clearing both timers, game-over stop, reset cleanup, and reset button wiring. Real-browser/gameplay and mobile touch testing NOT TESTED.
 - Safety: no main edit, merge, deployment, paid service, secret access, deletion, or unrelated game changes. Owner merge required. GitLab NOT REQUIRED under current GitHub-only direction; Blogger/Telegram NOT REQUIRED.
 - Marker: trtt-ai-king-game-loop-repair-20261128
+
+
+## 2026-11-28 — Verify King Game merge; stop repeat win alerts in mini-games
+- Project code: DR-TRTT-OPS-001.
+- Timestamp: 2026-11-28 (UTC time not asserted).
+- Trigger: Owner sent “next”.
+- GitHub-first verification: TRTT-VOYAGE/trtt-ai PR #1 confirmed CLOSED/MERGED at 2026-11-28T00:05:45Z; merge commit 80090e795b0dd350b801f4233988d0ad1eeab97a. Command Center PR #89 confirmed CLOSED/MERGED at 2026-11-28T00:06:05Z; merge commit 43dfc567034836cc448ce9a7d323818d0c2a8043.
+- Next scoped task: inspected TRTT-VOYAGE/trtt-ai main/games.html. Both mini-games increased score by 10 per tap and displayed the win alert at 100+, but retained active click handlers; further taps could repeatedly trigger the same win alert.
+- Decision: preserve the Bengali copy, layout, game mechanics and six-emoji setup; add a per-run won guard, lock the emoji targets after the first 100-point win, and let pressing Start create a fresh run with a reset guard.
+- Application repository: TRTT-VOYAGE/trtt-ai. Branch: feature/trtt-mini-game-win-state-20261128. File changed: games.html only. Commit: 717c1c69d014471c5f3ce68bdeeb7453f58aaf5c.
+- Verification: patch applied against the inspected main blob fdccdd27ebb6dc3b7762bc26480d5794150c6915. Remote branch read-back and syntax/interaction checks pending at entry creation. Browser/mobile QA and live GitHub Pages runtime NOT TESTED.
+- Safety: no main edit, merge, deployment, deletion, paid service, secret access, GitLab, Blogger or Telegram action. Owner merge required.
+- Marker: trtt-ai-mini-game-win-state-20261128
