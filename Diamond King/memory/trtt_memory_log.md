@@ -1681,3 +1681,13 @@ Policy: append-only; preserve all earlier entries.
 - **Google / Blogger:** GitHub Pages deployment does not guarantee Google indexing. Search Console verification/sitemap submission is separate. Blogger remains a later stage; no Blogger draft/live post/theme change or Telegram send occurred.
 - **Safety:** No DNS/custom domain/security change, no Vercel deployment, no secret access, and no main-branch change. Locked diamond-king-v7-final.html remains untouched.
 - **Marker:** trtt-github-pages-safe-launch-verification-20261128
+
+
+## Final status addendum — GitHub Pages launch handoff — 2026-11-28
+
+- GitHub PR #147 remains OPEN/unmerged and mergeable=true; current head 43206121543cc595a4667d621f85f7948ff4b540. Main remains at 339532320419054da609bc4862b035299d88ead4. No merge or deployment performed.
+- GitHub Pages PR workflow run 46148067194 and PR Asset & Syntax Validation run 46148067249 both completed SUCCESS. The Pages artifact contains 81 allowlisted files; local links pass; artifact ID 15264706816; deploy job correctly SKIPPED on pull_request.
+- GitLab mirror MR !32 remains OPEN/unmerged. The three Pages code/docs files and both full memory files were mirrored; exact raw read-back of memory log and HTML trace PASS. Latest observed GitLab pipeline 3126669676 FAILED before runner start with failure_reason ci_quota_exceeded. GitLab CI NOT PASS; GitLab main unchanged.
+- Command Center memory PR #117 remains OPEN/unmerged and mergeable=false; this append is on its feature branch, not main. Owner merge is still needed to bring the memory history into Command Center main.
+- Next Owner action is one explicit approval for GitHub PR #147 only. That merge triggers the Pages deploy workflow; verify the resulting deployment URL and browser behavior before beginning Blogger. No Blogger/Telegram/DNS/custom-domain action performed.
+- **Marker:** trtt-github-pages-final-owner-handoff-20261128
