@@ -1731,3 +1731,14 @@ Policy: append-only; preserve all earlier entries.
 - **Files changed:** Append this entry to the canonical memory log and mirror it in the Command Center HTML trace on the existing PR #117 feature branch.
 - **Verification:** Pre-write read-back PASS. Post-write read-back pending. No GitLab, Blogger or Telegram tool/action invoked.
 - **Marker:** trtt-github-only-scope-20261128
+
+
+## Entry — 2026-11-28 — GitHub profile hub naming and priority
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner shared https://github.com/TRTT-VOYAGE/Cocvghuj as their profile repository and requested a suitable name and that it remain first in the repository/profile listing.
+- **Decision:** Recommended public-facing display name: **TRTT Voyage — Diamond King HQ**. Preserve the technical repository name `Cocvghuj` for now; do not rename, transfer, reorder, or alter profile settings without verifying the actual account/profile ownership and available controls. The inspected repository is `TRTT-VOYAGE/Cocvghuj`, public, description currently says “Config files for my GitHub profile.” Its API owner is the TRTT-VOYAGE organization, while its homepage points to `https://github.com/Cocvghuj`; this does not by itself establish that it is the personal account's special profile README repository.
+- **Priority request:** Owner wants the hub to be the first visible/pinned repository. Pin ordering/profile customization is not confirmed through the available GitHub connector; do not claim it was changed.
+- **Files changed:** Append this entry and mirror HTML trace only; no changes to the profile repository itself.
+- **Verification:** Repository metadata read via GitHub API; no profile pin/order action performed.
+- **Marker:** trtt-profile-hub-name-and-priority-20261128
