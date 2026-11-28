@@ -1502,3 +1502,15 @@ Policy: append-only; preserve all earlier entries.
 - **File changes:** Append this entry to `Diamond King/memory/trtt_memory_log.md` and mirror it in `Diamond King/trttmagic.html` on the existing PR #117 feature branch.
 - **Verification:** Pre-write read-back PASS; post-write read-back pending.
 - **Marker:** trtt-diamond-trigger-correction-20261128
+
+
+## Trigger activation issue — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner reported that pressing the provided trigger did not start work.
+- **Finding:** The previous response supplied copyable trigger text, not an interactive action control. Therefore pressing/copying it did not itself execute a new task; an actual interactive trigger or sending the command as a chat message is required.
+- **Decision:** Provide a real in-chat action button that submits the Blogger execution instruction as a new user turn. This does not grant merge, live-publish, production, DNS, or security approval.
+- **GitHub inspection:** Command Center PR #117 inspected; branch undefined; PR OPEN. Both memory files read before append.
+- **File changes:** Append this entry to both memory files on the existing feature branch.
+- **Verification:** Post-write read-back pending.
+- **Marker:** trtt-trigger-activation-issue-20261128
