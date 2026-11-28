@@ -60,6 +60,18 @@
         "amazon-picks-ui",
         "affiliate-disclosure-and-catalog-tests"
       ]
+    },
+    {
+      "systemId": "blog-publishing",
+      "repository": "TRTT-VOYAGE/TRTTVOYAG-BLOG",
+      "url": "https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG",
+      "role": "TRTT-Voyage-Blogger-theme-static-pages-editorial-standards-and-draft-only-publishing",
+      "sourceOfTruth": [
+        "Blogger-theme-candidate",
+        "Blogger-static-page-sources",
+        "editorial-and-affiliate-policy",
+        "Blogger-draft-validation-and-release-gates"
+      ]
     }
   ],
   "sharedRecordFields": [
@@ -83,5 +95,5 @@
     "copySensitivePersonalData": false,
     "ownerApprovalRequiredForMergeAndProduction": true
   },
-  "status": "four-repository-source-bridge-merged-to-main-manual-links-only"
+  "status": "five-repository-source-bridge-prepared-open-pr-manual-links-only"
 }

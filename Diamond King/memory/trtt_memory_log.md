@@ -1368,3 +1368,57 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No secrets accessed or exposed. No production deployment, Blogger publication, Telegram delivery, DNS/security/account change, or GitLab operation performed. GitLab is not required in the current GitHub-only workflow.
 - **GitHub memory update:** This entry and the matching HTML trace are being appended on feature branch `feature/diamond-king-bridge-merge-record-20261128`; no prior history is replaced.
 - **Marker:** `diamond-king-four-repo-bridge-owner-merge-20261128`
+
+
+## Entry — 2026-11-28 — TRTTVOYAG-BLOG repository prepared
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger:** Owner requested the empty TRTT-VOYAG/TRTTVOYAG-BLOG repository be made Blogger-ready, using all established project rules and the supplied Travelpayout and Amazon sources.
+- **Repository baseline:** public repository; main contained only the original two-line README; no existing workflows, pages, data catalogs, theme or issues.
+- **Build branch:** feature/trtt-blogger-ready-package-v1-20261128.
+- **Blog PR:** #1 — https://github.com/TRTT-VOYAGE/TRTTVOYAG-BLOG/pull/1 — OPEN, unmerged; latest head recorded in PR metadata. Owner merge required by repository rules.
+- **Theme:** original TRTT Diamond Horizon source adapted; 20 observed Blogger widget IDs preserved; menu includes Home, News, Travel, AI, Tools, Amazon Picks, Travel Booking and About. Blog1 includes main/post/postsLoop/comments/pagination/feedLinks/status-message/nextprev/postMetadataJSON/commentForm. Removed reduced post loop, legacy ad/Disqus/social-share includes and placeholder-image fallbacks. Blog share buttons disabled.
+- **Pages:** seven Blogger static page sources (Travel Booking, Amazon Picks, About, Privacy, Disclaimer, Affiliate Disclosure, Contact).
+- **Travelpayout:** 43 Owner register entries reconciled; 40 active short URLs preserved; three GigSky entries excluded per Owner direction; no hotel URL supplied; marker 787950 and trs=606759 preserved where present.
+- **Amazon:** exactly six Owner-approved product names/URLs reconciled and preserved; no fabricated price, rating, stock, image or specifications.
+- **Automation:** dependency-free package validator and 13 regression tests PASS; optional Blogger API workflow creates only DRAFTS, skips if secrets are absent, checks duplicates and reads back ID/title/content/DRAFT status. It never publishes or sends Telegram.
+- **GitHub Actions evidence:** run 46105082563 completed SUCCESS; validator PASS; 13 tests PASS.
+- **Central bridge:** five-repository registry and architecture addendum prepared on feature branch feature/trtt-blog-module-bridge-20261128; Blog module added as manual version-controlled reference only. Central PR pending creation/read-back.
+- **Limitations:** Blogger live compiler/import, Layout, actual comments/pagination, browser/mobile/screen-reader QA, static page installation, Blogger API secret availability, live partner redirects/attribution, live publication, Telegram, DNS and production deployment remain NOT TESTED/NOT VERIFIED.
+- **Safety:** no secrets accessed or displayed; no Blogger write, theme import, publication, Telegram delivery, production deployment, DNS/security change or GitLab operation performed.
+- **Marker:** trtt-blogger-ready-package-v1-20261128
+
+
+## Follow-up — 2026-11-28 — Fifth repository bridge PR created
+
+- **Project:** DR-TRTT-OPS-001
+- **Update:** Created Command Center PR #112: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/112.
+- **Branch:** feature/trtt-blog-module-bridge-20261128.
+- **Verification:** central registry JSON read back and parses with five repositories, including systemId blog-publishing. Command Center dashboard link, architecture/bridge addenda, README link, memory marker and HTML trace marker read back.
+- **PR status:** OPEN, unmerged, mergeable=true at last metadata check. No CI workflow run was returned for this docs/registry/dashboard-only PR; CI status NOT TESTED.
+- **Blog package PR #1:** OPEN, unmerged, mergeable=true; final observed Blog CI run 46105164431 SUCCESS. Package tests had 13 passing cases.
+- **Boundary:** five-repository bridge remains manual/version-controlled links only. No automatic data replication, webhooks, background agent or ChatGPT Memory sync. No Blogger import/publication, Telegram, production deployment, DNS/security or GitLab action.
+- **Marker:** trtt-blogger-ready-package-v1-20261128-central-pr-112
+
+
+## Follow-up — 2026-11-28 — Blogger menu route and final CI verification
+
+- **Source check:** Re-read the approved Blogger menu configuration in Cocvghuj-trtt-news-bot main (blog-control.json).
+- **Correction:** News route aligned to /search/label/TRTT%20News24BD; Travel route aligned to /search?q=travel. This replaced earlier assumptions based on the theme candidate alone.
+- **Evidence:** Blog PR #1 latest checked head before this memory append: b9d229fa73db6cee95c44b3f3e8756949be80e35. GitHub Actions run 46105479389 SUCCESS; package validator PASS; 13 tests PASS.
+- **Status:** Blog PR #1 OPEN/unmerged/mergeable=true at last check. Command Center PR #112 remains the fifth-module registry/bridge PR. Neither PR was merged.
+- **Remaining NOT TESTED:** Blogger live route resolution, theme compiler/import, static page installation, browser/device QA, Blogger API access, partner redirect/attribution, live publication, Telegram, production deployment and DNS.
+- **Marker:** trtt-blogger-ready-package-v1-20261128-final-menu-ci
+
+
+## Owner-authorized merge — TRTT Blogger package — 2026-11-28
+
+- Owner instruction explicitly authorized merging the prepared Blogger package and GitHub bridge updates.
+- TRTTVOYAG-BLOG PR #1 merged successfully to main.
+- Merge commit: d1c290cace951e31e720cc962801aee6253f0047.
+- Main read-back PASS: Blogger theme XML, README, Travelpayout catalog (40 active placements), Amazon catalog (6 approved entries), validator, tests, release checklist, build log and Blogger page sources all fetched from main.
+- Blog1 core template features read back: postsLoop, comments, pagination, feedLinks, status-message, nextprev, postMetadataJSON and commentForm.
+- Approved News/Travel menu route strings read back.
+- Blogger live theme import and seven static page installations remain NOT TESTED; no live publication, Telegram, DNS/security or production deployment.
+- Central fifth-module bridge PR #112 is still OPEN pending its own merge.
+- Marker: trtt-blogger-package-owner-merge-verified-20261128
