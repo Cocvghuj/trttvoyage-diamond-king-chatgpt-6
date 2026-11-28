@@ -1224,3 +1224,12 @@ Policy: append-only; preserve all earlier entries.
 - Learning Journey read-back/source assertions PASS for guide steps, README link, and homepage CTA. Browser/device QA, screen-reader testing, actual download/export click testing, and production deployment remain NOT TESTED.
 - All new workflow data remains in the current browser/device only. No server, database, authentication, cloud sync, AI integration, billing, or franchise tenant isolation was added. Overall production SaaS readiness remains NOT 100%.
 - Marker: offline-learning-idea-workflows-build-20261128
+
+
+### Offline workflow merge verification — 2026-11-28
+- Command Center PR #101 merged successfully: bf6f76d99eef9da160fa3d6968352a0fc64c544d. Main read-back PASS for Command Center direct Learning/Idea navigation, Idea Universe browser-local save/delete/JSON export, Learning Universe browser-local plans/completion/progress/JSON export, and updated screen specification.
+- Learning Journey PR #15 merged successfully: 99a124584b6e7864de3da67393f2f9b02f1ede58. Main read-back PASS for START-HERE.md, README discovery link, and homepage Start Here CTA.
+- Validation: JavaScript syntax parsing PASS; mock-DOM save/delete and save/complete/progress tests PASS; source assertions and remote read-back PASS.
+- Remaining open PR audit: Command Center PR #8 is still the sole open PR, a separate Wellness educational article Draft; Learning Journey has zero open PRs. PR #8 remains excluded pending qualified medical review, licensed images, editorial/localization review and Blogger preview.
+- Not tested: real browser rendering, actual export download, mobile devices, assistive technology, cross-browser, performance, live Pages deployment. Local records are browser/device-only and not cloud synced. Command Center is still not production SaaS: no backend, server database, authentication, tenant isolation, AI runtime or billing.
+- Marker: offline-learning-idea-workflows-merge-verified-20261128
