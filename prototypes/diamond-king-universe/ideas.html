@@ -97,7 +97,7 @@ body{margin:0;background:radial-gradient(circle at 10% 5%,#49314f 0,transparent 
     const stage = document.getElementById("ideaStage").value;
     if (!title || !note || !allowedStages.includes(stage)) { announce("Add a title, original thought, and valid stage."); return; }
     if (records.length >= 100) { announce("Local limit reached (100 ideas). Export and remove older records before adding more."); return; }
-    records.push({id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + "-" + String(Math.random()).slice(2)),title,note,stage,createdAt:new Date().toISOString()});
+    records.push({id: (typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + "-" + String(Math.random()).slice(2)),title,note,stage,createdAt:new Date().toISOString()});
     if (!save()) { records.pop(); return; }
     form.reset();
     render();
