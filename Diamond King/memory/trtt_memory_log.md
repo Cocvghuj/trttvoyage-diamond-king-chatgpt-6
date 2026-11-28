@@ -1828,3 +1828,13 @@ Policy: append-only; preserve all earlier entries.
 - **Scope:** GitHub repository content only. No GitLab, Blogger, Telegram distribution, production deployment, DNS/security, or secrets action.
 - **Result:** Repository profile hub build and merge PASS; automated CI NOT TESTED.
 - **Marker:** trtt-abu-taher-profile-hub-merged-20261128
+
+
+## 2026-11-28 — Social announcement draft request
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** User shared Muse's praise of the public `TRTT-VOYAGE/abu-taher` GitHub profile hub and asked for a post using the repository link.
+- **Decision:** Prepare an English, reusable social-media announcement draft for the public profile hub. Do not publish to any social platform without explicit approval. Current scope remains GitHub-only; no external distribution actions.
+- **Reference:** https://github.com/TRTT-VOYAGE/abu-taher
+- **File changes:** Append this memory entry and mirror it in `Diamond King/trttmagic.html` only.
+- **Verification:** Pending read-back after append.
+- **Marker:** trtt-abu-taher-social-post-draft-20261128
