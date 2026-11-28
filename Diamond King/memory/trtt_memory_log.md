@@ -1596,3 +1596,17 @@ Policy: append-only; preserve all earlier entries.
 - **Actions / safety:** No Blogger API draft, theme import, static-page installation, live publication, Telegram, production, DNS/security change or secret access.
 - **Command Center memory:** Append this entry and mirror HTML trace on existing PR #117 feature branch; read-back required.
 - **Marker:** trtt-blogger-pointer-pr5-ci-verified-20261128
+
+
+## Entry — 2026-11-28 — Diamond Blogger execution trigger / current verification
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner explicitly activated the Blogger stage and instructed inspection of TRTTVOYAG-BLOG PR #5 and Command Center PR #117, CI verification, safe continuation, and append-only memory update.
+- **GitHub inspection:** TRTTVOYAG-BLOG PR #5 is OPEN, unmerged, and mergeable=true at inspection. Branch `feature/trtt-first-article-su-nuraxi-20261128`; head `2614bb15cd43289e525620c4ec808269d4443b14`; exactly two changed files: `blog/drafts/2026-11-28-su-nuraxi-barumini-guide.html` and `blog/drafts/ARTICLE-RESEARCH-BRIEF.md`. Command Center PR #117 is OPEN and unmerged; branch `feature/trtt-blogger-work-start-audit-20261128`; mergeable=false at inspection.
+- **CI evidence:** GitHub Actions run `46141822769` completed SUCCESS. Job `validate` and all steps, including `Validate source package` and `Run unit tests`, completed SUCCESS. Combined status endpoint returned no separate status entries.
+- **Workflow safety inspection:** Main-branch `.github/workflows/blogger-draft.yml` is DRAFT-only. On push to main for `blog/drafts/*.html`, it checks presence of four Blogger secrets without printing values and creates DRAFTs only if all are configured. Manual dispatch also creates DRAFT only. No publish or Telegram step. Secret presence was not checked in this session.
+- **Next safe action / blocker:** Article source and CI are ready, but PR #5 must remain unmerged until explicit Owner approval for PR #5. Since merge triggers the DRAFT workflow automatically when secrets are present, no merge or Blogger account action was taken. Do not dispatch workflow before approved merge/review. Blogger Post ID/status therefore NOT TESTED.
+- **Command Center:** PR #117 memory branch inspected before append. Append this trigger to both required memory files; read-back verification follows.
+- **GitLab / Telegram:** No GitLab write/sync in this trigger. Telegram remains blocked until confirmed live publication and Owner approval.
+- **Safety:** No PR merged, no Blogger API action, no live publication, no Telegram send, no production/DNS/security change, and no secret values accessed.
+- **Marker:** trtt-blogger-execution-trigger-verified-20261128
