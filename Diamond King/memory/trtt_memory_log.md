@@ -1060,3 +1060,15 @@ Policy: append-only; preserve all earlier entries.
 - Verification: patch applied against the inspected main blob fdccdd27ebb6dc3b7762bc26480d5794150c6915. Remote branch read-back and syntax/interaction checks pending at entry creation. Browser/mobile QA and live GitHub Pages runtime NOT TESTED.
 - Safety: no main edit, merge, deployment, deletion, paid service, secret access, GitLab, Blogger or Telegram action. Owner merge required.
 - Marker: trtt-ai-mini-game-win-state-20261128
+
+
+## 2026-11-28 — Verify mini-game win-state merge; improve keyboard accessibility
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner sent “Next”.
+- GitHub-first verification: TRTT AI PR #2 confirmed CLOSED/MERGED at 2026-11-28T00:08:22Z, merge commit 8c6b892a7f9ccc2e79e3c2572b5089195f7686f4. Command Center PR #90 confirmed CLOSED/MERGED at 2026-11-28T00:08:43Z, merge commit 0509eb2666abc5d72a4160f486cda7309e734917.
+- Inspected remaining TRTT AI pages and main/games.html. The star/diamond targets were clickable div elements, which do not provide native keyboard activation or button semantics.
+- Decision: preserve visuals and game logic; change each target to a native button with a descriptive Bengali accessible name and add a visible keyboard focus outline.
+- Application repository: TRTT-VOYAGE/trtt-ai. Branch: feature/trtt-mini-game-accessibility-20261128. File changed: games.html only. Commit: 44f1476c1b8d100f80bde0b083c0031ce89277ff.
+- Verification: syntax, keyboard semantics and feature-branch remote read-back pending at entry creation. Actual keyboard/browser/mobile assistive-technology testing NOT TESTED.
+- Safety: no main edit, merge, deployment, deletion, paid service, secret access, GitLab, Blogger or Telegram action. Owner merge required.
+- Marker: trtt-ai-mini-game-keyboard-accessibility-20261128
