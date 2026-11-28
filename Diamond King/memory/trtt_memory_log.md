@@ -1264,3 +1264,27 @@ Policy: append-only; preserve all earlier entries.
 - JavaScript syntax PASS. Mock import tests PASS for both formats; valid records restored, invalid records skipped, duplicate-safe merge behavior verified, and learning source links restricted to HTTPS.
 - Browser file picker, actual downloaded JSON file, Android/iOS device, screen-reader, cross-browser and production deployment tests remain NOT TESTED.
 - Marker: json-backup-restore-merge-verified-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Travelpayout repository build
+
+- **Trigger:** Owner instructed DIAMOND KING to plan, build, check and complete the TRTT-VOYAGE/Travelpayout repository autonomously, then report the verified result.
+- **Discovery:** Travelpayout main was empty except a 14-byte README. Recovered the Owner-supplied 43-row affiliate register from merged Command Center PR #41 and read the canonical AGENTS.md governance rules.
+- **Decision:** Build a free static partner-discovery/outbound-referral MVP. Preserve all supplied active short URLs and supplied full tracking URLs verbatim; include marker 787950 and trs=606759 metadata. Exclude the three GigSky placements from the public catalog under the later Owner direction, preserving the historical register unchanged. Do not import older unverified hotel URLs.
+- **Travelpayout repository:** Branch `feature/trtt-travel-booking-affiliate-hub-v1-20261128`; PR #1: https://github.com/TRTT-VOYAGE/Travelpayout/pull/1; head commit `04af50e0f128117dfe550744fe064cf25c351a97`.
+- **Files:** `index.html`, `assets/css/site.css`, `assets/js/app.js`, `data/partners.json`, `tests/validate.js`, `package.json`, `README.md`, `PRIVACY.md`, `SECURITY.md`, `docs/PRODUCT-SCOPE.md`, `.github/workflows/validate.yml`.
+- **Read-back:** All 11 changed files fetched from the feature branch; file read-back PASS. In-tool data/source checks: 43 source entries, 40 active entries, 3 excluded GigSky entries; all active short links HTTPS; supplied full tracking URLs retain marker=787950 and trs=606759; UI source avoids innerHTML; external links include sponsored/nofollow/noopener/noreferrer.
+- **CI:** GitHub Actions validation run started and was IN_PROGRESS at memory append time; final result pending.
+- **Boundaries:** This is a static partner directory, not live fare/hotel search, booking checkout or provider API integration. No Owner-supplied hotel URL in the latest register. Redirects, campaigns, marker attribution, live API access, commissions/conversions, manual browser/device QA and deployment remain NOT VERIFIED/NOT TESTED. No credentials, paid services, analytics, cookies, database, production deployment, DNS change, Blogger publication or Telegram distribution.
+- **Governance:** Command Center AGENTS.md requires Owner approval for PR merges and production actions. PR #1 is not merged. No GitLab operation under current GitHub-only direction.
+- **Marker:** `travelpayout-hub-mvp-build-20261128`.
+
+
+### Travelpayout Hub verification addendum — 2026-11-28
+- Corrected the partner hub stylesheet syntax and made the “All services” filter interactive; extended the validator to assert this behavior.
+- Re-read the 43-row source register and the generated catalog. Exact comparison confirms all 40 active short URLs and all supplied full tracking URLs are preserved verbatim. Three GigSky entries remain excluded from the active directory.
+- Re-read all 11 Travelpayout changed files after the fixes. PR #1 is OPEN, not merged, and mergeable=true.
+- GitHub Actions run 46096393061 (“Validate Travelpayout Hub”) completed with conclusion SUCCESS on head 653deac079779d5ae14ca1924b02a166d6a2da7e. Node syntax check and catalog/source assertions passed.
+- Manual real-browser, mobile, screen-reader, provider redirect/campaign/marker attribution, live API, commission reporting and production deployment remain NOT TESTED/NOT VERIFIED.
+- Command Center PR #108 contains this task's append-only memory/HTML trace. It remains Owner-approval-gated for merge under AGENTS.md.
+- Marker: `travelpayout-hub-mvp-build-20261128`.
