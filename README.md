@@ -239,3 +239,11 @@ This hub follows documented security and contribution practices. Start with:
 - [Support Guide](SUPPORT.md) — where to ask for help.
 
 Repository automation includes a least-privilege CodeQL workflow for JavaScript/TypeScript analysis and weekly Dependabot checks for GitHub Actions. Workflow execution and GitHub Advanced Security features must be verified in GitHub; the presence of policy files does not mean those platform settings are enabled.
+
+
+## Central Automation Architecture
+
+- [Automated GitOps & AI-Driven Workflow](docs/AUTOMATED-GITOPS-AI-CONTENT-PIPELINE.md) — central orchestration, repository allowlisting, PR-only GitOps, backup/recovery and the headless AI content pipeline.
+- [Pilot repository registry](automation/repository-registry.json) — explicit two-repository pilot allowlist; runtime automation is disabled by default.
+
+The architecture is a blueprint until dispatcher/workers, permissions, dry-run tests and recovery checks are implemented and verified.
