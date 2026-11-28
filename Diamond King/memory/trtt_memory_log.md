@@ -1669,3 +1669,15 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab:** Existing MR !31 inspected; Pages PR mirror and current pipeline evidence still require separate verification. No GitLab main merge.
 - **Safety:** No secrets accessed, no DNS/security change, no production deployment yet, no live Blogger or Telegram action.
 - **Marker:** trtt-github-pages-safe-launch-20261128
+
+
+## Verification addendum — GitHub Pages safe launch PR — 2026-11-28
+
+- **GitHub PR #147:** https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/147 remains OPEN/unmerged and mergeable=true at reinspection. Feature branch head: 43206121543cc595a4667d621f85f7948ff4b540; main base: 339532320419054da609bc4862b035299d88ead4.
+- **CI:** GitHub Pages workflow run 46148067194 completed SUCCESS. Existing npm tests and npm run build both passed. Pages-specific artifact builder passed with 81 files; private/admin/vault/diary files were excluded by explicit allowlist; local HTML links passed; artifact upload passed. Artifact ID 15264706816; SHA-256 be6b85f7a2d0f1f7462bc1c5042843096610876ca8701e2c3438272605ca3b8b.
+- **Additional validation:** Existing PR Asset & Syntax Validation run 46148067249 completed SUCCESS. Initial Pages attempt run 46147974767 failed local link validation; corrected base-path rewriting and legacy page references. The subsequent run above passed all checks.
+- **GitHub deployment:** Not performed. PR-triggered run deploy job was SKIPPED by design. Main merge is required to deploy; actual Pages URL and runtime checks remain pending.
+- **GitLab mirror:** Created MR !32 https://gitlab.com/trttnews24bd-group/Cocvghuj-trtt-news-bot/-/merge_requests/32 on feature/trtt-github-pages-safe-launch-20261128. Mirrored Pages script/workflow/docs and the current full append-only memory log plus trttmagic.html. Exact read-back PASS for all five files. GitLab MR !32 OPEN/unmerged; latest head 39c8b3c418e82fd3e56cca68bdc1f7d522d4822c. Pipeline 3126668082 FAILED with failure_reason ci_quota_exceeded; runner did not start. GitLab CI is not PASS. MR !31 remains separate and unchanged.
+- **Google / Blogger:** GitHub Pages deployment does not guarantee Google indexing. Search Console verification/sitemap submission is separate. Blogger remains a later stage; no Blogger draft/live post/theme change or Telegram send occurred.
+- **Safety:** No DNS/custom domain/security change, no Vercel deployment, no secret access, and no main-branch change. Locked diamond-king-v7-final.html remains untouched.
+- **Marker:** trtt-github-pages-safe-launch-verification-20261128
