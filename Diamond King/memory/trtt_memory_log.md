@@ -1804,3 +1804,14 @@ Policy: append-only; preserve all earlier entries.
 - **URL:** `https://github.com/TRTT-VOYAGE/abu-taher`.
 - **File changes:** Append-only verification entry and matching HTML trace.
 - **Scope:** GitHub only. No GitLab, Blogger, Telegram, production, DNS/security, or secret action.
+
+
+## Entry — 2026-11-28 — Build Abu Taher Profile Hub
+- **Timestamp:** 2026-11-28 (Europe/Rome)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked to build the public `TRTT-VOYAGE/abu-taher` repository as a showcase, self-merge this first example, catalogue all relevant repositories, include social links, and place ChatGPT/DIAMOND KING and Muse links side by side.
+- **Inspection:** Repository ID `529331693`, public, default branch `main`; current main commit before work `8c6a54467768e79bb3b89eb5b2a898ebed6a74cd`. Existing README had legacy `Cocvghuj` link and recorded public links for website, WhatsApp, Telegram, Facebook, CodePen, and Buy Me a Coffee. GitHub organization repository listing inspected; private repository intentionally excluded.
+- **Decisions:** Build a public profile hub with ChatGPT and Muse project links side-by-side; use only known public URLs; keep first-party project list distinct from learning/upstream forks; do not expose private repositories or secrets; retain GitHub-only scope (no GitLab, Blogger, or Telegram distribution actions).
+- **File changes:** On `feature/abu-taher-profile-hub-20261128`, update `README.md` and add `docs/PROJECT-DIRECTORY.md`. README replacement commit `ee900dc0362932551366a8fb11a0842c730d4513`; project directory commit `650300a0a071539c5819ecedd54df4ecc3811547`.
+- **Verification:** Files written successfully. Read-back, PR creation, CI, merge, and post-merge verification are pending.
+- **Marker:** trtt-abu-taher-profile-hub-build-20261128
