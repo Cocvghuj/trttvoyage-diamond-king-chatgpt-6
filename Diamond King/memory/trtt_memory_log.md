@@ -1276,3 +1276,17 @@ Policy: append-only; preserve all earlier entries.
 - No production, GitHub Pages, Blogger, Telegram, DNS, account, or security-setting action authorized or performed. Browser/device QA and live deployment remain NOT TESTED/NOT VERIFIED.
 - Working branch: `feature/two-project-audit-next-saas-prep-20261128`. Further changes and final PR/test evidence will be appended separately.
 - Marker: two-project-reaudit-start-20261128
+
+
+### Two-project re-audit completion — 2026-11-28 02:46 CET
+- Command Center PR #107 created: https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6/pull/107 (feature branch `feature/two-project-audit-next-saas-prep-20261128`; initial GitHub response OPEN; mergeability subsequently read back as true). Per repository AGENTS.md, it is not merged by the agent.
+- Fixed Idea local record validation: IDs/content are checked and bounded; invalid/missing timestamps are retained as unavailable and shown as “Date not recorded”; JSON restore accepts an empty timestamp only when the date is unknown, while non-empty invalid dates are rejected.
+- Fixed Learning local record validation: IDs/content are checked and bounded; timestamps are normalized without inventing dates; source URLs are parsed and only HTTPS URLs are retained; JSON restore rejects non-empty invalid timestamps.
+- Existing localStorage keys and JSON format versions are unchanged. No records are migrated, uploaded or deleted remotely.
+- Added `docs/TWO-PROJECT-RE-AUDIT-2026-11-28.md`, `docs/NEXT-PROJECT-SAAS-UNIVERSE-MVP-DISCOVERY-001.md`, and an additive screen-spec QA addendum.
+- Verification PASS: both updated page scripts parse; static assertions for local-data validation/import and date fallback; HTTPS allow/reject cases (HTTPS kept; HTTP, non-HTTPS and malformed values rejected); Learning Journey homepage script parse, menu controls, Escape/focus-return and Start Here README link; all changed files and both memory markers read back from GitHub.
+- Learning Journey source audit found no additional confirmed source defect, so no unnecessary code change or PR was made there. Its main commit inspected: `dd0666171c0779deeba71e361502584bfdd6f660`.
+- Remaining NOT TESTED: actual browser rendering, Android/iOS device, screen reader, cross-browser, Lighthouse, real file picker/download restore. GitHub Pages/live deployment for both projects remains NOT VERIFIED. Neither prototype is production SaaS.
+- Existing unrelated Command Center PR #8 remains Draft and merge-blocked pending qualified medical review, licensed images, editorial/localization review and Blogger preview.
+- Next project prepared: SaaS Universe MVP Discovery 001; discovery only, no implementation/deployment authorization. Start command is in the new prep brief.
+- Marker: two-project-reaudit-complete-20261128
