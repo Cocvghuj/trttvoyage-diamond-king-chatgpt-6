@@ -1491,3 +1491,17 @@ Policy: append-only; preserve all earlier entries.
 - **Pre-merge inspection:** PR #116 was OPEN and GitHub reported `mergeable=true`; both memory files contain marker `trtt-merge-complete-verification-20261128`.
 - **Execution status at append:** Merge action and main-branch read-back pending; no merge success claimed yet.
 - **Marker:** trtt-pr116-owner-approval-20261128
+
+
+## Entry — 2026-11-28 — TRTT Blogger work start / readiness audit
+
+- **Timestamp:** 2026-11-28 12:20 Europe/Rome (UTC+01:00)
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner instructed Diamond King to begin the TRTT Voyage Blogger work.
+- **GitHub-first inspection:** Inspected `TRTT-VOYAGE/TRTTVOYAG-BLOG` repository metadata, default branch, branches, PR history, root tree, AGENTS.md, README, Blogger pages, draft directory, draft script, workflow and release checklist.
+- **Verified source state:** Blogger theme package PR #3 is merged to main at `fd063018962f35475466105e6728128bc1ca024d`. Diamond Horizon theme source and seven static-page source files are present. Package docs explicitly distinguish GitHub source merge from Blogger installation.
+- **Draft readiness:** `blog/drafts/` currently contains only README.md; no article HTML is available to submit. Draft workflow supports push of HTML files under that folder or manual workflow dispatch. It validates the article, checks duplicates, creates only with `isDraft=True`, and reads back Blogger post ID/title/content/status. It contains no publish or Telegram step.
+- **Safety gates:** No Blogger connector is available in this session. No live Blogger import, page installation, post creation, live publication, Telegram delivery, DNS/security or production action performed. Theme/page installation requires separate Owner approval and current live-theme backup/layout verification. Blogger API secret values were not accessed; availability is not verified.
+- **Decision / next step:** Treat this trigger as Blogger readiness and draft-work start, not as permission to mutate the live Blogger account. The next actionable content step needs a selected article topic/source material, or explicit Owner approval and live-theme backup evidence before theme import/page installation.
+- **GitHub memory:** This entry is appended on feature branch `feature/trtt-blogger-work-start-audit-20261128`; Command Center HTML trace mirrors the same audit. PR creation and branch read-back are pending at entry time.
+- **Marker:** trtt-blogger-work-start-audit-20261128
