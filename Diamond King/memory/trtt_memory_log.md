@@ -1224,3 +1224,15 @@ Policy: append-only; preserve all earlier entries.
 - Learning Journey read-back/source assertions PASS for guide steps, README link, and homepage CTA. Browser/device QA, screen-reader testing, actual download/export click testing, and production deployment remain NOT TESTED.
 - All new workflow data remains in the current browser/device only. No server, database, authentication, cloud sync, AI integration, billing, or franchise tenant isolation was added. Overall production SaaS readiness remains NOT 100%.
 - Marker: offline-learning-idea-workflows-build-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Owner trigger: “Make both projects 100; do not ask me to merge”
+
+- Owner instructed the agent to execute project work and routine merges without asking Owner to merge. Scoped to the two named repositories and their direct work; production, external publication, sensitive security, and third-party review gates remain protected.
+- Accessibility PRs merged and verified: Command Center PR #99 (030025ed52d7ea52ba90c613bfa142f97a5cc5c8); Learning Journey PR #14 (91295a5644fb6921eee45f72f78443864b51153a); Command Center verification PR #100 (219aad1fc16b5eaab33724b7a40b6bf0fdd3d833).
+- Command Center enhancement in progress: connected dashboard navigation and Quick Create links to Learning and Idea screens; added local-only idea capture (100-record cap, delete, JSON export) and learning plans (100-record cap, self-recorded completion, pathway progress, HTTPS source links, delete, JSON export); added explicit local-storage/privacy boundary and updated specification.
+- Source and mock-DOM checks: script syntax PASS; idea save/render/delete PASS; learning save/render/mark-complete/progress PASS; direct navigation links PASS; visible keyboard focus CSS PASS.
+- Learning Journey enhancement in progress: added START-HERE.md practical Learn → Imagine → Build → Share guide, homepage and README links, plus status/changelog records. Mobile navigation link-close, Escape/focus-return and desktop-resize handling retained.
+- Browser, actual mobile device, screen-reader, cross-browser, Lighthouse and production deployment tests remain NOT TESTED. No backend, account, cloud sync, AI runtime, database, billing or tenant isolation is claimed.
+- Separate Command Center PR #8 remains an unrelated Wellness content Draft requiring qualified medical review, image licensing and editorial/localization review; it is not being published or merged as part of this build.
+- Marker: make-two-projects-100-workflows-20261128
