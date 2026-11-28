@@ -1499,3 +1499,14 @@ Policy: append-only; preserve all earlier entries.
 - Exact mirror read-back previously confirmed theme, Travelpayout/Amazon catalogs and roadmap. Current theme and 2–3 new news articles remain unchanged.
 - No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
 - Marker: `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Automatic mirror preflight result — 2026-11-28
+- **GitHub source:** TRTT-VOYAGE/TRTTVOYAG-BLOG PR #3 remains OPEN/mergeable; current source head `2b321fe5bae2e194616f18abbfcabddd7d537a51`.
+- **GitHub CI:** run `46131171917` SUCCESS; package validator and unit-test steps PASS.
+- **GitLab manual snapshot:** branch `feature/trtt-blog-github-gitlab-bridge-20261128`, latest checked commit `3abcc39642e0f3d48c7d11df5c7a207a6100f68a`, MR !31 OPEN. GitLab main unchanged.
+- **Automatic sync test:** GitHub Actions runs `46131067990`, `46131071172` and `46131165595` completed successfully as jobs, but logs explicitly show `GITLAB_TOKEN` was empty and the GitLab push step was SKIPPED. Automatic sync is therefore BLOCKED until Owner configures the GitHub Actions repository secret with GitLab `write_repository` scope. No token requested or exposed.
+- **GitLab CI:** latest MR pipeline `3126329659` failed before runner start with `ci_quota_exceeded`; GitLab CI NOT PASS due quota.
+- **Read-back:** theme, Travelpayout catalog, Amazon catalog and 100-part roadmap match GitHub exactly; roadmap count = 100.
+- **Preservation:** current theme and Owner's 2–3 new news articles unchanged. No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
+- **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
