@@ -1264,3 +1264,15 @@ Policy: append-only; preserve all earlier entries.
 - JavaScript syntax PASS. Mock import tests PASS for both formats; valid records restored, invalid records skipped, duplicate-safe merge behavior verified, and learning source links restricted to HTTPS.
 - Browser file picker, actual downloaded JSON file, Android/iOS device, screen-reader, cross-browser and production deployment tests remain NOT TESTED.
 - Marker: json-backup-restore-merge-verified-20261128
+
+
+## 2026-11-28 02:43 CET — DR-TRTT-OPS-001 — Two-project re-audit started
+
+- Owner trigger: double-check the Command Center and Learning Journey projects, fix verified problems, and prepare the next project.
+- Audit targets: `TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6` (main `af68a223c224b2b4cc860ae560dc95e5ec5fdb6f`) and `TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey` (main `dd0666171c0779deeba71e361502584bfdd6f660`).
+- Read repository operating rules, READMEs, Command Center/Idea/Learning screens, Learning Journey homepage and Start Here guide. Command Center `AGENTS.md` requires feature branches, append-only memory, PR review, and Owner approval for merge/production deployment. Learning Journey `PROJECT-RULES.md` independently requires feature branches and owner authorization for merge/deployment.
+- Initial source finding: Idea local-storage load accepted records without validating `createdAt`; rendering could display “Invalid Date”. Learning local-storage load did not normalize stored source URLs or timestamps robustly. These are targeted local-data integrity fixes.
+- Learning Journey source review: homepage mobile navigation has labelled toggle, `aria-controls`, `aria-expanded`, link-close, Escape/focus-return and desktop-resize handling; Start Here guide and README/homepage discovery links are present. No additional confirmed source defect identified in this pass.
+- No production, GitHub Pages, Blogger, Telegram, DNS, account, or security-setting action authorized or performed. Browser/device QA and live deployment remain NOT TESTED/NOT VERIFIED.
+- Working branch: `feature/two-project-audit-next-saas-prep-20261128`. Further changes and final PR/test evidence will be appended separately.
+- Marker: two-project-reaudit-start-20261128
