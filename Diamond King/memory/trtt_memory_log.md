@@ -1755,3 +1755,16 @@ Policy: append-only; preserve all earlier entries.
 - **PR:** #3 — https://github.com/TRTT-VOYAGE/Cocvghuj/pull/3 ; OPEN, unmerged, mergeable=true; head SHA `2950ec9552106f83d46a8f18fb38cf44ff5dd99a`.
 - **Verification:** Branch README read-back confirms the new heading. The change is not yet on main until PR #3 is merged. Repository rename and profile pinned-repository ordering are separate GitHub settings and were not changed; available connector does not expose those settings actions.
 - **Marker:** trtt-profile-hq-display-name-pr3-20261128
+
+
+## Entry — 2026-11-28 — Abu Taher profile heading proposal
+
+- **Project code:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner asked whether “Abu Taher” should be the primary GitHub profile name for clearer Google identity/indexing.
+- **Decision:** Use `Abu Taher` as the README H1 and `Founder of TRTT Voyage · Independent Builder` as the supporting line.
+- **GitHub target:** `TRTT-VOYAGE/Cocvghuj`, README.md only.
+- **Prior state:** PR #3 (TRTT Voyage — Diamond King HQ) was found merged on main at `4761d7d685a53419e808760e1781a7e14677be24` during this turn.
+- **New change:** Commit `db6b4e7c3329ae23d224c623fff947269d465355` on `feature/abu-taher-profile-name-20261128`; PR #4 https://github.com/TRTT-VOYAGE/Cocvghuj/pull/4 is OPEN and unmerged.
+- **Verification:** PR creation confirmed. Read-back verification pending; Google indexing is not guaranteed by a README heading alone.
+- **Scope:** No repo rename, profile pin reorder, external service action, GitLab, Blogger, or Telegram work.
+- **Marker:** trtt-abu-taher-profile-heading-pr4-20261128
