@@ -1871,3 +1871,13 @@ Policy: append-only; preserve all earlier entries.
 - **PR state:** OPEN; latest fetch reports mergeable=true. No workflow runs or commit status checks returned; CI NOT TESTED.
 - **Merge:** Not performed in this trigger because the user requested implementation but did not explicitly approve merging this specific PR. Awaiting owner approval.
 - **Marker:** trtt-abu-taher-gitops-ai-content-positioning-pr-20261128
+
+
+## 2026-11-28 — Add Diamond Raja & Diamond King Learning Journey to profile
+- **Project:** DR-TRTT-OPS-001
+- **Trigger:** User supplied the live learning-journey URL https://trtt-voyage.github.io/trttvoyage-ashes-fall-king/index.html and source repository https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey.
+- **Decision:** Treat the two supplied URLs as the live experience and source repository for one public learning-journey project. Add both links to the Featured TRTT Projects table in the Abu Taher profile README. Describe it as a public learning journey using the repository's stated Learn → Imagine → Build → Share framing; do not claim a deployed SaaS or backend capability.
+- **Scope:** GitHub only. No GitLab, Blogger, Telegram, social publishing, deployment, DNS/security, or secrets actions.
+- **File changes:** README.md in TRTT-VOYAGE/abu-taher on feature/abu-taher-learning-journey-project-link-20261128; append-only memory log and HTML mirror.
+- **Verification:** Project repository README inspected; profile README update committed to feature branch. Live URL browser fetch unavailable, so live-page rendering NOT VERIFIED. PR creation and CI checks pending.
+- **Marker:** trtt-abu-taher-learning-journey-project-link-20261128
