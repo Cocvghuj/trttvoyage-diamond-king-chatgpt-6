@@ -1531,3 +1531,15 @@ Policy: append-only; preserve all earlier entries.
 - **Verification:** GitHub read-back and PR validation pending at append time; merge only after successful CI and file verification.
 - **GitLab:** Mirror remains subject to MR !31 and quota/token blockers; no GitLab main mutation.
 - **Marker:** trtt-blogger-editorial-intake-brief-20261128
+
+
+## Verification addendum — Blogger editorial intake brief — 2026-11-28
+
+- **Blogger PR:** #4 successfully squash-merged to GitHub main after successful CI and mergeability re-check.
+- **Merge commit:** cf0407bd5475d4fcc1cdd6127beb64bbac1360d0.
+- **CI:** GitHub Actions run 46140633597 completed SUCCESS for the PR head; package validation and unit tests passed.
+- **Main read-back:** blog/drafts/ARTICLE-RESEARCH-BRIEF.md exists; README links the brief; docs/BUILD-LOG.md contains marker trtt-blogger-editorial-intake-brief-20261128.
+- **GitLab mirror:** appended the same three files to existing MR !31 feature branch. Commit 73d1fdd14d3dfdd734cc0daf18dbcac7881709f5. Raw read-back exact-match PASS for all three files. MR !31 remains OPEN; its pipeline 3126511035 failed with ci_quota_exceeded before runner startup (python_validation started_at=null).
+- **Command Center PR #117:** remains OPEN and unmerged; it is the append-only memory PR for this work, not the Blogger-work PR.
+- **Blogger:** No article HTML was produced because no verified topic/source packet or cleared image was present. No Blogger API draft, theme import, static page install or live publication occurred. No Telegram, production, DNS/security action or secret access.
+- **Marker:** trtt-blogger-editorial-brief-merge-verified-20261128
