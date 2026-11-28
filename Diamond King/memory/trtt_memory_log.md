@@ -1459,3 +1459,13 @@ Policy: append-only; preserve all earlier entries.
 - **GitLab:** No matching GitLab projects were found for either Smart Invoice SaaS or Ashes Fall King. The existing Blogger mirror is a separate project; no cross-project mirror was attempted.
 - **Blogger status inspected:** Command Center PR #114 remains OPEN/mergeable. It references TRTTVOYAG-BLOG PR #3 and GitLab MR !31. GitLab MR !31 is OPEN/mergeable, but its latest pipeline is FAILED before runner start due to `ci_quota_exceeded`; GitHub package CI run 46131171917 is recorded SUCCESS in the PR evidence. No Blogger import, draft creation, live publish or Telegram delivery performed.
 - **Marker:** trtt-cross-repo-links-pr-status-20261128
+
+
+## Owner merge authorization — 2026-11-28
+
+- **Owner trigger:** Explicit approval received: `MERGE APPROVED` for GitHub PR #2 (Ashes Fall King), PR #115 (Command Center append-only memory), and PR #3 (TRTT Blogger theme package).
+- **Pre-merge inspection:** All three PRs were OPEN and GitHub reported `mergeable=true`. PR #2 changes only Ashes homepage navigation; PR #115 appends the project memory log and HTML trace; PR #3 applies the reviewed Diamond Horizon Blogger package and supporting validation/docs/workflow.
+- **CI evidence:** Blogger PR #3 head commit `2b321fe5bae2e194616f18abbfcabddd7d537a51` has GitHub Actions validation run `46131171917` completed with conclusion `success`. PR #2 and #115 had no PR-triggered workflow runs or commit statuses reported.
+- **Authorization boundary:** Owner approval authorizes these three GitHub PR merges only. It does not authorize Blogger theme import, Blogger draft/live publication, Telegram delivery, GitLab MR merge, DNS/security changes or production deployment.
+- **Execution status at append:** Merge actions and post-merge read-back are pending; no merge success is claimed yet.
+- **Marker:** trtt-merge-approved-20261128
