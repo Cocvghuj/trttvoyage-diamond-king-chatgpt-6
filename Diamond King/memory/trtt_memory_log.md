@@ -1211,3 +1211,16 @@ Policy: append-only; preserve all earlier entries.
 - Existing architecture/spec documents explicitly classify these as concept prototypes. Preserve that boundary and keep browser-local data on the user's device.
 - PR #8 remains an unrelated Wellness content Draft; it is not part of this project and remains blocked pending professional review and licensing/editorial checks.
 - Marker: offline-learning-idea-workflows-start-20261128
+
+
+### Offline workflow implementation — 2026-11-28
+- Command Center feature branch: feature/offline-learning-idea-workflows-20261128.
+- Updated prototypes/diamond-king-universe/ideas.html: browser-local idea capture (maximum 100), list, delete, JSON export, input limits, local-storage failure feedback, safe textContent rendering, and explicit local-only disclosure.
+- Updated prototypes/diamond-king-universe/learning.html: browser-local learning plans (maximum 100), pathway selection, optional HTTPS source, self-recorded complete/reopen, delete, per-path progress calculation, JSON export, safe textContent rendering, and local-only disclosure.
+- Updated prototypes/diamond-king-command-center/index.html: direct links to Learning and Idea screens; hero and quick-create actions open the actual pages; dynamic heading uses DOM text nodes rather than innerHTML.
+- Updated docs/DIAMOND-KING-LEARNING-IDEA-UNIVERSE-SCREEN-SPEC-001.md and appended the Command Center UI/UX implementation addendum.
+- Syntax parsing PASS for both page scripts. Mock-DOM workflow checks PASS: idea save/render/delete; learning plan save/render/mark-complete and progress updates to 100% for a one-item completed pathway. Source assertions PASS for JSON export, 100-record caps, HTTPS source validation, local-storage error handling, safe text rendering, and focus-visible styles.
+- Learning Journey branch: feature/free-learning-start-here-20261128. Added START-HERE.md with an original four-step Learn → Imagine → Build → Share practical curriculum, evidence criteria, privacy boundaries, and reusable project-record template. Added discoverability links in README.md and homepage index.html.
+- Learning Journey read-back/source assertions PASS for guide steps, README link, and homepage CTA. Browser/device QA, screen-reader testing, actual download/export click testing, and production deployment remain NOT TESTED.
+- All new workflow data remains in the current browser/device only. No server, database, authentication, cloud sync, AI integration, billing, or franchise tenant isolation was added. Overall production SaaS readiness remains NOT 100%.
+- Marker: offline-learning-idea-workflows-build-20261128
