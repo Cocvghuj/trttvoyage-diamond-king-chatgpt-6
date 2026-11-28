@@ -1652,3 +1652,20 @@ Policy: append-only; preserve all earlier entries.
 - **Final handoff:** No further code change is justified before the required credentials exist; no fabricated success or guaranteed result. A single consolidated Owner approval trigger may be issued only after credentials are configured and a Blogger DRAFT is actually verified. Owner will separately decide/manualize Live publication. Telegram remains excluded until a confirmed LIVE URL and separate approval.
 - **Memory branch:** Appended this entry to the existing PR #117 feature branch and mirrored it in trttmagic.html; read-back verification pending.
 - **Marker:** trtt-final-blogger-readiness-handoff-20261128
+
+
+## Entry — 2026-11-28 — GitHub Pages safe launch build trigger
+
+- **Timestamp:** 2026-11-28 14:04 Europe/Rome (UTC+01:00)
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner allotted 30 minutes and requested the TRTT website be made ready for a GitHub Pages launch first, followed by the separate Blogger launch stage. Owner requested a high-confidence, fully working result, not a claim of guaranteed Google ranking/indexing.
+- **GitHub-first inspection:** Identified TRTT-VOYAGE/Cocvghuj-trtt-news-bot as the website source. Main branch head at inspection: 339532320419054da609bc4862b035299d88ead4. Repository contains index.html, build.js, static assets and multiple existing workflows, but no .github/workflows/deploy-pages.yml. Existing PR validation runs npm test and npm run build.
+- **Critical publication risk found:** Existing generic build.js copies arbitrary root-level HTML by extension. The repository includes Diamond King admin/command-center HTML, trttmagic.html, vault embeds, diary/health routine HTML, and other non-site files. Reusing the generic output directly for public Pages could expose content not intended for public site. Locked diamond-king-v7-final.html baseline SHA 7886ec0cfd881fea1588d086e1ecb679c671657a is reference-only and was not modified.
+- **Build decision:** Create a dedicated GitHub Pages artifact builder using an explicit public allowlist, excluding admin/vault/diary/private/raw-data/workflow/config files; rewrite root-relative links and PWA scope for project Pages path; generate Pages-specific robots.txt and sitemap; validate local HTML targets. Preserve existing Vercel build/deploy and Blogger workflows unchanged.
+- **Files added on feature branch:** feature/trtt-github-pages-safe-launch-20261128 in TRTT-VOYAGE/Cocvghuj-trtt-news-bot: scripts/build-github-pages.js, .github/workflows/deploy-pages.yml, docs/GITHUB-PAGES-DEPLOYMENT.md. All are additive. Latest feature head after additions: 4cdba638f3d8fc3fe751434554d4440cf0a68d3a.
+- **PR:** #147 created: https://github.com/TRTT-VOYAGE/Cocvghuj-trtt-news-bot/pull/147. State OPEN, unmerged; mergeable=true at latest inspection. Workflow run 46147974767 triggered by pull_request and was IN_PROGRESS at inspection. Build job had started Node setup; project tests, existing build, Pages artifact validation, and artifact upload were still pending. No successful test claim yet.
+- **Deployment plan:** PR workflow only builds/uploads artifact; deployment job is gated to push on main or manual dispatch on main. Thus Owner merge is the production deployment gate. Expected project Pages URL documented as https://trtt-voyage.github.io/Cocvghuj-trtt-news-bot/; no custom domain or DNS change. GitHub Pages activation and public route require deployment evidence.
+- **Google / Blogger:** GitHub Pages deployment does not guarantee Google indexing. Search Console verification and sitemap submission remain separate. No Blogger post/theme/page change, no live publication, no Telegram action.
+- **GitLab:** Existing MR !31 inspected; Pages PR mirror and current pipeline evidence still require separate verification. No GitLab main merge.
+- **Safety:** No secrets accessed, no DNS/security change, no production deployment yet, no live Blogger or Telegram action.
+- **Marker:** trtt-github-pages-safe-launch-20261128
