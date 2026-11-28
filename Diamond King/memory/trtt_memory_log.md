@@ -1491,3 +1491,14 @@ Policy: append-only; preserve all earlier entries.
 - **Pre-merge inspection:** PR #116 was OPEN and GitHub reported `mergeable=true`; both memory files contain marker `trtt-merge-complete-verification-20261128`.
 - **Execution status at append:** Merge action and main-branch read-back pending; no merge success claimed yet.
 - **Marker:** trtt-pr116-owner-approval-20261128
+
+
+## Diamond trigger presentation correction — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001
+- **Trigger summary:** Owner objected that the previous TRTT MAGIC COMMAND trigger lacked the required 👑💎 Diamond identity and requested a proper DIAMOND VERSION trigger.
+- **Decision:** Provide a visually distinct, copy-ready 👑💎 TRTT MAGIC COMMAND CENTER — DIAMOND VERSION trigger. This is a wording/presentation request only; it does not authorize merging PR #5 or #117, Blogger changes, live publication, Telegram delivery, deployment, DNS, or security changes.
+- **GitHub inspection:** Existing Command Center PR #117 inspected; state OPEN. Both append-only memory targets read from its feature branch before update.
+- **File changes:** Append this entry to `Diamond King/memory/trtt_memory_log.md` and mirror it in `Diamond King/trttmagic.html` on the existing PR #117 feature branch.
+- **Verification:** Pre-write read-back PASS; post-write read-back pending.
+- **Marker:** trtt-diamond-trigger-correction-20261128
