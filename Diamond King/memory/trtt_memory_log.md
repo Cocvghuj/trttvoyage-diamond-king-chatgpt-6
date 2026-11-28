@@ -1035,3 +1035,15 @@ Policy: append-only; preserve all earlier entries.
 - Verification: Remote read-back PASS; JavaScript parse via V8 Function constructor PASS; document closure, all five DATA keys, pick() definition, localStorage read/write, status element, corrected browser-local wording, and no eval/new Function patterns PASS. Browser interaction, localStorage behavior in a real browser, mobile/device rendering, and GitHub Pages deployment/runtime remain NOT TESTED.
 - Safety: No main-branch change, deletion, external dependency, paid service, secret access, deployment, DNS/security change, Blogger publication, Telegram send, or GitLab mirror. Owner merge required.
 - Marker: ashes-fall-king-runtime-repair-20261128
+
+
+## 2026-11-28 — Verify Ashes Fall King merge; repair TRTT AI King Game loop
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner sent “Next”.
+- GitHub-first verification: Ashes Fall King PR #1 confirmed CLOSED/MERGED at 2026-11-28T00:01:00Z, merge commit 0cc87d00f1c02095e48426f8ae5d5e7b4ef2fdc0. Command Center memory PR #88 confirmed CLOSED/MERGED at 2026-11-28T00:01:23Z, merge commit bfc3456acb24a7e8084d66c3438077c0a300a352. Read-back from both main branches confirmed repaired Ashes index.html and memory marker in both Command Center files.
+- Next scoped task: address the previously identified TRTT AI King Game timer leak. Inspected TRTT-VOYAGE/trtt-ai main/king-game.html before editing; startGame() created two untracked setInterval loops on each start and game-over only flipped playing=false, leaving timers alive; Again used a full-page reload.
+- Decision: preserve existing game visuals, scoring, controls and copy; track both interval handles; clear both on game over; make Again reset the current game state/items and start a fresh run without page reload.
+- Application repository: TRTT-VOYAGE/trtt-ai. Feature branch: feature/king-game-loop-cleanup-20261128 (from main). File changed: king-game.html only. Commit: 7c67a3dfcdf7beccdc7a84a3d9024bead4a61dfa.
+- Verification: Remote source read-back and V8 JavaScript syntax parse PASS. Source checks confirm interval handles, clearing both timers, game-over stop, reset cleanup, and reset button wiring. Real-browser/gameplay and mobile touch testing NOT TESTED.
+- Safety: no main edit, merge, deployment, paid service, secret access, deletion, or unrelated game changes. Owner merge required. GitLab NOT REQUIRED under current GitHub-only direction; Blogger/Telegram NOT REQUIRED.
+- Marker: trtt-ai-king-game-loop-repair-20261128
