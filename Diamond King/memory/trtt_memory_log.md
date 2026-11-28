@@ -1487,3 +1487,15 @@ Policy: append-only; preserve all earlier entries.
 - **Roadmap:** exactly 100 small work units, planning only.
 - **Gemini:** optional public/non-sensitive second-opinion lane documented; connector/API NOT VERIFIED.
 - **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
+
+
+## Correction — Final Blogger mirror and CI state — 2026-11-28
+- Latest GitHub source head is `0124cdbc8b615133200808b937db2d436f98a3e4`; PR #3 remains OPEN/mergeable, not merged.
+- GitHub Actions run `46130925601` completed SUCCESS on this exact head; package validator and unit-test steps PASS.
+- Latest GitLab mirror branch commit is `ab96fe46e7d7b3a12d1720a8e73e7e8119f4a77f`; MR !31 remains OPEN.
+- GitLab main SHA remains `95cff41c0ca8453c6e8519f6f59899d5b576edc5`; no GitLab main change.
+- GitLab MR pipeline `3126323743` failed before runner start with `ci_quota_exceeded`; NOT PASS due quota.
+- README read-back confirms the initial manual snapshot and automatic sync are clearly distinguished. The GitHub Actions sync workflow remains configured but `GITLAB_TOKEN` presence/scope NOT VERIFIED.
+- Exact mirror read-back previously confirmed theme, Travelpayout/Amazon catalogs and roadmap. Current theme and 2–3 new news articles remain unchanged.
+- No live Blogger import/pages/posts, publication, Telegram, DNS/security or secret access.
+- Marker: `trtt-blog-github-gitlab-bridge-final-20261128`
