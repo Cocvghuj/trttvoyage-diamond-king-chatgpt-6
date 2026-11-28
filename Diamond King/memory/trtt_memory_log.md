@@ -1200,3 +1200,14 @@ Policy: append-only; preserve all earlier entries.
 - Current open PR audit: Command Center still has PR #8, a separate Wellness educational article Draft; Learning Journey has zero open PRs. PR #8 remains unmerged because medical review, licensed image rights, editorial/localization review and Blogger preview are outstanding.
 - Production readiness is still NOT 100%. Source changes and GitHub merges are verified; browser/mobile/screen-reader/production runtime tests are NOT TESTED. Backend/database/authentication/tenant isolation/AI runtime/billing are not implemented in the Command Center concept prototype.
 - Marker: two-project-accessibility-pr-merge-verified-20261128
+
+
+## 2026-11-28 — DR-TRTT-OPS-001 — Owner trigger: “Do not ask me to merge; make both projects 100”
+
+- Owner instruction: do not ask Owner to perform merges; execute routine merges for the requested project work. This is treated as current scoped authorization for the two named projects and their directly related PRs, subject to safety and repository constraints.
+- Verified prior accessibility PR merges: Command Center PR #99 -> 030025ed52d7ea52ba90c613bfa142f97a5cc5c8; Learning Journey PR #14 -> 91295a5644fb6921eee45f72f78443864b51153a.
+- Main read-back confirmed focus-visible styling in Command Center Learning Universe and Idea Universe and Learning Journey home. Memory/trace verification PR #100 -> 219aad1fc16b5eaab33724b7a40b6bf0fdd3d833.
+- New build scope: make the two existing Universe screens useful as browser-local workflows: persistent idea capture and learning-plan tracking, with export and explicit local-only privacy disclosure. No cloud sync, user accounts, backend, or production service will be claimed.
+- Existing architecture/spec documents explicitly classify these as concept prototypes. Preserve that boundary and keep browser-local data on the user's device.
+- PR #8 remains an unrelated Wellness content Draft; it is not part of this project and remains blocked pending professional review and licensing/editorial checks.
+- Marker: offline-learning-idea-workflows-start-20261128
