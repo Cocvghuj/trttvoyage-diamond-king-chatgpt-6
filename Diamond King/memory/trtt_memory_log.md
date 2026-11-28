@@ -1469,3 +1469,25 @@ Policy: append-only; preserve all earlier entries.
 - **Authorization boundary:** Owner approval authorizes these three GitHub PR merges only. It does not authorize Blogger theme import, Blogger draft/live publication, Telegram delivery, GitLab MR merge, DNS/security changes or production deployment.
 - **Execution status at append:** Merge actions and post-merge read-back are pending; no merge success is claimed yet.
 - **Marker:** trtt-merge-approved-20261128
+
+
+## Approved PR merge execution and verification — 2026-11-28
+
+- **Owner approval:** Explicit `MERGE APPROVED` received for GitHub PR #2, #115 and #3.
+- **Ashes Fall King PR #2:** Squash-merged successfully. Merge commit: `9298d16ee240a33a1edeb8abad1d90c22f5629ba`. Main-branch `index.html` read-back confirms the Smart Invoice SaaS repository link is present.
+- **TRTT Blogger package PR #3:** Squash-merged successfully. Merge commit: `fd063018962f35475466105e6728128bc1ca024d`. Main-branch Diamond Horizon theme read-back confirms the Command Center refinements are present. GitHub package validation run `46131171917` passed on the PR head before merge; no post-merge workflow run was returned by the commit workflow lookup.
+- **Command Center memory PR #115:** Squash-merged successfully. Merge commit: `62e8436363069d0bcb69e2d2943c27db0a1f65cc`. Main-branch read-back confirms the merge-approval marker exists in both the Markdown memory log and HTML mirror.
+- **Post-merge PR verification:** All three PRs now report `state=closed`, `merged=true`; merge timestamps were 2026-11-28 10:58 UTC.
+- **GitLab:** Blogger mirror MR !31 remains OPEN/mergeable. Its latest pipeline failed before runner start due `ci_quota_exceeded`; the GitHub Actions sync previously showed `GITLAB_TOKEN` unavailable and no post-merge mirror commit is verified. No GitLab MR merge was performed.
+- **Blogger / Telegram:** No Blogger theme import, static page installation, draft creation, live publication or Telegram delivery performed. No live Blogger or production state changed.
+- **Unresolved source limitation:** Smart Invoice SaaS dashboard `index.html` remains unchanged because available current/history versions are truncated mid-script; no guessed reconstruction was made.
+- **Marker:** trtt-merge-complete-verification-20261128
+
+
+## Owner approval to merge verification log — 2026-11-28
+
+- **Owner trigger:** Explicit `MERGE APPROVED` received for Command Center GitHub PR #116 only.
+- **Scope:** Merge the append-only post-merge verification record into GitHub `main`. This approval does not authorize GitLab MR !31 merge, Blogger import/draft/live publication, Telegram delivery, production deployment, or DNS/security changes.
+- **Pre-merge inspection:** PR #116 was OPEN and GitHub reported `mergeable=true`; both memory files contain marker `trtt-merge-complete-verification-20261128`.
+- **Execution status at append:** Merge action and main-branch read-back pending; no merge success claimed yet.
+- **Marker:** trtt-pr116-owner-approval-20261128
