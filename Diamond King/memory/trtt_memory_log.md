@@ -1474,3 +1474,16 @@ Policy: append-only; preserve all earlier entries.
 - **Gemini:** optional second-opinion lane documented for public/non-sensitive artifacts only. No Gemini connector/API credential available or verified in this chat; no secret assumed.
 - **Boundaries:** no live Blogger theme import, static page install, post edit/publication, Telegram, DNS/security, GitLab main mutation or secret access.
 - **Marker:** `trtt-blog-github-gitlab-bridge-100-part-roadmap-20261128`
+
+
+## Final verification addendum — Blogger GitHub/GitLab bridge — 2026-11-28
+- **GitHub source:** TRTT-VOYAGE/TRTTVOYAG-BLOG PR #3 remains OPEN/mergeable; final checked head `207b2d4fae76dce5f2a9290607b4633f0233704c`.
+- **GitHub CI:** run `46130780286` completed SUCCESS on that head; package validator and unit-test steps PASS.
+- **GitLab destination:** private project `trttnews24bd-group/Cocvghuj-trtt-news-bot`, project ID 88270725. Mirror branch `feature/trtt-blog-github-gitlab-bridge-20261128`; latest verified branch commit `6230726386aeb1df272a4dec0711421be06bda0d`; MR !31 OPEN.
+- **Exact read-back:** canonical Diamond Horizon XML, Travelpayout JSON, Amazon JSON and 100-part roadmap match GitHub source byte-for-byte. Roadmap count exactly 100.
+- **GitLab CI:** latest MR pipeline `3126321676` failed before runner start; job `python_validation` failure reason `ci_quota_exceeded`. This is a GitLab quota blocker, not a reported test assertion failure. GitLab CI status NOT PASS.
+- **Automation:** GitHub one-way sync workflow is committed, only writes the dedicated GitLab branch, and uses `GITLAB_TOKEN` without printing it. Secret presence/scope NOT VERIFIED; workflow has not yet run on GitHub main.
+- **Preservation:** current theme unchanged; 2–3 new news articles protected; no Blogger live import, page install, post edits/publication, Telegram, DNS/security, GitLab main mutation or secret access.
+- **Roadmap:** exactly 100 small work units, planning only.
+- **Gemini:** optional public/non-sensitive second-opinion lane documented; connector/API NOT VERIFIED.
+- **Marker:** `trtt-blog-github-gitlab-bridge-final-20261128`
