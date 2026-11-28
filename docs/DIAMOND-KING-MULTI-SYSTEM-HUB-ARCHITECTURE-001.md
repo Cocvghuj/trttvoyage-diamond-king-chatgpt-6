@@ -79,3 +79,16 @@ Recommended sequence:
 
 **Motto:** ONE TEAM. ONE VISION. ONE JOURNEY.  
 **Marker:** diamond-king-command-center-canonical-multisystem-hub-batch-20261127
+
+
+## Addendum — Three-repository bridge 001 (2026-11-28)
+
+The active three-repository scope is now explicitly:
+
+1. [Diamond King Command Center](https://github.com/TRTT-VOYAGE/trttvoyage-diamond-king-chatgpt-6) — canonical coordination, memory and governance.
+2. [Diamond Raja & Diamond King Learning Journey](https://github.com/TRTT-VOYAGE/diamond-raja-diamond-king-learning-journey) — Learning Universe, Idea Universe and curated learning records.
+3. [TRTT Voyage Travelpayout](https://github.com/TRTT-VOYAGE/Travelpayout) — travel partner catalog and outbound referral hub.
+
+The Command Center owns the shared registry and project memory; each module owns its own source data. Reciprocal repository links and a common record contract are being added through feature branches. This does not create automated synchronization. The detailed contract is in [DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md](DIAMOND-KING-THREE-REPOSITORY-BRIDGE-001.md), with the current machine-readable registry at [data/diamond-king-three-repo-registry.json](../data/diamond-king-three-repo-registry.json).
+
+**Current status:** source-level bridge changes are pending PR review; merge, production deployment and live runtime synchronization are not claimed.
