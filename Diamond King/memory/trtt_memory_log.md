@@ -1022,3 +1022,16 @@ Policy: append-only; preserve all earlier entries.
 - No application files changed. Append-only Command Center memory and HTML trace only.
 - GitLab: NOT REQUIRED under current GitHub-only direction. Blogger/Telegram: NOT REQUIRED.
 - Marker: two-live-sites-source-audit-20261128
+
+
+## 2026-11-28 — Ashes Fall King runtime repair
+- Project code: DR-TRTT-OPS-001.
+- Trigger: Owner sent “next” after the source audit of the two GitHub Pages projects; the next scoped task was to repair the incomplete Ashes Fall King command-center page.
+- GitHub-first inspection: Command Center PR #87 was rechecked and confirmed CLOSED/MERGED at 2026-11-27T23:58:12Z (merge commit c8fe850fcccd6eac2194fdced060a1dd06259001). Ashes Fall King repository exists, is public, and uses main as its default branch. The current main index.html was read before editing; it ended inside DATA after the Learning entry.
+- Decision: Preserve the existing visual layout, CSS, labels, image references, and five navigation choices. Complete the missing DATA entries and pick() navigation; implement the Idea Star list using browser localStorage only; make the persistence boundary explicit (same browser/device, not cloud/account sync); add accessible status feedback and remove controls. Limit saved stars to 12 and each label to 36 characters.
+- Application repository: TRTT-VOYAGE/trttvoyage-ashes-fall-king.
+- Feature branch: feature/ashes-fall-king-runtime-repair-20261128 (from main).
+- File changed: index.html only. Commits: bc685565a0f3a1669e181bcf0b46daefb7675612 and 8ca42e267aada094cf4179a71181eb152d688e7d.
+- Verification: Remote read-back PASS; JavaScript parse via V8 Function constructor PASS; document closure, all five DATA keys, pick() definition, localStorage read/write, status element, corrected browser-local wording, and no eval/new Function patterns PASS. Browser interaction, localStorage behavior in a real browser, mobile/device rendering, and GitHub Pages deployment/runtime remain NOT TESTED.
+- Safety: No main-branch change, deletion, external dependency, paid service, secret access, deployment, DNS/security change, Blogger publication, Telegram send, or GitLab mirror. Owner merge required.
+- Marker: ashes-fall-king-runtime-repair-20261128
