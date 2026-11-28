@@ -1256,3 +1256,11 @@ Policy: append-only; preserve all earlier entries.
 - Import rendering uses textContent and validated data; no imported HTML is executed or injected.
 - JavaScript syntax PASS. Mock file/localStorage import tests PASS for both spaces; invalid records were skipped and valid records restored. Browser download picker and actual file-selection flows NOT TESTED in a real browser.
 - Marker: learning-idea-json-backup-restore-20261128
+
+
+### JSON backup restore merge verification — 2026-11-28
+- Command Center PR #105 merged successfully. Merge commit: 9d7926d7f789bb9194dfbb7b5c2367b585838bd2.
+- Main read-back confirmed Import JSON controls and validated import handlers in both Idea Universe and Learning Universe, plus updated specification.
+- JavaScript syntax PASS. Mock import tests PASS for both formats; valid records restored, invalid records skipped, duplicate-safe merge behavior verified, and learning source links restricted to HTTPS.
+- Browser file picker, actual downloaded JSON file, Android/iOS device, screen-reader, cross-browser and production deployment tests remain NOT TESTED.
+- Marker: json-backup-restore-merge-verified-20261128
