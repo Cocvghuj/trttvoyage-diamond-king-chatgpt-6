@@ -1529,3 +1529,18 @@ Policy: append-only; preserve all earlier entries.
 - **Safety:** No direct pushes to default branches; no deletion, secrets, paid services, mass repository creation, production deployment, Blogger publishing, or Telegram distribution.
 - **Verification:** Repository metadata, current README files, memory log, command-center HTML, and PR #11 state were fetched from GitHub. Repository inventory is only partially enumerated by the available listing response; an exact organization-wide count is NOT VERIFIED.
 - **Marker:** trtt-two-hub-github-showcase-and-187-repo-growth-plan-20261128
+
+
+## Verification Addendum — Two-Hub GitHub Showcase — 2026-11-28
+
+- **Project:** DR-TRTT-OPS-001.
+- **Diamond King Command Center README:** PR #123 merged. Merge commit: `9d180b3af3596f423833ebc1ff9ead4cd3010cf4`. Post-merge `README.md` read-back from `main` PASS; verified command-center landing title, navigation/workflow section and standing-delegation wording. Read-back blob SHA: `52730f4a79a554785020cca6f36d82190a37c1f0`.
+- **Abu Taher profile README:** PR #12 merged. Merge commit: `d214ea2e15e3d2bbd1292fdf0c69dfabbd751569`. Post-merge `README.md` read-back from `main` PASS; verified idea-to-delivery workflow, routine low-risk delegated merge wording and portfolio-quality principles. Read-back blob SHA: `3b7e96076a80462bf0426856a327c3e1ddb73874`.
+- **Prior profile capability update:** PR #11 was re-fetched and confirmed merged at `e12d42b946b043f75ef86edea91152496ebaba53`.
+- **Memory update:** PR #122 merged at `80b1add7d959119315e127793c9c0ea15fd3ab0b`; both memory log and HTML marker were verified on `main`.
+- **Checks:** The two README PRs were README-only; GitHub reported each as mergeable. No workflow runs and no combined status entries were returned for their head commits. CI, browser rendering, mobile-device rendering, accessibility and link-click runtime are NOT TESTED.
+- **Organization profile:** Attempted to inspect `TRTT-VOYAGE/.github` and `profile/README.md`; repository/file lookup returned 404. No organization profile repository was created. Available GitHub tools in this session expose no repository-creation action, so this second profile surface remains NOT TESTED / NOT CREATED.
+- **Repository inventory:** The organization repository listing returned 100 records on the first request and no additional records on the offset request. This does not establish an exact count for all user/org repositories; the owner's stated 187-repository inventory remains NOT VERIFIED.
+- **Decisions:** Keep the two README examples honest and useful; next portfolio step should be a repository inventory and classification before bulk changes. Do not create empty/duplicate repositories to inflate the target of 1,000. Seven-day target is aspirational, not guaranteed.
+- **Scope:** GitHub only. GitLab backup, Blogger draft/live publishing, Telegram distribution and production deployment were not performed.
+- **Marker:** trtt-two-hub-github-showcase-verification-20261128
