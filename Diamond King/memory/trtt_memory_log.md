@@ -1316,3 +1316,12 @@ Policy: append-only; preserve all earlier entries.
 - Governance: no PR merged. No Pages/production deployment, DNS/security/account change, Blogger publication or Telegram delivery.
 - Runtime browser/mobile/screen-reader/cross-browser QA remains NOT TESTED. Live deployment and automatic cross-repository synchronization remain NOT VERIFIED / NOT IMPLEMENTED.
 - **Marker:** diamond-king-three-repository-bridge-verification-20261128
+
+
+### Owner operating instruction — 2026-11-28
+- Owner confirmed they are actively working in GitHub and requested concise communication, no unnecessary status talk, and autonomous execution of all safe/in-scope work from the agent side on future triggers.
+- Decision: inspect GitHub and repository governance first; execute the complete safe task without repeated questions; preserve append-only history; report evidence only.
+- This message did not specify a new implementation target. Existing three-repository bridge PRs remain open; repository rules still require Owner approval before merge or production deployment.
+- Current verified PR states at this trigger: Command Center #107 OPEN/mergeable (head 0608decb5d35c70d2474e12c42e0b6c64805f54c); Learning Journey #17 OPEN/mergeable (head 582e3fe905bd10a36ff50d2f01eca6eeab4e0f2e); Travelpayout #1 OPEN/mergeable (head 1a4419cb9210f529da21f69571a924933ddee9a9).
+- No code, workflow, deployment, merge, Blogger publication, or Telegram delivery was authorized or performed by this instruction.
+- Marker: owner-autonomous-execution-instruction-20261128
